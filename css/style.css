@@ -92,6 +92,7 @@ headline h2 {
     height: 80vh;
     top:0;
     left: 50%;
+    -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
     z-index: -100;
     
@@ -102,6 +103,7 @@ headline h2 {
     width: auto;
     top:0;
     left: 50%;
+    -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
 
     
