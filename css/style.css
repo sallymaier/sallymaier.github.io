@@ -16,7 +16,7 @@ headline h1 {
     font-weight: 100;
     letter-spacing: .15em;
     text-transform: uppercase;
-    font-size: 25vw;
+    font-size: 10vw;
     color: rgba(249, 0, 80, 0.8);
     position: fixed;
     z-index: 50;
