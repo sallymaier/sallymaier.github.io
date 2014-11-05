@@ -1,0 +1,136 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+        
+}
+
+.clear {
+  display: block;
+  clear:both;
+}
+
+
+
+headline h1 {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: rgba(249, 0, 80, 0.8);
+    position: fixed;
+    z-index: 50;
+    text-align: left;
+    top:-25px;
+    text-decoration: underline;
+    left: 36px;
+    margin-top: 36px;
+
+}
+
+headline h2 {
+    font-family: 'Playfair Display', serif;;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 36px;
+    color: rgba(255, 0, 102, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    text-align: center;
+    margin-top: 90px;
+
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: relative;
+    top: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    height: 90vh;
+
+}
+
+.content h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: black;
+    text-align: left;
+    margin-bottom: -12px;
+    color: #708D91 ;
+        
+}
+
+.content p { 
+    color: #415557  ;
+}
+
+.info {
+    display: block;
+    float: right;
+    margin-right: 36px;
+    z-index: 100;
+}    
+
+
+.imageContainer {
+    width: 100%;
+    display: block;
+    clear:both;
+    z-index: -100;
+}
+
+.imageContainer img {
+    position: absolute;
+    height: 80vh;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: -100;
+    
+}
+
+.overlayContainer {
+    position: absolute;
+    width: auto;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    
+}
+
+.trans {
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+}
+        
+
+ object {
+/*    text-align: center;*/
+    height: 80vh;
+    opacity: 0;
+    z-index: -50 !important;
+    
+    
+    
+}
+
+.overlayContainer object:hover {
+    opacity: 1;
+    background: black;
+    z-index: -50;
+    
+}
+
+
