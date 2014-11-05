@@ -10,8 +10,19 @@ title: White Space is a Luxury Good
             {{ post.content }}
         </div>
     
-        <aside>
-            metadata
-        </aside>
+        <div class="info">
+                <div class="publication">
+                <h1>Publication</h1>
+                <p>{{ post.publication }}</p>
+                </div>
+                <div class="income">
+                <h1>Median Household Income</h1>
+                <p>{{ post.income }}</p>
+                </div>
+                <div class="percent">
+                <h1>Percentage White Space</h1>
+                <p>{{ percentwhite }}</p>
+                </div>
+            </div>  
     </section>
 {% endfor %}
