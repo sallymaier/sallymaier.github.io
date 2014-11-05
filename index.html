@@ -3,24 +3,15 @@ layout: test
 title: White Space is a Luxury Good
 ---
 
-<p>testing</p>
-{% for post in site.posts %}
-
-<h1>{{ post.title }}</h1>
-  <p class="meta">{{ post.date }} &mdash; {{ post.location }}</p>
-  {{ post.content }}
-
-{% endfor %}
 
 {% for post in site.posts %}
-<section class="row">
-  <h1 class="span8 offset2">Thoughts, Notes, Miscellany</h1>
-
-  <ul class="posts span8 offset2">
+    <section class="post">
+        <div>
+            {{ post.content }}
+        </div>
     
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-      
-      
-  </ul>
-</section>
+        <aside>
+            metadata
+        </aside>
+    </section>
 {% endfor %}
