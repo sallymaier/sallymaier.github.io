@@ -5,24 +5,23 @@ title: White Space is a Luxury Good
 
 
 {% for post in site.posts %}
-    <section class="post">
-        <div>
-            {{ post.content }}
-        </div>
+    <section class="content">
+
+        {{ post.content }}
     
         <div class="info">
-                <div class="publication">
+            <div class="publication">
                 <h1>Publication</h1>
                 <p>{{ post.publication }}</p>
-                </div>
-                <div class="income">
+            </div>
+            <div class="income">
                 <h1>Median Household Income</h1>
                 <p>{{ post.income }}</p>
-                </div>
-                <div class="percent">
+            </div>
+            <div class="percent">
                 <h1>Percentage White Space</h1>
-                <p>{{ percentwhite }}</p>
-                </div>
-            </div>  
+                <p>{{ post.percentwhite }}</p>
+            </div>
+        </div>  
     </section>
 {% endfor %}
