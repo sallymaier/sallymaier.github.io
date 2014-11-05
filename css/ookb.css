@@ -1,0 +1,207 @@
+/* Update a few things from Bootstrap.css */
+
+/*======*/
+/* =General
+=========================================================*/
+.left        {float:left;}
+.right       {float:right;}
+.clear       {clear:both;}
+.clearLeft   {clear:left;}
+.clearRight  {clear:right;}
+.add-bottom  { !important; }
+.add-top     { !important; }
+.relative    {position:relative !important; z-index:1;}
+/*
+=========================================================*/
+
+
+/*=======================================*/
+/*=======================================*/
+/*=======================================*/
+
+/*
+.red, .note           { background: rgba(183,80,81,1); }
+.orange, .essay       { background: rgba(195,115,99,1); }
+.yellow, .links, .rant               { background: rgba(197,192,101,1); }
+.green, .web, .sustainability { background: rgba(140,165,115,1); }
+.blue, .letterpress   { background: rgba(157,178,176,1); }
+.purple, .misc        { background: rgba(174,139,164,1); }
+*/
+
+/*=======================================*/
+/*=======================================*/
+/*=======================================*/
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+em, cite { font-style: italic; }
+strong { font-weight: 700;}
+
+.past h2 {
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 0;
+  text-decoration: line-through;
+}
+
+article h3  {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 800 !important;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+article ol {
+  margin: 0 0 0 4px;
+  padding: 0;
+}
+
+.stricken, del {
+  text-decoration: line-through;
+}
+
+#post h1 {
+  color: rgba(175,171,104,1);
+  font-size: 48px;
+}
+
+#post p {
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+  text-indent: 32.5px;
+}
+
+#post p:nth-child(3) {
+  font-size: 24px;
+  line-height: 32.5px;
+  margin: 19.5px 0;
+  text-indent: 0;
+}
+
+#post p.meta {
+  color: rgba(96,103,103,1);
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 19.5px 0;
+  text-indent: 0;
+}
+
+#loader h1 em {
+  font-family: "gentium book basic", georgia, "times new roman", times, serif !important;
+  font-weight: 400 !important;
+  text-transform: lowercase !important;
+  }
+
+/* #main homepage "notes" link list */
+#main ul.posts {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  /**/
+  list-style: none;
+  padding: 0;
+}
+
+#main ul.posts li {
+  list-style: none;
+  margin: 5px 0;
+  padding: 0;
+}
+
+#main ul.posts li:first-child {
+  font-size: 24px;
+  line-height: 32.5px;
+}
+
+#main ul.posts li span {
+  color: rgba(96,103,103,1);
+  font-size: 14px;
+  display: inline-block;
+  width: 100px;
+  text-transform: uppercase;
+}
+
+/* Related Posts Styles */
+aside#related {
+  border-top: 1px solid rgba(96,103,103,1);
+  color: rgba(96,103,103,1);
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  margin-top: 39px;
+  padding-top: 19.5px;
+}
+
+/*=======================================*/
+/*=======================================*/
+/*=======================================*/
+/*=======================================*/
+/*=======================================*/
+/*=======================================*/
+
+/* Full Page Loading Screen */
+#loader {
+  width: 100% !important;
+  height: 100% !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(55,46,42,1);
+  color: rgba(132,132,120,1);
+  z-index: 1000000;
+}
+
+#loader .outer-container {
+  width: 100% !important;
+  height: 100% !important;
+  position: fixed;
+  display: table;
+  top: 0;
+  right: 0;
+}
+
+#loader .outer-container .inner-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#loader .outer-container .inner-container div {
+  width: 97.91667%;
+  float: left;
+  margin: 0 1.04167%;
+  font-size: 2.25em;
+  line-height: 1.33333em;
+  text-align: center;
+}
+
+#loader .outer-container .inner-container div img {
+  display: block;
+  margin: 0 auto;
+  }
+
+#loader .outer-container .inner-container div h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  }
+
+#loader .outer-container .inner-container div p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 80%;
+}
+
+#loader .outer-container .inner-container p.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000001;
+}

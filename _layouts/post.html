@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<article id="post" class="span8 offset2">
+  <h1>{{ page.title }}</h1>
+  <p class="meta">{{ page.date }} &mdash; {{ page.location }}</p>
+  {{ content }}
+</article>
+
+<aside>
+  {% for post in site.posts %}
+    {% if post.url == page.url %}
+      {% assign post_index0 = forloop.index0 %}
+      {% assign post_index1 = forloop.index %}
+    {% endif %}
+  {% endfor %}
+  {% for post in site.posts %}
+    {% if post_index0 == forloop.index %}
+      {% assign next_post = post.url %}
+    {% endif %}
+    {% if post_index1 == forloop.index0 %}
+      {% assign prev_post = post.url %}
+    {% endif %}
+  {% endfor %}
+  {% if next_post %}
+    <a class="btn span2 pull-right" href="{{ next_post }}">Next Post</a>
+  {% endif %}
+  {% if prev_post %}
+    <a class="btn span2" href="{{ prev_post }}">Last Post</a>
+  {% endif %}
+</aside>
+
+<aside id="related" class="span8 offset2">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    {% for post in site.posts limit:5 %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</aside>
