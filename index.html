@@ -6,7 +6,9 @@ title: White Space is a Luxury Good
 
 {% for post in site.posts %}
 
-{{ post.content }} 
+<h1>{{ page.title }}</h1>
+  <p class="meta">{{ page.date }} &mdash; {{ page.location }}</p>
+  {{ content }}
 
 {% endfor %}
 
