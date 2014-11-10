@@ -1,0 +1,36 @@
+---
+layout: The Lower the Price, the Bigger the Pricetag
+---
+
+
+{% for post in site.categories.price] %}
+
+
+
+
+    <article class="section group">
+        <div class="col imageContainer">
+
+    
+
+        {{ post.content }}
+        
+        </div>
+
+        
+        <div class="col info">
+            <div class="brand">
+                <h1>Brand</h1>
+                <p>{{ post.brand }}</p>
+            </div>
+            <div class="cost">
+                <h1>Average Cost Per Item</h1>
+                <p>{{ post.cost }}</p>
+            </div>
+            <div class="percent">
+                <h1>Percent of Page Displaying Price</h1>
+                <p>{{ post.percentprice }}</p>
+            </div>
+        </div>  
+    </article>
+{% endfor %}
