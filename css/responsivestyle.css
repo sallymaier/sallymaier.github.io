@@ -152,7 +152,7 @@ headline h1 {
     
 }
 
-.Price object:hover {
+.overlayContainerPrice object:hover {
     opacity: 1;
 /*    background: black;
 */    z-index: -50;
