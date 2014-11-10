@@ -4,13 +4,14 @@ title: White Space is a Luxury Good
 ---
 
 
-{% for post in site.posts %}
+{% for post in site.categories[whitespace] %}
+
     <article class="section group">
         <div class="col imageContainer">
 
     
 
-        {{ site.categories.whitespace }}
+        {{ post.content }}
         
         </div>
 
