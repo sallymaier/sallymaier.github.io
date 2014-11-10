@@ -152,6 +152,13 @@ headline h1 {
     
 }
 
+.Price object:hover {
+    opacity: 1;
+/*    background: black;
+*/    z-index: -50;
+    
+}
+
 .info {
 /*
     display: block;
