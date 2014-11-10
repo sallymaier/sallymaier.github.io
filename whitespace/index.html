@@ -1,0 +1,33 @@
+---
+layout: whitespace
+title: White Space is a Luxury Good
+---
+
+
+{% for post in site.posts %}
+    <article class="section group">
+        <div class="col imageContainer">
+
+    
+
+        {{ post.categories.whitespace }}
+        
+        </div>
+
+        
+        <div class="col info">
+            <div class="publication">
+                <h1>Publication</h1>
+                <p>{{ post.publication }}</p>
+            </div>
+            <div class="income">
+                <h1>Median Household Income</h1>
+                <p>{{ post.income }}</p>
+            </div>
+            <div class="percent">
+                <h1>Percentage White Space</h1>
+                <p>{{ post.percentwhite }}</p>
+            </div>
+        </div>  
+    </article>
+{% endfor %}

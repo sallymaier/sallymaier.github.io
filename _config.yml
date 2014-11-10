@@ -1,2 +1,7 @@
 markdown: kramdown
 pygments: true
+
+collections:
+  whitespace:
+    output: true
+    permalink: /whitespace/:path/
