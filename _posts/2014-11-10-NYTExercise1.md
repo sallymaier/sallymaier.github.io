@@ -1,7 +1,7 @@
 ---
 layout: whitespace
 date: 2014-11-10 15:52
-title: New York Times Magazine: Well. May 2013.
+title: New York Times Magazine Well May 2013
 category: whitespace
 publication: New York Times Magazine
 income: $157,289
