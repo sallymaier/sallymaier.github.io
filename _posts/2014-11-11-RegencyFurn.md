@@ -14,7 +14,6 @@ tags: flyer, furniture
 
 
            
-<div class="imageContainer">
 <img src="/img/editscans/RegencyFurn_1.png">
             
 <div class="overlayContainerPrice">
@@ -22,7 +21,6 @@ tags: flyer, furniture
 </div>
 
 
-</div>
             
         
         
