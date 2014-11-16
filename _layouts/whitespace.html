@@ -28,17 +28,19 @@
             
         </div>
 
-    <script>
+        <script>
         $( document ).ready(function() {
             $(".imageContainer").each(function() {
-                console.log($(this).find('img').height());
+                console.log($(this).find('img').height()); // log out height of <img> in .imageContainer
+                
 
-            $("imageContainer").css("height", $(this).find('img').height()); //set imageContainer height to <img> height
+            
+            $("imageContainer").css("height", $(this).find('img').height());
 
         
         });
 
-    </script>  
+    </script>   
         
     </body>
 </html>
