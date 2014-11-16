@@ -113,7 +113,7 @@ headline h1 {
     
 }
 
-.overlayContainer {
+/*.overlayContainer {
     position: absolute;
     width: 36vw;
 
@@ -121,7 +121,7 @@ headline h1 {
     z-index: 100;
     
     
-}
+}*/
 
 .trans {
     transition: all 1s ease-in-out;
