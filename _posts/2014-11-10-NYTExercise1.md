@@ -14,14 +14,10 @@ tags: editorial NYTMag frontmatter wellness exercise
 
 
            
-<div class="imageContainer">
 <img src="/img/editscans/NYT_exercise1.png">
             
 <div class="overlayContainer">
 <object type="image/svg+xml" data="/img/overlays/NYT_exercise1.svg" class="trans"></object>
-</div>
-
-
 </div>
             
         
