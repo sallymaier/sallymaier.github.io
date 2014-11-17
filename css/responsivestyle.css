@@ -114,7 +114,7 @@ headline h4 {
 
 
 
-#bracket4 {
+#bracket* {
         height: 15px;
         margin-top: 12px;
         margin-bottom: 12px;
@@ -123,14 +123,7 @@ headline h4 {
 
 }
 
-#bracket7 {
-        height: 15px;
-        margin-top: 12px;
-        margin-bottom: 12px;
-        background-color: rgba(249, 0, 80, 1);
 
-
-}
 
 
 
