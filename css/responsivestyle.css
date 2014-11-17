@@ -62,13 +62,12 @@ headline h1 {
 
 headline h2 {
     font-family: 'Lato', sans-serif;
-    font-weight: 200;
-    font-size: 9px;
-    letter-spacing: .5em;
-    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: .2em;
     color: rgba(249, 0, 80, 1);
     text-align: left;
-    margin-bottom: -12px;
+    margin-bottom: 3px;
 }
 
 headline h3 {
@@ -78,7 +77,7 @@ headline h3 {
     letter-spacing: .2em;
     text-transform: uppercase;
     text-align: left;
-    margin-bottom: -12px;
+    margin-bottom: -9px;
     color: #708D91 ;
 
 }
