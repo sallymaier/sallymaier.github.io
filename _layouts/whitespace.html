@@ -42,6 +42,9 @@
             <h3>$65,000 to $74,999</h3>
             <div class= "bracket" id="bracket5"></div>
 
+            <h3>$85,000 to $99,999</h3>
+            <div class= "bracket" id="bracket7"></div>
+
             <h3>$100,000 to $149,999</h3>
             <div class= "bracket" id="bracket9"></div>
 
@@ -153,6 +156,35 @@
     });
 
     //end Income Bracket 5
+
+    //for Income Bracket 7
+    $(document).ready(function() {
+        $ (function getData() {
+            $.getJSON( "https://spreadsheets.google.com/feeds/cells/1IYHFa9qc4WjFLWDI2wybud7xTWcHNRMzH1x4mlhTLyE/od6/public/values/R4C19?alt=json-in-script&callback=?",
+
+                function (data) {
+        
+
+            
+                    console.log(data);
+                    console.log(data.entry.gs$cell.$t);
+                    
+                        
+
+                    var bracketSeven = (data.entry.gs$cell.$t) * 100;
+                    console.log(bracketSeven);
+
+                    $( document ).ready(function() {
+                    $( "#bracket7" ).width( bracketSeven+"%" )});
+                    $('#bracket7').append('<p>' + bracketSeven + '% </p>');
+                      
+
+                });
+
+        });
+    });
+
+    //end Income Bracket 7
 
     //for Income Bracket 9
 
