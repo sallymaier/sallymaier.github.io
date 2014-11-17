@@ -26,6 +26,16 @@
         <headline class="col group"> 
         <h1>White<br>Space is<br>a Luxury<br>Good</h1>
         </headline>
+
+        <div class="graphs"> 
+
+            <h3>$50,000 to $74,999</h3>
+            <div id="bracket4"></div>
+
+            <h3>$150,000 to $199,999</h3>
+            <div id="bracket7"></div>
+
+        </div>
         
         <div class="col content group">
 
@@ -34,32 +44,27 @@
             
         </div>
 
-    <!--<script>
-        $( document ).ready(function() {
-            // $(".imageContainer").each(function() {
-            //     console.log($(this).find('img').height()); // log out height of <img> in .imageContainer
-                // var imgContainer = ($(this).find('img').height()); // set imgContainer to height of <img> in .imageContainer
-                // console.log(imgContainer);
+    <script type="text/javascript"> 
+        $(document).ready(function() {  
 
-            
-            $("imageContainer").css("height", $(this).find('img').height());
+        //source file is https://docs.google.com/spreadsheet/ccc?key=0Ak0qDiMLT3XddHlNempadUs1djdkQ0tFLWF6ci1rUUE   
 
-        
+            $(function trackTrends() {    
+
+                $.getJSON( "https://spreadsheets.google.com/feeds/list/1c1wpMcf-nWiB2ToNQRm5nmRznDDpKJAK-9Nims9tTOc/od6/public/values?alt=json-in-script&callback=?",
+
+                b4 = JSON.parse(text);
+                b4 = obj.entry.gs$cell.title[P4].gs$cell.$t ;
+
+                $('div.bracket4').width(b4);
+
+            };
+
+
         });
 
 
-
-        // function getHeight( height ) 
-        //     $( ".imageContainer" ).click(function() {
-        //       getHeight( "paragraph", $( "p" ).height() );
-        //     });
-        //     $( "#getd" ).click(function() {
-        //       showHeight( "document", $( document ).height() );
-        //     });
-        //     $( "#getw" ).click(function() {
-        //       showHeight( "window", $( window ).height() );
-        //     });
-    </script> -->
+    </script>
         
     </body>
 </html>

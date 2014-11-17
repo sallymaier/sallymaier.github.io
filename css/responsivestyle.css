@@ -225,6 +225,14 @@ headline h1 {
         width: 100%;
     }
     
+    #bracket4 {
+        height: 30px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        color: blue;
+
+
+    }
     
 }
 
