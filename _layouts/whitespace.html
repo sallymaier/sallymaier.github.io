@@ -10,14 +10,16 @@
         <meta name="description" content="White Space is a Luxury Good">
 
         <!-- jquery -->
-        <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
 
         <!-- fonts -->
         <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
         <!-- styles -->
-        <link rel="stylesheet" href="/css/responsivestyle.css" type="text/css">
+        <link rel="stylesheet" href="../css/responsivestyle.css" type="text/css">
 
     </head>
     
@@ -26,7 +28,10 @@
         <headline class="col group"> 
         <h1>White<br>Space is<br>a Luxury<br>Good</h1>
 
-        <div class="graphs"> 
+        <div id="graphs">
+
+            <h2>Percentage White Space<br>per Household Income Bracket</h2>
+
 
             <h3>$50,000 to $74,999</h3>
             <div id="bracket4"></div>
@@ -34,7 +39,11 @@
             <h3>$150,000 to $199,999</h3>
             <div id="bracket7"></div>
 
+            <h4>Additional brackets will be shown as they <br>become available in the database.</h4>
+
         </div>
+
+
 
         </headline>
 
@@ -47,46 +56,68 @@
             
         </div>
 
-    <script type="text/javascript"> 
-        // $(document).ready(function() {  
-
-        // //source file is https://docs.google.com/spreadsheet/ccc?key=0Ak0qDiMLT3XddHlNempadUs1djdkQ0tFLWF6ci1rUUE   
-
-        //     $(function trackTrends() {    
-
-        //         $.getJSON( "https://spreadsheets.google.com/feeds/list/1c1wpMcf-nWiB2ToNQRm5nmRznDDpKJAK-9Nims9tTOc/od6/public/values?alt=json-in-script&callback=?",
-
-        //         b4 = JSON.parse(text);
-
-        //         b4 = obj.entry.gs$cell.title[P4].gs$cell.$t ;
-
-        //         $('div.bracket4').width(b4);
-
-        //         console.log($(this).b4);
-
-        //     };
-
-
-        // });
-
-        function getData() {
-            return $.ajax({
-                url: 'https://spreadsheets.google.com/feeds/cells/1c1wpMcf-nWiB2ToNQRm5nmRznDDpKJAK-9Nims9tTOc/1/public/values/R4C16?alt=json-in-script&callback=importGSS',
-                dataType: 'jsonp',
-                jsonpCallback: 'importGSS' 
-            }
-
-        function doSomethingWithData(data) {
-                    console.log(data);
-
-                }
-                
-                getData().done(doSomethingWithData);
-            })
-        }
-
-
-    </script>
         
     </body>
+
+    <script type="text/javascript">
+
+    //for Income Bracket 4
+    $(document).ready(function() {
+        $ (function getData() {
+            $.getJSON( "https://spreadsheets.google.com/feeds/cells/1IYHFa9qc4WjFLWDI2wybud7xTWcHNRMzH1x4mlhTLyE/od6/public/values/R4C16?alt=json-in-script&callback=?",
+
+                function (data) {
+        
+
+            
+                    console.log(data);
+                    console.log(data.entry.gs$cell.$t);
+                    
+                        
+
+                    var bracketFour = (data.entry.gs$cell.$t) * 100;
+                    console.log(bracketFour);
+
+                    $( document ).ready(function() {
+                    $( "#bracket4" ).width( bracketFour+"%" )});
+                    $('#bracket4').append('<p>' + bracketFour + '% </p>');
+                      
+
+                });
+
+        });
+    });
+
+    //end Income Bracket 4
+
+    //for Income Bracket 7
+
+    $(document).ready(function() {
+        $ (function getData() {
+            $.getJSON( "https://spreadsheets.google.com/feeds/cells/1IYHFa9qc4WjFLWDI2wybud7xTWcHNRMzH1x4mlhTLyE/od6/public/values/R4C19?alt=json-in-script&callback=?",
+
+                function (data) {
+        
+
+            
+                    console.log(data);
+                    console.log(data.entry.gs$cell.$t);
+                    
+                        
+
+                    var bracketSeven = (data.entry.gs$cell.$t) * 100;
+                    console.log(bracketSeven);
+
+                    $( document ).ready(function() {
+                    $( "#bracket7" ).width( bracketSeven+"%" )});
+                    $('#bracket7').append('<p>' + bracketSeven + '% </p>');
+                      
+
+                });
+
+        });
+    });
+
+
+</script>
 </html>

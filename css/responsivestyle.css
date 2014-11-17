@@ -45,6 +45,11 @@ headline {
 
 }
 
+#graphs {
+
+    width: 75%;
+}
+
 
 
 headline h1 {
@@ -61,12 +66,14 @@ headline h1 {
 }
 
 headline h2 {
-    font-family: 'Playfair', serif;
-    font-weight: 700;
-    font-size: 12px;
-    color: rgba(249, 0, 80, 1);
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    /* font-style: italic; */
+    font-size: 1.1vw;
+    color: rgba(249, 0, 80, .8);
     text-align: left;
-    margin-bottom: 3px;
+    margin-bottom: 12px;
+    letter-spacing: 0.01em;
 }
 
 headline h3 {
@@ -76,10 +83,36 @@ headline h3 {
     letter-spacing: .2em;
     text-transform: uppercase;
     text-align: left;
+    margin-bottom: -9px;
+    margin-top: 9px;
+    color: #708D91 ;
+
+}
+
+headline p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    text-align: right;
+    margin-right: 2px;
+    padding-top: 2px;
+    vertical-align: center;
+    color: white ;
+
+}
+
+headline h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    text-align: left;
+    margin-top: 12px;
     margin-bottom: -3px;
     color: #708D91 ;
 
 }
+
+
 
 #bracket4 {
         height: 15px;
