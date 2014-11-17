@@ -60,6 +60,47 @@ headline h1 {
     
 }
 
+headline h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-size: 9px;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    color: rgba(249, 0, 80, 1);
+    text-align: left;
+    margin-bottom: -12px;
+}
+
+headline h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: -12px;
+    color: #708D91 ;
+
+}
+
+#bracket4 {
+        height: 15px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        background-color: rgba(249, 0, 80, 1);
+
+
+}
+
+#bracket7 {
+        height: 15px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        background-color: rgba(249, 0, 80, 1);
+
+
+}
+
 
 
 
@@ -174,16 +215,9 @@ headline h1 {
 } 
 
 
-#bracket4 {
-        height: 30px;
-        margin-top: 12px;
-        margin-bottom: 12px;
-        background-color: rgba(249, 0, 80, 1);
 
 
-}
-
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
 	.col { 
 		margin: 1% 0 1% 0%;
 	}
@@ -238,3 +272,4 @@ headline h1 {
     
 }
 
+*/
