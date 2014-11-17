@@ -15,7 +15,7 @@ tags: editorial realsimple food recipe
 
 <img src="/img/editscans/RealSimple_Food1.png">
 
-<div class="overlayContainerPrice">
+<div class="overlayContainer">
 <object type="image/svg+xml" data="/img/overlays/RealSimple_Food1.svg" class="trans"></object>
 </div>
 
