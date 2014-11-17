@@ -144,7 +144,7 @@ headline h4 {
 .info h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: .2em;
     text-transform: uppercase;
     color: black;
@@ -157,6 +157,21 @@ headline h4 {
 .info p { 
     color: #415557  ;
 }
+
+.info {
+/*
+    display: block;
+    float: right;
+    margin-right: 36px;
+*/
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    z-index: 100;
+    width: 35%;
+    height: auto;
+    
+} 
 
    
 
@@ -223,20 +238,7 @@ headline h4 {
     
 }
 
-.info {
-/*
-    display: block;
-    float: right;
-    margin-right: 36px;
-*/
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    z-index: 100;
-    width: 35%;
-    height: auto;
-    
-} 
+
 
 
 
