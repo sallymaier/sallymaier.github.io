@@ -48,25 +48,41 @@
         </div>
 
     <script type="text/javascript"> 
-        $(document).ready(function() {  
+        // $(document).ready(function() {  
 
-        //source file is https://docs.google.com/spreadsheet/ccc?key=0Ak0qDiMLT3XddHlNempadUs1djdkQ0tFLWF6ci1rUUE   
+        // //source file is https://docs.google.com/spreadsheet/ccc?key=0Ak0qDiMLT3XddHlNempadUs1djdkQ0tFLWF6ci1rUUE   
 
-            $(function trackTrends() {    
+        //     $(function trackTrends() {    
 
-                $.getJSON( "https://spreadsheets.google.com/feeds/list/1c1wpMcf-nWiB2ToNQRm5nmRznDDpKJAK-9Nims9tTOc/od6/public/values?alt=json-in-script&callback=?",
+        //         $.getJSON( "https://spreadsheets.google.com/feeds/list/1c1wpMcf-nWiB2ToNQRm5nmRznDDpKJAK-9Nims9tTOc/od6/public/values?alt=json-in-script&callback=?",
 
-                b4 = JSON.parse(text);
-                b4 = obj.entry.gs$cell.title[P4].gs$cell.$t ;
+        //         b4 = JSON.parse(text);
 
-                $('div.bracket4').width(b4);
+        //         b4 = obj.entry.gs$cell.title[P4].gs$cell.$t ;
 
-                console.log($(this).b4);
+        //         $('div.bracket4').width(b4);
 
-            };
+        //         console.log($(this).b4);
+
+        //     };
 
 
-        });
+        // });
+
+        function getData() {
+            return $.ajax({
+                url: 'https://spreadsheets.google.com/feeds/cells/1c1wpMcf-nWiB2ToNQRm5nmRznDDpKJAK-9Nims9tTOc/1/public/values/R4C16?alt=json-in-script&callback=importGSS',
+                dataType: 'jsonp',
+                jsonpCallback: 'importGSS'
+
+                function doSomethingWithData(data) {
+                    console.log(data);
+                    
+                }
+                
+                getData().done(doSomethingWithData);
+            })
+        }
 
 
     </script>
