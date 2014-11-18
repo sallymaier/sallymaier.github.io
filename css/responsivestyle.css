@@ -175,7 +175,7 @@ headline h4 {
     font-weight: 300;
     font-size: 14px;
     z-index: 100;
-    width: 24%;
+    width: 25%;
     height: auto;
     
 } 
@@ -184,16 +184,17 @@ headline h4 {
 
 
 .imageContainer {
-    width: 74%;
+    width: 75%;
     z-index: -100;
     margin-bottom: 5%;
 }
 
 .imageContainer img {
     position: absolute;
-    width: auto;
+    width: 36vw;
     margin-top: 0;
     z-index: -100;
+    height: auto;
   
     
 }
@@ -219,7 +220,9 @@ headline h4 {
 
  object {
 /*    text-align: center;*/
-    width: auto;
+    width: 36vw;
+
+    
     opacity: 0;
     z-index: -50 !important;
     
