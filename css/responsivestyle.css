@@ -190,8 +190,8 @@ headline h4 {
 }
 
 .imageContainer img {
-/*    position: absolute;
-*/    width: auto;
+    position: absolute;
+    width: auto;
     margin-top: 0;
     z-index: -100;
   
