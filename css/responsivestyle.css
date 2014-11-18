@@ -191,7 +191,7 @@ headline h4 {
 
 .imageContainer img {
     position: absolute;
-    width: 100%;
+    width: auto;
     margin-top: 0;
     z-index: -100;
     height: auto;
@@ -220,7 +220,7 @@ headline h4 {
 
  object {
 /*    text-align: center;*/
-    width: 36vw;
+    width: auto;
 
     
     opacity: 0;
