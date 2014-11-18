@@ -114,13 +114,20 @@ headline h4 {
 
 
 
-.bracket {
+/*.bracket {
         height: 15px;
         margin-top: 12px;
         margin-bottom: 12px;
         background-color: rgba(249, 0, 80, 1);
 
 
+}*/
+
+[id*='bracket'] {
+    height: 15px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: rgba(249, 0, 80, 1);
 }
 
 
