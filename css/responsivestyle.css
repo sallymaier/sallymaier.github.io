@@ -175,7 +175,7 @@ headline h4 {
     font-weight: 300;
     font-size: 14px;
     z-index: 100;
-    width: 35%;
+    width: 25%;
     height: auto;
     
 } 
@@ -184,7 +184,7 @@ headline h4 {
 
 
 .imageContainer {
-    width: 60%;
+    width: 75%;
     z-index: -100;
     margin-bottom: 5%;
 }
