@@ -1,4 +1,5 @@
 ---
+
 layout: whitespace
 date: 2014-11-20 17:13
 title: New York Times Magazine Who Made That?: Cellphone
@@ -9,7 +10,6 @@ percentwhite: 57%
 tags: editorial NYTM feature whomadethat whitespace
 
 ---
-
 
 
 
