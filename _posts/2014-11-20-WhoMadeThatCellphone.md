@@ -1,12 +1,12 @@
 ---
 layout: whitespace
 date: 2014-11-20 17:13
-title: New York Times Magazine "Who Made That?: Cellphone"
+title: New York Times Magazine Who Made That?: Cellphone
 category: whitespace
 publication: New York Times Magazine
 income: $157,289
 percentwhite: 57%
-tags: editorial NYTM feature whomadethat
+tags: editorial NYTM feature whomadethat whitespace
 
 ---
 
