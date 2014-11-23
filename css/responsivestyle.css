@@ -9,8 +9,6 @@ body {
         
 }
 
-p {margin: 0;}
-
 .clear {
   display: block;
   clear:both;
@@ -186,7 +184,6 @@ headline h4 {
 .imageContainer {
     z-index: -100;
     margin-bottom: 5%;
-    padding:0;
 }
 
 .imageContainer img {
