@@ -1,3 +1,8 @@
+* { box-sizing: border-box; } 
+
+
+
+
 body {
     margin-left: auto;
     margin-right: auto;
@@ -27,11 +32,29 @@ body {
     zoom:1; /* For IE 6/7 */
 }
 
-.col {
-	display: block;
-	float:left;
-	margin: 0% 0 1% 1.6%;
+
+/*smallest size*/
+
+[class*='col-'] {
+    float: left;
+    padding: 0% 0 1% 1.6%;
+    display: block;
 }
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 { width: 100%;}
+
+
 .col:first-child { margin-left: 0; }
 
 
@@ -40,14 +63,13 @@ headline {
     
     z-index: 50;
     width: 30%;
-    padding-left: 3vw;
     margin-top: 0;
 
 }
 
 #graphs {
 
-    width: 75%;
+    width: 100%;
 }
 
 
@@ -57,7 +79,7 @@ headline h1 {
     font-weight: 100;
     letter-spacing: .05em;
     text-transform: uppercase;
-    font-size: 5vw;
+    font-size: 3.5em;
     color: rgba(249, 0, 80, 1);
     text-align: left;
     text-decoration: underline;
@@ -69,7 +91,7 @@ headline h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     /* font-style: italic; */
-    font-size: 1.1vw;
+    font-size: 0.8em;
     color: rgba(249, 0, 80, .8);
     text-align: left;
     margin-bottom: 12px;
@@ -114,15 +136,6 @@ headline h4 {
 
 
 
-/*.bracket {
-        height: 15px;
-        margin-top: 12px;
-        margin-bottom: 12px;
-        background-color: rgba(249, 0, 80, 1);
-
-
-}*/
-
 [id*='bracket'] {
     height: 15px;
     margin-top: 12px;
@@ -131,19 +144,9 @@ headline h4 {
 }
 
 
-
-
-
-
 .content {
-/*
-    margin-left: auto;
-    margin-right: auto;
-*/
 
-    width: 64%;
-    height: auto;
-    
+    height: auto; 
 
 }
 
@@ -185,30 +188,18 @@ headline h4 {
 
 
 .imageContainer {
-    width: 74%;
     z-index: -100;
     margin-bottom: 5%;
 }
 
 .imageContainer img {
     position: absolute;
-    width: 45vw;
+    max-width: 100%;
     margin-top: 0;
     z-index: -100;
-    height: auto;
-  
-    
+    max-height: 100%;    
 }
 
-/*.overlayContainer {
-    position: absolute;
-    width: 36vw;
-
-    margin-top: 0;
-    z-index: 100;
-    
-    
-}*/
 
 .trans {
     transition: all 1s ease-in-out;
@@ -220,90 +211,71 @@ headline h4 {
         
 
  object {
-/*    text-align: center;*/
-    width: 45vw;
-
-    
+    max-width: 100%;  
+    max-height: 100%;    
     opacity: 0;
-    z-index: -50 !important;
-    
-    
-    
-    
+    z-index: -50 !important;   
 }
 
-.overlayContainer object:hover {
+.overlayContainer object:hover, object.hover_effect {
     opacity: 1;
     background: black;
     z-index: -50;
     
 }
 
-.overlayContainerPrice object:hover {
+.overlayContainerPrice object:hover, object.hover_effect {
     opacity: 1;
-/*    background: black;
-*/    z-index: -50;
+    z-index: -50;
     
 }
 
-
-
-
-
-
-/*@media only screen and (max-width: 480px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
+.hover {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;        
 }
 
-@media only screen and (max-width: 480px) {
-	
-	.imagecontainer {
-		width: 100%; 
-        z-index: -100;
-        height: 70vh;
-	}
-    
-	headline {
-		width: 100%;
-        font-size: 14vw;
-	}
-    
-    
 
-    .imageContainer img {
-        position: absolute;
-        width: 90vw;
-        margin-left:  auto;
-        margin-right:  auto;    
-        z-index: -100;
-        
+@media (min-width: 600px) {
 
+    #graphs {
+        width: 75%;
     }
 
-    .overlayContainer {
-        position: absolute;
-        margin-top: 0;
-        width: 90vh;
-        
+    headline h1 {
+        font-size: 4em;
+    }
 
-    }
-    
-    object {
-        width: 90vw;
-        margin-left:  auto;
-        margin-right:  auto;
 
-        
-    }
-    
-    .info   {
-        width: 100%;
-    }
-    
-    
-    
+    .col-1  { width: calc( 100% / 12 * 1 );}
+    .col-2  { width: calc( 100% / 12 * 2 );}
+    .col-3  { width: calc( 100% / 12 * 3 );}
+    .col-4  { width: calc( 100% / 12 * 4 );}
+    .col-5  { width: calc( 100% / 12 * 5 );}
+    .col-6  { width: calc( 100% / 12 * 6 );}
+    .col-7  { width: calc( 100% / 12 * 7 );}
+    .col-8  { width: calc( 100% / 12 * 8 );}
+    .col-9  { width: calc( 100% / 12 * 9 );}
+    .col-10 { width: calc( 100% / 12 * 10 );}
+    .col-11 { width: calc( 100% / 12 * 11 );}
+    .col-12 { width: calc( 100% / 12 * 12 );}
+
+
+    /** offsets **/
+
+    .col-offset-1  { margin-left: calc( 100% / 12 * 1 );}
+    .col-offset-2  { margin-left: calc( 100% / 12 * 2 );}
+    .col-offset-3  { margin-left: calc( 100% / 12 * 3 );}
+    .col-offset-4  { margin-left: calc( 100% / 12 * 4 );}
+    .col-offset-5  { margin-left: calc( 100% / 12 * 5 );}
+    .col-offset-6  { margin-left: calc( 100% / 12 * 6 );}
+    .col-offset-7  { margin-left: calc( 100% / 12 * 7 );}
+    .col-offset-8  { margin-left: calc( 100% / 12 * 8 );}
+    .col-offset-9  { margin-left: calc( 100% / 12 * 9 );}
+    .col-offset-10 { margin-left: calc( 100% / 12 * 10 );}
+    .col-offset-11 { margin-left: calc( 100% / 12 * 11 );}
+    .col-offset-12 { margin-left: calc( 100% / 12 * 12 );}
+
+
+
 }
-
-*/
