@@ -39,6 +39,7 @@ body {
     float: left;
     padding: 0% 0 1% 1.6%;
     display: block;
+    margin-right: 1%;
 }
 
 .col-1,
@@ -169,16 +170,11 @@ headline h4 {
 }
 
 .info {
-/*
-    display: block;
-    float: right;
-    margin-right: 36px;
-*/
+
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 14px;
     z-index: 100;
-    width: 24%;
     height: auto;
     margin-top: 3%;
     
