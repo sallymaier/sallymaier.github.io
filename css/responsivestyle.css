@@ -187,21 +187,25 @@ headline h4 {
 }
 
 .imageContainer img {
-    position: absolute;
     max-width: 100%;
     margin-top: 0;
     z-index: -100;
-    max-height: 100%;    
 }
 
 .overlayContainer {
         margin-bottom: 5%;
         padding-bottom: 1%;
+        transform: translate(0 px, -100%);
+        -webkit-transform: translate(0px, -100%);
+        margin-top: -.7em;
 }
 
 .overlayContainerPrice {
         margin-bottom: 5%;
         padding-bottom: 1%;
+        transform: translate(0 px, -100%);
+        -webkit-transform: translate(0px, -100%);
+        margin-top: -.7em;
 }
 
 
@@ -247,7 +251,7 @@ headline h4 {
     }
 
     headline h1 {
-        font-size: 4em;
+        font-size: 5vw;
     }
 
 
