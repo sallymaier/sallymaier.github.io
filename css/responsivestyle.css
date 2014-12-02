@@ -193,18 +193,16 @@ headline h4 {
 }
 
 .overlayContainer {
-        margin-bottom: 5%;
-        padding-bottom: 1%;
-        transform: translate(0 px, -100%);
-        -webkit-transform: translate(0px, -100%);
+        position: absolute;
+        top:0;
+        left:0;
         margin-top: -.7em;
 }
 
 .overlayContainerPrice {
-        margin-bottom: 5%;
-        padding-bottom: 1%;
-        transform: translate(0 px, -100%);
-        -webkit-transform: translate(0px, -100%);
+        position: absolute;
+        top:0;
+        left:0;
         margin-top: -.7em;
 }
 
