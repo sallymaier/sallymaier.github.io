@@ -13,7 +13,7 @@ tags: editorial NYTM feature whomadethat whitespace
            
 <div class="imageContainer col-8"><img src="/img/editscans/NYT_WhoMadeThat_Cellphone.png">
             
-<div class="overlayContainer col-8">
+<div class="overlayContainer col-12">
 <object type="image/svg+xml" data="/img/overlays/NYT_WhoMadeThat_Cellphone.svg" class="trans"></object>
 </div></div>
 
