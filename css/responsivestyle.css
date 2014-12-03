@@ -37,7 +37,7 @@ body {
 
 [class*='col-'] {
     float: left;
-    padding: 0% 0 1% 1.6%;
+    padding: 0 10px;
     display: block;
 }
 
