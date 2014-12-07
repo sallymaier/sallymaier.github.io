@@ -12,13 +12,11 @@ tags: editorial realsimple contents
 
 
 
-
-<img src="/img/editscans/RealSimple_Contents1.png">
-
-<div class="overlayContainer">
+<div class="imageContainer col-8"><img src="/img/editscans/RealSimple_Contents1.png">
+            
+<div class="overlayContainer col-12">
 <object type="image/svg+xml" data="/img/overlays/RealSimple_Contents1.svg" class="trans"></object>
-</div>
-
+</div></div>
 
             
         

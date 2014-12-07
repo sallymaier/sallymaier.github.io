@@ -12,17 +12,11 @@ tags: editorial NYTMag feature music
 
 
 
-
-           
-<div class="imageContainer">
-<img src="/img/editscans/NYT_FeatureRock_1.png">
+<div class="imageContainer col-8"><img src="/img/editscans/NYT_FeatureRock_1.png">
             
-<div class="overlayContainer">
+<div class="overlayContainer col-12">
 <object type="image/svg+xml" data="/img/overlays/NYT_FeatureRock_1.svg" class="trans"></object>
-</div>
-
-
-</div>
+</div></div>
             
         
         

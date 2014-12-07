@@ -10,15 +10,8 @@ tags: editorial recipes bread womansworld
 ---
 
 
-
-           
-<img src="/img/editscans/womansworld_recipes.png">
+<div class="imageContainer col-8"><img src="/img/editscans/womansworld_recipes.png">
             
-<div class="overlayContainer">
+<div class="overlayContainerPrice col-12">
 <object type="image/svg+xml" data="/img/overlays/womansworld_recipes-01.svg" class="trans"></object>
-</div>
-
-
-            
-        
-        
+</div></div>

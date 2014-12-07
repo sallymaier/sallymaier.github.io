@@ -11,13 +11,11 @@ tags: editorial fashion leopard womansworld
 
 
 
-           
-<img src="/img/editscans/WomensWorld_Leopard1.png">
+<div class="imageContainer col-8"><img src="/img/editscans/WomensWorld_Leopard1.png">
             
-<div class="overlayContainer">
+<div class="overlayContainer col-12">
 <object type="image/svg+xml" data="/img/overlays/WomensWorld_Leopard1.svg" class="trans"></object>
-</div>
-
+</div></div>
 
             
         

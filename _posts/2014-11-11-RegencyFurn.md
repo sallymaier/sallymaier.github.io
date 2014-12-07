@@ -10,16 +10,8 @@ tags: flyer, furniture
 
 ---
 
-
-
-
-<img src="/img/editscans/RegencyFurn_1.png">
-
-<div class="overlayContainerPrice">
-<object type="image/svg+xml" data="/img/overlays/RegencyFurn_1.svg" class="trans"></object>
-</div>
-
-
+<div class="imageContainer col-8"><img src="/img/editscans/RegencyFurn_1.png">
             
-        
-        
+<div class="overlayContainerPrice col-12">
+<object type="image/svg+xml" data="/img/overlays/RegencyFurn_1.svg" class="trans"></object>
+</div></div>
