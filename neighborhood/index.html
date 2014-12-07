@@ -1,0 +1,39 @@
+---
+layout: neighborhood
+title: Neighborhood Transition
+
+---
+
+
+{% for post in site.categories.neighborhood] %}
+
+
+
+
+    <article class="section group">
+        <div class="col slider">
+
+    
+
+        {{ post.content }}
+        
+        </div>
+
+        
+        <div class="col info">
+            <div class="location">
+                <h1>Location</h1>
+                <p>{{ post.location }}</p>
+            </div>
+            <div class="streetview">
+                <h1>Streetview Date</h1>
+                <p>{{ post.streetview }}</p>
+            </div>
+            <div class="modified">
+                <h1>Date Modified</h1>
+                <p>{{ post.modified }}</p>
+            </div>
+
+        </div>  
+    </article>
+{% endfor %}
