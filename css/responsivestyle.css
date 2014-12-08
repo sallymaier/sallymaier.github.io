@@ -186,6 +186,11 @@ headline h4 {
     margin-bottom: 5%;
 }
 
+.sliderContainer {
+    position: relative;
+    margin-bottom: 5%;
+}
+
 .imageContainer img {
     position: relative;
     width: 100%;
