@@ -1,0 +1,18 @@
+
+header {
+	text-align: center;
+}
+
+h1 {
+  font-family: "league-gothic",sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 5em;
+  }
+
+  h2 {
+  font-family: "Playfair Display",serif;
+  font-weight: 400;
+  font-size: 1em;
+  }
+
