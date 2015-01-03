@@ -22,15 +22,19 @@ h1 {
   font-family: "league-gothic",sans-serif;
   text-transform: uppercase;
   font-style: italic;
-  font-size: 7em;
-
+  font-size: 8em;
+  padding-bottom: -3px;
+  border-bottom-width: .1em;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  line-height: .9em;
+  display: inline-block;
   }
 
-  h2 {
+h2 {
   font-family: "Playfair Display",serif;
   font-weight: 400;
-  font-size: 1em;
-  line-height: 1em;
-  margin-top: 1em;
+  font-size: 1.25em;
+  margin-top: 2em;
   }
 
