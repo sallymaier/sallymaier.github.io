@@ -52,25 +52,25 @@ h2 {
 }
 
 #yellow {
-    background-image: url(/img/printingpressyel.gif);
+    background-image: url(/off-register/img/printingpressyel.gif);
     background-position: top top;
 
 }
 
 #magenta {
-    background-image: url(/img/printingpressmag.gif);
+    background-image: url(/off-register/img/printingpressmag.gif);
     background-position: top top;
 
 }
 
 #cyan {
-    background-image: url(/img/printingpresscyan.gif);
+    background-image: url(/off-register/img/printingpresscyan.gif);
     background-position: top top;
 
 }
 
 #black {
-    background-image: url(/img/printingpressblack.gif);
+    background-image: url(/off-register/img/printingpressblack.gif);
     background-position: top top;
 
 }
