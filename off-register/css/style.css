@@ -53,25 +53,31 @@ h2 {
 
 #yellow {
     background-image: url(/off-register/img/printingpressyel.gif);
-    background-position: top top;
+    z-index: -10;
 
 }
 
 #magenta {
     background-image: url(/off-register/img/printingpressmag.gif);
-    background-position: top top;
+    z-index: -9;
+
 
 }
 
 #cyan {
     background-image: url(/off-register/img/printingpresscyan.gif);
-    background-position: top top;
+    z-index: -8;
 
 }
 
 #black {
     background-image: url(/off-register/img/printingpressblack.gif);
-    background-position: top top;
+    z-index: -7;
 
+}
+
+#whitebox {
+  background-color: white;
+  padding: 1em;
 }
 
