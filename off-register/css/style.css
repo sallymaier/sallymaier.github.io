@@ -1,18 +1,36 @@
 
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+a {text-decoration: none;}
+
+body {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+
+
 header {
 	text-align: center;
+  margin-top: 3em;
 }
 
 h1 {
   font-family: "league-gothic",sans-serif;
   text-transform: uppercase;
   font-style: italic;
-  font-size: 5em;
+  font-size: 7em;
+
   }
 
   h2 {
   font-family: "Playfair Display",serif;
   font-weight: 400;
   font-size: 1em;
+  line-height: 1em;
+  margin-top: 1em;
   }
 
