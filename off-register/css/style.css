@@ -105,7 +105,8 @@ h2 {
   color: yellow;
   opacity: 0.8;  
   border-width: 21px;
-  border-image: url(/off-register/img/cropborderyellow.png) 21px stretch;
+  border-style: solid;
+  border-image: url(http://sallymaier.github.io/off-register/img/cropborderyellow.png) 33% stretch;  
   z-index: -5;
 
 }
@@ -127,7 +128,8 @@ h2 {
   color: aqua;
   opacity: 0.4;  
   border-width: 21px;
-  border-image: url(/off-register/img/cropbordercyan.png) 21px stretch;
+  border-style: solid;
+  border-image: url(http://sallymaier.github.io/off-register/img/cropbordercyan.png) 33% stretch;  
   z-index: -4;
 
 }
@@ -149,7 +151,8 @@ h2 {
   color: fuchsia;
   opacity: 0.5;  
   border-width: 21px;
-  border-image: url(/off-register/img/cropbordermag.png) 21px stretch;
+  border-style: solid;
+  border-image: url(http://sallymaier.github.io/off-register/img/cropbordermag.png) 33% stretch;  
   z-index: -3;
 
 }
@@ -170,7 +173,8 @@ h2 {
   transform: translate(-50%,-50%);
   color: black;
   border-width: 21px;
-  border-image: url(/off-register/img/cropborderblack.png) 21px stretch;
+  border-style: solid;
+  border-image: url(http://sallymaier.github.io/off-register/img/cropborderblack.png) 33% stretch;  
   z-index: -2;
 
 }
