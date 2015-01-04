@@ -141,13 +141,33 @@ h2 {
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  color: fuschia;
+  color: fuchsia;
   opacity: 0.5;  
   border-image: url(/off-register/img/cropbordermag.png) 21px stretch;
 
 }
 
 #magbox h1 {
-    border-bottom-color: fuschia;
+    border-bottom-color: fuchsia;
+
+}
+
+#blackbox {
+  padding: 4em;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  color: black;
+  opacity: 0.3;  
+  border-image: url(/off-register/img/cropborderblack.png) 21px stretch;
+
+}
+
+#blackbox h1 {
+    border-bottom-color: black;
 
 }
