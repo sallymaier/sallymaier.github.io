@@ -102,6 +102,7 @@ h2 {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   color: yellow;
+  opacity: 0.8;  
   border-image: url(/off-register/img/cropborderyellow.png) 21px stretch;
 
 }
@@ -111,3 +112,42 @@ h2 {
 
 }
 
+#cyanbox {
+  padding: 4em;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  color: aqua;
+  opacity: 0.4;  
+  border-image: url(/off-register/img/cropbordercyan.png) 21px stretch;
+
+}
+
+#cyanbox h1 {
+    border-bottom-color: aqua;
+
+}
+
+#magbox {
+  padding: 4em;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  color: fuschia;
+  opacity: 0.5;  
+  border-image: url(/off-register/img/cropbordermag.png) 21px stretch;
+
+}
+
+#magbox h1 {
+    border-bottom-color: fuschia;
+
+}
