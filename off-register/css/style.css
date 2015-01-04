@@ -166,7 +166,6 @@ h2 {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   color: black;
-  opacity: 0.3;  
   border-image: url(/off-register/img/cropborderblack.png) 21px stretch;
   z-index: -2;
 
