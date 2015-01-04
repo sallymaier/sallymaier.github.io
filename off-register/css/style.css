@@ -90,6 +90,7 @@ h2 {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   color: white;
+  z-index: -6;
 }
 
 #yellowbox {
@@ -104,6 +105,7 @@ h2 {
   color: yellow;
   opacity: 0.8;  
   border-image: url(/off-register/img/cropborderyellow.png) 21px stretch;
+  z-index: -5;
 
 }
 
@@ -124,6 +126,7 @@ h2 {
   color: aqua;
   opacity: 0.4;  
   border-image: url(/off-register/img/cropbordercyan.png) 21px stretch;
+  z-index: -4;
 
 }
 
@@ -144,6 +147,7 @@ h2 {
   color: fuchsia;
   opacity: 0.5;  
   border-image: url(/off-register/img/cropbordermag.png) 21px stretch;
+  z-index: -3;
 
 }
 
@@ -164,6 +168,7 @@ h2 {
   color: black;
   opacity: 0.3;  
   border-image: url(/off-register/img/cropborderblack.png) 21px stretch;
+  z-index: -2;
 
 }
 
