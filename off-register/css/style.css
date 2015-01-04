@@ -81,7 +81,7 @@ h2 {
 
 #whitebox {
   background-color: white;
-  padding: 4em;
+  padding: calc(4em - 21px);
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -94,7 +94,7 @@ h2 {
 }
 
 #yellowbox {
-  padding: 4em;
+  padding: calc(4em - 21px);
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -117,7 +117,7 @@ h2 {
 }
 
 #cyanbox {
-  padding: 4em;
+  padding: calc(4em - 21px);
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -140,7 +140,7 @@ h2 {
 }
 
 #magbox {
-  padding: 4em;
+  padding: calc(4em - 21px);
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -163,7 +163,7 @@ h2 {
 }
 
 #blackbox {
-  padding: 4em;
+  padding: calc(4em - 21px);
   display: inline-block;
   position: absolute;
   left: 50%;
