@@ -82,6 +82,7 @@ h2 {
 #whitebox {
   background-color: white;
   padding: calc(4.5em - 21px);
+  box-sizing: content-box;
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -90,8 +91,11 @@ h2 {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   color: white;
+  border-width: 21px;
+  border-style: solid;
   z-index: -6;
-}
+  border-color: rgba(0,0,0,0);
+  }
 
 #yellowbox {
   padding: calc(4.5em - 21px);
