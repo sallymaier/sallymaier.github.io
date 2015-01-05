@@ -91,8 +91,8 @@ h2 {
 
 .box {
   position: absolute;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   left: 50%;
   top: 50%;
   -ms-transform: translate(-50%,-50%);
@@ -105,7 +105,7 @@ h2 {
 #whitebox {
   background-color: white;
   color: white; 
-  width: calc(63.63% - 42px);
+  width: calc(45.4545% - 42px);
   z-index: -6;
   }
 
