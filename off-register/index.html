@@ -129,7 +129,10 @@
 	                        /*========================================================*/      
 	                        $this.animate({
 	                          // 'position':'relative',
+	                          console.log($this.css( "left" ));
 	                          'left':'calc(' + $this.css( "left" ) + '+' + rx + 'px)',
+
+
 	                          'top':ry+'px',
 	                          '-ms-filter':'progid:DXImageTransform.Microsoft.Alpha(Opacity='+ropac*100+')',
 	                          'filter':'alpha(opacity='+ropac*100+')',          
