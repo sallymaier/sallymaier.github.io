@@ -67,7 +67,9 @@
 	    function runRumbler() {      
 	        $(document).ready(function(){
 
-	            var count = 0;
+	            var count = 0, // increases over time to create progressively stronger rumble effect
+	           	offset = $(".offreg").offset();	// determine initial position of class to rumble
+
 
 	            $(function addone(){
 	                count = count+1;
@@ -101,8 +103,7 @@
 	                        opac = opt.opacity,
 	                        opacm = opt.opacityMin,
 	                        inline,
-	                        interval,
-	                        offset = $( this ).offset();	// determine initial position of object to rumble
+	                        interval;
 
 	                      
 	                      /*========================================================*/
