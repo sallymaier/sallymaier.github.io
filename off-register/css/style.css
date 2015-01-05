@@ -15,10 +15,10 @@ body {
 header {
   text-align: center;
   position: relative;
-  top: -10vh;
-  left: -10vh;
-  height: 110vh;
-  width: 110vw;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 h1 {
@@ -47,10 +47,10 @@ h2 {
   background-repeat: no-repeat;
   background-position: center center;
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
+  top: -10vh;
+  left: -10vw;
+  height: 110vh;
+  width: 110%;
   margin: 0;
 }
 
