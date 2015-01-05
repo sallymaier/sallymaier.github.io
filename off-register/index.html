@@ -28,23 +28,23 @@
 		<div id="black" class="offreg black background"> </div>
 		<div id="whitebox" class="offreg">
 			<h1 class="offreg">Off-Register</h1>
-			<h2 class="offreg">An experimental jQuery plugin and bookmarklet <br> bringing the imperfection of print to the web.</h2>
+			<h2 class="offreg">An experimental jQuery script that brings the imperfection of print to the web.</h2>
 		</div>
 		<div id="yellowbox" class="yellow offreg">
 			<h1 class="offreg">Off-Register</h1>
-			<h2 class="offreg">An experimental jQuery plugin and bookmarklet <br> bringing the imperfection of print to the web.</h2>
+			<h2 class="offreg">An experimental jQuery script that brings the imperfection of print to the web.</h2>
 		</div>
 		<div id="magbox" class="mag offreg">
 			<h1 class="offreg">Off-Register</h1>
-			<h2 class="offreg">An experimental jQuery plugin and bookmarklet <br> bringing the imperfection of print to the web.</h2>
+			<h2 class="offreg">An experimental jQuery script that brings the imperfection of print to the web.</h2>
 		</div>
 		<div id="cyanbox" class="cyan offreg">
 			<h1 class="offreg">Off-Register</h1>
-			<h2 class="offreg">An experimental jQuery plugin and bookmarklet <br> bringing the imperfection of print to the web.</h2>
+			<h2 class="offreg">An experimental jQuery script that brings the imperfection of print to the web.</h2>
 		</div>
 		<div id="blackbox" class="black">
 			<h1>Off-Register</h1>
-			<h2>An experimental jQuery plugin and bookmarklet <br> bringing the imperfection of print to the web.</h2>
+			<h2>An experimental jQuery script that brings the imperfection of print to the web.</h2>
 		</div>
 	</header>
 
@@ -127,12 +127,8 @@
 	                        /*========================================================*/
 	                        /* Rumble Element
 	                        /*========================================================*/      
-	                        console.log($this.css( "left" ));
-
-
 	                        $this.animate({
-	                          // 'position':'relative',
-	                          'left': parseFloat($this.css( "left" )) + rx + 'px',
+	                          'left': parseFloat($this.css( "left" )) + rx + 'px', // move from declared position
 	                          'top': parseFloat($this.css( "top" )) + ry+'px',
 	                          '-ms-filter':'progid:DXImageTransform.Microsoft.Alpha(Opacity='+ropac*100+')',
 	                          'filter':'alpha(opacity='+ropac*100+')',          
@@ -146,13 +142,8 @@
 	                          'transform':'rotate('+rrot+'deg)'
 	                        });
 
-	                      	console.log($this.css( "left" ));
-
-
 	                      }; /* close rumble function */
 
-
-	                      
 	                      /*========================================================*/
 	                      /* Rumble CSS Reset
 	                      /*========================================================*/
