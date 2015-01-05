@@ -130,8 +130,8 @@
 	                        /* Rumble Element
 	                        /*========================================================*/      
 	                        $this.animate({
-	                          'left': parseFloat($this.css( "left" )) + rx + 'px', // move from declared position
-	                          'top': parseFloat($this.css( "top" )) + ry+'px',
+	                          'left': parseFloat($this.offset.left) + rx + 'px', // move from declared position
+	                          'top': parseFloat($this.offset.top) + ry+'px',
 	                          '-ms-filter':'progid:DXImageTransform.Microsoft.Alpha(Opacity='+ropac*100+')',
 	                          'filter':'alpha(opacity='+ropac*100+')',          
 	                          '-moz-opacity':ropac,         
