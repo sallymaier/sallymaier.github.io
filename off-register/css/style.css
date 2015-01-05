@@ -4,7 +4,17 @@
     margin: 0; padding: 0;
 }
 
+html{
+  font-size: 16px;   // 1rem = 16px
+}
+
 a {text-decoration: none;}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
 
 body {
 
@@ -25,20 +35,20 @@ h1 {
   font-family: "league-gothic",sans-serif;
   text-transform: uppercase;
   font-style: italic;
-  font-size: 8em;
-  padding-bottom: -3px;
-  border-bottom-width: .1em;
+  font-size: 2rem;
+  padding-bottom: -.25rem;
+  border-bottom-width: 1rem;
   border-bottom-style: solid;
   border-bottom-color: black;
-  line-height: .9em;
+  line-height: 1rem;
   display: inline-block;
   }
 
 h2 {
   font-family: "Playfair Display",serif;
   font-weight: 400;
-  font-size: 1.25em;
-  margin-top: 2em;
+  font-size: 1.5rem;
+  margin-top: 2rem;
   }
 
 .background {
@@ -79,32 +89,26 @@ h2 {
 
 }
 
-#whitebox {
-  background-color: white;
-  padding: calc(4.5em - 21px);
-  box-sizing: content-box;
-  display: inline-block;
+.box {
   position: absolute;
   left: 50%;
   top: 50%;
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
+  }
+
+
+
+#whitebox {
+  background-color: white;
   color: white; 
   z-index: -6;
   }
 
 #yellowbox {
-  padding: calc(4.5em - 21px);
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
   color: yellow;
-  opacity: 0.8;  
+  opacity: 0.9;  
   border-width: 21px;
   border-style: solid;
   border-image: url(http://sallymaier.github.io/off-register/img/cropborderyellow.png) 33% stretch;  
@@ -118,14 +122,6 @@ h2 {
 }
 
 #cyanbox {
-  padding: calc(4.5em - 21px);
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
   color: aqua;
   opacity: 0.4;  
   border-width: 21px;
@@ -141,14 +137,6 @@ h2 {
 }
 
 #magbox {
-  padding: calc(4.5em - 21px);
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
   color: fuchsia;
   opacity: 0.5;  
   border-width: 21px;
@@ -164,14 +152,6 @@ h2 {
 }
 
 #blackbox {
-  padding: calc(4.5em - 21px);
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
   color: black;
   border-width: 21px;
   border-style: solid;
@@ -182,5 +162,43 @@ h2 {
 
 #blackbox h1 {
     border-bottom-color: black;
-
 }
+
+
+/* Column Widths */
+/*=========================================*/
+/*=========================================*/
+
+[class*="col-"] {
+  float: left;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-1  { width: calc(100% / 11 * 1);}
+.col-2  { width: calc(100% / 11 * 2);}
+.col-3  { width: calc(100% / 11 * 3);}
+.col-4  { width: calc(100% / 11 * 4);}
+.col-5  { width: calc(100% / 11 * 5);}
+.col-6  { width: calc(100% / 11 * 6);}
+.col-7  { width: calc(100% / 11 * 7);}
+.col-8  { width: calc(100% / 11 * 8);}
+.col-9  { width: calc(100% / 11 * 9);}
+.col-10 { width: calc(100% / 11 * 10);}
+.col-11 { width: calc(100% / 11 * 11);}
+
+/* 3. Offsets */
+/*=========================================*/
+/*=========================================*/
+
+.coloffset-1  { margin-left: calc(100% / 11 * 1);}
+.coloffset-2  { margin-left: calc(100% / 11 * 2);}
+.coloffset-3  { margin-left: calc(100% / 11 * 3);}
+.coloffset-4  { margin-left: calc(100% / 11 * 4);}
+.coloffset-5  { margin-left: calc(100% / 11 * 5);}
+.coloffset-6  { margin-left: calc(100% / 11 * 6);}
+.coloffset-7  { margin-left: calc(100% / 11 * 7);}
+.coloffset-8  { margin-left: calc(100% / 11 * 8);}
+.coloffset-9  { margin-left: calc(100% / 11 * 9);}
+.coloffset-10 { margin-left: calc(100% / 11 * 10);}
+.coloffset-11 { margin-left: calc(100% / 11 * 11);}
