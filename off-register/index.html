@@ -101,7 +101,9 @@
 	                        opac = opt.opacity,
 	                        opacm = opt.opacityMin,
 	                        inline,
-	                        interval;
+	                        interval,
+	                        offset = $( this ).offset();	// determine initial position of object to rumble
+
 	                      
 	                      /*========================================================*/
 	                      /* Rumble Function
@@ -130,11 +132,12 @@
 	                        /* Rumble Element
 	                        /*========================================================*/      
 	                        $this.animate({
-	                          'left': parseFloat($( this ).offset().left) + rx + 'px', // move from declared position
-	                          'top': parseFloat($( this ).offset().top) + ry+'px',
+
+	                          'left': offset.left + rx + 'px', 
+	                          'top': offset.top + ry+'px',
 	                          
-	                          console.log(parseFloat($( this ).offset().left));
-	                          console.log(parseFloat($( this ).offset().top));
+	                          console.log(offset.left);
+	                          console.log($(offset.top);
 
 	                          '-ms-filter':'progid:DXImageTransform.Microsoft.Alpha(Opacity='+ropac*100+')',
 	                          'filter':'alpha(opacity='+ropac*100+')',          
