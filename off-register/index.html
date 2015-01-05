@@ -133,7 +133,7 @@
 	                        $this.animate({
 	                          // 'position':'relative',
 	                          'left': parseFloat($this.css( "left" )) + rx + 'px',
-	                          'top':ry+'px',
+	                          'top': parseFloat($this.css( "top" )) + ry+'px',
 	                          '-ms-filter':'progid:DXImageTransform.Microsoft.Alpha(Opacity='+ropac*100+')',
 	                          'filter':'alpha(opacity='+ropac*100+')',          
 	                          '-moz-opacity':ropac,         
