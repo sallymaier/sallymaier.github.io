@@ -132,6 +132,9 @@
 	                        $this.animate({
 	                          'left': parseFloat($this.offset.left) + rx + 'px', // move from declared position
 	                          'top': parseFloat($this.offset.top) + ry+'px',
+
+	                          console.log(parseFloat($this.offset.left))
+
 	                          '-ms-filter':'progid:DXImageTransform.Microsoft.Alpha(Opacity='+ropac*100+')',
 	                          'filter':'alpha(opacity='+ropac*100+')',          
 	                          '-moz-opacity':ropac,         
