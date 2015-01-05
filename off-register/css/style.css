@@ -35,20 +35,20 @@ h1 {
   font-family: "league-gothic",sans-serif;
   text-transform: uppercase;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 7rem;
   padding-bottom: -.25rem;
   border-bottom-width: 1rem;
   border-bottom-style: solid;
   border-bottom-color: black;
-  line-height: 1rem;
+  line-height: 6rem;
   display: inline-block;
   }
 
 h2 {
   font-family: "Playfair Display",serif;
   font-weight: 400;
-  font-size: 1.5rem;
-  margin-top: 2rem;
+  font-size: 1.25rem;
+  margin-top: 1rem;
   }
 
 .background {
