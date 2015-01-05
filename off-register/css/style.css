@@ -4,10 +4,6 @@
     margin: 0; padding: 0;
 }
 
-html{
-  /*font-size: 16px;   // 1rem = 16px*/
-}
-
 a {text-decoration: none;}
 
 .clearfix::after {
@@ -15,12 +11,6 @@ a {text-decoration: none;}
   display: table;
   clear: both;
 }
-
-body {
-
-}
-
-
 
 header {
   text-align: center;
@@ -94,26 +84,6 @@ p {
 
 }
 
-.box {
-  position: absolute;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  left: 50%;
-  top: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  }
-
-
-
-#whitebox {
-  background-color: white;
-  color: white; 
-  width: calc(45.4545% - 42px);
-  z-index: -6;
-  }
-
 #yellowbox {
   color: yellow;
   opacity: 0.9;  
@@ -136,12 +106,10 @@ p {
   border-style: solid;
   border-image: url(http://sallymaier.github.io/off-register/img/cropbordercyan.png) 33% stretch;  
   z-index: -4;
-
 }
 
 #cyanbox h1 {
     border-bottom-color: aqua;
-
 }
 
 #magbox {
@@ -151,12 +119,10 @@ p {
   border-style: solid;
   border-image: url(http://sallymaier.github.io/off-register/img/cropbordermag.png) 33% stretch;  
   z-index: -3;
-
 }
 
 #magbox h1 {
     border-bottom-color: fuchsia;
-
 }
 
 #blackbox {
@@ -165,48 +131,147 @@ p {
   border-style: solid;
   border-image: url(http://sallymaier.github.io/off-register/img/cropborderblack.png) 33% stretch;  
   z-index: -2;
-
 }
 
 #blackbox h1 {
     border-bottom-color: black;
 }
 
-
-/* Column Widths */
-/*=========================================*/
-/*=========================================*/
-
-[class*="col-"] {
-  float: left;
-  padding-left: 12px;
-  padding-right: 12px;
+.box {
+  position: absolute;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
-.col-1  { width: calc(100% / 11 * 1);}
-.col-2  { width: calc(100% / 11 * 2);}
-.col-3  { width: calc(100% / 11 * 3);}
-.col-4  { width: calc(100% / 11 * 4);}
-.col-5  { width: calc(100% / 11 * 5);}
-.col-6  { width: calc(100% / 11 * 6);}
-.col-7  { width: calc(100% / 11 * 7);}
-.col-8  { width: calc(100% / 11 * 8);}
-.col-9  { width: calc(100% / 11 * 9);}
-.col-10 { width: calc(100% / 11 * 10);}
-.col-11 { width: calc(100% / 11 * 11);}
+#whitebox {
+  background-color: white;
+  color: white; 
+  z-index: -6;
+}
 
-/* 3. Offsets */
-/*=========================================*/
-/*=========================================*/
 
-.coloffset-1  { margin-left: calc(100% / 11 * 1);}
-.coloffset-2  { margin-left: calc(100% / 11 * 2);}
-.coloffset-3  { margin-left: calc(100% / 11 * 3);}
-.coloffset-4  { margin-left: calc(100% / 11 * 4);}
-.coloffset-5  { margin-left: calc(100% / 11 * 5);}
-.coloffset-6  { margin-left: calc(100% / 11 * 6);}
-.coloffset-7  { margin-left: calc(100% / 11 * 7);}
-.coloffset-8  { margin-left: calc(100% / 11 * 8);}
-.coloffset-9  { margin-left: calc(100% / 11 * 9);}
-.coloffset-10 { margin-left: calc(100% / 11 * 10);}
-.coloffset-11 { margin-left: calc(100% / 11 * 11);}
+@media (min-width: 320px) {
+
+  .box {
+    width: 81.8181%;
+    }
+
+  #whitebox {
+    width: calc(81.8181% - 42px);
+    }
+
+  html{
+  font-size: 9px;
+  }
+
+}
+
+@media (min-width: 480px) {
+
+  .box {
+    width: 81.8181%;
+    }
+
+  #whitebox {
+    width: calc(81.8181% - 42px);
+    }
+
+  html{
+  font-size: 10.5px;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+
+  .box {
+    position: absolute;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    left: 50%;
+    top: 50%;
+    width: 63.6363%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    }
+
+  #whitebox {
+    background-color: white;
+    color: white; 
+    width: calc(63.6363% - 42px);
+    z-index: -6;
+    }
+
+  html{
+  font-size: 14px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .box {
+    position: absolute;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    left: 50%;
+    top: 50%;
+    width: 45.4545%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    }
+
+  #whitebox {
+    background-color: white;
+    color: white; 
+    width: calc(45.4545% - 42px);
+    z-index: -6;
+    }
+
+}
+
+  /* Column Widths */
+  /*=========================================*/
+  /*=========================================*/
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .col-1  { width: calc(100% / 11 * 1);}
+  .col-2  { width: calc(100% / 11 * 2);}
+  .col-3  { width: calc(100% / 11 * 3);}
+  .col-4  { width: calc(100% / 11 * 4);}
+  .col-5  { width: calc(100% / 11 * 5);}
+  .col-6  { width: calc(100% / 11 * 6);}
+  .col-7  { width: calc(100% / 11 * 7);}
+  .col-8  { width: calc(100% / 11 * 8);}
+  .col-9  { width: calc(100% / 11 * 9);}
+  .col-10 { width: calc(100% / 11 * 10);}
+  .col-11 { width: calc(100% / 11 * 11);}
+
+  /* 3. Offsets */
+  /*=========================================*/
+  /*=========================================*/
+
+  .coloffset-1  { margin-left: calc(100% / 11 * 1);}
+  .coloffset-2  { margin-left: calc(100% / 11 * 2);}
+  .coloffset-3  { margin-left: calc(100% / 11 * 3);}
+  .coloffset-4  { margin-left: calc(100% / 11 * 4);}
+  .coloffset-5  { margin-left: calc(100% / 11 * 5);}
+  .coloffset-6  { margin-left: calc(100% / 11 * 6);}
+  .coloffset-7  { margin-left: calc(100% / 11 * 7);}
+  .coloffset-8  { margin-left: calc(100% / 11 * 8);}
+  .coloffset-9  { margin-left: calc(100% / 11 * 9);}
+  .coloffset-10 { margin-left: calc(100% / 11 * 10);}
+  .coloffset-11 { margin-left: calc(100% / 11 * 11);}
