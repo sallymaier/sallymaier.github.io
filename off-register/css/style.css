@@ -139,8 +139,7 @@ p {
 
 .box {
   position: absolute;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
   left: 50%;
   top: 50%;
   -ms-transform: translate(-50%,-50%);
@@ -191,22 +190,11 @@ p {
 @media (min-width: 768px) {
 
   .box {
-    position: absolute;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    left: 50%;
-    top: 50%;
     width: 63.6363%;
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
     }
 
   #whitebox {
-    background-color: white;
-    color: white; 
     width: calc(63.6363% - 42px);
-    z-index: -6;
     }
 
   html{
@@ -218,22 +206,11 @@ p {
 @media (min-width: 1024px) {
 
   .box {
-    position: absolute;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    left: 50%;
-    top: 50%;
     width: 45.4545%;
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
     }
 
   #whitebox {
-    background-color: white;
-    color: white; 
     width: calc(45.4545% - 42px);
-    z-index: -6;
     }
 
 }
