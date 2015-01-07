@@ -51,6 +51,10 @@ p {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
+
+}
+
+.bgimages {
   position: fixed;
   top: 0;
   left: 0;

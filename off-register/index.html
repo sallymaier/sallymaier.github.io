@@ -9,202 +9,226 @@
 
 	<title>Off-Register</title>
 	
-	<link rel="stylesheet" type="text/css" href="css/style.css" /> <!-- Main stylesheet /-->
-	<script src="//use.typekit.net/rvj3czx.js"></script><script>try{Typekit.load();}catch(e){}</script> <!-- Typekit /-->
+	<!-- Main stylesheet /-->
+	<link rel="stylesheet" type="text/css" href="css/style.css" /> 
 
-
+	<!-- Fonts /-->
+	<script src="//use.typekit.net/rvj3czx.js"></script><script>try{Typekit.load();}catch(e){}</script> 
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
 
-
+	<!-- Scripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+	<script src="js/jquery.jrumble.1.3.min.js"></script> 
 
 </head>
 
 <body>
 
 	<header>
-		<div id="yellow" class="offreg yellow background"> </div>
-		<div id="magenta" class="offreg magenta background"> </div>
-		<div id="cyan" class="offreg cyan background"> </div>
-		<div id="black" class="offreg black background"> </div>
+		<div id="bgimages">
+			<div id="yellow" class="offreg yellow background"> </div>
+			<div id="magenta" class="offreg magenta background"> </div>
+			<div id="cyan" class="offreg cyan background"> </div>
+			<div id="black" class="offreg black background"> </div>
+		</div>
+		<div class="box">
+			<div id="whitebox" class="offreg">
+				<h1 class="offreg">Off-Register</h1>
+				<h2 class="offreg">  An experimental jQuery script that brings the imperfection of print to the web.  </h2>
+			</div>
+			<div id="yellowbox" class="yellow offreg">
+				<h1 class="offreg">Off-Register</h1>
+				<h2 class="offreg">An experimental jQuery script that brings the imperfection of print to the web.</h2>
+			</div>
+			<div id="magbox" class="mag offreg">
+				<h1 class="offreg">Off-Register</h1>
+				<h2 class="offreg">An experimental jQuery script that brings the imperfection of print to the web.</h2>
+			</div>
+			<div id="cyanbox" class="cyan offreg">
+				<h1 class="offreg">Off-Register</h1>
+				<h2 class="offreg">An experimental jQuery script that brings the imperfection of print to the web.</h2>
+			</div>
+			<div id="blackbox" class="black">
+				<h1>Off-Register</h1>
+				<h2>An experimental jQuery script that brings the imperfection of print to the web.</h2>
+			</div>
+		</div>
 
-		<div id="whitebox" class="offreg box">
-			<h1 class="offreg">Off-Register</h1>
-			<h2 class="offreg">  An experimental jQuery script that brings the imperfection of print to the web.  </h2>
-		</div>
-		<div id="yellowbox" class="yellow offreg box">
-			<h1 class="offreg">Off-Register</h1>
-			<h2 class="offreg">An experimental jQuery script that brings the imperfection of print to the web.</h2>
-		</div>
-		<div id="magbox" class="mag offreg box">
-			<h1 class="offreg">Off-Register</h1>
-			<h2 class="offreg">An experimental jQuery script that brings the imperfection of print to the web.</h2>
-		</div>
-		<div id="cyanbox" class="cyan offreg box">
-			<h1 class="offreg">Off-Register</h1>
-			<h2 class="offreg">An experimental jQuery script that brings the imperfection of print to the web.</h2>
-		</div>
-		<div id="blackbox" class="black box">
-			<h1>Off-Register</h1>
-			<h2>An experimental jQuery script that brings the imperfection of print to the web.</h2>
-		</div>
 	</header>
 
 	<script>
 
-	  var offRegister = function() {
+		$(document).ready(function(){
+  			var count = 0;
 
-	    if (!($ = window.jQuery)) { // see if jQuery is already called, if not, calling script
-	      script = document.createElement( 'script' );
-	      script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'; 
-	      script.onload=runRumbler;
-	      document.body.appendChild(script);
-	    } 
-	    else {
-	      runRumbler();
-	    }
+		  function addone(){
+		    count++;
+		    $('.offreg').jrumble({
+		      x: count,
+		      y: count,
+		      rotation: 1
+		    });
+		    $('.offreg').trigger('startRumble');
+
+		    setTimeout(addone, 1000);
+		  }
+		});
+
+	//   var offRegister = function() {
+
+	//     if (!($ = window.jQuery)) { // see if jQuery is already called, if not, calling script
+	//       script = document.createElement( 'script' );
+	//       script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'; 
+	//       script.onload=runRumbler;
+	//       document.body.appendChild(script);
+	//     } 
+	//     else {
+	//       runRumbler();
+	//     }
 	       
-	    function runRumbler() {      
-	        $(document).ready(function(){
+	//     function runRumbler() {      
+	//         $(document).ready(function(){
 
-	            var count = 0;
+	//             var count = 0;
 
-	            $(function addone(){
-	                count = count+1;
+	//             $(function addone(){
+	//                 count = count+1;
 
-	                (function($) {
-	                  $.fn.jrumble = function(options){  // jRumble by Jack Rugile. http://jackrugile.com/jrumble/
+	//                 (function($) {
+	//                   $.fn.jrumble = function(options){  // jRumble by Jack Rugile. http://jackrugile.com/jrumble/
 	                    
-	                    /*========================================================*/
-	                    /* Options
-	                    /*========================================================*/
-	                    var defaults = {
-	                      x: count/5,
-	                      y: count/5,
-	                      rotation: 0,
-	                      speed: 200,
-	                      opacity: false,
-	                      opacityMin: .5
-	                    },
-	                    opt = $.extend(defaults, options);  
+	//                     /*========================================================*/
+	//                     /* Options
+	//                     /*========================================================*/
+	//                     var defaults = {
+	//                       x: count/5,
+	//                       y: count/5,
+	//                       rotation: 0,
+	//                       speed: 200,
+	//                       opacity: false,
+	//                       opacityMin: .5
+	//                     },
+	//                     opt = $.extend(defaults, options);  
 	                        
-	                    return this.each(function(){
+	//                     return this.each(function(){
 	                                  
-	                      /*========================================================*/
-	                      /* Variables
-	                      /*========================================================*/
-	                      var $this = $(this),        
-	                        x = opt.x*2,
-	                        y = opt.y*2,
-	                        rot = opt.rotation*2,
-	                        speed = (opt.speed === 0) ? 1 : opt.speed,      
-	                        opac = opt.opacity,
-	                        opacm = opt.opacityMin,
-	                        inline,
-	                        interval;
+	//                       /*========================================================*/
+	//                       /* Variables
+	//                       /*========================================================*/
+	//                       var $this = $(this),        
+	//                         x = opt.x*2,
+	//                         y = opt.y*2,
+	//                         rot = opt.rotation*2,
+	//                         speed = (opt.speed === 0) ? 1 : opt.speed,      
+	//                         opac = opt.opacity,
+	//                         opacm = opt.opacityMin,
+	//                         inline,
+	//                         interval;
 	                      
-	                      /*========================================================*/
-	                      /* Rumble Function
-	                      /*========================================================*/    
-	                      var rumbler = function(){       
-	                        var rx = Math.floor(Math.random() * (x+1)) -x/2,
-	                            ry = Math.floor(Math.random() * (y+1)) -y/2,
-	                            rrot = Math.floor(Math.random() * (rot+1)) -rot/2,
-	                            ropac = opac ? Math.random() + opacm : 1;
+	//                       /*========================================================*/
+	//                       /* Rumble Function
+	//                       /*========================================================*/    
+	//                       var rumbler = function(){       
+	//                         var rx = Math.floor(Math.random() * (x+1)) -x/2,
+	//                             ry = Math.floor(Math.random() * (y+1)) -y/2,
+	//                             rrot = Math.floor(Math.random() * (rot+1)) -rot/2,
+	//                             ropac = opac ? Math.random() + opacm : 1;
 	                          
-	                        /*========================================================*/
-	                        /* Ensure Movement From Original Position
-	                        /*========================================================*/        
-	                        rx = (rx === 0 && x !== 0) ? ((Math.random() < .5) ? 1 : -1) : rx;
-	                        ry = (ry === 0 && y !== 0) ? ((Math.random() < .5) ? 1 : -1) : ry;  
+	//                         /*========================================================*/
+	//                         /* Ensure Movement From Original Position
+	//                         /*========================================================*/        
+	//                         rx = (rx === 0 && x !== 0) ? ((Math.random() < .5) ? 1 : -1) : rx;
+	//                         ry = (ry === 0 && y !== 0) ? ((Math.random() < .5) ? 1 : -1) : ry;  
 	                        
-	                        /*========================================================*/
-	                        /* Check Inline
-	                        /*========================================================*/
-	                        if($this.css('display') === 'inline'){
-	                          inline = true;
-	                          $this.css('display', 'inline-block');
-	                        }
+	//                         /*========================================================*/
+	//                         /* Check Inline
+	//                         /*========================================================*/
+	//                         if($this.css('display') === 'inline'){
+	//                           inline = true;
+	//                           $this.css('display', 'inline-block');
+	//                         }
 	                      
-	                        /*========================================================*/
-	                        /* Rumble Element
-	                        /*========================================================*/      
-	                        $this.animate({
-	                          'left': parseFloat($this.css( "left" )) + rx + 'px', // move from declared position
-	                          'top': parseFloat($this.css( "top" )) + ry+'px',
-	                          '-ms-filter':'progid:DXImageTransform.Microsoft.Alpha(Opacity='+ropac*100+')',
-	                          'filter':'alpha(opacity='+ropac*100+')',          
-	                          '-moz-opacity':ropac,         
-	                          '-khtml-opacity':ropac,         
-	                          'opacity':ropac,
-	                          '-webkit-transform':'rotate('+rrot+'deg)', 
-	                          '-moz-transform':'rotate('+rrot+'deg)', 
-	                          '-ms-transform':'rotate('+rrot+'deg)',
-	                          '-o-transform':'rotate('+rrot+'deg)', 
-	                          'transform':'rotate('+rrot+'deg)'
-	                        });
+	//                         /*========================================================*/
+	//                          Rumble Element
+	//                         ========================================================      
+	//                         $this.animate({
+	//                           'position':'relative', // place off-register elements in container to maintain positioning
+	//                           'left':rx+'px',
+	//                           'top':ry+'px',
+	//                           '-ms-filter':'progid:DXImageTransform.Microsoft.Alpha(Opacity='+ropac*100+')',
+	//                           'filter':'alpha(opacity='+ropac*100+')',          
+	//                           '-moz-opacity':ropac,         
+	//                           '-khtml-opacity':ropac,         
+	//                           'opacity':ropac,
+	//                           '-webkit-transform':'rotate('+rrot+'deg)', 
+	//                           '-moz-transform':'rotate('+rrot+'deg)', 
+	//                           '-ms-transform':'rotate('+rrot+'deg)',
+	//                           '-o-transform':'rotate('+rrot+'deg)', 
+	//                           'transform':'rotate('+rrot+'deg)'
+	//                         });
 
-	                      }; /* close rumble function */
+	//                       }; /* close rumble function 
 
-	                      /*========================================================*/
-	                      /* Rumble CSS Reset
-	                      /*========================================================*/
-	                      var reset = {
-	                        'left':0,
-	                        'top':0,
-	                        '-ms-filter':'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)',
-	                        'filter':'alpha(opacity=100)',          
-	                        '-moz-opacity':1,         
-	                        '-khtml-opacity':1,         
-	                        'opacity':1,
-	                        '-webkit-transform':'rotate(0deg)',
-	                        '-moz-transform':'rotate(0deg)',
-	                        '-ms-transform':'rotate(0deg)',
-	                        '-o-transform':'rotate(0deg)',
-	                        'transform':'rotate(0deg)'
-	                      };
+	//                       /*========================================================*/
+	//                       /* Rumble CSS Reset
+	//                       /*========================================================*/
+	//                       var reset = {
+	//                         'left':0,
+	//                         'top':0,
+	//                         '-ms-filter':'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)',
+	//                         'filter':'alpha(opacity=100)',          
+	//                         '-moz-opacity':1,         
+	//                         '-khtml-opacity':1,         
+	//                         'opacity':1,
+	//                         '-webkit-transform':'rotate(0deg)',
+	//                         '-moz-transform':'rotate(0deg)',
+	//                         '-ms-transform':'rotate(0deg)',
+	//                         '-o-transform':'rotate(0deg)',
+	//                         'transform':'rotate(0deg)'
+	//                       };
 	                      
-	                      /*========================================================*/
-	                      /* Rumble Start/Stop Trigger
-	                      /*========================================================*/
-	                        $this.bind({
-	                        'startRumble': function(e){
-	                          e.stopPropagation();
-	                          clearInterval(interval);
-	                          interval = setInterval(rumbler, speed)
-	                        },
-	                        'stopRumble': function(e){
-	                          e.stopPropagation();
-	                          clearInterval(interval);
-	                          if(inline){
-	                            $this.css('display', 'inline');
-	                          }
-	                          $this.css(reset);
-	                        }
-	                      });   
+	//                       /*========================================================*/
+	//                       /* Rumble Start/Stop Trigger
+	//                       /*========================================================*/
+	//                         $this.bind({
+	//                         'startRumble': function(e){
+	//                           e.stopPropagation();
+	//                           clearInterval(interval);
+	//                           interval = setInterval(rumbler, speed)
+	//                         },
+	//                         'stopRumble': function(e){
+	//                           e.stopPropagation();
+	//                           clearInterval(interval);
+	//                           if(inline){
+	//                             $this.css('display', 'inline');
+	//                           }
+	//                           $this.css(reset);
+	//                         }
+	//                       });   
 
-	                    });// End return this.each
-	                  };// End $.fn.jrumble
+	//                     });// End return this.each
+	//                   };// End $.fn.jrumble
 
-	                })(jQuery);
+	//                 })(jQuery);
 
-	                /*===============================================================*/
-	                /* Specify selector to vibrate below. 
-	                /* For bookmarklet, 'div' will vibrate all elements, 
-	                /* in plugin this can be specifically targeted to a class or id.
-	                /*===============================================================*/
+	//                 /*===============================================================*/
+	//                 /* Specify selector to vibrate below. 
+	//                 /* For bookmarklet, 'div' will vibrate all elements, 
+	//                 /* in plugin this can be specifically targeted to a class or id.
+	//                 /*===============================================================*/
 
-	                $('.offreg').jrumble();    
-	                $('.offreg').trigger('startRumble');
+	//                 $('.offreg').jrumble();    
+	//                 $('.offreg').trigger('startRumble');
 	              
-	             setTimeout(addone, 1000); // how many seconds to wait before adding to count, increasing vibration
+	//              setTimeout(addone, 1000); // how many seconds to wait before adding to count, increasing vibration
 
-	            }); // end addone()
+	//             }); // end addone()
 
-	         });
-	    };
-	  };
+	//          });
+	//     };
+	//   };
 
-	offRegister();
+	// offRegister();
 
 	</script>
