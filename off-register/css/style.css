@@ -65,7 +65,7 @@ p {
 }
 
 .yellow {
-    z-index: -10;
+    z-index: 1;
 }
 
 #yellow {
@@ -74,7 +74,7 @@ p {
 }
 
 .magenta {
-    z-index: -9;
+    z-index: 2;
 }
 
 #magenta {
@@ -82,7 +82,7 @@ p {
 }
 
 .cyan {
-    z-index: -8;
+    z-index: 3;
 }
 
 #cyan {
@@ -90,7 +90,7 @@ p {
 }
 
 .black {
-    z-index: -7;
+    z-index: 4;
 }
 
 #black {
@@ -98,7 +98,7 @@ p {
 }
 
 #yellowcontainer {
-  z-index: -5;
+  z-index: 5;
 }
 
 #yellowbox {
@@ -116,7 +116,7 @@ p {
 }
 
 #cyancontainer {
-  z-index: -4;
+  z-index: 6;
 }
 
 #cyanbox {
@@ -132,7 +132,7 @@ p {
 }
 
 #magcontainer {
-  z-index: -3;
+  z-index: 7;
 }
 
 #magbox {
@@ -148,7 +148,7 @@ p {
 }
 
 #blackcontainer {
-  z-index: -2;
+  z-index: 8;
 }
 
 #blackbox {
@@ -163,7 +163,7 @@ p {
 }
 
 #whitecontainer {
-  z-index: -6;
+  z-index: 4;
 }
 
 .container {
