@@ -75,22 +75,24 @@
 	<script>
 
 		$(document).ready(function(){
-  var count = 0;
+ 			 var count = 0;
 
-  function addone(){
-    count++;
-    $('.offreg').jrumble({
-      x: count,
-      y: count,
-      rotation: count
-    });
-    $('.offreg').trigger('startRumble');
+ 			function addone(){
+ 			   count++;
+   			
+   				$('.offreg').jrumble({
+	  			   x: count/5,
+	   			   y: count/5,
+	   			   rotation: count/100
+    			});
+    	
+    		$('.offreg').trigger('startRumble');
 
-    setTimeout(addone, 1000);
-  }
+    		setTimeout(addone, 1000);
+  			}
 
-  addone();
-});
+  			addone();
+		});
 
 	//   var offRegister = function() {
 
