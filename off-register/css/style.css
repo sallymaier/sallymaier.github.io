@@ -194,11 +194,11 @@ p {
 
 @media (min-width: 320px) {
 
-  .innerbox {
+  .container {
     width: 81.8181%;
     }
 
-  .whitebox {
+  #whitecontainer {
     width: calc(81.8181% - 42px);
     }
 
@@ -210,11 +210,11 @@ p {
 
 @media (min-width: 480px) {
 
-  .innerbox {
+  .container {
     width: 81.8181%;
     }
 
-  .whitebox {
+  #whitecontainer {
     width: calc(81.8181% - 42px);
     }
 
@@ -227,11 +227,11 @@ p {
 
 @media (min-width: 768px) {
 
-  .innerbox {
+  .container {
     width: 63.6363%;
     }
 
-  .whitebox {
+  #whitecontainer {
     width: calc(63.6363% - 42px);
     }
 
@@ -243,11 +243,11 @@ p {
 
 @media (min-width: 1024px) {
 
-  .innerbox {
+  .container {
     width: 45.4545%;
     }
 
-  .whitebox {
+  #whitecontainer {
     width: calc(45.4545% - 42px);
     }
 
