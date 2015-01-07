@@ -75,28 +75,22 @@
 	<script>
 
 		$(document).ready(function(){
-  			var count = 0;
-  			console.log("is this thing on?");
-  			console.log(count);
+  var count = 0;
 
-		  function addone(){
-		    count++;
-		    $('#blackbox').jrumble({
-		      x: (count/5),
-		      y: (count/5),
-		      speed: 200,
-		      rotation: 0
-		    });
+  function addone(){
+    count++;
+    $('.offreg').jrumble({
+      x: count,
+      y: count,
+      rotation: count
+    });
+    $('.offreg').trigger('startRumble');
 
-		    console.log(x);
-		    console.log(y);
+    setTimeout(addone, 1000);
+  }
 
-
-		    $('#blackbox').trigger('startRumble');
-
-		    setTimeout(addone, 1000);
-		  }
-		});
+  addone();
+});
 
 	//   var offRegister = function() {
 
