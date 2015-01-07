@@ -77,6 +77,7 @@
 		$(document).ready(function(){
   			var count = 0;
   			console.log("is this thing on?");
+  			console.log(count);
 
 		  function addone(){
 		    count++;
@@ -86,7 +87,7 @@
 		      speed: 200,
 		      rotation: 0
 		    });
-		    
+
 		    $('.offreg').trigger('startRumble');
 
 		    setTimeout(addone, 1000);
