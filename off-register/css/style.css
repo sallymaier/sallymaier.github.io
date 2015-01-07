@@ -64,29 +64,41 @@ p {
   margin: 0;
 }
 
+.yellow {
+    z-index: -10;
+}
+
 #yellow {
     background-image: url(/off-register/img/printingpressyel.gif);
-    z-index: -10;
 
+}
+
+.magenta {
+    z-index: -9;
 }
 
 #magenta {
     background-image: url(/off-register/img/printingpressmag.gif);
-    z-index: -9;
+}
 
-
+.cyan {
+    z-index: -8;
 }
 
 #cyan {
     background-image: url(/off-register/img/printingpresscyan.gif);
-    z-index: -8;
+}
 
+.black {
+    z-index: -7;
 }
 
 #black {
     background-image: url(/off-register/img/printingpressblack.gif);
-    z-index: -7;
+}
 
+.yellowbox {
+  z-index: -5;
 }
 
 #yellowbox {
@@ -95,7 +107,6 @@ p {
   border-width: 21px;
   border-style: solid;
   border-image: url(http://sallymaier.github.io/off-register/img/cropborderyellow.png) 33% stretch;  
-  z-index: -5;
 
 }
 
@@ -104,17 +115,24 @@ p {
 
 }
 
+.cyanbox {
+  z-index: -4;
+}
+
 #cyanbox {
   color: aqua;
   opacity: 0.4;  
   border-width: 21px;
   border-style: solid;
   border-image: url(http://sallymaier.github.io/off-register/img/cropbordercyan.png) 33% stretch;  
-  z-index: -4;
 }
 
 #cyanbox h1 {
     border-bottom-color: aqua;
+}
+
+.magbox {
+  z-index: -3;
 }
 
 #magbox {
@@ -123,11 +141,14 @@ p {
   border-width: 21px;
   border-style: solid;
   border-image: url(http://sallymaier.github.io/off-register/img/cropbordermag.png) 33% stretch;  
-  z-index: -3;
 }
 
 #magbox h1 {
     border-bottom-color: fuchsia;
+}
+
+.blackbox {
+  z-index: -2;
 }
 
 #blackbox {
@@ -135,7 +156,6 @@ p {
   border-width: 21px;
   border-style: solid;
   border-image: url(http://sallymaier.github.io/off-register/img/cropborderblack.png) 33% stretch;  
-  z-index: -2;
 }
 
 #blackbox h1 {
