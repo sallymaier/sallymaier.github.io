@@ -179,7 +179,7 @@ p {
     padding: 2rem;
 }
 
-.whitebox {
+#whitecontainer {
   position: absolute;
   padding: 2rem;
   left: 50%;
