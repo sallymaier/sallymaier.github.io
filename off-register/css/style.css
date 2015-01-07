@@ -172,7 +172,7 @@ p {
     width: 81.8181%;
     }
 
-  #whitebox {
+  .whitebox {
     width: calc(81.8181% - 42px);
     }
 
@@ -188,7 +188,7 @@ p {
     width: 81.8181%;
     }
 
-  #whitebox {
+  .whitebox {
     width: calc(81.8181% - 42px);
     }
 
@@ -205,7 +205,7 @@ p {
     width: 63.6363%;
     }
 
-  #whitebox {
+  .whitebox {
     width: calc(63.6363% - 42px);
     }
 
@@ -221,7 +221,7 @@ p {
     width: 45.4545%;
     }
 
-  #whitebox {
+  .whitebox {
     width: calc(45.4545% - 42px);
     }
 
