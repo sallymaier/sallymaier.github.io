@@ -199,6 +199,10 @@ article {
   z-index: 100;
 }
 
+img {
+  max-width: 100%;
+}
+
 
 @media (min-width: 320px) {
 
