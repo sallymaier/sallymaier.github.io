@@ -19,6 +19,7 @@ header {
   left: 0;
   height: 100vh;
   width: 100vw;
+  z-index: -10;
 }
 
 h1 {
@@ -338,6 +339,7 @@ article {
     .row {
     margin-left: -.75em;
     margin-right: -.75em;
+    background-color: white;
   }
 
   .cf::after,
