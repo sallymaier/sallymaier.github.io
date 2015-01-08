@@ -45,6 +45,9 @@ h2 {
 p {
   font-family: "Playfair Display",serif;
   font-weight: 300;
+  font-size: 1.383rem;
+  line-height: 2rem;
+
 }
 
 .background {
@@ -197,13 +200,12 @@ article {
 }
 
 .infinate { 
-  height: 150px; 
+  height: 200px; 
   overflow: hidden; 
 }
 
 .infinate img { 
   width: 100%; 
-  transform: translateY(-25%);
 }
 
 @media (min-width: 320px) {
