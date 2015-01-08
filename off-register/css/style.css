@@ -196,14 +196,14 @@ article {
 
 }
 
-img {
-  max-width: 100%;
+.infinate { 
+  height: 250px; 
+  overflow: hidden; 
 }
 
-.infinate {
-  height: 200px;
+.infinate img { 
+  width: 100%; 
 }
-
 
 @media (min-width: 320px) {
 
