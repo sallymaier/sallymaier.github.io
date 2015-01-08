@@ -239,6 +239,45 @@ p {
   font-size: 15px;
   }
 
+  /* Column Widths */
+  /*=========================================*/
+  /*=========================================*/
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .col-1  { width: calc(100% / 11 * 1);}
+  .col-2  { width: calc(100% / 11 * 2);}
+  .col-3  { width: calc(100% / 11 * 3);}
+  .col-4  { width: calc(100% / 11 * 4);}
+  .col-5  { width: calc(100% / 11 * 5);}
+  .col-6  { width: calc(100% / 11 * 6);}
+  .col-7  { width: calc(100% / 11 * 7);}
+  .col-8  { width: calc(100% / 11 * 8);}
+  .col-9  { width: calc(100% / 11 * 9);}
+  .col-10 { width: calc(100% / 11 * 10);}
+  .col-11 { width: calc(100% / 11 * 11);}
+
+  /* 3. Offsets */
+  /*=========================================*/
+  /*=========================================*/
+
+  .coloffset-1  { margin-left: calc(100% / 11 * 1);}
+  .coloffset-2  { margin-left: calc(100% / 11 * 2);}
+  .coloffset-3  { margin-left: calc(100% / 11 * 3);}
+  .coloffset-4  { margin-left: calc(100% / 11 * 4);}
+  .coloffset-5  { margin-left: calc(100% / 11 * 5);}
+  .coloffset-6  { margin-left: calc(100% / 11 * 6);}
+  .coloffset-7  { margin-left: calc(100% / 11 * 7);}
+  .coloffset-8  { margin-left: calc(100% / 11 * 8);}
+  .coloffset-9  { margin-left: calc(100% / 11 * 9);}
+  .coloffset-10 { margin-left: calc(100% / 11 * 10);}
+  .coloffset-11 { margin-left: calc(100% / 11 * 11);}
+
+
 }
 
 @media (min-width: 1024px) {
@@ -250,8 +289,6 @@ p {
   #whitecontainer {
     width: calc(45.4545% - 42px);
     }
-
-}
 
   /* Column Widths */
   /*=========================================*/
@@ -290,3 +327,5 @@ p {
   .coloffset-9  { margin-left: calc(100% / 11 * 9);}
   .coloffset-10 { margin-left: calc(100% / 11 * 10);}
   .coloffset-11 { margin-left: calc(100% / 11 * 11);}
+
+}
