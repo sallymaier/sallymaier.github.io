@@ -197,12 +197,13 @@ article {
 }
 
 .infinate { 
-  height: 250px; 
+  height: 150px; 
   overflow: hidden; 
 }
 
 .infinate img { 
   width: 100%; 
+  transform: translateY(-25%);
 }
 
 @media (min-width: 320px) {
