@@ -47,32 +47,6 @@ p {
   font-weight: 300;
 }
 
-.yellowtext {
-  color: yellow;
-}
-
-.magtext {
-  color: fuchsia;
-  opacity: 0.75;
-}
-
-.cyantext {
-  color: aqua;
-  opacity: 0.85;
-
-}
-
-.yellowtext {
-  color: yellow;
-  opacity: 0.95
-}
-
-.overlays {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
 .background {
   background-size: cover;
   background-attachment: fixed;
@@ -229,8 +203,6 @@ article {
 
 .infinate img { 
   width: 100%; 
-  transform: translateY(-25%);
-
 }
 
 @media (min-width: 320px) {
