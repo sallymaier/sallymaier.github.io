@@ -43,7 +43,7 @@ h2 {
   }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Playfair Display",serif;
   font-weight: 300;
 }
 
@@ -198,6 +198,10 @@ article {
 
 img {
   max-width: 100%;
+}
+
+.infinate {
+  height: 200px;
 }
 
 
