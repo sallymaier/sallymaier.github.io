@@ -191,6 +191,12 @@ p {
   color: white; 
 }
 
+article {
+  display: block;
+  background-color: white;
+  width: 100%;
+}
+
 
 @media (min-width: 320px) {
 
@@ -327,5 +333,18 @@ p {
   .coloffset-9  { margin-left: calc(100% / 11 * 9);}
   .coloffset-10 { margin-left: calc(100% / 11 * 10);}
   .coloffset-11 { margin-left: calc(100% / 11 * 11);}
+
+    .row {
+    margin-left: -.75em;
+    margin-right: -.75em;
+  }
+
+  .cf::after,
+  .clearfix.after,
+  .row::after {
+    content: ' ' ;
+    display: table;
+    clear:both;
+  }
 
 }
