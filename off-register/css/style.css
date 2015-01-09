@@ -214,10 +214,6 @@ h6 {
     border-bottom-color: black;
 }
 
-#whitecontainer {
-  z-index: 4;
-}
-
 .container {
   position: absolute;
   left: 50%;
@@ -241,10 +237,13 @@ h6 {
   transform: translate(-50%,-50%);
   background-color: white;
   color: white; 
+  z-index: 4;
+
 }
 
 .whitebackground {
   background-color: white;
+  padding-top: 1em;
 }
 
 .infinate { 
@@ -398,7 +397,6 @@ h6 {
   .row {
     margin-left: -.75em;
     margin-right: -.75em;
-    padding-top: 2em;
     padding-bottom: 2em;
   }
 
