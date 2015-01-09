@@ -54,6 +54,15 @@ article {
 
 }
 
+caption {
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.422em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
 .background {
   background-size: cover;
   background-attachment: fixed;
