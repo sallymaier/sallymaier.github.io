@@ -210,13 +210,11 @@ caption {
 
 
 .infinate { 
-  height: 200px; 
-  overflow: hidden; 
+  width: 100%
 }
 
 .infinate img { 
   width: 100%; 
-  transform: translateY(-25%);
 }
 
 @media (min-width: 320px) {
