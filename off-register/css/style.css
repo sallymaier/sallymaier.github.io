@@ -75,10 +75,12 @@ h6 {
 
 .posrel {
   position: relative;
+  padding-bottom: 3em !important; 
 }
 
 .absolute {
   position: absolute;
+  margin-left: 1em;
 }
 
 .textcyan {
@@ -244,6 +246,10 @@ h6 {
   color: white; 
 }
 
+.whitebackground {
+  background-color: white;
+  z-index: -5;
+}
 
 .infinate { 
   width: 100%
@@ -393,10 +399,9 @@ h6 {
   .coloffset-10 { margin-left: calc(100% / 11 * 10);}
   .coloffset-11 { margin-left: calc(100% / 11 * 11);}
 
-    .row {
+  .row {
     margin-left: -.75em;
     margin-right: -.75em;
-    background-color: white;
     padding-top: 2em;
     padding-bottom: 2em;
   }
