@@ -247,11 +247,12 @@ h6 {
 }
 
 .infinate { 
-  width: 100%
+  max-height: 100vh;
+  overflow-y: hidden;
 }
 
 .infinate img { 
-  width: 100%; 
+  width: 100%;
 }
 
 @media (min-width: 320px) {
