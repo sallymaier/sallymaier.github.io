@@ -73,6 +73,32 @@ h6 {
   text-align: center;
 }
 
+.posrel {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.textcyan {
+  color: aqua;
+  opacity: .8;
+  z-index: -1;
+}
+
+.textmag {
+  color: fuchsia;
+  opacity: .9;
+  z-index: -2;
+}
+
+.textyel {
+  color: yellow;
+  opacity: 1;
+  z-index: -3;
+}
+
 .background {
   background-size: cover;
   background-attachment: fixed;
