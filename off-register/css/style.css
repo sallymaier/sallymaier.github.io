@@ -49,6 +49,11 @@ p {
 
 }
 
+article {
+  line-height: 1.386em;
+
+}
+
 .background {
   background-size: cover;
   background-attachment: fixed;
@@ -194,10 +199,6 @@ p {
   color: white; 
 }
 
-article {
-  line-height: 1.04em;
-
-}
 
 .infinate { 
   height: 200px; 
