@@ -121,7 +121,7 @@ h6 {
 }
 
 #yellow {
-    background-image: url(/off-register/img/printingpressyel.gif);
+    background-image: url(/off-register/img/halftoneY.png);
 
 }
 
@@ -130,7 +130,7 @@ h6 {
 }
 
 #magenta {
-    background-image: url(/off-register/img/printingpressmag.gif);
+    background-image: url(/off-register/img/halftoneM.png);
 }
 
 .cyan {
@@ -138,7 +138,7 @@ h6 {
 }
 
 #cyan {
-    background-image: url(/off-register/img/printingpresscyan.gif);
+    background-image: url(/off-register/img/halftoneC.png);
 }
 
 .black {
@@ -146,7 +146,7 @@ h6 {
 }
 
 #black {
-    background-image: url(/off-register/img/printingpressblack.gif);
+    background-image: url(/off-register/img/halftoneK.png);
 }
 
 #yellowcontainer {
