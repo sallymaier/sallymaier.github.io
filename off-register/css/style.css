@@ -86,19 +86,16 @@ h6 {
 .textcyan {
   color: aqua;
   opacity: .8;
-  z-index: -1;
 }
 
 .textmag {
   color: fuchsia;
   opacity: .9;
-  z-index: -2;
 }
 
 .textyel {
   color: yellow;
   opacity: 1;
-  z-index: -3;
 }
 
 .background {
@@ -248,7 +245,6 @@ h6 {
 
 .whitebackground {
   background-color: white;
-  z-index: -5;
 }
 
 .infinate { 
