@@ -122,6 +122,8 @@ h6 {
 
 #yellow {
     background-image: url(/off-register/img/halftoneY.png);
+    background-blend-mode: multiply;
+
 
 }
 
@@ -131,6 +133,8 @@ h6 {
 
 #magenta {
     background-image: url(/off-register/img/halftoneM.png);
+    background-blend-mode: multiply;
+
 }
 
 .cyan {
@@ -139,6 +143,8 @@ h6 {
 
 #cyan {
     background-image: url(/off-register/img/halftoneC.png);
+    background-blend-mode: multiply;
+
 }
 
 .black {
@@ -147,6 +153,8 @@ h6 {
 
 #black {
     background-image: url(/off-register/img/halftoneK.png);
+    background-blend-mode: multiply;
+
 }
 
 #yellowcontainer {
