@@ -26,20 +26,29 @@ h1 {
   font-family: "league-gothic",sans-serif;
   text-transform: uppercase;
   font-style: italic;
-  font-size: 5.833rem;
-  padding-bottom: -.25rem;
-  border-bottom-width: 1rem;
+  font-size: 5.833em;
+  padding-bottom: -.25em;
+  border-bottom-width: 1em;
   border-bottom-style: solid;
   border-bottom-color: black;
-  line-height: 6rem;
+  line-height: 6em;
   display: inline-block;
   }
 
 h2 {
   font-family: "Playfair Display",serif;
   font-weight: 400;
-  font-size: 1.386rem;
+  font-size: 1.386em;
+  margin-top: 1em;
+  }
+
+h3 {
+  font-family: "Playfair Display",serif;
+  font-weight: 400;
+  font-size: 1.333em;
   margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .1;
   }
 
 p {
