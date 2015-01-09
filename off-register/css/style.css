@@ -43,9 +43,9 @@ h2 {
   }
 
 p {
-  font-family: "Playfair Display",serif;
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
   font-weight: 300;
-  line-height: 1.383rem;
 
 }
 
@@ -297,6 +297,10 @@ article {
 }
 
 @media (min-width: 1024px) {
+
+  html{
+  font-size: 16px;
+  }
 
   .container {
     width: 45.4545%;
