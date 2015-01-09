@@ -26,7 +26,7 @@ h1 {
   font-family: "league-gothic",sans-serif;
   text-transform: uppercase;
   font-style: italic;
-  font-size: 7rem;
+  font-size: 5.833rem;
   padding-bottom: -.25rem;
   border-bottom-width: 1rem;
   border-bottom-style: solid;
@@ -38,7 +38,7 @@ h1 {
 h2 {
   font-family: "Playfair Display",serif;
   font-weight: 400;
-  font-size: 1.383rem;
+  font-size: 1.386rem;
   margin-top: 1rem;
   }
 
@@ -195,6 +195,7 @@ p {
 }
 
 article {
+  line-height: 1.04em;
 
 }
 
@@ -219,7 +220,7 @@ article {
     }
 
   html{
-  font-size: 8.5px;
+  font-size: 12px;
   }
 
 }
@@ -235,7 +236,7 @@ article {
     }
 
   html{
-  font-size: 12px;
+  font-size: 15px;
   }
 
 }
@@ -252,7 +253,7 @@ article {
     }
 
   html{
-  font-size: 15px;
+  font-size: 16px;
   }
 
   /* Column Widths */
@@ -299,7 +300,7 @@ article {
 @media (min-width: 1024px) {
 
   html{
-  font-size: 16px;
+  font-size: 18px;
   }
 
   .container {
