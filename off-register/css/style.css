@@ -30,7 +30,7 @@ nav {
   letter-spacing: .1em;
 }
 
-nav h1 {
+.navtitle {
   float: left;
   font-family: "league-gothic",sans-serif;
   text-transform: uppercase;
