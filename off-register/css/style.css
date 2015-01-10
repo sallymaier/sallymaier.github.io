@@ -71,6 +71,9 @@ header {
 }
 
 h1 {
+  font-family: "league-gothic",sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
   padding-bottom: -.25rem;
   border-bottom-width: 1rem;
   border-bottom-style: solid;
