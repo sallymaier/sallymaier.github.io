@@ -12,14 +12,15 @@ a {text-decoration: none;}
   clear: both;
 }
 
-header {
-  text-align: center;
-  position: relative;
-  top: 0;
+nav {
+  background: black;
+  color: white;
+  position: fixed;
   left: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: -10;
+  right: 0;
+  top:0;
+  font-size: 16px !important;
+  z-index: 100;
 }
 
 nav ul {
@@ -43,6 +44,17 @@ nav a {
 nav   a:hover {
   background: white;
   color: black;
+}
+
+
+header {
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -10;
 }
 
 h1 {
