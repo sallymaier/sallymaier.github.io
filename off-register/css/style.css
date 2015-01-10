@@ -399,6 +399,28 @@ img {
   .coloffset-1  { margin-left: calc(100% / 11 * 1);}
   .coloffset-2  { margin-left: calc(100% / 11 * 1);}
 
+  h1 {
+  font-size: 5.833rem;
+  line-height: 6rem;
+  }
+
+  h2 {
+    font-size: 1.333rem;
+    }
+
+  h3 {
+    font-size: 1.333em;
+    }
+
+  article {
+    line-height: 1.386em;
+
+  }
+
+  h6 {
+    font-size: 0.422em;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -446,34 +468,49 @@ img {
   .coloffset-10 { margin-left: calc(100% / 11 * 10);}
   .coloffset-11 { margin-left: calc(100% / 11 * 11);}
 
+  h1 {
+  font-size: 5.833rem;
+  line-height: 6rem;
+  }
+
+  h2 {
+    font-size: 1.333rem;
+    }
+
+  h3 {
+    font-size: 1.333em;
+    }
+
+  article {
+    line-height: 1.386em;
+
+  }
+
+  h6 {
+    font-size: 0.422em;
+  }
+
 }
 
 /* type */
 
 h1 {
-  font-family: "league-gothic",sans-serif;
-  text-transform: uppercase;
-  font-style: italic;
-  font-size: 5.833rem;
   padding-bottom: -.25rem;
   border-bottom-width: 1rem;
   border-bottom-style: solid;
   border-bottom-color: black;
-  line-height: 6rem;
   display: inline-block;
   }
 
 h2 {
   font-family: "Playfair Display",serif;
   font-weight: 400;
-  font-size: 1.333rem;
   margin-top: 1rem;
   }
 
 h3 {
   font-family: "Playfair Display",serif;
   font-weight: 700;
-  font-size: 1.333em;
   margin-top: 1rem;
   margin-bottom: .5em;
   font-style: italic;
@@ -487,7 +524,6 @@ p {
 }
 
 article {
-  line-height: 1.386em;
 
 }
 
@@ -495,7 +531,6 @@ h6 {
   font-family: "museo-sans",sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 0.422em;
   text-transform: uppercase;
   letter-spacing: .1em;
   text-align: center;
