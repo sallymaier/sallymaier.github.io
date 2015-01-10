@@ -102,7 +102,6 @@ p {
   font-family: "museo-sans",sans-serif;
   font-style: normal;
   font-weight: 300;
-
 }
 
 article {
@@ -554,7 +553,11 @@ img {
 
 }
 
-/* type */
+p {
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
 
 
 
