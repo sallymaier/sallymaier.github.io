@@ -103,7 +103,18 @@ p {
 }
 
 article {
+}
 
+h4 {
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: .9em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 h6 {
