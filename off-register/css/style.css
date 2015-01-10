@@ -19,23 +19,14 @@ nav {
   left: 0;
   right: 0;
   top:0;
-  font-size: 16px !important;
   z-index: 100;
-
-  font-family: "museo-sans",sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: .8em;
-  text-transform: uppercase;
-  letter-spacing: .1em;
 }
 
 .navtitle {
-  float: left;
   font-family: "league-gothic",sans-serif;
   text-transform: uppercase;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 1em;
   text-decoration: underline;
   text-underline-position: under;
 }
@@ -44,6 +35,12 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
 }
 
 nav ul li {
