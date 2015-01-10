@@ -21,6 +21,15 @@ nav {
   top:0;
   font-size: 16px !important;
   z-index: 100;
+
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-align: center;
+
 }
 
 nav ul {

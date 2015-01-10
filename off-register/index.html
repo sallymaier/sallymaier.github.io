@@ -27,14 +27,8 @@
 
 	<nav>
         <ul class="nav">
-          <li><a class="scroll" href="#plains">Plains</a></li>
-          <li><a class="scroll" href="#elephants">Elephants</a></li>
-          <li><a class="scroll" href="#ostrich">Ostriches</a></li>
-          <li><a class="scroll" href="#savannah">Savannah</a></li>
-          <li><a class="scroll" href="#lions">Lions</a></li>
-            <li><a class="scroll" href="#bears">Bears</a></li>
-          <li><a class="scroll" href="#tigers">Tigers</a></li>
-          <li><a class="scroll" href="#baboons">Baboons</a></li>
+          <li><a class="scroll" href="#inspiration">Inspriation</a></li>
+
 
         </ul>
   	</nav>
@@ -87,7 +81,7 @@
 
 	</header>
 
-	<div class="whitebackground">
+	<div class="whitebackground" id="inspiration">
 		<div class="row">
 			<article class="coloffset-2 col-5">
 				<div class="row posrel">
@@ -296,3 +290,12 @@
 	// offRegister();
 
 	</script>
+
+    <!-- Scroll effects -->
+
+    <script>
+      $("header a.scroll").click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
+      });
+   </script>
