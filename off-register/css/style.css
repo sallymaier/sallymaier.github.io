@@ -70,6 +70,52 @@ header {
   z-index: -10;
 }
 
+h1 {
+  padding-bottom: -.25rem;
+  border-bottom-width: 1rem;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  display: inline-block;
+  }
+
+h2 {
+  font-family: "Playfair Display",serif;
+  font-weight: 400;
+  margin-top: 1rem;
+  }
+
+h3 {
+  font-family: "Playfair Display",serif;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: .5em;
+  font-style: italic;
+  }
+
+p {
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+
+}
+
+article {
+
+}
+
+h6 {
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-align: center;
+}
+
+code {
+  font-size: 0.75em;
+}
+
 .posrel {
   position: relative;
   padding-bottom: 3em !important; 
@@ -494,51 +540,7 @@ img {
 
 /* type */
 
-h1 {
-  padding-bottom: -.25rem;
-  border-bottom-width: 1rem;
-  border-bottom-style: solid;
-  border-bottom-color: black;
-  display: inline-block;
-  }
 
-h2 {
-  font-family: "Playfair Display",serif;
-  font-weight: 400;
-  margin-top: 1rem;
-  }
-
-h3 {
-  font-family: "Playfair Display",serif;
-  font-weight: 700;
-  margin-top: 1rem;
-  margin-bottom: .5em;
-  font-style: italic;
-  }
-
-p {
-  font-family: "museo-sans",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-
-}
-
-article {
-
-}
-
-h6 {
-  font-family: "museo-sans",sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  text-align: center;
-}
-
-code {
-  font-size: 0.75em;
-}
 
 
 
