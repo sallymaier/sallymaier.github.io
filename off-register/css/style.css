@@ -88,11 +88,14 @@ h2 {
   }
 
 h3 {
-  font-family: "Playfair Display",serif;
-  font-weight: 700;
+  font-family: "museo-sans",sans-serif;
+  font-weight: 900;
   margin-top: 1rem;
   margin-bottom: .5em;
   font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
   }
 
 p {
@@ -113,6 +116,7 @@ h4 {
   text-transform: uppercase;
   letter-spacing: .1em;
   padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 h6 {
@@ -467,7 +471,7 @@ img {
     }
 
   h3 {
-    font-size: 1.333em;
+    font-size: 1em;
     }
 
   article {
@@ -536,7 +540,7 @@ img {
     }
 
   h3 {
-    font-size: 1.333em;
+    font-size: 1em;
     }
 
   article {
