@@ -131,6 +131,10 @@ h6 {
   margin-left: 1em;
 }
 
+.marginfix {
+  margin-left: -0.75em;
+}
+
 .textcyan {
   color: aqua;
   opacity: .8;
@@ -299,7 +303,7 @@ h6 {
 
 .whitebackground {
   background-color: white;
-  padding-top: 2em;
+  padding-top: 3em;
 }
 
 .infinate { 
@@ -451,21 +455,18 @@ h6 {
   .coloffset-9  { margin-left: calc(100% / 11 * 9);}
   .coloffset-10 { margin-left: calc(100% / 11 * 10);}
   .coloffset-11 { margin-left: calc(100% / 11 * 11);}
+}
 
-  .row {
-    margin-left: -.75em;
-    margin-right: -.75em;
-    padding-bottom: 2em;
-  }
+.row {
+  padding-bottom: 2em;
+}
 
-  .cf::after,
-  .clearfix.after,
-  .row::after {
-    content: ' ' ;
-    display: table;
-    clear:both;
-  }
-
+.cf::after,
+.clearfix.after,
+.row::after {
+  content: ' ' ;
+  display: table;
+  clear:both;
 }
 
 }
