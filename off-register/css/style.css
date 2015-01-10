@@ -316,6 +316,11 @@ h6 {
   height: 100%;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 320px) {
 
   .container {
@@ -343,8 +348,55 @@ h6 {
     }
 
   html{
-  font-size: 15px;
+  font-size: 16px;
   }
+
+  h1 {
+    font-size: 4.833rem;
+    line-height: 5rem;
+    }
+
+  h2 {
+    font-size: 1.333rem;
+    }
+
+  h6 {
+    font-size: 0.8em;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .col-1  { width: calc(100% / 11 * 1);}
+  .col-2  { width: calc(100% / 11 * 1);}
+  .col-3  { width: calc(100% / 11 * 1);}
+  .col-4  { width: calc(100% / 11 * 1);}
+  .col-5  { width: calc(100% / 11 * 1);}
+  .col-6  { width: calc(100% / 11 * 1);}
+  .col-7  { width: calc(100% / 11 * 1);}
+  .col-8  { width: calc(100% / 11 * 1);}
+  .col-9  { width: calc(100% / 11 * 1);}
+  .col-10 { width: calc(100% / 11 * 1);}
+  .col-11 { width: calc(100% / 11 * 1);}
+
+  /* 3. Offsets */
+  /*=========================================*/
+  /*=========================================*/
+
+  .coloffset-1  { margin-left: calc(100% / 11 * 1);}
+  .coloffset-2  { margin-left: calc(100% / 11 * 1);}
+  .coloffset-3  { margin-left: calc(100% / 11 * 1);}
+  .coloffset-4  { margin-left: calc(100% / 11 * 1);}
+  .coloffset-5  { margin-left: calc(100% / 11 * 1);}
+  .coloffset-6  { margin-left: calc(100% / 11 * 1);}
+  .coloffset-7  { margin-left: calc(100% / 11 * 1);}
+  .coloffset-8  { margin-left: calc(100% / 11 * 1);}
+  .coloffset-9  { margin-left: calc(100% / 11 * 1);}
+  .coloffset-10 { margin-left: calc(100% / 11 * 1);}
+  .coloffset-11 { margin-left: calc(100% / 11 * 1);}
 
 }
 
@@ -373,34 +425,19 @@ h6 {
     padding-right: 12px;
   }
 
-  .col-1  { width: calc(100% / 11 * 1);}
-  .col-2  { width: calc(100% / 11 * 2);}
+  .col-1  { width: calc(100% / 11 * 3);}
+  .col-2  { width: calc(100% / 11 * 3);} /* widening to 3 cols */
   .col-3  { width: calc(100% / 11 * 3);}
-  .col-4  { width: calc(100% / 11 * 4);}
-  .col-5  { width: calc(100% / 11 * 5);}
-  .col-6  { width: calc(100% / 11 * 6);}
-  .col-7  { width: calc(100% / 11 * 7);}
-  .col-8  { width: calc(100% / 11 * 8);}
-  .col-9  { width: calc(100% / 11 * 9);}
-  .col-10 { width: calc(100% / 11 * 10);}
-  .col-11 { width: calc(100% / 11 * 11);}
+  .col-4  { width: calc(100% / 11 * 6);}
+  .col-5  { width: calc(100% / 11 * 6);} /* widening to 6 cols */
+
 
   /* 3. Offsets */
   /*=========================================*/
   /*=========================================*/
 
   .coloffset-1  { margin-left: calc(100% / 11 * 1);}
-  .coloffset-2  { margin-left: calc(100% / 11 * 2);}
-  .coloffset-3  { margin-left: calc(100% / 11 * 3);}
-  .coloffset-4  { margin-left: calc(100% / 11 * 4);}
-  .coloffset-5  { margin-left: calc(100% / 11 * 5);}
-  .coloffset-6  { margin-left: calc(100% / 11 * 6);}
-  .coloffset-7  { margin-left: calc(100% / 11 * 7);}
-  .coloffset-8  { margin-left: calc(100% / 11 * 8);}
-  .coloffset-9  { margin-left: calc(100% / 11 * 9);}
-  .coloffset-10 { margin-left: calc(100% / 11 * 10);}
-  .coloffset-11 { margin-left: calc(100% / 11 * 11);}
-
+  .coloffset-2  { margin-left: calc(100% / 11 * 1);}
 
 }
 
@@ -455,6 +492,57 @@ h6 {
   .coloffset-9  { margin-left: calc(100% / 11 * 9);}
   .coloffset-10 { margin-left: calc(100% / 11 * 10);}
   .coloffset-11 { margin-left: calc(100% / 11 * 11);}
+
+  h1 {
+    font-family: "league-gothic",sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 5.833rem;
+    padding-bottom: -.25rem;
+    border-bottom-width: 1rem;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    line-height: 6rem;
+    display: inline-block;
+    }
+
+  h2 {
+    font-family: "Playfair Display",serif;
+    font-weight: 400;
+    font-size: 1.386rem;
+    margin-top: 1rem;
+    }
+
+  h3 {
+    font-family: "Playfair Display",serif;
+    font-weight: 700;
+    font-size: 1.333em;
+    margin-top: 1rem;
+    margin-bottom: .5em;
+    font-style: italic;
+    }
+
+  p {
+    font-family: "museo-sans",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
+  }
+
+  article {
+    line-height: 1.386em;
+
+  }
+
+  h6 {
+    font-family: "museo-sans",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    text-align: center;
+  }
 }
 
 .row {
