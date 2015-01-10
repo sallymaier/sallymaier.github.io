@@ -25,12 +25,13 @@ nav {
   font-family: "museo-sans",sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 1em;
+  font-size: .8em;
   text-transform: uppercase;
   letter-spacing: .1em;
 }
 
 nav h1 {
+  float: left;
   font-family: "league-gothic",sans-serif;
   text-transform: uppercase;
   font-style: italic;
@@ -38,8 +39,7 @@ nav h1 {
   padding-bottom: -.25rem;
   border-bottom-width: .25rem;
   border-bottom-style: solid;
-  border-bottom-color: black;
-  display: inline-block;
+  border-bottom-color: white;
 }
 
 nav ul {
