@@ -321,7 +321,27 @@ img {
   height: 100%;
 }
 
+[class*='col-'] {
+  float: left;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 { width: 100%;}
+
 @media (min-width: 320px) {
+
 
   .container {
     width: 81.8181%;
@@ -333,6 +353,19 @@ img {
 
   html{
   font-size: 12px;
+  }
+
+  h1 {
+    font-size: 4.833rem;
+    line-height: 5rem;
+    }
+
+  h2 {
+    font-size: 1.333rem;
+    }
+
+  h6 {
+    font-size: 0.8em;
   }
 
 }
@@ -363,40 +396,6 @@ img {
   h6 {
     font-size: 0.8em;
   }
-
-  [class*="col-"] {
-    float: left;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  .col-1  { width: calc(100% / 11 * 11);}
-  .col-2  { width: calc(100% / 11 * 11);}
-  .col-3  { width: calc(100% / 11 * 11);}
-  .col-4  { width: calc(100% / 11 * 11);}
-  .col-5  { width: calc(100% / 11 * 11);}
-  .col-6  { width: calc(100% / 11 * 11);}
-  .col-7  { width: calc(100% / 11 * 11);}
-  .col-8  { width: calc(100% / 11 * 11);}
-  .col-9  { width: calc(100% / 11 * 11);}
-  .col-10 { width: calc(100% / 11 * 11);}
-  .col-11 { width: calc(100% / 11 * 11);}
-
-  /* 3. Offsets */
-  /*=========================================*/
-  /*=========================================*/
-
-  .coloffset-1  { margin-left: calc(100% / 11 * 1);}
-  .coloffset-2  { margin-left: calc(100% / 11 * 1);}
-  .coloffset-3  { margin-left: calc(100% / 11 * 1);}
-  .coloffset-4  { margin-left: calc(100% / 11 * 1);}
-  .coloffset-5  { margin-left: calc(100% / 11 * 1);}
-  .coloffset-6  { margin-left: calc(100% / 11 * 1);}
-  .coloffset-7  { margin-left: calc(100% / 11 * 1);}
-  .coloffset-8  { margin-left: calc(100% / 11 * 1);}
-  .coloffset-9  { margin-left: calc(100% / 11 * 1);}
-  .coloffset-10 { margin-left: calc(100% / 11 * 1);}
-  .coloffset-11 { margin-left: calc(100% / 11 * 1);}
 
 }
 
