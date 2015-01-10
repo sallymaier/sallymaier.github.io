@@ -28,8 +28,18 @@ nav {
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: .1em;
-  text-align: center;
+}
 
+nav h1 {
+  font-family: "league-gothic",sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1rem;
+  padding-bottom: -.25rem;
+  border-bottom-width: .25rem;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  display: inline-block;
 }
 
 nav ul {
