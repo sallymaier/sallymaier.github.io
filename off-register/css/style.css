@@ -327,6 +327,18 @@ img {
   padding-right: .75em;
 }
 
+.row {
+  padding-bottom: 55px;
+}
+
+.cf::after,
+.clearfix.after,
+.row::after {
+  content: ' ' ;
+  display: table;
+  clear:both;
+}
+
 .col-1,
 .col-2,
 .col-3,
@@ -339,6 +351,10 @@ img {
 .col-10,
 .col-11,
 .col-12 { width: 100%;}
+
+
+/** media queries follow **/
+
 
 @media (min-width: 320px) {
 
@@ -354,6 +370,8 @@ img {
   html{
   font-size: 12px;
   }
+
+  /* headlines reproportioned for very small screens */
 
   h1 {
     font-size: 4.833rem;
@@ -383,6 +401,8 @@ img {
   html{
   font-size: 16px;
   }
+
+  /* headlines reproportioned for small screens */
 
   h1 {
     font-size: 4.833rem;
@@ -414,10 +434,6 @@ img {
   font-size: 16px;
   }
 
-  /* Column Widths */
-  /*=========================================*/
-  /*=========================================*/
-
   [class*="col-"] {
     float: left;
     padding-left: 12px;
@@ -430,10 +446,6 @@ img {
   .col-4  { width: calc(100% / 11 * 6);}
   .col-5  { width: calc(100% / 11 * 6);} /* widening to 6 cols */
 
-
-  /* 3. Offsets */
-  /*=========================================*/
-  /*=========================================*/
 
   .coloffset-1  { margin-left: calc(100% / 11 * 1);}
   .coloffset-2  { margin-left: calc(100% / 11 * 1);}
@@ -454,10 +466,6 @@ img {
     width: calc(45.4545% - 42px);
     }
 
-  /* Column Widths */
-  /*=========================================*/
-  /*=========================================*/
-
   [class*="col-"] {
     float: left;
     padding-left: 12px;
@@ -476,9 +484,6 @@ img {
   .col-10 { width: calc(100% / 11 * 10);}
   .col-11 { width: calc(100% / 11 * 11);}
 
-  /* 3. Offsets */
-  /*=========================================*/
-  /*=========================================*/
 
   .coloffset-1  { margin-left: calc(100% / 11 * 1);}
   .coloffset-2  { margin-left: calc(100% / 11 * 2);}
@@ -492,68 +497,8 @@ img {
   .coloffset-10 { margin-left: calc(100% / 11 * 10);}
   .coloffset-11 { margin-left: calc(100% / 11 * 11);}
 
-  h1 {
-    font-family: "league-gothic",sans-serif;
-    text-transform: uppercase;
-    font-style: italic;
-    font-size: 5.833rem;
-    padding-bottom: -.25rem;
-    border-bottom-width: 1rem;
-    border-bottom-style: solid;
-    border-bottom-color: black;
-    line-height: 6rem;
-    display: inline-block;
-    }
-
-  h2 {
-    font-family: "Playfair Display",serif;
-    font-weight: 400;
-    font-size: 1.386rem;
-    margin-top: 1rem;
-    }
-
-  h3 {
-    font-family: "Playfair Display",serif;
-    font-weight: 700;
-    font-size: 1.333em;
-    margin-top: 1rem;
-    margin-bottom: .5em;
-    font-style: italic;
-    }
-
-  p {
-    font-family: "museo-sans",sans-serif;
-    font-style: normal;
-    font-weight: 300;
-
-  }
-
-  article {
-    line-height: 1.386em;
-
-  }
-
-  h6 {
-    font-family: "museo-sans",sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 0.5em;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    text-align: center;
-  }
 }
 
-.row {
-  padding-bottom: 2em;
-}
 
-.cf::after,
-.clearfix.after,
-.row::after {
-  content: ' ' ;
-  display: table;
-  clear:both;
-}
 
-}
+
