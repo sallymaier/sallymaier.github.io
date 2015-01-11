@@ -51,8 +51,9 @@ nav ul li {
 nav a {
   color: white;
   display: block;
-  padding: 2em;
+  padding: 1.25em;
   text-decoration: none;
+  background-color: transparent;
 }
 
 nav   a:hover {
