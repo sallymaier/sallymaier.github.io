@@ -29,7 +29,18 @@ nav {
 }
 
 .navtitle {
-  text-decoration: underline;
+}
+
+.navtitle a:after {
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+
+    border-width: 0 0 1px;
+    border-style: solid;
 }
 
 nav ul {
@@ -104,10 +115,6 @@ p {
   font-style: normal;
   font-weight: 300;
 }
-
-
-
-
 
 h4 {
   font-family: "museo-sans",sans-serif;
