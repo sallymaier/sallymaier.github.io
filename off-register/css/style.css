@@ -24,12 +24,7 @@ nav {
 }
 
 .navtitle {
-  font-family: "league-gothic",sans-serif;
-  text-transform: uppercase;
-  font-style: italic;
-  font-size: 1.1em;
   text-decoration: underline;
-  text-underline-position: under;
 }
 
 nav ul {
