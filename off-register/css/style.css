@@ -4,7 +4,12 @@
     margin: 0; padding: 0;
 }
 
-a {text-decoration: none;}
+a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+
+}
 
 .clearfix::after {
   content: " ";
@@ -100,8 +105,9 @@ p {
   font-weight: 300;
 }
 
-article {
-}
+
+
+
 
 h4 {
   font-family: "museo-sans",sans-serif;
