@@ -104,6 +104,7 @@ p {
   font-family: "museo-sans",sans-serif;
   font-style: normal;
   font-weight: 300;
+  margin-bottom: 1em;
 }
 
 h4 {
@@ -128,6 +129,7 @@ h6 {
 
 code {
   font-size: 0.75em;
+  margin-bottom: 1em;
 }
 
 .posrel {
