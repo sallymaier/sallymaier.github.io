@@ -127,7 +127,7 @@ h6 {
   text-align: center;
 }
 
-code {
+pre {
   font-size: 0.75em;
   margin-bottom: 1em;
 }
@@ -558,6 +558,7 @@ p {
   font-family: "museo-sans",sans-serif;
   font-style: normal;
   font-weight: 300;
+  margin-bottom: 1em;
 }
 
 
