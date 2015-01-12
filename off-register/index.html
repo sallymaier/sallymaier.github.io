@@ -127,11 +127,11 @@
 		</div>
 		<div class="row">
 			<article class="coloffset-2 col-5">
-				<p>The script is simple. It is based on the animation functions from <a href="http://jackrugile.com/jrumble/">Jack Rugile's jRumble script</a>, but intensity of Off-Register increses over time. When using the script on your own site, it is best to structure the overlays in HTML by hand. Each element that will vibrate must be nested into a absolute positioned container.</p>
+				<p>The script is simple. It is based on the animation functions from <a href="http://jackrugile.com/jrumble/">Jack Rugile's jRumble script</a>, but intensity of Off-Register increases over time. jRumble has several variables that can be manipulated to vary the motion of affected objects. This is thouroughly documented on that page. Off-Register can be modified with values that determine the speed and amount of increase in intensity.</p>
+				<p>When using the script on your own site, it is best to structure the overlays in HTML by hand. Each element that will vibrate must be nested into a absolute positioned container.</p>
 				<p>The script can also be used as a bookmarklet and then run on other sites to get a bit of the print newspaper experience while reading online. When used as a bookmarklet, an additional section of code can be added to duplicate the page elements.</p>
 			</article>
-			<div class="col-2">
-				<h4>The header above is positioned using this structure:</h4>
+				<h4>The section header above is positioned using this structure:</h4>
 				<code>
 <pre style='color:#000000;background:#ffffff;'><html><body style='color:#000000; background:#ffffff; '><pre>
 <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>absolute</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
@@ -148,7 +148,6 @@
 <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
 </pre>
 				</code>
-			</div>
 			<div class="col-5 coloffset-2">
 
 				<h4>When using the bookmarklet, this code duplicates the page elements to create the CMY layers:</h4>
@@ -172,6 +171,10 @@ $<span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><sp
 				</code>
 			</div>
 		</div>	
+
+		<div class="col-2">
+			<h4>Examples:</h4>
+
 
 		<div id="use"></div>
 		<div class="coloffset-2 col-5">
@@ -231,25 +234,29 @@ $<span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><sp
 	<script>
 
 		$(document).ready(function(){
- 			 var count = 0;
+ 			 var distance = 0,
+           intensity = 50, // higher values for less intensity
+           speed = 0, // higher values are slower
+           increase = 10000; // number of milliseconds before distance is increased. higher numbers=slower increase.
+           offregclass = 'offreg' // name of class to be affected.
+
 
  			function addone(){
- 			   count++;
+ 			   distance++;
    			
-   				$('.offreg').jrumble({
-	  			   x: count/50,
-	   			   y: count/50,
-	   			   rotation: count/10000,
-	   			   speed: 0
+   				$('.'offregclass).jrumble({ 
+	  			   x: distance/intensity,
+	   			   y: distance/intensity,
+	   			   rotation: distance/intensity/intensity,
 
     			});
     	
-    		$('.offreg').trigger('startRumble');
+    		$('.'offregclass).trigger('startRumble');
 
     		setTimeout(addone, 10000);
   			}
 
-  			addone();
+  	  		addone();
 		});
 
 	</script>
