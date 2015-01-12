@@ -127,7 +127,30 @@
 		</div>
 		<div class="row">
 			<article class="coloffset-2 col-5">
-				<p>The script is simple. It is based on the animation functions from <a href="http://jackrugile.com/jrumble/">Jack Rugile's jRumble script</a>, but intensity of Off-Register increases over time. jRumble has several variables that can be manipulated to vary the motion of affected objects. This is thouroughly documented on that page. Off-Register can be modified with values that determine the speed and amount of increase in intensity.</p>
+				<p>The script is simple. It is based on the animation functions from <a href="http://jackrugile.com/jrumble/">Jack Rugile's jRumble script</a>, but intensity of Off-Register increases over time. jRumble has several variables that can be manipulated to vary the motion of affected objects. This is thouroughly documented <a href="http://jackrugile.com/jrumble/#demos">on that page</a>. Off-Register can be modified with values that determine the speed and amount of increase in intensity. These can be modified when calling the function in your document using the following code:</p>
+				<code>
+					<!-- HTML generated using hilite.me --><pre style="margin: 0; line-height: 125%">$(document).ready(<span style="font-weight: bold">function</span>() {
+  <span style="font-weight: bold">var</span> distance = 0,
+    intensity = 50, <span style="font-style: italic">// higher values for less intensity</span>
+    speed = 0, <span style="font-style: italic">// higher values are slower</span>
+    increase = 10000, <span style="font-style: italic">// number of milliseconds before distance is increased. higher numbers=slower increase.</span>
+    offregclass = <span style="font-style: italic">&#39;offreg&#39;</span>; <span style="font-style: italic">// name of class to be affected.</span>
+  console.log(distance, intensity, speed, increase, offregclass);
+
+  <span style="font-weight: bold">function</span> addone() {
+    distance++;
+    $(<span style="font-style: italic">&#39;.&#39;</span> + offregclass).jrumble({
+      x: distance / intensity,
+      y: distance / intensity,
+      rotation: distance / intensity / intensity,
+    });
+    $(<span style="font-style: italic">&#39;.&#39;</span> + offregclass).trigger(<span style="font-style: italic">&#39;startRumble&#39;</span>);
+    setTimeout(addone, 10000);
+  }
+  addone();
+});
+</pre>
+				</code>
 				<p>When using the script on your own site, it is best to structure the overlays in HTML by hand. Each element that will vibrate must be nested into a absolute positioned container.</p>
 				<p>The script can also be used as a bookmarklet and then run on other sites to get a bit of the print newspaper experience while reading online. When used as a bookmarklet, an additional section of code can be added to duplicate the page elements.</p>
 			</article>
@@ -170,10 +193,11 @@ $<span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><sp
 </pre>
 				</code>
 
+		</div>
+
 			<div class="col-2">
 				<h4>Examples:</h4>
 			</div>	
-		</div>
 		</div>
 	
 
