@@ -249,14 +249,14 @@ $<span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><sp
  			function addone(){
  			   distance++;
    			
-   				$('.'offregclass).jrumble({ 
+   				$('.' + offregclass).jrumble({ 
 	  			   x: distance/intensity,
 	   			   y: distance/intensity,
 	   			   rotation: distance/intensity/intensity,
 
     			});
     	
-    		$('.'offregclass).trigger('startRumble');
+    		$('.' + offregclass).trigger('startRumble');
 
     		setTimeout(addone, 10000);
   			}
