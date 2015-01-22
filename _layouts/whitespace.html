@@ -18,54 +18,86 @@
         <!-- fonts -->
         <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
         <!-- styles -->
-        <link rel="stylesheet" href="../css/responsivestyle.css" type="text/css">
+        <link rel="stylesheet" href="../css/tastestyle.css" type="text/css">
 
     </head>
     
     <body>
+
+
+    <!-- Drawer -->
+
+        <ul class="navigation">
+            <li class="nav-item">Essay</li>
+            <li class="nav-item scroll"><a href="/index.html">Why Do People Like Ugly Things?</a></li>
+            <li class="nav-item">Principles</li>
+            <li class="nav-item scroll"><a href="/whitespace">White Space is a Luxury Good</a></li>
+            <li class="nav-item scroll"><a href="/lowprice">Low Price, Big Type</a></li>
+            <li class="nav-item scroll"><a href="/moreismore">More is More</a></li>
+            <li class="nav-item">Elements</li>
+        </ul>
+
+
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger"></label>
         
-        <headline class="col-4 group"> 
-        <h1>White<br>Space is<br>a Luxury<br>Good</h1>
 
-        <div id="graphs">
+        <div class="site-wrap">
 
-            <h2>Percentage White Space<br>per Household Income Bracket</h2>
+        <nav>
 
-            <h3>$45,000 to $54,999</h3>
-            <div id="bracket3"></div>
+            <ul class="nav">
+                <li><span class="navtitle"><a class="scroll" href="#top">Essay</a></span></li>
+                <li><a class="scroll" href="/principles.html">Principles</a></li>
+                <li><a class="scroll" href="/elements.html">Elements</a></li>
+            </ul>
+        </nav>
 
-            <h3>$55,000 to $64,999</h3>
-            <div id="bracket4"></div>
-
-            <h3>$65,000 to $74,999</h3>
-            <div id="bracket5"></div>
-
-            <h3>$85,000 to $99,999</h3>
-            <div id="bracket7"></div>
-
-            <h3>$100,000 to $149,999</h3>
-            <div id="bracket9"></div>
-
-            <h4>Additional brackets will be shown as they <br>become available in the database.</h4>
-
-        </div>
-
-
-
-        </headline>
-
-
+        <div class="contentwrapper">
         
-        <div class="col-8 content group">
+            <headline class="col-4 group"> 
+            <h1>White<br>Space is<br>a Luxury<br>Good</h1>
 
-        
-        {{ content }}
+            <div id="graphs">
+
+                <h2>Percentage White Space<br>per Household Income Bracket</h2>
+
+                <h3>$45,000 to $54,999</h3>
+                <div id="bracket3"></div>
+
+                <h3>$55,000 to $64,999</h3>
+                <div id="bracket4"></div>
+
+                <h3>$65,000 to $74,999</h3>
+                <div id="bracket5"></div>
+
+                <h3>$85,000 to $99,999</h3>
+                <div id="bracket7"></div>
+
+                <h3>$100,000 to $149,999</h3>
+                <div id="bracket9"></div>
+
+                <h4>Additional brackets will be shown as they <br>become available in the database.</h4>
+
+            </div>
+
+
+
+            </headline>
+
+
             
-        </div>
+            <div class="col-7 content group">
 
-        
+            
+            {{ content }}
+                
+            </div>
+
+        </div>
     </body>
 
     <script type="text/javascript">

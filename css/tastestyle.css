@@ -9,6 +9,7 @@ html{
 body {
     margin-left: auto;
     margin-right: auto;
+    overflow-x: hidden;
         
 }
 
@@ -79,13 +80,12 @@ body {
         /* Critical position and size styles */
           min-height: 100%;
           min-width: 100%;
-          background-color: white;
+          background-color: white; /* Needs a background or else the nav will show through */
           position: relative;
           top: 0;
           bottom: 100%;
           left: 0;
           z-index: 1;
-          background-size: 200%;
         }
 
         /* Nav Trigger */
