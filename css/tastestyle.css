@@ -315,24 +315,31 @@ p {
     letter-spacing: .2em;
     text-transform: uppercase;
     text-align: left;
-    margin-bottom: -12px;
+    margin-bottom: .8em;
     color: #708D91 ;
         
 }
 
 .info p { 
-    color: #415557  ;
+    color: #415557;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    z-index: 100;
+    height: auto;
 }
 
-.info {
+ 
+
+.graphs p {
 
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 14px;
     z-index: 100;
     height: auto;
     
 } 
+
+
 
    
 
