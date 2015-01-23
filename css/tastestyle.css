@@ -183,6 +183,7 @@ body {
     position: absolute;
     opacity: 1;
     padding: 0;
+    z-index: 100;
 }
 
 .togglesvg{
