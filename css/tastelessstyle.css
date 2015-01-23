@@ -1,0 +1,534 @@
+* { box-sizing: border-box; } 
+
+
+html{
+      font-size: 14px;  /* this is the small size for mobile. larger size 16px, set in media query for min600px */
+}
+
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+        
+}
+
+.contentwrapper {
+    position: absolute;
+    left: 1em;
+    top: 4em;
+}
+
+/* Drawer */
+
+        /* Navigation Menu - Background */
+        .navigation {
+          /* critical sizing and position styles */
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 0;
+          
+          /* non-critical appearance styles */
+          list-style: none;
+          background: white;
+          font-family: Lato, sans-serif;
+          padding-left: 1em;
+          padding-top: 1em;
+          background-color: lightgray;
+        }
+
+        /* Navigation Menu - List items */
+        .nav-item {
+          /* non-critical appearance styles */
+            width: 175px;
+            display: block;
+            font-weight: 100;
+            font-size: .8em;
+            text-transform: uppercase;
+            letter-spacing: .15em;
+            margin-top: .75em;
+            margin-bottom: .25em;
+        }
+
+        .nav-item a {
+            display: block;
+            color: rgb(110, 110, 110);
+            text-decoration: none;
+            font-weight: 300;
+            text-transform: none;
+            margin-top: -.5em;
+            letter-spacing: 0;
+            font-size: 1.05em;
+        }
+        
+        .nav-item img {
+          max-height: 100%;
+          max-width: 100%;       
+          margin-left: -.5em;
+
+        }
+
+        .nav-item a:hover {
+        }
+
+        /* Site Wrapper - Everything that isn't navigation */
+        .site-wrap {
+        /* Critical position and size styles */
+          min-height: 100%;
+          min-width: 100%;
+          background-color: white; /* Needs a background or else the nav will show through */
+          position: fixed;
+          overflow: scroll;
+          top: 0;
+          bottom: 100%;
+          left: 0;
+          z-index: 1;
+        }
+
+        /* Nav Trigger */
+        .nav-trigger {
+          /* critical styles - hide the checkbox input */
+          position: absolute;
+          clip: rect(0, 0, 0, 0);
+        }
+
+        label[for="nav-trigger"] {
+          /* critical positioning styles */
+          position: fixed;
+          left: 15px; top: 15px;
+          z-index: 2;
+          /* non-critical apperance styles */
+          height: 15px;
+          width: 21px;
+          cursor: pointer;
+          background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+          background-size: contain;
+          fill: black;
+        }
+
+        /* Make the Magic Happen */
+        .nav-trigger + label, .site-wrap {
+            -webkit-transition: -webkit-transform 500ms ease;
+            -moz-transition: -moz-transform 500ms ease;
+            -o-transition: -o-transform 500ms ease;
+            transition: transform 500ms ease;
+        }
+
+        .nav-trigger:checked + label {
+            -webkit-transform: translateX(80vw) scale(1);
+            -moz-transform: translateX(80vw) scale(1);
+            -ms-transform: translateX(80vw) scale(1);
+            -o-transform: translateX(80vw) scale(1);
+            transform: translateX(80vw) scale(1);
+        }
+
+        .nav-trigger:checked ~ .site-wrap {
+            -webkit-transform: translateX(80vw) scale(1);
+            -moz-transform: translateX(80vw) scale(1);
+            -ms-transform: translateX(80vw) scale(1);
+            -o-transform: translateX(80vw) scale(1);
+            transform: translateX(80vw) scale(1);
+          box-shadow: 0 0 15px 2px rgba(0,0,0,0.3);
+        }
+
+        body {
+            /* Without this, the body has excess horizontal scroll when the menu is open */
+          overflow-x: hidden;
+        }
+
+        /* Additional non-critical styles */
+
+        code {
+            padding: 2px;
+            background: #ddd;
+        }
+
+        /* Micro reset */
+        *,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+        html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+
+        
+/* Heading */
+        nav  {
+            display: none;
+        }
+        
+        nav ul {
+            display: none;
+        }
+
+        nav ul li {
+            display: none;
+        }
+
+        nav a {
+            display: none;
+        }
+
+        nav   a:hover {
+            display: none;
+        }
+
+        nav .toggle .tasteless {
+            text-align: left;
+            height: 15px;
+        }
+
+.clear {
+  display: block;
+  clear:both;
+}
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+
+/*smallest size*/
+
+[class*='col-'] {
+    float: left;
+    padding: 0 10px;
+    display: block;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 { width: 100%;}
+
+
+.col:first-child { margin-left: 0; }
+
+
+
+headline {
+    
+    z-index: 50;
+    width: 30%;
+    margin-top: 0;
+
+}
+
+#graphs {
+
+    width: 100%;
+}
+
+p {
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: black;
+}
+
+headline h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 4em;
+    color: rgba(249, 0, 80, 1);
+    text-align: left;
+    border-bottom-color: rgba(249, 0, 80, 1);
+    border-bottom-width: .02em;
+    border-bottom-style: solid;
+    margin-bottom: -.5em;
+    display: inline;
+    
+}
+
+headline h2 {
+    font-family: "Playfair Display";
+    font-weight: 100;
+    font-size: 1.25em;
+    color: black;
+    text-align: left;
+    margin-top: 1.5em;
+    margin-bottom: 12px;
+}
+
+
+
+headline h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: -3px;
+    color: #708D91 ;
+
+}
+
+#graphs h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: -9px;
+    margin-top: 9px;
+    color: #708D91 ;
+
+}
+
+
+#graphs p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    z-index: 100;
+    height: auto;
+    font-size: .65em;
+    line-height: 1.5em;
+    padding-left: .3em;
+    color: white;
+} 
+
+
+
+[id*='bracket'] {
+    height: 15px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: rgba(249, 0, 80, 1);
+}
+
+
+.content {
+
+    height: auto; 
+
+}
+
+
+.info h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: .6em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #708D91;        
+}
+
+.info p { 
+    color: #415557;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    z-index: 100;
+    height: auto;
+    font-size: .8em;
+    line-height: 1.2em;
+    margin-bottom: .8em;
+}
+
+.imageContainer {
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.sliderContainer {
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.imageContainer img {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+}
+
+.overlayContainer {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+
+.overlayContainerPrice {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+
+
+.trans {
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+}
+        
+
+ object {
+    max-width: 100%;  
+    max-height: 100%;    
+    opacity: 0;
+}
+
+.overlayContainer object:hover, object.hover_effect {
+    opacity: 1;
+    background: black;
+    
+}
+
+.overlayContainerPrice object:hover, object.hover_effect {
+    opacity: 1;
+    
+}
+
+.hover {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;        
+}
+
+
+@media (min-width: 600px) {
+
+    html{
+      font-size: 16px;
+    }
+
+    #graphs {
+        width: 75%;
+    }
+
+    headline h1 {
+        font-size: 5vw;
+    }
+
+
+    .col-1  { width: calc( 100% / 12 * 1 );}
+    .col-2  { width: calc( 100% / 12 * 2 );}
+    .col-3  { width: calc( 100% / 12 * 3 );}
+    .col-4  { width: calc( 100% / 12 * 4 );}
+    .col-5  { width: calc( 100% / 12 * 5 );}
+    .col-6  { width: calc( 100% / 12 * 6 );}
+    .col-7  { width: calc( 100% / 12 * 7 );}
+    .col-8  { width: calc( 100% / 12 * 8 );}
+    .col-9  { width: calc( 100% / 12 * 9 );}
+    .col-10 { width: calc( 100% / 12 * 10 );}
+    .col-11 { width: calc( 100% / 12 * 11 );}
+    .col-12 { width: calc( 100% / 12 * 12 );}
+
+
+    /** offsets **/
+
+    .col-offset-1  { margin-left: calc( 100% / 12 * 1 );}
+    .col-offset-2  { margin-left: calc( 100% / 12 * 2 );}
+    .col-offset-3  { margin-left: calc( 100% / 12 * 3 );}
+    .col-offset-4  { margin-left: calc( 100% / 12 * 4 );}
+    .col-offset-5  { margin-left: calc( 100% / 12 * 5 );}
+    .col-offset-6  { margin-left: calc( 100% / 12 * 6 );}
+    .col-offset-7  { margin-left: calc( 100% / 12 * 7 );}
+    .col-offset-8  { margin-left: calc( 100% / 12 * 8 );}
+    .col-offset-9  { margin-left: calc( 100% / 12 * 9 );}
+    .col-offset-10 { margin-left: calc( 100% / 12 * 10 );}
+    .col-offset-11 { margin-left: calc( 100% / 12 * 11 );}
+    .col-offset-12 { margin-left: calc( 100% / 12 * 12 );}
+
+    /* Heading */
+
+        nav {
+            background: white;
+            opacity: .8;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: 100;
+            text-align: left;
+            display: block;
+            margin-left: 3.75em;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: "lato",sans-serif;
+            font-style: normal;
+            font-weight: 100;
+            font-size: .9em;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            color: black;
+            display: inline-block;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav a {
+            color: black;
+            display: block;
+            padding: 1.1em;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        nav   a:hover {
+            background: white;
+            color: rgba(249, 0, 80, 1);
+            display: block;
+        }
+
+        label[for="nav-trigger"] {
+          /* svg */
+          fill: white;
+        }
+
+        .contentwrapper {
+            top: 4em;
+            left: 4em;
+        }
+
+        .nav-trigger:checked + label {
+            -webkit-transform: translateX(20vw) scale(1);
+            -moz-transform: translateX(20vw) scale(1);
+            -ms-transform: translateX(20vw) scale(1);
+            -o-transform: translateX(20vw) scale(1);
+            transform: translateX(20vw) scale(1);
+        }
+
+        .nav-trigger:checked ~ .site-wrap {
+            -webkit-transform: translateX(20vw) scale(1);
+            -moz-transform: translateX(20vw) scale(1);
+            -ms-transform: translateX(20vw) scale(1);
+            -o-transform: translateX(20vw) scale(1);
+            transform: translateX(20vw) scale(1);
+          box-shadow: 0 0 15px 2px rgba(0,0,0,0.3);
+        }
+
+}

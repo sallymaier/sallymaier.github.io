@@ -19,6 +19,7 @@
         <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lakki+Reddy' rel='stylesheet' type='text/css'>
 
         <!-- styles -->
         <link rel="stylesheet" href="../css/tastestyle.css" type="text/css">
@@ -54,6 +55,9 @@
                 <li><a class="scroll" href="/principles.html">Principles</a></li>
                 <li><a class="scroll" href="/elements.html">Elements</a></li>
             </ul>
+            <a href="#" rel="../css/tastelessstyle.css"><object type="image/svg+xml" data="/img/icons/interupt.svg" class="toggle tasteless"></object></a>
+            <a href="#" rel="../css/tastestyle.css"><object type="image/svg+xml" data="/img/icons/interupt.svg" class="toggle taste"></object></a>        
+
         </nav>
 
         <div class="contentwrapper">
@@ -80,6 +84,17 @@
             
         </body>
 
+
+    <script>
+            //STYLE TOGGLE
+
+        $(document).ready(function() { 
+            $(".toggle").click(function() { 
+                $("link").attr("href",$(this).attr('rel'));
+                return false;
+            });
+        });
+    </script>
         
 
 </html>
