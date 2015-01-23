@@ -275,11 +275,13 @@ headline h1 {
     font-size: 4em;
     color: rgba(249, 0, 80, 1);
     text-align: left;
-    border-bottom-color: rgba(249, 0, 80, 1);
-    border-bottom-width: .02em;
-    border-bottom-style: solid;
-    margin-bottom: -.5em;
+    /* border-bottom-color: rgba(249, 0, 80, 1); */
+    /* border-bottom-width: .02em; */
+    /* border-bottom-style: solid; */
+    /* margin-bottom: -.5em; */
     display: inline;
+    line-height: 1em;
+    text-shadow: 1px 5px 8px lime;
     
 }
 
