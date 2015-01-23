@@ -181,7 +181,9 @@ body {
     right: 1.5em;
     top: .5em;
     position: absolute;
-    }
+    opacity: 1;
+    padding: 0;
+}
 
 .toggle .tasteless{
         display: inline-block;
@@ -512,7 +514,7 @@ headline h4 {
         nav   a:hover {
             background: white;
             color: rgba(249, 0, 80, 1);
-            display: block;
+            display: inline-block;
         }
 
         label[for="nav-trigger"] {
