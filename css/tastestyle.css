@@ -190,10 +190,10 @@ body {
     padding: 0;
 }
 
-.toggle .tasteless{
+.tasteless{
         display: inline-block;
     }
-.toggle .taste {
+.taste {
         display: none;
     }
 
