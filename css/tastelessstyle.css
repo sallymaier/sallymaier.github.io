@@ -13,33 +13,34 @@ body {
         
 }
 
-.contentwrapper {
+/*.contentwrapper {
     position: absolute;
     left: 1em;
     top: 4em;
-}
+}*/
 
 /* Drawer */
 
         /* Navigation Menu - Background */
         .navigation {
-          /* critical sizing and position styles */
-          width: 100%;
-          height: 100%;
-          position: fixed;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          z-index: 0;
-          
-          /* non-critical appearance styles */
-          list-style: none;
-          background: white;
-          font-family: Lato, sans-serif;
-          padding-left: 1em;
-          padding-top: 1em;
-          background-color: lightgray;
+            width: 20%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+            list-style: none;
+            /* background: white; */
+            font-family: serif;
+            padding-left: 1em;
+            padding-top: 1em;
+            background-color: white;
+            background: -webkit-linear-gradient(left, red , blue);
+            background: -o-linear-gradient(right, red, blue);
+            background: -moz-linear-gradient(right, red, blue);
+            background: linear-gradient(to right, silver , white, white, white, silver);
         }
 
         /* Navigation Menu - List items */
@@ -79,15 +80,15 @@ body {
         /* Site Wrapper - Everything that isn't navigation */
         .site-wrap {
         /* Critical position and size styles */
-          min-height: 100%;
-          min-width: 100%;
-          background-color: white; /* Needs a background or else the nav will show through */
-          position: fixed;
-          overflow: scroll;
-          top: 0;
-          bottom: 100%;
-          left: 0;
-          z-index: 1;
+            min-height: 100%;
+            min-width: 80%;
+            background-color: white;
+            position: fixed;
+            overflow: scroll;
+            top: 0;
+            bottom: 100%;
+            right: 0;
+            z-index: 1;
         }
 
         /* Nav Trigger */
@@ -442,7 +443,7 @@ headline h4 {
         width: 75%;
     }
 
-    headline h1 {
+/*    headline h1 {
         font-size: 5vw;
     }
 
@@ -463,7 +464,7 @@ headline h4 {
 
     /** offsets **/
 
-    .col-offset-1  { margin-left: calc( 100% / 12 * 1 );}
+/*    .col-offset-1  { margin-left: calc( 100% / 12 * 1 );}
     .col-offset-2  { margin-left: calc( 100% / 12 * 2 );}
     .col-offset-3  { margin-left: calc( 100% / 12 * 3 );}
     .col-offset-4  { margin-left: calc( 100% / 12 * 4 );}
@@ -474,7 +475,7 @@ headline h4 {
     .col-offset-9  { margin-left: calc( 100% / 12 * 9 );}
     .col-offset-10 { margin-left: calc( 100% / 12 * 10 );}
     .col-offset-11 { margin-left: calc( 100% / 12 * 11 );}
-    .col-offset-12 { margin-left: calc( 100% / 12 * 12 );}
+    .col-offset-12 { margin-left: calc( 100% / 12 * 12 );}*/
 
     /* Heading */
 
