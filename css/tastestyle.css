@@ -174,9 +174,10 @@ body {
             display: none;
         }
 
-        nav .toggle .tasteless {
+        nav a object .tasteless {
             text-align: left;
             height: 15px;
+            display: inline-block;
         }
 
 .clear {
