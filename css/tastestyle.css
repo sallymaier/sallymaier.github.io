@@ -174,11 +174,21 @@ body {
             display: none;
         }
 
-        nav a object .tasteless {
-            text-align: left;
-            height: 15px;
-            display: inline-block;
-        }
+.toggle {
+    width: 2em;
+    height: 2em;
+    text-align: right;
+    right: 1.5em;
+    top: .5em;
+    position: absolute;
+    }
+
+.toggle .tasteless{
+        display: inline-block;
+    }
+.toggle .taste {
+        display: none;
+    }
 
 .clear {
   display: block;
@@ -493,7 +503,7 @@ headline h4 {
 
         nav a {
             color: black;
-            display: block;
+            display: inline-block;
             padding: 1.1em;
             text-decoration: none;
             background-color: transparent;
