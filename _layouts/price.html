@@ -6,85 +6,232 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Low Price, Big Type</title>
-        <meta name="description" content="Low Price, Big Type">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <title>White Space is a Luxury Good</title>
+        <meta name="description" content="White Space is a Luxury Good">
+
         <!-- jquery -->
-        <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
 
         <!-- fonts -->
         <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
         <!-- styles -->
-        <link rel="stylesheet" href="/css/responsivestyle.css" type="text/css">
+        <link rel="stylesheet" href="../css/tastestyle.css" type="text/css">
 
     </head>
     
     <body>
+
+
+    <!-- Drawer -->
+
+        <ul class="navigation">
+            <li class="nav-item">Essay</li>
+            <li class="nav-item scroll"><a href="/index.html">Why Do People Like Ugly Things?</a></li>
+            <li class="nav-item">Principles</li>
+            <li class="nav-item scroll"><a href="/whitespace">White Space is a Luxury Good</a></li>
+            <li class="nav-item scroll"><a href="/lowprice">Low Price, Big Type</a></li>
+            <li class="nav-item scroll"><a href="/moreismore">More is More</a></li>
+            <li class="nav-item">Elements</li>
+        </ul>
+
+
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger"></label>
         
-        <headline class="col-4 group"> 
-        <h1>Low Price,<br>Big Type</h1>
+
+        <div class="site-wrap">
+
+        <nav>
+
+            <ul class="nav">
+                <li><span class="navtitle"><a class="scroll" href="#top">Essay</a></span></li>
+                <li><a class="scroll" href="/principles.html">Principles</a></li>
+                <li><a class="scroll" href="/elements.html">Elements</a></li>
+            </ul>
+        </nav>
+
+        <div class="contentwrapper">
         
-        <div id="graphs">
+            <headline class="col-4 group"> 
+            <h1>Low Price,<br>Big Type</h1>
 
-            <!-- <h2>Percentage White Space<br>per Household Income Bracket</h2>
+            <!-- <div id="graphs">
 
-            <h3>$45,000 to $54,999</h3>
-            <div id="bracket3"></div>
+                <h2>Percentage White Space<br>per Household Income Bracket</h2>
 
-            <h3>$55,000 to $64,999</h3>
-            <div id="bracket4"></div>
+                <h3>$45,000 to $54,999</h3>
+                <div id="bracket3"></div>
 
-            <h3>$65,000 to $74,999</h3>
-            <div id="bracket5"></div>
+                <h3>$55,000 to $64,999</h3>
+                <div id="bracket4"></div>
 
-            <h3>$85,000 to $99,999</h3>
-            <div id="bracket7"></div>
+                <h3>$65,000 to $74,999</h3>
+                <div id="bracket5"></div>
 
-            <h3>$100,000 to $149,999</h3>
-            <div id="bracket9"></div>
+                <h3>$85,000 to $99,999</h3>
+                <div id="bracket7"></div>
 
-            <h4>Additional brackets will be shown as they <br>become available in the database.</h4> -->
+                <h3>$100,000 to $149,999</h3>
+                <div id="bracket9"></div>
+
+                <h4>Additional brackets will be shown as they <br>become available in the database.</h4>
+
+            </div> -->
+
+
+
+            </headline>
+
+
+            
+            <div class="col-7 content group">
+
+            
+            {{ content }}
+                
+            </div>
 
         </div>
-
-
-        </headline>
-        
-        <div class="col-8 content group">
-
-        
-        {{ content }}
-            
-        </div>
-
-    <!-- <script>
-    //     $( document ).ready(function() {
-    //         // $(".imageContainer").each(function() {
-    //         //     console.log($(this).find('img').height()); // log out height of <img> in .imageContainer
-    //             // var imgContainer = ($(this).find('img').height()); // set imgContainer to height of <img> in .imageContainer
-    //             // console.log(imgContainer);
-
-            
-    //         $("imageContainer").css("height", $(this).find('img').height());
-
-        
-    //     });
-
-
-
-    //     // function getHeight( height ) 
-    //     //     $( ".imageContainer" ).click(function() {
-    //     //       getHeight( "paragraph", $( "p" ).height() );
-    //     //     });
-    //     //     $( "#getd" ).click(function() {
-    //     //       showHeight( "document", $( document ).height() );
-    //     //     });
-    //     //     $( "#getw" ).click(function() {
-    //     //       showHeight( "window", $( window ).height() );
-    //     //     });
-    // </script>    -->
-        
     </body>
+
+    <script type="text/javascript">
+
+    //for Income Bracket 3
+    $(document).ready(function() {
+        $ (function getData() {
+            $.getJSON( "https://spreadsheets.google.com/feeds/cells/1IYHFa9qc4WjFLWDI2wybud7xTWcHNRMzH1x4mlhTLyE/od6/public/values/R4C15?alt=json-in-script&callback=?",
+
+                function (data) {
+            
+                    console.log(data);
+                    console.log(data.entry.gs$cell.$t);
+
+                    var bracketThree = ((data.entry.gs$cell.$t) * 100).toFixed(0);
+                    console.log(bracketThree);
+
+                    $( document ).ready(function() {
+                    $( "#bracket3" ).width( bracketThree+"%" )});
+                    $('#bracket3').append('<p>' + bracketThree + '% </p>');
+
+                });
+        });
+    });
+    //end Income Bracket 3
+
+    //for Income Bracket 4
+    $(document).ready(function() {
+        $ (function getData() {
+            $.getJSON( "https://spreadsheets.google.com/feeds/cells/1IYHFa9qc4WjFLWDI2wybud7xTWcHNRMzH1x4mlhTLyE/od6/public/values/R4C16?alt=json-in-script&callback=?",
+
+                function (data) {
+        
+                    console.log(data);
+                    console.log(data.entry.gs$cell.$t);                        
+
+                    var bracketFour = ((data.entry.gs$cell.$t) * 100).toFixed(0);
+                    console.log(bracketFour);
+
+                    $( document ).ready(function() {
+                    $( "#bracket4" ).width( bracketFour+"%" )});
+                    $('#bracket4').append('<p>' + bracketFour + '% </p>');
+
+                });
+
+        });
+    });
+    //end Income Bracket 4
+
+    //for Income Bracket 5
+    $(document).ready(function() {
+        $ (function getData() {
+            $.getJSON( "https://spreadsheets.google.com/feeds/cells/1IYHFa9qc4WjFLWDI2wybud7xTWcHNRMzH1x4mlhTLyE/od6/public/values/R4C17?alt=json-in-script&callback=?",
+
+                function (data) {
+            
+                    console.log(data);
+                    console.log(data.entry.gs$cell.$t);
+                    
+                    var bracketFive = ((data.entry.gs$cell.$t) * 100).toFixed(0);
+                    console.log(bracketFive);
+
+                    $( document ).ready(function() {
+                    $( "#bracket5" ).width( bracketFive+"%" )});
+                    $('#bracket5').append('<p>' + bracketFive + '% </p>');
+                      
+                });
+
+        });
+    });
+    //end Income Bracket 5
+
+    //for Income Bracket 7
+    $(document).ready(function() {
+        $ (function getData() {
+            $.getJSON( "https://spreadsheets.google.com/feeds/cells/1IYHFa9qc4WjFLWDI2wybud7xTWcHNRMzH1x4mlhTLyE/od6/public/values/R4C19?alt=json-in-script&callback=?",
+
+                function (data) {
+            
+                    console.log(data);
+                    console.log(data.entry.gs$cell.$t);
+
+                    
+                    var bracketSeven = ((data.entry.gs$cell.$t) * 100).toFixed(0);
+                    console.log(bracketSeven);
+
+                    $( document ).ready(function() {
+                    $( "#bracket7" ).width( bracketSeven+"%" )});
+                    $('#bracket7').append('<p>' + bracketSeven + '% </p>');
+
+                });
+
+        });
+    });
+    //end Income Bracket 7
+
+    //for Income Bracket 9
+    $(document).ready(function() {
+        $ (function getData() {
+            $.getJSON( "https://spreadsheets.google.com/feeds/cells/1IYHFa9qc4WjFLWDI2wybud7xTWcHNRMzH1x4mlhTLyE/od6/public/values/R4C21?alt=json-in-script&callback=?",
+
+                function (data) {
+        
+                    console.log(data);
+                    console.log(data.entry.gs$cell.$t);                  
+
+                    var bracketNine = ((data.entry.gs$cell.$t) * 100).toFixed(0);
+                    console.log(bracketNine);
+
+                    $( document ).ready(function() {
+                    $( "#bracket9" ).width( bracketNine+"%" )});
+                    $('#bracket9').append('<p>' + bracketNine + '% </p>');          
+
+                });
+
+        });
+    });
+
+    //mobile friendly hover
+
+    $(document).ready(function() {
+    $('.overlayContainer').bind('touchstart touchend', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('hover_effect');
+    });
+    });
+
+    $(document).ready(function() {
+    $('.overlayContainerPrice').bind('touchstart touchend', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('hover_effect');
+    });
+    });
+
+</script>
+
 </html>

@@ -236,7 +236,12 @@ headline {
     width: 100%;
 }
 
-
+p {
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: black;
+}
 
 headline h1 {
     font-family: 'Playfair Display', serif;
@@ -262,18 +267,7 @@ headline h2 {
     margin-bottom: 12px;
 }
 
-headline h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 9px;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    text-align: left;
-    margin-bottom: -9px;
-    margin-top: 9px;
-    color: #708D91 ;
 
-}
 
 headline h4 {
     font-family: 'Lato', sans-serif;
@@ -286,12 +280,32 @@ headline h4 {
 
 }
 
-p {
-    font-family: 'Gentium Book Basic', serif;
-    font-weight: 400;
-    font-size: 1em;
-    color: black;
+#graphs h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: -9px;
+    margin-top: 9px;
+    color: #708D91 ;
+
 }
+
+
+#graphs p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    z-index: 100;
+    height: auto;
+    font-size: .65em;
+    line-height: 1.5em;
+    padding-left: .3em;
+    color: white;
+} 
+
+
 
 [id*='bracket'] {
     height: 15px;
@@ -311,13 +325,11 @@ p {
 .info h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: .7em;
+    font-size: .6em;
     letter-spacing: .2em;
     text-transform: uppercase;
     text-align: left;
-    margin-bottom: .8em;
-    color: #708D91 ;
-        
+    color: #708D91;        
 }
 
 .info p { 
@@ -327,24 +339,9 @@ p {
     z-index: 100;
     height: auto;
     font-size: .8em;
-
+    line-height: 1.2em;
+    margin-bottom: .8em;
 }
-
- 
-
-#graphs p {
-
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    z-index: 100;
-    height: auto;
-    
-} 
-
-
-
-   
-
 
 .imageContainer {
     position: relative;
