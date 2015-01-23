@@ -174,10 +174,28 @@ body {
             display: none;
         }
 
-        nav .toggle .tasteless {
-            text-align: left;
-            height: 15px;
-        }
+.toggle {
+    width: 2em;
+    height: 2em;
+    text-align: right;
+    right: 1.5em;
+    top: .5em;
+    position: absolute;
+    opacity: 1;
+    padding: 0;
+}
+
+.togglesvg{
+    opacity: 1;
+    padding: 0;
+}
+
+.tasteless{
+        display: none;
+    }
+.taste {
+        display: inline;
+    }
 
 .clear {
   display: block;
@@ -243,14 +261,14 @@ headline {
 }
 
 p {
-    font-family: 'Gentium Book Basic', serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-weight: 400;
     font-size: 1em;
     color: black;
 }
 
 headline h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lakki Reddy', cursive;
     font-weight: 700;
     font-size: 4em;
     color: rgba(249, 0, 80, 1);
@@ -264,7 +282,7 @@ headline h1 {
 }
 
 headline h2 {
-    font-family: "Playfair Display";
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-weight: 100;
     font-size: 1.25em;
     color: black;
@@ -276,7 +294,7 @@ headline h2 {
 
 
 headline h4 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-weight: 400;
     font-size: 9px;
     text-align: left;
@@ -287,7 +305,7 @@ headline h4 {
 }
 
 #graphs h3 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-weight: 700;
     font-size: 9px;
     letter-spacing: .2em;
@@ -301,7 +319,7 @@ headline h4 {
 
 
 #graphs p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-weight: 300;
     z-index: 100;
     height: auto;
@@ -329,7 +347,7 @@ headline h4 {
 
 
 .info h1 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-weight: 700;
     font-size: .6em;
     letter-spacing: .2em;
@@ -340,7 +358,7 @@ headline h4 {
 
 .info p { 
     color: #415557;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-weight: 300;
     z-index: 100;
     height: auto;
@@ -476,7 +494,7 @@ headline h4 {
             list-style: none;
             margin: 0;
             padding: 0;
-            font-family: "lato",sans-serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
             font-style: normal;
             font-weight: 100;
             font-size: .9em;
@@ -492,7 +510,7 @@ headline h4 {
 
         nav a {
             color: black;
-            display: block;
+            display: inline-block;
             padding: 1.1em;
             text-decoration: none;
             background-color: transparent;
@@ -501,7 +519,7 @@ headline h4 {
         nav   a:hover {
             background: white;
             color: rgba(249, 0, 80, 1);
-            display: block;
+            display: inline-block;
         }
 
         label[for="nav-trigger"] {
@@ -509,12 +527,12 @@ headline h4 {
           fill: white;
         }
 
-        .contentwrapper {
+/*        .contentwrapper {
             top: 4em;
             left: 4em;
-        }
+        }*/
 
-        .nav-trigger:checked + label {
+/*        .nav-trigger:checked + label {
             -webkit-transform: translateX(20vw) scale(1);
             -moz-transform: translateX(20vw) scale(1);
             -ms-transform: translateX(20vw) scale(1);
@@ -529,6 +547,6 @@ headline h4 {
             -o-transform: translateX(20vw) scale(1);
             transform: translateX(20vw) scale(1);
           box-shadow: 0 0 15px 2px rgba(0,0,0,0.3);
-        }
+        }*/
 
 }

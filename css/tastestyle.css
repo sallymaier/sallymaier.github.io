@@ -191,7 +191,7 @@ body {
 }
 
 .tasteless{
-        display: inline-block;
+        display: inline;
     }
 .taste {
         display: none;
