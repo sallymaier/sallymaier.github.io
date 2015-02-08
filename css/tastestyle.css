@@ -174,7 +174,11 @@ body {
             display: none;
         }
 
-        nav   a:hover {
+        nav a:hover {
+            display: none;
+        }
+
+        nav a.current  {
             display: none;
         }
 
@@ -208,22 +212,26 @@ body {
 }
 
 .section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
+    clear: both;
+    padding: 0px;
+    margin: 0px;
 }
 
 .group:before,
 .group:after {
-	content:"";
-	display:table;
+    content:"";
+    display:table;
 }
 .group:after {
-	clear:both;
+    clear:both;
 }
 .group {
     zoom:1; /* For IE 6/7 */
 }
+
+
+
+
 
 
 /*smallest size*/
@@ -350,6 +358,110 @@ headline h4 {
 
 }
 
+.content h2 {
+    font-family: "Playfair Display";
+    font-weight: 100;
+    font-size: 1.2em;
+    color: black;
+    /* text-align: center; */
+    margin-top: 1.2em;
+    display: inline-block;
+    margin-bottom: .5em;
+}
+
+.choice label {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    /* text-align: center; */
+    /* margin-top: 12px; */
+    /* margin-bottom: .5em; */
+    color: rgba(249, 0, 80, 1);
+    text-transform: uppercase;
+    /* text-align: center; */
+    /* display: inline-grid; */
+    letter-spacing: .05em;
+}
+
+/* RADIO BUTTONS */
+
+.choice input[type=checkbox]:not(old),
+.choice input[type=radio   ]:not(old){
+  width: 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size: 1em;
+  opacity   : 0;
+  /* text-align: center; */
+  /* margin-left: -2em; */
+  /* margin-right: auto; */
+}
+
+.choice input[type=checkbox]:not(old) + label,
+.choice input[type=radio   ]:not(old) + label{
+  display: block;
+  margin-left: -.7em;
+  line-height  : 1.5em;
+  /* margin-left: auto; */
+  /* text-align: center; */
+  /* margin-right: auto; */
+  /* display: block; */
+  margin-top: -1em;
+}
+
+.choice input[type=checkbox]:not(old) + label > span,
+.choice input[type=radio   ]:not(old) + label > span{
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    /* margin: .5em; */
+    border: 0.0625em solid lightgray;
+    border-radius: 1.25em;
+    /* text-align: center; */
+    margin-left: .5em;
+    /* margin-right: auto; */
+    margin-top: .5;
+}
+
+.choice input[type=checkbox]:not(old):checked + label > span,
+.choice input[type=radio   ]:not(old):checked + label > span{
+  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  /* background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240)); */
+  /* background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240)); */
+}
+
+.choice input[type=checkbox]:not(old):checked + label > span:before{
+  content     : '✓';
+  display     : block;
+  width       : 1em;
+  color       : rgb(153,204,102);
+  font-size   : 0.875em;
+  line-height : 1em;
+  text-align  : center;
+  text-shadow : 0 0 0.0714em rgb(115,153,77);
+  font-weight : bold;
+}
+
+.choice input[type=radio]:not(old):checked + label > span > span{
+  display          : block;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.049em;
+  /* margin-bottom: .05em; */
+  margin-left: .051em;
+  /* margin-right: .1em; */
+  /* border           : 0.0625em solid rgb(115,153,77); */
+  border-radius: 1em;
+  background: rgba(249, 0, 80, 1);
+  background-image :    -moz-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :     -ms-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :      -o-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  /* background-image : -webkit-linear-gradient(rgb(179,217,140),rgb(153,204,102)); */
+  /* background-image :         linear-gradient(rgb(179,217,140),rgb(153,204,102)); */
+}
+
 
 .info h1 {
     font-family: 'Lato', sans-serif;
@@ -384,9 +496,9 @@ headline h4 {
 
 .imageContainer img {
     position: relative;
-    width: 100%;
     max-width: 100%;
     z-index: 1;
+    max-height: 85vh;
 }
 
 .overlayContainer {
@@ -527,6 +639,12 @@ headline h4 {
             display: inline-block;
         }
 
+        nav a.current {
+            color: rgba(249, 0, 80, 1);
+            font-weight: 300;
+            display: inline-block;
+        }
+
         label[for="nav-trigger"] {
           /* svg */
           fill: white;
@@ -535,6 +653,7 @@ headline h4 {
         .contentwrapper {
             top: 4em;
             left: 4em;
+            width: calc(100% - 8em);
         }
 
         .nav-trigger:checked + label {

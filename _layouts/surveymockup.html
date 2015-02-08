@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>White Space is a Luxury Good</title>
-        <meta name="description" content="White Space is a Luxury Good">
+        <meta name="description" content="Participate">
 
         <!-- jquery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
@@ -38,7 +38,7 @@
             <li class="nav-item scroll"><a href="/whitespace">White Space is a Luxury Good</a></li>
             <li class="nav-item scroll"><a href="/price">Low Price, Big Type</a></li>
             <li class="nav-item scroll"><a href="/moreismore">More is More</a></li>
-            <li class="nav-item">Elements</li>
+            <li class="nav-item">Participate</li>
         </ul>
 
 
@@ -53,53 +53,94 @@
             <ul class="nav">
                 <li><span class="navtitle"><a class="scroll" href="/index.html">Essay</a></span></li>
                 <li><a class="scroll" href="/principles.html">Principles</a></li>
-                <li><a class="scroll" href="/elements.html">Elements</a></li>
+                <li><a class="scroll current" href="/elements.html">Participate</a></li>
             </ul>
 
         </nav>
 
         <div class="contentwrapper">
+
+            <headline class="col-4"> 
+                <h1>Survey</h1>
         
-            <headline class="col-4 group"> 
-            <h1>White Space is a Luxury Good</h1>
+                <div class="content">
 
-            <div id="graphs">
+                     <h2>Is this a value or a luxury product?</h2>
 
-                <h2>Percentage White Space<br>per Household Income Bracket</h2>
+                    <div class="col-4 choice">
+                        <input id="likeyes" type="radio" name="Like" value="yes">
+                        <label for="likeyes">Value<span><span></span></span></label>
 
-                <h3>$45,000 to $54,999</h3>
-                <div id="bracket3"></div>
+                    </div>
 
-                <h3>$55,000 to $64,999</h3>
-                <div id="bracket4"></div>
+                    <div class="col-4 choice">
+                        <input id="likeno" type="radio" name="Like" value="no">
+                        <label for="likeno">Luxury<span><span></span></span></label>
 
-                <h3>$65,000 to $74,999</h3>
-                <div id="bracket5"></div>
+                    </div>
 
-                <h3>$75,000 to $84,999</h3>
-                <div id="bracket6"></div>
+                    <h2>Do you feel that this ad is adressing you?</h2>
 
-                <h3>$85,000 to $99,999</h3>
-                <div id="bracket7"></div>
+                    <div class="col-4 choice">
+                        <input id="likeyes" type="radio" name="Like" value="yes">
+                        <label for="likeyes">Yes<span><span></span></span></label>
 
-                <h3>$100,000 to $149,999</h3>
-                <div id="bracket9"></div>
+                    </div>
 
-                <h4>Additional brackets will be shown as they <br>become available in the database.</h4>
+                    <div class="col-4 choice">
+                        <input id="likeno" type="radio" name="Like" value="no">
+                        <label for="likeno">No<span><span></span></span></label>
 
-            </div>
+                    </div>
 
+                    <h2>Is this a product you would purchase?</h2>
 
+                    <div class="col-4 choice">
+                        <input id="likeyes" type="radio" name="Like" value="yes">
+                        <label for="likeyes">Yes<span><span></span></span></label>
+
+                    </div>
+
+                    <div class="col-4 choice">
+                        <input id="likeno" type="radio" name="Like" value="no">
+                        <label for="likeno">No<span><span></span></span></label>
+
+                    </div>
+
+                    <h2>Does the ad design make you more or less likely to buy it?</h2>
+
+                    <div class="col-4 choice">
+                        <input id="likeyes" type="radio" name="Like" value="yes">
+                        <label for="likeyes">More<span><span></span></span></label>
+
+                    </div>
+
+                    <div class="col-4 choice">
+                        <input id="likeno" type="radio" name="Like" value="no">
+                        <label for="likeno">Less<span><span></span></span></label>
+
+                    </div>
+
+                    <h2>Do you like this ad?</h2>
+
+                    <div class="col-4 choice">
+                        <input id="likeyes" type="radio" name="Like" value="yes">
+                        <label for="likeyes">Yes<span><span></span></span></label>
+
+                    </div>
+
+                    <div class="col-4 choice">
+                        <input id="likeno" type="radio" name="Like" value="no">
+                        <label for="likeno">No<span><span></span></span></label>
+
+                    </div>
+
+                </div>
 
             </headline>
+    
 
-
-            
-            <div class="col-7 content group">
-
-            
-            {{ content }}
-                
+            <div class="imageContainer col-7"><img src="../img/survey/mod/watch1.jpg">
             </div>
 
         </div>
@@ -174,30 +215,6 @@
         });
     });
     //end Income Bracket 5
-
-
-    //for Income Bracket 6
-    $(document).ready(function() {
-        $ (function getData() {
-            $.getJSON( "https://spreadsheets.google.com/feeds/cells/1IYHFa9qc4WjFLWDI2wybud7xTWcHNRMzH1x4mlhTLyE/od6/public/values/R4C18?alt=json-in-script&callback=?",
-
-                function (data) {
-            
-                    console.log(data);
-                    console.log(data.entry.gs$cell.$t);
-                    
-                    var bracketSix = ((data.entry.gs$cell.$t) * 100).toFixed(0);
-                    console.log(bracketSix);
-
-                    $( document ).ready(function() {
-                    $( "#bracket5" ).width( bracketSix+"%" )});
-                    $('#bracket5').append('<p>' + bracketSix + '% </p>');
-                      
-                });
-
-        });
-    });
-    //end Income Bracket 6
 
     //for Income Bracket 7
     $(document).ready(function() {

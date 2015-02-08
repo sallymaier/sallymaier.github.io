@@ -83,11 +83,9 @@ body {
         /* Site Wrapper - Everything that isn't navigation */
         .site-wrap {
         /* Critical position and size styles */
-            min-height: 100%;
             width: 80%;
             background-color: white;
             position: fixed;
-            overflow: scroll;
             top: 3em;
             bottom: 100%;
             right: 0;
