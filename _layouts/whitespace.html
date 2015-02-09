@@ -91,10 +91,10 @@
 
             <div id="tags">
                 <ul class="tag-box inline">
-                    {% assign tags_list = site.layouttype %}  
+                    {% assign tags_list = site.categories %}  
                       {% if tags_list.first[0] == null %}
                         {% for tag in tags_list %} 
-                          <li><a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.layouttype[tag].size }}</span></a></li>
+                          <li><a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li>
                         {% endfor %}
                       {% else %}
                         {% for tag in tags_list %} 
@@ -104,7 +104,7 @@
                     {% assign tags_list = nil %}
                     </ul>
 
-                    <!-- {% for tag in site.categories %} 
+                    {% for tag in site.categories %} 
                       <h2 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h2>
                       <ul class="post-list">
                         {% assign pages_list = tag[1] %}  
@@ -118,7 +118,7 @@
                         {% assign pages_list = nil %}
                         {% assign group = nil %}
                       </ul>
-                    {% endfor %} -->
+                    {% endfor %}
             </div>
 
 
