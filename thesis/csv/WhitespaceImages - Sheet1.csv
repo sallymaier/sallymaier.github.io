@@ -1,0 +1,28 @@
+png,overlay,publication,hhi,bracket,percentwhite,pages,type,topic
+womansworld_toc.png,womansworld_toc_Overlay.png,Woman's World,"$50,192",1,24,single,table of contents,lifestyle
+womansworld_recipes.png,womansworld_recipes_Overlay.png,Woman's World,"$50,192",1,13,single,food,food
+WWleopard.png,WWleopard_Overlay.png,Woman's World,"$50,192",1,16,spread,review,fashion
+PeopleTOC2.png,PeopleTOC2_Overlay.png,People,"$69,050",1,21,single,table of contents,lifestyle
+PeopleFeature.png,PeopleFeature_Overlay.png,People,"$69,050",1,15,spread,feature,lifestyle
+PeopleReview.png,PeopleReview_Overlay.png,People,"$69,050",1,30,single,review,fashion
+Time_TOC.png,Time_TOC_Overlay.png,Time,"$70,682",1,54,single,table of contents,news
+TimeReview.png,TimeReview_Overlay.png,Time,"$70,682",1,47,single,review,tech
+Timebriefing.png,Timebriefing_Overlay.png,Time,"$70,682",1,38,spread,feature,news
+WiredTOC.png,WiredTOC_Overlay.png,Wired,"$91,083",2,57,single,table of contents,tech
+WiredReview.png,WiredReview_Overlay.png,Wired,"$91,083",2,66,single,review,tech
+WIRED_Feature.png,WIRED_Feature_Overlay.png,Wired,"$91,083",2,41,single,feature,tech
+BonAppTOC.png,BonAppTOC_Overlay.png,Bon Appetit,"$92,951",2,65,single,table of contents,food
+BonAppSpread.png,BonAppSpread_Overlay.png,Bon Appetit,"$92,951",2,43,spread,food,food
+BonAppReview.png,BonAppReview_Overlay.png,Bon Appetit,"$92,951",2,39,single,review,food
+RealSimple_Contents1.png,RealSimple_Contents1_Overlay.png,Real Simple,"$97,026",2,55,single,table of contents,lifestyle
+RealSimpleProducts.png,RealSimpleProducts_Overlay.png,Real Simple,"$97,026",2,56,single,review,lifestyle
+RealSimple_FoodFeature.png,RealSimple_FoodFeature_Overlay.png,Real Simple,"$97,026",2,63,spread,food,food
+NewYorker_TOC.png,NewYorker_TOC_Overlay.png,New Yorker,"$112,394",2,86,single,table of contents,writing
+NewYorkerFiction.png,NewYorkerFiction_Overlay.png,New Yorker,"$112,394",2,22,spread,feature,fiction
+NewYorkerReview.png,NewYorkerReview_Overlay.png,New Yorker,"$112,394",2,34,single,review,writing
+WallpaperTOC.png,WallpaperTOC_Overlay.png,Wallpaper,"$131,779",3,66,single,table of contents,lifestyle
+WallpaperFeatureSpread.png,WallpaperFeatureSpread_Overlay.png,Wallpaper,"$131,779",3,21,spread,feature,lifestyle
+WallpaperReview.png,WallpaperReview_Overlay.png,Wallpaper,"$131,779",3,66,single,review,lifestyle
+NYTTOC-1.png,NYTTOC-1_Overlay.png,New York Times Magazine,"$175,968",3,70,single,table of contents,news
+NYTFeature.png,NYTFeature_Overlay.png,New York Times Magazine,"$175,968",3,80,spread,feature,news
+NYTReview.png,NYTReview_Overlay.png,New York Times Magazine,"$175,968",3,35,single,review,food

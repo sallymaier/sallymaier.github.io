@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Dissection</title>
+
+
+    
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/mfa2014.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".mainnav" data-offset="160">
+
+    <nav class="navbar navbar-default navbar-fixed-top visible-xs" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gs-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#"><img src="img/apple-touch-icon-72x72.png" /></a> <!-- make this take you back to the top of the page... -->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="gs-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#schedule">Process</a></li>
+            <li><a href="#galleries">Analysis</a></li>
+
+            <li>
+              <a href="#students">Students</a>
+              <ul>
+                
+
+                <li><a href="#" class="sort-dissections" data-type="all">All Dissections</a></li>
+
+                <li>
+                  <span>Publication</span>
+                  <script id="students-template" type="text/x-mustache-template">
+                    {{#publication}}
+                      <ul class="" id="pub-filter">
+                        <li><a href="#" data-pub="{{publication}}">{{publication}}</a></li>
+                      </ul>
+                </li>
+              //   <li>
+              //     <span>Gallery</span>
+              //     <ul class="" id="gallery-filter">
+              //       <li><a href="#" data-gallery="D center">D Center</a></li>
+              //       <li><a href="#" data-gallery="Decker">Decker</a></li>
+              //       <li><a href="#" data-gallery="Fox">Fox 3</a></li>
+              //       <li><a href="#" data-gallery="Meyerhoff">Meyerhoff</a></li>
+              //       <li><a href="#" data-gallery="Pinkard">Pinkard</a></li>
+              //       <li><a href="#" data-gallery="Studio Center Galleries">Studio Center Galleries</a></li>
+              //       <li><a href="#" data-gallery="Off Campus">Off Campus</a></li>
+              //     </ul>
+              //   </li>
+              //   <li>
+              //     <span>Show Date</span>
+              //     <ul class="" id="showdate-filter">
+              //       <li><a href="#" data-showdate="Jan 24-Feb 16, 2014">Jan 24-Feb 16, 2014</a></li>
+              //       <li><a href="#" data-showdate="Jan 31-Feb 16, 2014">Jan 31-Feb 16, 2014</a></li>
+              //       <li><a href="#" data-showdate="Feb 01-May 09, 2014">Feb 01-May 09, 2014</a></li>
+              //       <li><a href="#" data-showdate="Mar 28-Apr 06, 2014">Mar 28-Apr 06, 2014</a></li>
+              //       <li><a href="#" data-showdate="Apr 11-Apr 20, 2014">Apr 11-Apr 20, 2014</a></li>
+              //       <li><a href="#" data-showdate="Apr 23-May 04, 2014">Apr 23-May 04, 2014</a></li>
+              //       <li><a href="#" data-showdate="Apr 25-May 04, 2014">Apr 25-May 04, 2014</a></li>
+              //       <li><a href="criticalstudies.html">May 03, 2014</a></li>
+              //       <li><a href="#" data-showdate="Jun 28-Jul 12, 2014">Jun 28-Jul 12, 2014</a></li>
+              //       <li><a href="#" data-showdate="Jul 29-Aug 1, 2014">Jul 29-Aug 1, 2014</a></li>
+              //     </ul>
+              //   </li>
+              //   <li><a href="pdf/MICA_GRADSHOW_catalogueweb_2014.pdf">Catalog PDF <span class="glyphicon glyphicon-download"></span></a></li>
+              // </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>

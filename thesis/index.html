@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="CAPE.io 2.x">
+    <title>MICA Grad Show 2014</title>
+
+
+    <!--
+    Y                   T             5       X           0       I         0           H
+        S       H   J     8      ]               8      D               T           W
+             M            Y            M  I  C  A               ]              P
+    U             O            U        ----------    0               M     T        I
+           2            J   Y        0    G  R  A  D      I     5      S         Y
+      I       9    H            ]        ----------                         H          7
+    3       H              E           S  H  O  W      D    E    4      O           E
+        F              8     5        ----------                    ]           I      U
+                    Y              G      2  0  1  4         D              R
+      O      Q          U                 ----------    F          G   P            Y   9
+                 6       N       [     E         W              G             2
+    P    X          F                K       J              F      J     Y      5       L
+    -->
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/mfa2014.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons-->
+  	<link rel="shortcut icon" href="img/favicon.ico">
+  	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".mainnav" data-offset="160">
+
+    <nav class="navbar navbar-default navbar-fixed-top visible-xs" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gs-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#"><img src="img/apple-touch-icon-72x72.png" /></a> <!-- make this take you back to the top of the page... -->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="gs-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#intro">Welcome</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#galleries">Galleries</a></li>
+
+            <li>
+              <a href="#students">Students</a>
+              <ul>
+                <li>
+                  <div class="input-group">
+                    <input id="search-students" type="text" class="form-control" placeholder="Search by Name">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                  </div><!-- /input-group -->
+                </li> <!-- Here's to hoping. -->
+
+                <li><a href="#" class="sort-studentlist" data-type="all">All Students</a></li>
+
+                <li>
+                  <span>Program</span>
+                  <ul class="" id="program-filter">
+                    <li><a href="#" data-program="Art Education MA">Art Education MA</a></li>
+                    <li><a href="#" data-program="Community Arts MFA">Community Arts MFA</a></li>
+                    <li><a href="criticalstudies.html">Critical Studies MA</a></li>
+                    <li><a href="#" data-program="Curatorial Practice MFA">Curatorial Practice MFA</a></li>
+                    <li><a href="#" data-program="Graphic Design MFA">Graphic Design MFA</a></li>
+                    <li><a href="#" data-program="Illustration Practice MFA">Illustration Practice MFA</a></li>
+                    <li><a href="#" data-program="Leroy E. Hoffberger School of Painting MFA">Leroy E. Hoffberger School of Painting MFA</a></li>
+                    <li><a href="#" data-program="Mount Royal School of Art MFA">Mount Royal School of Art MFA</a></li>
+                    <li><a href="#" data-program="Photographic & Electronic Media MFA">Photographic & Electronic Media MFA</a></li>
+                    <li><a href="#" data-program="Post-Baccalaureate Fine Art">Post-Baccalaureate Fine Arts</a></li>
+                    <li><a href="#" data-program="Post-Baccalaureate Graphic Design">Post-Baccalaureate Graphic Design</a></li>
+                    <li><a href="#" data-program="Rinehart School of Sculpture MFA">Rinehart School of Sculpture MFA</a></li>
+                    <li><a href="#" data-program="Social Design MA">Social Design MA</a></li>
+                    <li><a href="#" data-program="Studio Art MFA">Studio Art MFA</a></li>
+                    <li><a href="#" data-program="Teaching MA">Teaching MA</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Gallery</span>
+                  <ul class="" id="gallery-filter">
+                    <li><a href="#" data-gallery="D center">D Center</a></li>
+                    <li><a href="#" data-gallery="Decker">Decker</a></li>
+                    <li><a href="#" data-gallery="Fox">Fox 3</a></li>
+                    <li><a href="#" data-gallery="Meyerhoff">Meyerhoff</a></li>
+                    <li><a href="#" data-gallery="Pinkard">Pinkard</a></li>
+                    <li><a href="#" data-gallery="Studio Center Galleries">Studio Center Galleries</a></li>
+                    <li><a href="#" data-gallery="Off Campus">Off Campus</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Show Date</span>
+                  <ul class="" id="showdate-filter">
+                    <li><a href="#" data-showdate="Jan 24-Feb 16, 2014">Jan 24-Feb 16, 2014</a></li>
+                    <li><a href="#" data-showdate="Jan 31-Feb 16, 2014">Jan 31-Feb 16, 2014</a></li>
+                    <li><a href="#" data-showdate="Feb 01-May 09, 2014">Feb 01-May 09, 2014</a></li>
+                    <li><a href="#" data-showdate="Mar 28-Apr 06, 2014">Mar 28-Apr 06, 2014</a></li>
+                    <li><a href="#" data-showdate="Apr 11-Apr 20, 2014">Apr 11-Apr 20, 2014</a></li>
+                    <li><a href="#" data-showdate="Apr 23-May 04, 2014">Apr 23-May 04, 2014</a></li>
+                    <li><a href="#" data-showdate="Apr 25-May 04, 2014">Apr 25-May 04, 2014</a></li>
+                    <li><a href="criticalstudies.html">May 03, 2014</a></li>
+                    <li><a href="#" data-showdate="Jun 28-Jul 12, 2014">Jun 28-Jul 12, 2014</a></li>
+                    <li><a href="#" data-showdate="Jul 29-Aug 1, 2014">Jul 29-Aug 1, 2014</a></li>
+                  </ul>
+                </li>
+                <li><a href="pdf/MICA_GRADSHOW_catalogueweb_2014.pdf">Catalog PDF <span class="glyphicon glyphicon-download"></span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <header class="text-center">
+      <img src="img/headers/id0445714.jpg" class="backgroundfill">
+      <img src="img/headers/id0516545_2.jpg" class="backgroundfill">
+      <img src="img/headers/id0479534.jpg" class="backgroundfill">
+      <img src="img/headers/id0495100-1.jpg" class="backgroundfill">
+      <img src="img/headers/id519216.jpg" class="backgroundfill">
+      <img src="img/headers/id0495100.jpg" class="backgroundfill">
+      <img src="img/headers/id0495403-1.jpg" class="backgroundfill">
+      <img src="img/headers/id0513690.jpg" class="backgroundfill">
+      <img src="img/headers/id0514534.jpg" class="backgroundfill">
+      <img src="img/headers/id0516358.jpg" class="backgroundfill">
+      <img src="img/headers/hong_wei.jpg" class="backgroundfill">
+      <img src="img/headers/id0516545.jpg" class="backgroundfill">
+      <img src="img/headers/id0518670.jpg" class="backgroundfill">
+      <img src="img/headers/id0518979.jpg" class="backgroundfill">
+      <img src="img/headers/id0519030.jpg" class="backgroundfill">
+      <div class="ontop">
+        <h1 style="display:none;">MICA Grad Show 2014</h1>
+        <img src="img/header_pattern.png" class="pattern" />
+      </div>
+    </header>
+
+    <main class="container" style="padding-top: 40px;">
+      <div class="row">
+
+        <div class="col-sm-2">
+          <nav class="mainnav hidden-xs" data-spy="affix" data-offset-top="399" data-offset-bottom="320">
+            <ul class="nav nav-stacked nav-pills">
+              <li><a href="#intro">Welcome</a></li>
+              <li><a href="#schedule">Schedule</a></li>
+              <li><a href="#galleries">Galleries</a></li>
+              <li><a href="#students">Students </a>
+                <ul> <!-- this submenu only shows up when in students area -->
+                  <li>
+                    <div class="input-group">
+                      <input id="search-students" type="text" class="form-control" placeholder="Search by Name">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                  </li> <!-- Here's to hoping. -->
+                  <li><a href="#" class="sort-studentlist" data-type="all">All Students</a></li>
+                  <li>
+                    <div class="btn-group dropup">
+                      <button type="button" data-type="gallery" class="btn btn-default dropdown-toggle sort-studentlist" data-toggle="dropdown">
+                        <a href="#">Program </a><span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" id="program-filter">
+                        <li><a href="#" data-program="Art Education MA">Art Education MA</a></li>
+                        <li><a href="#" data-program="Community Arts MFA">Community Arts MFA</a></li>
+                        <li><a href="criticalstudies.html">Critical Studies MA</a></li>
+                        <li><a href="#" data-program="Curatorial Practice MFA">Curatorial Practice MFA</a></li>
+                        <li><a href="#" data-program="Graphic Design MFA">Graphic Design MFA</a></li>
+                        <li><a href="#" data-program="Illustration Practice MFA">Illustration Practice MFA</a></li>
+                        <li><a href="#" data-program="Leroy E. Hoffberger School of Painting MFA">Leroy E. Hoffberger School of Painting MFA</a></li>
+                        <li><a href="#" data-program="Mount Royal School of Art MFA">Mount Royal School of Art MFA</a></li>
+                        <li><a href="#" data-program="Photographic & Electronic Media MFA">Photographic & Electronic Media MFA</a></li>
+                        <li><a href="#" data-program="Post-Baccalaureate Fine Art">Post-Baccalaureate Fine Arts</a></li>
+                        <li><a href="#" data-program="Post-Baccalaureate Graphic Design">Post-Baccalaureate Graphic Design</a></li>
+                        <li><a href="#" data-program="Rinehart School of Sculpture MFA">Rinehart School of Sculpture MFA</a></li>
+                        <li><a href="#" data-program="Social Design MA">Social Design MA</a></li>
+                        <li><a href="#" data-program="Studio Art MFA">Studio Art MFA</a></li>
+                        <li><a href="#" data-program="Teaching MA">Teaching MA</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="btn-group dropup">
+                      <button type="button" data-type="gallery" class="btn btn-default dropdown-toggle sort-studentlist" data-toggle="dropdown">
+                        <a href="#">Gallery </a><span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" id="gallery-filter">
+                        <li><a href="#" data-gallery="D center">D Center</a></li>
+                        <li><a href="#" data-gallery="Decker">Decker</a></li>
+                        <li><a href="#" data-gallery="Fox">Fox 3</a></li>
+                        <li><a href="#" data-gallery="Meyerhoff">Meyerhoff</a></li>
+                        <li><a href="#" data-gallery="Pinkard">Pinkard</a></li>
+                        <li><a href="#" data-gallery="Studio Center Galleries">Studio Center Galleries</a></li>
+                        <li><a href="#" data-gallery="Off Campus">Off Campus</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="btn-group dropup">
+                      <button type="button" data-type="gallery" class="btn btn-default dropdown-toggle sort-studentlist" data-toggle="dropdown">
+                        <a href="#">Show Date </a><span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" id="showdate-filter">
+                        <li><a href="#" data-showdate="Jan 24-Feb 16, 2014">Jan 24-Feb 16, 2014</a></li>
+                        <li><a href="#" data-showdate="Jan 31-Feb 16, 2014">Jan 31-Feb 16, 2014</a></li>
+                        <li><a href="#" data-showdate="Feb 01-May 09, 2014">Feb 01-May 09, 2014</a></li>
+                        <li><a href="#" data-showdate="Mar 28-Apr 06, 2014">Mar 28-Apr 06, 2014</a></li>
+                        <li><a href="#" data-showdate="Apr 11-Apr 20, 2014">Apr 11-Apr 20, 2014</a></li>
+                        <li><a href="#" data-showdate="Apr 23-May 04, 2014">Apr 23-May 04, 2014</a></li>
+                        <li><a href="#" data-showdate="Apr 25-May 04, 2014">Apr 25-May 04, 2014</a></li>
+                        <li><a href="criticalstudies.html">May 03, 2014</a></li>
+                        <li><a href="#" data-showdate="Jun 28-Jul 12, 2014">Jun 28-Jul 12, 2014</a></li>
+                        <li><a href="#" data-showdate="Jul 29-Aug 1, 2014">Jul 29-Aug 1, 2014</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="pdf/MICA_GRADSHOW_catalogueweb_2014.pdf">Catalog PDF <span class="glyphicon glyphicon-download"></span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-1">
+
+          <article id="intro">
+            <div class="row">
+              <div class="col-sm-12 col-md-10">
+                <p class="lead">The Graduate Exhibition Season 2014 presents work to the MICA community and the public from January 24 &ndash; May 4 and resumes June 26 &ndash; August 1. The season includes MFA, MA and post-baccalaureate exhibitions and critiques, gallery talks and presentations, public programs, a symposium, and student curated installations throughout the city.</p>
+                <p class="lead">The Graduate Exhibition Season showcases the achievements of MICA&rsquo;s graduate students&mdash;a diverse group of artists, designers, educators, scholars, and curators. It offers the campus community and the general public opportunities to engage with and contribute to the creative process at MICA.</p>
+              </div>
+            </div>
+          </article>
+
+          <article id="schedule">
+            <h1>Schedule of Events</h1>
+            <ul>
+              <!-- teaching ma -->
+              <li class="row showtime" data-showdate="Jan 24-Feb 16, 2014">
+                <div class="col-sm-4 text-right">
+                  <h3><date>Jan 24</date>&ndash;<date>Feb 16, 2014</date></h3>
+                  <p class="small red">Reception: January 24, 5&ndash;7pm</p>
+                </div>
+                <div class="col-sm-8">
+                  <p class="lead">Teaching MA</p>
+                </div>
+              </li>
+              <!-- post-bacc fine art -->
+              <li class="row showtime active" data-showdate="Jan 31-Feb 16, 2014">
+                <div class="col-sm-4 text-right">
+                  <h3><date>Jan 31</date>&ndash;<date>Feb 16, 2014</date></h3>
+                  <p class="small red">Reception: January 31, 5&ndash;7pm</p>
+                </div>
+                <div class="col-sm-8">
+                  <p class="lead">Post-Baccalaureate Fine Art</p>
+                </div>
+              </li>
+              <!-- curatorial practice -->
+              <li class="row showtime" data-showdate="Feb 01-May 09, 2014">
+                <div class="col-sm-4 text-right">
+                  <h3><date>Feb 01</date>&ndash;<date>May 09, 2014</date></h3>
+                  <p class="small red">Receptions throughout the semester</p>
+                </div>
+                <div class="col-sm-8">
+                  <p class="lead">Curatorial Practice MFA</p>
+                  <p class="small">Curatorial Students take over individual galleries all across Baltimore from February to May. <a href="http://www.micacuratorial.org/class-2014.html" target="_blank">Details »</a></p>
+                </div>
+              </li>
+
+              <!-- -->
+              <li class="row showtime active" data-showdate="Mar 28-Apr 06, 2014">
+                <div class="col-sm-4 text-right">
+                  <h3><date>Mar 28</date>&ndash;<date>Apr 06, 2014</date></h3>
+                  <p class="small red">Reception: March 28, 5&ndash;8pm</p>
+                </div>
+                <div class="col-sm-8">
+                  <p class="lead">Illustration Practice MFA</p>
+                  <p class="lead">Graphic Design MFA</p>
+                  <p class="lead">Post-Baccalaureate Graphic Design</p>
+                </div>
+              </li>
+
+              <!-- -->
+              <li class="row showtime active" data-showdate="Apr 11-Apr 20, 2014">
+                <div class="col-sm-4 text-right">
+                  <h3><date>Apr 11</date>&ndash;<date>Apr 20, 2014</date></h3>
+                  <p class="small red">Reception: April 11, 5&ndash;8pm</p>
+                </div>
+                <div class="col-sm-8">
+                  <p class="lead">Community Arts MFA</p>
+                  <p class="lead">Photographic & Electronic Media MFA</p>
+                  <p class="lead">Rinehart School of Sculpture MFA</p>
+                </div>
+              </li>
+
+              <!-- -->
+              <li class="row showtime active" data-showdate="Apr 23-May 04, 2014">
+                <div class="col-sm-4 text-right">
+                  <h3><date>Apr 23</date>&ndash;<date>May 04, 2014</date></h3>
+                  <p class="small red">Reception: May 02, 5&ndash;8pm</p>
+                </div>
+                <div class="col-sm-8">
+                  <p class="lead">Social Design MA</p>
+                </div>
+              </li>
+
+              <!-- -->
+              <li class="row showtime active" data-showdate="Apr 25-May 04, 2014">
+                <div class="col-sm-4 text-right">
+                  <h3><date>Apr 25</date>&ndash;<date>May 04, 2014</date></h3>
+                  <p class="small red">Reception: May 02, 5&ndash;8pm</p>
+                </div>
+                <div class="col-sm-8">
+                  <p class="lead">LeRoy E. Hoffberger School of Painting MFA</p>
+                  <p class="lead">Mount Royal School of Art MFA</p>
+                </div>
+              </li>
+
+              <!-- -->
+              <li class="row showtime" data-showdate="May 03, 2014">
+                <div class="col-sm-4 text-right">
+                  <h3><date>May 03, 2014</date></h3>
+                  <p class="small red">Symposium: 10:30am&ndash;4:30pm</a></p>
+                </div>
+                <div class="col-sm-8">
+                  <p class="lead"><a href="criticalstudies.html">Critical Studies MA</a></p>
+                  <p class="small">Students present their thesis work in a symposium at the <a href="https://www.google.com/maps/dir//Walters+Art+Museum,+600+N+Charles+St,+Baltimore,+MD+21201/@39.2965947,-76.6161201,17z/data=!4m13!1m4!3m3!1s0x89c80498448ab285:0xd5ddcac9d0faa540!2sWalters+Art+Museum!3b1!4m7!1m0!1m5!1m1!1s0x89c80498448ab285:0xd5ddcac9d0faa540!2m2!1d-76.61612!2d39.296595" target="_blank">Walters Art Museum</a></p>
+                </div>
+              </li>
+
+              <!-- -->
+              <li class="row showtime" data-showdate="Jun 28-Jul 12, 2014">
+                <div class="col-sm-4 text-right">
+                  <h3><date>Jun 28</date>&ndash;<date>Jul 12, 2014</date></h3>
+                  <p class="small red">Reception: June 28, 6&ndash;8p</p>
+                </div>
+                <div class="col-sm-8">
+                  <p class="lead">Studio Art MFA</p>
+                </div>
+              </li>
+
+              <!-- -->
+              <li class="row showtime" data-showdate="Jul 29-Aug 1, 2014">
+                <div class="col-sm-4 text-right">
+                  <h3><date>Jul 29</date>&ndash;<date>Aug 01, 2014</date></h3>
+                </div>
+                <div class="col-sm-8">
+                  <p class="lead">Art Education MA</p>
+                </div>
+              </li>
+
+            </ul>
+          </article>
+
+          <article id="galleries">
+            <h1>Participating Galleries</h1>
+            <p>Programs are spread across galleries; see student pages for individual locations. <a href="pdf/gradshow_2014_map.pdf" target="_blank">Download Map</a></p>
+            <section class="row">
+             <div class="col-xs-12 col-sm-8 col-md-9">
+                <img class="map" src="img/gradshow_2014_map.jpg" />
+              </div>
+              <div  class="col-xs-12 col-sm-4 col-md-3">
+                <div id="galleries-data">
+                  <ul data-gallery="Pinkard">
+                    <li><h4><span class="black">1&nbsp;</span> Bunting Center</h4></li>
+                    <li><h5>Pinkard Gallery</h5></li>
+                    <li><p>1305 W. Mt. Royal Ave. <br/>Baltimore, MD 21217</p></li>
+                    <li><p><a target="_blank" href="https://www.google.com/maps/place/Bunting+Building/@39.3080133,-76.621262,18z/data=!4m2!3m1!1s0x0:0x6541b717da384fd8">Get Directions</a></p></li>
+                  </ul>
+                  <ul data-gallery="Fox 3, Decker, Meyerhoff">
+                    <li><h4><span class="black">2&nbsp;</span> Fox Building</h4></li>
+                    <li><h5>Decker Gallery</h5></li>
+                    <li><h5>Fox 3 Gallery</h5></li>
+                    <li><h5>Meyerhoff Gallery</h5></li>
+                    <li><p>1303 W. Mt. Royal Ave. <br/>Baltimore, MD 21217</p></li>
+                    <li><p><a target="_blank" href="https://www.google.com/maps/place/Decker+and+Meyerhoff+Galleries/@39.3080133,-76.621262,18z/data=!4m2!3m1!1s0x0:0x6e7b0c3da90d8dd1">Get Directions</a></p></li>
+                  </ul>
+                  <ul data-gallery="Studio Center Galleries">
+                    <li><h4><span class="black">3&nbsp;</span> Studio Center</h4></li>
+                    <li><h5>Riggs Gallery</h5></li>
+                    <li><h5>Leidy Gallery</h5></li>
+                    <li><p>131 W. North Ave. <br/>Baltimore, MD 21201</p></li>
+                    <li><p><a target="_blank" href="https://www.google.com/maps/place/131+W+North+Ave/@39.310547,-76.618941,17z/data=!3m1!4b1!4m2!3m1!1s0x89c804c03b3ac339:0xb9849904ae9381af">Get Directions</a></p></li>
+                  </ul>
+                  <ul data-gallery="D Center">
+                    <li><h4><span class="black">4&nbsp;</span> D Center</h4></li>
+                    <li><h5>D Center Gallery</h5></li>
+                    <li><p>18 W. North Ave. <br/>Baltimore, MD 21218</p></li>
+                    <li><p><a target="_blank" href="https://www.google.com/maps/place/18+W+North+Ave/@39.3111576,-76.6171982,17z/data=!3m1!4b1!4m2!3m1!1s0x89c804ea61df87b5:0xfb5919f46f01192">Get Directions</a></p></li>
+                  </ul>
+                  <ul>
+                    <li><h4>Off Campus</h4></li>
+                    <li><h5><a href="http://www.micacuratorial.org/class-2014.html"  target="_blank">Curatorial Practice &raquo;</a></h5></li>
+                    <li><h5 class="add-top"><a href="criticalstudies.html">Critical Studies &raquo;</a></h5></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </article>
+
+          <article id="students">
+            <h1>Students</h1>
+
+            <div id="active-filter" style="display:none">
+              <span class="attribute"></span>
+              <button type="button">&times;</button>
+            </div>
+
+            <ul class="list row grid-display" id="projects-demo">
+              <script id="students-template" type="text/x-mustache-template">
+                {{#students}}
+                <li class="col-xs-6 col-sm-4 col-md-3 student thumb {{id}} {{studentid}}">
+                  <div class="block">
+                    <img src="img/thumbnails/{{studentid}}.jpg" /> <!-- decent start to thumbnails -->
+                    <div class="info">
+                      <h4 class="name">{{firstname}} {{lastname}}</h4>
+                      <p class="program">{{&program}}</p>
+                      <p class="exhibitionlocation">{{exhibitionlocation}}</p>
+                      <p class="show-date showdate">{{showdate}}</p>
+                      <p class="id" style="display:none">{{studentid}}</p>
+<!--                       <p class="studentid">{{studentid}}</p> -->
+                    </div>
+                  </div>
+                </li>
+                {{/students}}
+              </script>
+            </ul>
+
+          </article>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <img class="col-xs-8 col-xs-offset-2 col-sm-2 col-sm-offset-0" src="img/mica_lockup_transp.png" />
+          <p class="col-xs-12 col-sm-2 col-sm-offset-6">Built and designed by <a href="http://yingxizhou.info" target="_blank">YZ</a>, <a href="http://studiorichb.com/" target="_blank">RB</a>, <a href="http://www.nourtabet.com" target="_blank">NT</a>, <a href="http://www.sherwoodandforbes.com" target="_blank">ESF</a>, and <a href="http://www.ookb.co" target="_blank">OOKB</a>.</p>
+          <ul class="col-xs-12 col-sm-2">
+            <li>Office of Grad Studies</li>
+            <li>131 West North Avenue</li>
+            <li>Baltimore, MD 21201</li>
+            <li><a href="tel:+14102255274">410.225.5274</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script id="overlay-template" type="text/x-mustache-template">
+      <div class="student-overlay alert alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <div class="container">
+          <div class="row">
+
+            <div class="col-xs-12 col-sm-4 col-md-3 student-info">
+
+              <ul class="student-nav nav nav-pills nav-justified">
+                <li class="previous"><a href="#id={{previd}}" class="overlay-nav-icon"></a></li>
+                <li class="random"><p class="overlay-nav-icon"></p></li>
+                <li class="next"><a href="#id={{nextid}}" class="overlay-nav-icon"></a></li>
+              </ul>
+
+              <div>
+                <h2>{{ firstname }}</h2>
+                <h2>{{ middlename }}</h2>
+                <h2>{{ lastname }}</h2>
+
+                <ul>
+                  <li>{{program}}</li>
+                  <li>{{exhibitionlocation}}</li>
+                  <li>{{showdate}}</li>
+                </ul>
+
+                <ul class="student-links">
+                  {{#urlofpersonalwebsite}}<li><a target="_blank" href="http://{{ urlofpersonalwebsite }}" target="_blank">View Website</a></li>{{/urlofpersonalwebsite}}
+                  {{#personalemail}}<li><a target="_blank" href="mailto:{{ personalemail }}" target="_blank">Contact via Email</a></li>{{/personalemail}}
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-8 col-md-9">
+
+              {{#slideshowimages}}
+                {{#slideshowsingle}}
+                <div id="slideshow" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    {{#slideshowcount}}
+                    <li data-target="#slideshow" data-slide-to="{{.}}"></li>
+                    {{/slideshowcount}}
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    {{#slideshow}}
+                    <div class="item">
+                      <img src="http://mfa.cape.io/img/slides/{{studentid}}/{{slide}}">
+
+                      {{#caption}}
+                      <div class="carousel-caption">
+                        <div class="inner">
+                          <div class="info">
+                            <h4 class="title">{{title}}</h4>
+                            <p class="year">{{#year}}{{year}}{{/year}}{{#year}}{{#medium}}, {{/medium}}{{/year}}{{#medium}}{{medium}}{{/medium}}{{#size}}, {{size}}{{/size}}</p>
+                            <p class="credit">{{credit}}</p>
+                          </div>
+                        </div>
+                      </div>
+                      {{/caption}}
+
+                      <!-- THIS IS WHERE THE CAPTIONS SHOULD PRINT OUT IF THERE ARE ANY! -->
+                      <!-- example code id like is down at the end of the doc, tried putting it here but it broke the site... -->
+                      <!-- /END THIS IS WHERE THE CAPTIONS SHOULD PRINT OUT IF THERE ARE ANY! -->
+
+                    </div>
+                    {{/slideshow}}
+                  </div>
+
+                  <!-- Controls -->
+                  {{#slideshow}}
+                  <a class="left carousel-control" href="#slideshow" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#slideshow" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                  {{/slideshow}}
+                </div><!-- end SS -->
+                {{/slideshowsingle}}
+                {{^slideshowsingle}}
+                {{#slideshow}}
+                <div id="singleimg">
+                  <img src="http://mfa.cape.io/img/slides/{{studentid}}/{{slide}}">
+                  {{#caption}}
+                  <div class="carousel-caption">
+                    <div class="inner">
+                      <div class="info">
+                        <h4 class="title">{{title}}</h4>
+                        <p class="year">{{#year}}{{year}}{{/year}}{{#year}}{{#medium}}, {{/medium}}{{/year}}{{#medium}}{{medium}}{{/medium}}{{#size}}, {{size}}{{/size}}</p>
+                        <p class="credit">{{credit}}</p>
+                      </div>
+                    </div>
+                  </div>
+                  {{/caption}}
+                </div>
+                {{/slideshow}}
+                {{/slideshowsingle}}
+              {{/slideshowimages}}
+              {{^slideshowimages}}
+              <h2 class="gap">No Images</h2>
+              {{/slideshowimages}}
+
+              <article class="row">
+                <div class="col-xs-12 col-md-9 student-statement {{^slideshowimages}}lead{{/slideshowimages}}">{{{ statement }}}</div>
+
+                <div class="clearfix visible-sm"></div>
+
+                <aside class="col-xs-12 col-md-3 program-list">
+                  <h4>{{program}}</h4>
+                  <ul class="program-peers">
+                    {{#peers}}
+                    <li><a>{{ firstname }} {{ lastname }} <span id="id-{{studentid}}" style="display:none" class="id">{{studentid}}</span></a></li>
+                    {{/peers}}
+                  </ul>
+                </aside>
+
+              </article>
+
+            </div> <!-- end center column with images and texts -->
+          </div>
+        </div>
+        <img data-dismiss="alert" aria-hidden="true" class="logo" src="img/logo.png" /> <!-- can this also make the overlay close? -->
+      </div><!-- END OVERLAY -->
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/hash.min.js"></script>
+    <script src="js/lodash.min.js"></script>
+    <script src="js/list.min.js"></script>
+    <script src="js/hogan.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/mfathesis.js"></script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47445120-1', 'mica.edu');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
