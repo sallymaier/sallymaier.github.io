@@ -60,10 +60,8 @@
 
                 <li>
                   <span>Publication</span>
-                    <ul id="pub-filter">
-                      <script id="whitespace-template" type="text/template">
-                        <li><a href="#" data-pub=" {{publication}} ">{{publication}}</a></li>
-                      </script>
+                    <ul id="pubfilter">
+                      
                     </ul>
 
                 </li>
@@ -111,6 +109,13 @@
 <script src="js/list.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/mustache.js"></script>
+
+<!--mustache templates -->
+<script id="publist" type="text/template">
+<li><a href="#" data-pub=" {{publication}} ">{{publication}}</a></li>
+</script>
+
 <script src="js/dissection.js"></script>
+
 
   </body>
