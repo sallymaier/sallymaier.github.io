@@ -10,8 +10,11 @@
 
   $.getJSON('http://sallymaier.github.io/thesis/json/whitespace2.json', function(data) {
     var template = $('#whitespace-template').html();
-    var html = Mustache.to_html(template, data);
-    $('#pub-filter').html(html);
+    var info = Mustache.to_html(template, data);
+    $('#pub-filter').html(info);
 
   });
 });
+
+
+
