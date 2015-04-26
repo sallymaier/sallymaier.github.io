@@ -14,6 +14,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <link href="css/dissection.css" rel="stylesheet"> 
+    <link href="css/mfa2014.css" rel="stylesheet"> 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,110 +33,117 @@
 
   <body data-spy="scroll" data-target=".mainnav" data-offset="160">
 
-    <nav class="navbar navbar-default navbar-fixed-top visible-xs" role="navigation">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gs-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#"><img src="img/apple-touch-icon-72x72.png" /></a> <!-- make this take you back to the top of the page... -->
+  <main class="container" style="padding-top: 40px;">
+      <div class="row">
+
+        <div class="col-sm-2">
+          <nav class="mainnav hidden-xs" data-spy="affix" data-offset-top="399" data-offset-bottom="320">
+            <ul class="nav nav-stacked nav-pills">
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#schedule">Process</a></li>
+                <li><a href="#analysis">Analysis</a>
+                    <ul>
+                      <li><a href="#" class="sort-dissections" data-type="all">All Dissections</a></li>
+
+                      <li>
+                        <div class="btn-group dropup">
+                          <button type="button" data-type="gallery" class="btn btn-default dropdown-toggle sort-studentlist" data-toggle="dropdown">
+                            <a href="#">Publication </a><span class="caret"></span>
+                          </button>
+                              <ul id="pubfilter" class="dropdown-menu"></ul>
+                      </li>
+                      <li>
+                        <div class="btn-group dropup">
+                          <button type="button" data-type="gallery" class="btn btn-default dropdown-toggle sort-studentlist" data-toggle="dropdown">
+                            <a href="#">Income Bracket </a><span class="caret"></span>
+                          </button>
+                        <ul class="dropdown-menu" id="bracketfilter"></ul>
+                      </li>
+                      
+                      <li><a href="#">The Book<span class="glyphicon glyphicon-download"></span></a></li>
+                    </ul>
+                  </li>
+              </ul>
+          </nav>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="gs-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="#intro">Introduction</a></li>
-            <li><a href="#schedule">Process</a></li>
-          
+        <div class="col-sm-9 col-sm-offset-1">
+          <article id="Analysis">
+              <h1>Dissections</h1>
 
-            <li>
-              <a href="#analysis">Analysis</a>
-              <ul>
-                
+              <div id="active-filter" style="display:none">
+                <span class="attribute"></span>
+                <button type="button">&times;</button>
+              </div>
 
-                <li><a href="#" class="sort-dissections" data-type="all">All Dissections</a></li>
+              <ul class="list row grid-display" id="projects-demo">
+                <div ><div id="wscansdiv" class="col-xs-6 col-sm-4 col-md-3 student thumb imageContainer"></div>
+                <div class="col-xs-6 col-sm-4 col-md-3 student thumb overlayContainer" id="woverlaydiv">
+                </div></div>
 
-                <li>
-                  <span>Publication</span>
-                    <ul id="pubfilter">
-                      
-                    </ul>
-
-                </li>
-<!--                 <li>
-                  <span>Gallery</span>
-                  <ul class="" id="gallery-filter">
-                    <li><a href="#" data-gallery="D center">D Center</a></li>
-                    <li><a href="#" data-gallery="Decker">Decker</a></li>
-                    <li><a href="#" data-gallery="Fox">Fox 3</a></li>
-                    <li><a href="#" data-gallery="Meyerhoff">Meyerhoff</a></li>
-                    <li><a href="#" data-gallery="Pinkard">Pinkard</a></li>
-                    <li><a href="#" data-gallery="Studio Center Galleries">Studio Center Galleries</a></li>
-                    <li><a href="#" data-gallery="Off Campus">Off Campus</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Show Date</span>
-                  <ul class="" id="showdate-filter">
-                    <li><a href="#" data-showdate="Jan 24-Feb 16, 2014">Jan 24-Feb 16, 2014</a></li>
-                    <li><a href="#" data-showdate="Jan 31-Feb 16, 2014">Jan 31-Feb 16, 2014</a></li>
-                    <li><a href="#" data-showdate="Feb 01-May 09, 2014">Feb 01-May 09, 2014</a></li>
-                    <li><a href="#" data-showdate="Mar 28-Apr 06, 2014">Mar 28-Apr 06, 2014</a></li>
-                    <li><a href="#" data-showdate="Apr 11-Apr 20, 2014">Apr 11-Apr 20, 2014</a></li>
-                    <li><a href="#" data-showdate="Apr 23-May 04, 2014">Apr 23-May 04, 2014</a></li>
-                    <li><a href="#" data-showdate="Apr 25-May 04, 2014">Apr 25-May 04, 2014</a></li>
-                    <li><a href="criticalstudies.html">May 03, 2014</a></li>
-                    <li><a href="#" data-showdate="Jun 28-Jul 12, 2014">Jun 28-Jul 12, 2014</a></li>
-                    <li><a href="#" data-showdate="Jul 29-Aug 1, 2014">Jul 29-Aug 1, 2014</a></li>
-                  </ul>
-                </li>
-                <li><a href="pdf/MICA_GRADSHOW_catalogueweb_2014.pdf">Catalog PDF <span class="glyphicon glyphicon-download"></span></a></li>
- -->
+                <script id="students-template" type="text/x-mustache-template">
+                  {{#students}}
+                  <li class="col-xs-6 col-sm-4 col-md-3 student thumb {{id}} {{studentid}}">
+                    <div class="block">
+                      <img src="img/thumbnails/{{studentid}}.jpg" /> <!-- decent start to thumbnails -->
+                      <div class="info">
+                        <h4 class="name">{{firstname}} {{lastname}}</h4>
+                        <p class="program">{{&program}}</p>
+                        <p class="exhibitionlocation">{{exhibitionlocation}}</p>
+                        <p class="show-date showdate">{{showdate}}</p>
+                        <p class="id" style="display:none">{{studentid}}</p>
+  <!--                       <p class="studentid">{{studentid}}</p> -->
+                      </div>
+                    </div>
+                  </li>
+                  {{/students}}
+                </script>
               </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
 
-<div ><div id="wscansdiv" class="col-3 imageContainer"></div>
-            
-<div class="col-3" id="woverlaydiv">
-</div></div>
+            </article>
+
+        </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/hash.min.js"></script>
-<script src="js/lodash.min.js"></script>
-<script src="js/list.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/mustache.js"></script>
-
-<!--mustache templates -->
-<script id="publist" type="text/template">
-{{#.}}
-<li><a href="#" data-pub=" {{publication}} ">{{publication}}</a></li>
-{{/.}}
-</script>
+      
+    </div>
+  </main>  
 
 
-<script id="wscans" type="text/template">
-{{#.}}
-<img src="images/scans/{{png}}" class="whitespaceimg">
-{{/.}}
-</script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/hash.min.js"></script>
+      <script src="js/lodash.min.js"></script>
+      <script src="js/list.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/mustache.js"></script>
 
-<script id="woverlay" type="text/template">
-{{#.}}
-<img src="images/overlays/{{overlay}}" class="trans whitespaceimg pretrans overlayContainer">
-{{/.}}
-</script>
+      <!--mustache templates -->
+      <script id="publist" type="text/template">
+      {{#.}}
+      <li><a href="#" data-pub=" {{publication}} ">{{publication}}</a></li>
+      {{/.}}
+      </script>
 
-<script src="js/dissection.js"></script>
+      <script id="bracketlist" type="text/template">
+      {{#.}}
+      <li><a href="#" data-pub=" {{bracket}} ">{{bracket}}</a></li>
+      {{/.}}
+      </script>
 
 
-  </body>
+      <script id="wscans" type="text/template">
+      {{#.}}
+      <img src="images/scans/{{png}}" class="whitespaceimg">
+      {{/.}}
+      </script>
+
+      <script id="woverlay" type="text/template">
+      {{#.}}
+      <img src="images/overlays/{{overlay}}" class="trans whitespaceimg pretrans">
+      {{/.}}
+      </script>
+
+      <script src="js/dissection.js"></script>
+
+
+        </body>

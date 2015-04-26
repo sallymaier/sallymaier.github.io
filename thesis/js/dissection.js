@@ -13,6 +13,10 @@
     var info = Mustache.to_html(template, data);
     $('#pubfilter').html(info);
 
+    var template = $('#bracketlist').html();
+    var info = Mustache.to_html(template, data);
+    $('#bracketfilter').html(info);
+
     var template = $('#wscans').html();
     var info = Mustache.to_html(template, data);
     $('#wscansdiv').html(info);
