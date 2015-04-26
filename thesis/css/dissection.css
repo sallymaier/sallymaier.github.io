@@ -240,6 +240,25 @@ headline h4 {
     -webkit-touch-callout: none;        
 }
 
+.spread {
+    width: 50%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+}
+
+.single {
+    width: 25%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+
+}
+
 
 @media (min-width: 600px) {
 

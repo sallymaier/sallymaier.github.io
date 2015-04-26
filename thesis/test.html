@@ -47,14 +47,14 @@
 
                       <li>
                         <div class="btn-group dropup">
-                          <button type="button" data-type="gallery" class="btn btn-default dropdown-toggle sort-studentlist" data-toggle="dropdown">
+                          <button type="button" data-type="gallery" class="btn btn-default dropdown-toggle sort-dissections" data-toggle="dropdown">
                             <a href="#">Publication </a><span class="caret"></span>
                           </button>
-                              <ul id="pubfilter" class="dropdown-menu"></ul>
+                              <ul id="pubfilter" class="dropdown-menu" ></ul>
                       </li>
                       <li>
                         <div class="btn-group dropup">
-                          <button type="button" data-type="gallery" class="btn btn-default dropdown-toggle sort-studentlist" data-toggle="dropdown">
+                          <button type="button" data-type="gallery" class="btn btn-default dropdown-toggle sort-dissections" data-toggle="dropdown">
                             <a href="#">Income Bracket </a><span class="caret"></span>
                           </button>
                         <ul class="dropdown-menu" id="bracketfilter"></ul>
@@ -68,7 +68,7 @@
         </div>
 
         <div class="col-sm-9 col-sm-offset-1">
-          <article id="Analysis">
+          <article id="analysis">
               <h1>Dissections</h1>
 
               <div id="active-filter" style="display:none">
@@ -76,28 +76,8 @@
                 <button type="button">&times;</button>
               </div>
 
-              <ul class="list row grid-display" id="projects-demo">
-                <div ><div id="wscansdiv" class="col-xs-6 col-sm-4 col-md-3 student thumb imageContainer"></div>
-                <div class="col-xs-6 col-sm-4 col-md-3 student thumb overlayContainer" id="woverlaydiv">
-                </div></div>
-
-                <script id="students-template" type="text/x-mustache-template">
-                  {{#students}}
-                  <li class="col-xs-6 col-sm-4 col-md-3 student thumb {{id}} {{studentid}}">
-                    <div class="block">
-                      <img src="img/thumbnails/{{studentid}}.jpg" /> <!-- decent start to thumbnails -->
-                      <div class="info">
-                        <h4 class="name">{{firstname}} {{lastname}}</h4>
-                        <p class="program">{{&program}}</p>
-                        <p class="exhibitionlocation">{{exhibitionlocation}}</p>
-                        <p class="show-date showdate">{{showdate}}</p>
-                        <p class="id" style="display:none">{{studentid}}</p>
-  <!--                       <p class="studentid">{{studentid}}</p> -->
-                      </div>
-                    </div>
-                  </li>
-                  {{/students}}
-                </script>
+              <ul class="list row grid-display" id="whitespacediv">
+           
               </ul>
 
             </article>
@@ -120,28 +100,33 @@
       <!--mustache templates -->
       <script id="publist" type="text/template">
       {{#.}}
-      <li><a href="#" data-pub=" {{publication}} ">{{publication}}</a></li>
+      <li><a href="#" data-pub="{{publication}}">{{publication}}</a></li>
       {{/.}}
       </script>
 
       <script id="bracketlist" type="text/template">
       {{#.}}
-      <li><a href="#" data-pub=" {{bracket}} ">{{bracket}}</a></li>
+      <li><a href="#" data-pub="{{bracket}}">{{bracket}}</a></li>
       {{/.}}
       </script>
 
 
-      <script id="wscans" type="text/template">
+      <script id="whitespace" type="text/template">
       {{#.}}
-      <img src="images/scans/{{png}}" class="whitespaceimg">
+      <li class="{{pages}}">
+          <div class="block" >
+            <div id="wscansdiv" class="imageContainer"><img src="images/scans/{{png}}" class="whitespaceimg"</div>
+            <div class="overlayContainer" id="woverlaydiv"><img src="images/overlays/{{overlay}}" class="trans whitespaceimg pretrans"></div>
+            <div class="info">
+              <p class="pub" id="wpubnamediv">{{publication}}</p>
+              <p class="income" id="whhidiv">Median Household Income ${{hhi}}</p>
+              <p class="percent">{{percentwhite}}% White Space</p></div>
+        </div>
+      </li>
       {{/.}}
       </script>
 
-      <script id="woverlay" type="text/template">
-      {{#.}}
-      <img src="images/overlays/{{overlay}}" class="trans whitespaceimg pretrans">
-      {{/.}}
-      </script>
+      
 
       <script src="js/dissection.js"></script>
 
