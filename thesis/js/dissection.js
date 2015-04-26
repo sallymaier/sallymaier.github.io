@@ -13,6 +13,14 @@
     var info = Mustache.to_html(template, data);
     $('#pubfilter').html(info);
 
+    var template = $('#wscans').html();
+    var info = Mustache.to_html(template, data);
+    $('#wscansdiv').html(info);
+
+    var template = $('#woverlay').html();
+    var info = Mustache.to_html(template, data);
+    $('#woverlaydiv').html(info);
+
   });
 });
 

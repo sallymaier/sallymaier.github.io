@@ -11,8 +11,9 @@
     
 
     <!-- Bootstrap -->
-<!--     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/mfa2014.css" rel="stylesheet"> -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/dissection.css" rel="stylesheet"> 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -101,6 +102,10 @@
       </div><!-- /.container-fluid -->
     </nav>
 
+<div ><div id="wscansdiv" class="col-3 imageContainer"></div>
+            
+<div class="col-3" id="woverlaydiv">
+</div></div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -114,6 +119,19 @@
 <script id="publist" type="text/template">
 {{#.}}
 <li><a href="#" data-pub=" {{publication}} ">{{publication}}</a></li>
+{{/.}}
+</script>
+
+
+<script id="wscans" type="text/template">
+{{#.}}
+<img src="images/scans/{{png}}" class="whitespaceimg">
+{{/.}}
+</script>
+
+<script id="woverlay" type="text/template">
+{{#.}}
+<img src="images/overlays/{{overlay}}" class="trans whitespaceimg pretrans overlayContainer">
 {{/.}}
 </script>
 
