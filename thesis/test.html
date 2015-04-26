@@ -47,14 +47,14 @@
 
                       <li>
                         <div class="btn-group dropup">
-                          <button type="button" data-type="gallery" class="btn btn-default dropdown-toggle sort-dissections" data-toggle="dropdown">
+                          <button type="button" data-type="pub" class="btn btn-default dropdown-toggle sort-dissections" data-toggle="dropdown">
                             <a href="#">Publication </a><span class="caret"></span>
                           </button>
-                              <ul id="pubfilter" class="dropdown-menu" ></ul>
+                              <ul id="pubfilter" class="dropdown-menu list" ></ul>
                       </li>
                       <li>
                         <div class="btn-group dropup">
-                          <button type="button" data-type="gallery" class="btn btn-default dropdown-toggle sort-dissections" data-toggle="dropdown">
+                          <button type="button" data-type="bracket" class="btn btn-default dropdown-toggle sort-dissections" data-toggle="dropdown">
                             <a href="#">Income Bracket </a><span class="caret"></span>
                           </button>
                         <ul class="dropdown-menu" id="bracketfilter"></ul>
@@ -106,14 +106,14 @@
 
       <script id="bracketlist" type="text/template">
       {{#.}}
-      <li><a href="#" data-pub="{{bracket}}">{{bracket}}</a></li>
+      <li><a href="#" data-bracket="{{bracket}}">{{bracket}}</a></li>
       {{/.}}
       </script>
 
 
       <script id="whitespace" type="text/template">
       {{#.}}
-      <li class="{{pages}}">
+      <li class="{{pages}} {{publication}} {{bracket}}">
           <div class="block" >
             <div id="wscansdiv" class="imageContainer"><img src="images/scans/{{png}}" class="whitespaceimg"</div>
             <div class="overlayContainer" id="woverlaydiv"><img src="images/overlays/{{overlay}}" class="trans whitespaceimg pretrans"></div>
@@ -121,6 +121,7 @@
               <p class="pub" id="wpubnamediv">{{publication}}</p>
               <p class="income" id="whhidiv">Median Household Income ${{hhi}}</p>
               <p class="percent">{{percentwhite}}% White Space</p></div>
+
         </div>
       </li>
       {{/.}}

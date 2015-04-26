@@ -3,10 +3,8 @@
     delete(sessionStorage.activefilter);
   }
 
-  var captions = {};
 
-  // Show a random header image
-  // $('header img.backgroundfill:nth-of-type('+_.random(1,$('header img.backgroundfill').length)+')').show();
+
 
   $.getJSON('https://sheetlabs.com/SALL/whitespace2', function(data) {
     var template = $('#publist').html();
@@ -24,28 +22,99 @@
 
   });
 
-  // Process dropdown gallery filter
-    $('#pubfilter a').on('click touch', function(e) {
-      e.preventDefault();
-      if (_.isUndefined(sessionStorage.activefilter) == false) {
-        delete(sessionStorage.activefilter);
-      }
-      $(window).trigger('updateFilter');
-      var gallery = $(this).data('gallery');
-      var g = $(this).html();
-      dissections.filter(function(item) {
-        var terms = gallery.split(',');
-        var match = false;
-        for (var i = 0; i<terms.length; i++) {
-          if (item.values().income.replace('&amp;','&').toLowerCase().indexOf(terms[i].toLowerCase()) >= 0) match = true;
-        }
-        return match;
-      });
-      sessionStorage.activefilter = 'Gallery: ' + g.replace('Gallery', '');
-      $(window).trigger('updateFilter');
-      var pos = $('#analysis').offset();
-      $('body').animate({ scrollTop: pos.top-150 });
+
+
+var options = {
+  valueNames: [ 'People', 'description', 'category' ]
+};
+
+var featureList = new List('lovely-things-list', options);
+
+$('#filter-games').click(function() {
+  featureList.filter(function(item) {
+    if (item.values().category == "Game") {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  return false;
+});
+
+$('#filter-beverages').click(function() {
+  featureList.filter(function(item) {
+    if (item.values().category == "Beverage") {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  return false;
+});
+$('#filter-none').click(function() {
+  featureList.filter();
+  return false;
+});
+
+
+
+
+
+
+   // Render the template for the list and initialize list.js
+    $('#whitespacediv').html(render(data));
+    var options = {
+      valueNames: [ 'name', 'program', 'exhibitionlocation', 'showdate', 'id' ]
+    };
+    var studentlist = new List('students', options);
+
+
+
+
+
+  // Process the program filter
+  $('#pubfilter a').on('click touch', function(e) {
+    if (_.isUndefined($(this).data('publication'))) return true;
+    e.preventDefault();
+    if (_.isUndefined(sessionStorage.activefilter) == false) {
+      delete(sessionStorage.activefilter);
+    }
+    $(window).trigger('updateFilter');
+    var publication = decodeURIComponent($(this).data('publication'));
+    var p = $(this).html();
+    dissections.filter(function(item) {
+      return item.values().publication.replace('&amp;','&').toLowerCase().indexOf(publication.toLowerCase()) >= 0;
     });
+    sessionStorage.activefilter = 'Program: ' + p;
+    $(window).trigger('updateFilter');
+    var pos = $('#analysis').offset();
+    $('body').animate({ scrollTop: pos.top-150 });
+  });
+
+
+
+  // // Process dropdown gallery filter
+  //   $('#pubfilter a').on('click touch', function(e) {
+  //     e.preventDefault();
+  //     if (_.isUndefined(sessionStorage.activefilter) == false) {
+  //       delete(sessionStorage.activefilter);
+  //     }
+  //     $(window).trigger('updateFilter');
+  //     var gallery = $(this).data('pub');
+  //     var g = $(this).html();
+  //     dissections.filter(function(item) {
+  //       var terms = gallery.split(',');
+  //       var match = false;
+  //       for (var i = 0; i<terms.length; i++) {
+  //         if (item.values().income.replace('&amp;','&').toLowerCase().indexOf(terms[i].toLowerCase()) >= 0) match = true;
+  //       }
+  //       return match;
+  //     });
+  //     sessionStorage.activefilter = 'Gallery: ' + g.replace('Gallery', '');
+  //     $(window).trigger('updateFilter');
+  //     var pos = $('#analysis').offset();
+  //     $('body').animate({ scrollTop: pos.top-150 });
+  //   });
 
     // Process the showdate filter
     $('#showdate-filter a,li.showtime.active').on('click touch', function(e) {
