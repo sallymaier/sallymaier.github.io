@@ -1,10 +1,6 @@
  $(document).ready(function() {
-  if (_.isUndefined(sessionStorage.activefilter) == false) {
-    delete(sessionStorage.activefilter);
-  }
 
-
-
+//mustache for nav
 
   $.getJSON('https://sheetlabs.com/SALL/whitespace2', function(data) {
     var template = $('#publist').html();
@@ -19,10 +15,10 @@
     var info = Mustache.to_html(template, data);
     $('#whitespacediv').html(info);
 
-
   });
 
 
+//mustache for images
 
 var options = {
   valueNames: [ 'People', 'description', 'category' ]
@@ -51,26 +47,11 @@ $('#filter-beverages').click(function() {
   });
   return false;
 });
+
 $('#filter-none').click(function() {
   featureList.filter();
   return false;
 });
-
-
-
-
-
-
-   // Render the template for the list and initialize list.js
-    $('#whitespacediv').html(render(data));
-    var options = {
-      valueNames: [ 'name', 'program', 'exhibitionlocation', 'showdate', 'id' ]
-    };
-    var studentlist = new List('students', options);
-
-
-
-
 
   // Process the program filter
   $('#pubfilter a').on('click touch', function(e) {
@@ -90,7 +71,6 @@ $('#filter-none').click(function() {
     var pos = $('#analysis').offset();
     $('body').animate({ scrollTop: pos.top-150 });
   });
-
 
 
   // // Process dropdown gallery filter
