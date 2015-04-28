@@ -11,6 +11,9 @@
     var info = Mustache.to_html(template, data);
     $('#bracketfilter').html(info);
 
+
+//mustache for images
+
     var template = $('#whitespace').html();
     var info = Mustache.to_html(template, data);
     $('#whitespacediv').html(info);
@@ -18,13 +21,13 @@
   });
 
 
-//mustache for images
 
-var options = {
-  valueNames: [ 'People', 'description', 'category' ]
+var publications = {
+  valueNames: [ "Woman's World", "People", "Time", "Wired", "Bon Appetit", "Real Simple", "New Yorker", "Wallpaper",
+"New York Times Magazine" ]
 };
 
-var featureList = new List('lovely-things-list', options);
+var publicationList = new List('whitespacediv', options);
 
 $('#filter-games').click(function() {
   featureList.filter(function(item) {
@@ -37,24 +40,24 @@ $('#filter-games').click(function() {
   return false;
 });
 
-$('#filter-beverages').click(function() {
-  featureList.filter(function(item) {
-    if (item.values().category == "Beverage") {
-      return true;
-    } else {
-      return false;
-    }
-  });
-  return false;
-});
+// $('#filter-beverages').click(function() {
+//   featureList.filter(function(item) {
+//     if (item.values().category == "Beverage") {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   });
+//   return false;
+// });
 
-$('#filter-none').click(function() {
-  featureList.filter();
-  return false;
-});
+// $('#filter-none').click(function() {
+//   featureList.filter();
+//   return false;
+// });
 
   // Process the program filter
-  $('#pubfilter a').on('click touch', function(e) {
+  $('#pub-filter a').on('click touch', function(e) {
     if (_.isUndefined($(this).data('publication'))) return true;
     e.preventDefault();
     if (_.isUndefined(sessionStorage.activefilter) == false) {

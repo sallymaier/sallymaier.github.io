@@ -52,7 +52,18 @@
                           <button type="button" data-type="pub" class="btn btn-default dropdown-toggle sort-dissections" data-toggle="dropdown">
                             <a href="#">Publication </a><span class="caret"></span>
                           </button>
-                              <ul id="pubfilter" class="dropdown-menu list" ></ul>
+                              <ul id="pub-filter" class="dropdown-menu list" >
+                                <li><a href="#" data-pub="Woman's World">Woman's World</a></li>
+                                <li><a href="#" data-pub="People">People</a></li>
+                                <li><a href="#" data-pub="Time">Time</a></li>
+                              </ul>
+<!-- 
+
+                                "", "People", "Time", "Wired", "Bon Appetit", "Real Simple", "New Yorker", "Wallpaper",
+// "New York Times Magazine"  -->
+
+
+                              
                       </li>
                       <li>
                         <div class="btn-group dropup">
@@ -132,20 +143,7 @@
 
     <script src="js/dissection.js"></script>
 
-    <script>
-$(document).ready(function() {
-   var maxHeight = -1;
-
-   $('#whitespacediv li').each(function() {
-     maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
-   });
-
-   $('#whitespacediv li').each(function() {
-     $(this).height(maxHeight);
-   });
- });
-
-    </script>
+ 
 
   </body>
 </html>

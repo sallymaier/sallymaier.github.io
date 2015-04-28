@@ -186,7 +186,6 @@ headline h4 {
 
 .imageContainer {
     position: relative;
-    margin-bottom: 5%;
 }
 
 
@@ -242,7 +241,7 @@ headline h4 {
 }
 
 .spread {
-    width: 50%;
+    width: 47%;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -260,6 +259,15 @@ headline h4 {
 
 }
 
+
+.imggrid {
+    height: 300px;
+    padding-bottom: 15px;
+}
+
+.block {
+    height: 450px;
+}
 
 @media (min-width: 600px) {
 
