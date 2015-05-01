@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Design Dissection</title>
 
-
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
     
-
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
     <link href="css/dissection.css" rel="stylesheet"> 
     <link href="css/mfa2014.css" rel="stylesheet"> 
 
@@ -22,117 +24,63 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-
   </head>
 
-  <body data-spy="scroll" data-target=".mainnav" data-offset="160">
+  <body>
 
-  <main class="container" style="padding-top: 40px;">
+    <main class="container" style="padding-top: 40px;">
       <div class="row">
 
-
-
         <div class="col-sm-2">
-          <nav class="mainnav hidden-xs" data-spy="affix" data-offset-top="399" data-offset-bottom="320">
-            <ul class="nav nav-stacked nav-pills">
-                <li><a href="#intro">Introduction</a></li>
-                <li><a href="#schedule">Process</a></li>
-                <li><a href="#analysis">Analysis</a>
-                    <ul>
-                      <li><a href="#" class="sort-dissections" data-type="all">All Dissections</a></li>
-
-                      <li>
-                        <div class="btn-group dropup">
-                          <button type="button" class="btn btn-default dropdown-toggle sort-dissections" data-toggle="dropdown">
-                            <a href="#">Publication </a><span class="caret"></span>
-                          </button>
-                              <ul id="pub-filter" class="dropdown-menu" >
-                                <li><a href="#" data-pub="Woman's World">Woman's World</a></li>
-                                <li><a href="#" data-pub="People">People</a></li>
-                                <li><a href="#" data-pub="Time">Time</a></li>
-                              </ul>
-<!-- 
-
-                                "", "People", "Time", "Wired", "Bon Appetit", "Real Simple", "New Yorker", "Wallpaper",
-// "New York Times Magazine"  -->
-
-
-                              
-                      </li>
-                      <li>
-                        <div class="btn-group dropup">
-                          <button type="button" data-type="bracket" class="btn btn-default dropdown-toggle sort-dissections" data-toggle="dropdown">
-                            <a href="#">Income Bracket </a><span class="caret"></span>
-                          </button>
-                        <ul class="dropdown-menu" id="bracketfilter"></ul>
-                      </li>
-                      
-                      <li><a href="#">The Book<span class="glyphicon glyphicon-download"></span></a></li>
-                    </ul>
-                  </li>
-              </ul>
+          <nav>
+            <ul id="pub-filter" class="filter">
+              <li><a href="#" id="filter-none" data-pub="Show All!">Show All</a></li>
+              <li><a href="#" data-pub="Woman's World">Woman's World</a></li>
+              <li><a href="#" data-pub="People">People</a></li>
+              <li><a href="#" data-pub="Time">Time</a></li>
+              <li><a href="#" data-pub="Wired">Wired</a></li>
+              <li><a href="#" data-pub="Bon Appetit">Bon Appetit</a></li>
+              <li><a href="#" data-pub="Real Simple">Real Simple</a></li>
+              <li><a href="#" data-pub="New Yorker">New Yorker</a></li>
+              <li><a href="#" data-pub="Wallpaper">Wallpaper</a></li>
+              <li><a href="#" data-pub="New York Times Magazine">New York Times Magazine</a></li>
+            </ul>
           </nav>
-        </div>
+        </div><!-- end navigation column -->
 
         <div class="col-sm-9 col-sm-offset-1">
           <article id="analysis">
-              <h1>Dissections</h1>
+            <h1>Dissections</h1>
 
-                
-                <ul class="list row grid-display" id="whitespacediv">
-             
-                </ul>
+            <ul class="list grid-display" id="whitespacediv">
+              <!-- dynamically filled with some sweet magix -->
+            </ul>
 
-            </article>
+          </article>
+        </div><!-- end image grid column -->
 
-        </div>
-
-
-      
-    </div>
-  </main>  
-
+      </div>
+    </main>  
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/mustache.js"></script>
 
-    <!--mustache templates -->
-   <!--  
-
-    <script id="publist" type="text/template">
-    {{#.}}
-    <li><a href="#" data-pub="{{publication}}">{{publication}}</a></li>
-    {{/.}}
-    </script>
- -->
-    <script id="bracketlist" type="text/template">
-    {{#.}}
-    <li><a href="#" data-bracket="{{bracket}}">{{bracket}}</a></li>
-    {{/.}}
-    </script>
-
     <script id="whitespace" type="text/template">
     {{#.}}
     <li class="{{pages}} {{publication}} {{bracket}}">
-        <div class="block" >
-          <div id="wscansdiv" class="imageContainer imggrid">
-            <img src="images/scans/{{png}}" class="whitespaceimg" />
-            <div class="overlayContainer imggrid" id="woverlaydiv">
-              <img src="images/overlays/{{overlay}}" class="trans whitespaceimg pretrans " />
-            </div>
+      <div class="block" >
+        <div id="wscansdiv" class="imageContainer imggrid">
+          <img src="images/scans/{{png}}" class="whitespaceimg" />
+          <div class="overlayContainer imggrid" id="woverlaydiv">
+            <img src="images/overlays/{{overlay}}" class="trans whitespaceimg pretrans " />
           </div>
-          <div class="info">
-            <p class="pub" id="wpubnamediv">{{publication}}</p>
-            <p class="income" id="whhidiv">Median Household Income ${{hhi}}</p>
-            <p class="percent">{{percentwhite}}% White Space</p>
-          </div>
+        </div>
+        <div class="info">
+          <p class="pub">{{publication}}</p>
+          <p class="income">Median Household Income ${{hhi}}</p>
+          <p class="percent">{{percentwhite}}% White Space</p>
+        </div>
       </div>
     </li>
     {{/.}}
@@ -140,10 +88,6 @@
 
     <script src="js/list.js"></script>
     <script src="js/mustachedissection.js"></script>
-    <script src="js/sortlist2.js"></script>
-
-
- 
 
   </body>
 </html>

@@ -1,30 +1,31 @@
 $(document).ready(function() {
 
-
   var options = {
-    valueNames: [ 'pub', 'bracket' ]
+    valueNames: [ 'pub', 'income' ]
   };
 
-  var whitespacedivList = new List('whitespacediv', options);
-  
+  var whitespacedivList = new List('analysis', options);
 
   $('#pub-filter li a').on('click touch', function()  {
-      var selection = $(this).data('pub'); 
+    var selection = $(this).data('pub'); 
+    console.log(selection);
 
-      console.log(selection);
-
-
-      // filter items in the list
-      pubList.filter(function (item) {
-           if (item.values().pub == "selection") {
-              return true;
-          } else {
-              return false;
-          }
-      });
+    // filter items in the list
+    whitespacedivList.filter(function(item) {
+      if (item.values().category === selection) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    return false;
   });
 
-
-
-
+  // show all items
+  $('#filter-none').click(function() {
+    whitespacedivList.filter();
+    return false;
+  });
+  
 });
+  
