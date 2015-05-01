@@ -7,7 +7,7 @@ $(document).ready(function() {
     var info = Mustache.to_html(template, data);
     $('#whitespacediv').html(info);
 
-    // trying the list.js here
+    // trying the list.js here, seems to work better here... weird.
     var options = {
       valueNames: [ 'pub', 'income' ]
     };
@@ -20,7 +20,7 @@ $(document).ready(function() {
 
       // filter items in the list
       whitespacedivList.filter(function(item) {
-        if (item.values().category === selection) {
+        if (item.values().pub === selection) {
           return true;
         } else {
           return false;
