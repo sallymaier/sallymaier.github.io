@@ -49,10 +49,10 @@
 
                       <li>
                         <div class="btn-group dropup">
-                          <button type="button" data-type="pub" class="btn btn-default dropdown-toggle sort-dissections" data-toggle="dropdown">
+                          <button type="button" class="btn btn-default dropdown-toggle sort-dissections" data-toggle="dropdown">
                             <a href="#">Publication </a><span class="caret"></span>
                           </button>
-                              <ul id="pub-filter" class="dropdown-menu list" >
+                              <ul id="pub-filter" class="dropdown-menu" >
                                 <li><a href="#" data-pub="Woman's World">Woman's World</a></li>
                                 <li><a href="#" data-pub="People">People</a></li>
                                 <li><a href="#" data-pub="Time">Time</a></li>
@@ -84,14 +84,10 @@
           <article id="analysis">
               <h1>Dissections</h1>
 
-              <div id="active-filter" style="display:none">
-                <span class="attribute"></span>
-                <button type="button">&times;</button>
-              </div>
-
-              <ul class="list row grid-display" id="whitespacediv">
-           
-              </ul>
+                
+                <ul class="list row grid-display" id="whitespacediv">
+             
+                </ul>
 
             </article>
 
@@ -104,17 +100,18 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/list.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/mustache.js"></script>
 
     <!--mustache templates -->
+   <!--  
+
     <script id="publist" type="text/template">
     {{#.}}
     <li><a href="#" data-pub="{{publication}}">{{publication}}</a></li>
     {{/.}}
     </script>
-
+ -->
     <script id="bracketlist" type="text/template">
     {{#.}}
     <li><a href="#" data-bracket="{{bracket}}">{{bracket}}</a></li>
@@ -141,7 +138,10 @@
     {{/.}}
     </script>
 
-    <script src="js/dissection.js"></script>
+    <script src="js/list.js"></script>
+    <script src="js/mustachedissection.js"></script>
+    <script src="js/sortlist2.js"></script>
+
 
  
 
