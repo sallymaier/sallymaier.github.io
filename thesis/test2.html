@@ -13,10 +13,16 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
     
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lakki+Reddy' rel='stylesheet' type='text/css'>
+
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/dissection.css" rel="stylesheet"> 
-    <link href="css/mfa2014.css" rel="stylesheet"> 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,37 +39,55 @@
 
         <div class="col-sm-2">
           <nav>
-            <ul id="pub-filter" class="filter">
-              <li><a href="#" data-pub="Woman's World">Woman's World</a></li>
-              <li><a href="#" data-pub="People">People</a></li>
-              <li><a href="#" data-pub="Time">Time</a></li>
-              <li><a href="#" data-pub="Wired">Wired</a></li>
-              <li><a href="#" data-pub="Bon Appetit">Bon Appetit</a></li>
-              <li><a href="#" data-pub="Real Simple">Real Simple</a></li>
-              <li><a href="#" data-pub="New Yorker">New Yorker</a></li>
-              <li><a href="#" data-pub="Wallpaper">Wallpaper</a></li>
-              <li><a href="#" data-pub="New York Times Magazine">New York Times Magazine</a></li>
-            </ul>
-            <ul id="bracket-filter" class="filter">
-              <li><a href="#" data-bracket="less than $74,999">less than $74,999</a></li>
-              <li><a href="#" data-bracket="$75,000-$99,999">$75,000-$99,999</a></li>
-              <li><a href="#" data-bracket="over $100,000">over $100,000</a></li>
-            </ul>
-            <ul id="type-filter" class="filter">
-              <li><a href="#" data-pagetype="table of contents">table of contents</a></li>
-              <li><a href="#" data-pagetype="feature">feature</a></li>
-              <li><a href="#" data-pagetype="food">food</a></li>
-              <li><a href="#" data-pagetype="review">review</a></li>
-            </ul>
-            <ul id="filter" class="filter">
-              <li><a href="#" id="filter-none" data-pub="Show All!">Show All</a></li>
-            </ul>
+            <div class="btn-group dropup">
+              <li>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  <a href="#">Publication</a><span class="caret"></span>
+                </button>
+                    <ul id="pub-filter" class="filter dropdown-menu">
+                      <li><a href="#" data-pub="Woman's World">Woman's World</a></li>
+                      <li><a href="#" data-pub="People">People</a></li>
+                      <li><a href="#" data-pub="Time">Time</a></li>
+                      <li><a href="#" data-pub="Wired">Wired</a></li>
+                      <li><a href="#" data-pub="Bon Appetit">Bon Appetit</a></li>
+                      <li><a href="#" data-pub="Real Simple">Real Simple</a></li>
+                      <li><a href="#" data-pub="New Yorker">New Yorker</a></li>
+                      <li><a href="#" data-pub="Wallpaper">Wallpaper</a></li>
+                      <li><a href="#" data-pub="New York Times Magazine">New York Times Magazine</a></li>
+                    </ul>
+              </li>
+              <li>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  <a href="#">Income Bracket</a><span class="caret"></span>
+                </button>
+                  <ul id="bracket-filter" class="filter dropdown-menu">
+                    <li><a href="#" data-bracket="less than $74,999">less than $74,999</a></li>
+                    <li><a href="#" data-bracket="$75,000-$99,999">$75,000-$99,999</a></li>
+                    <li><a href="#" data-bracket="over $100,000">over $100,000</a></li>
+                  </ul>
+              </li>
+              <li>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <a href="#">Article Type</a><span class="caret"></span>
+                 </button>
+                  <ul id="type-filter" class="filter dropdown-menu">
+                    <li><a href="#" data-pagetype="table of contents">table of contents</a></li>
+                    <li><a href="#" data-pagetype="feature">feature</a></li>
+                    <li><a href="#" data-pagetype="food">food</a></li>
+                    <li><a href="#" data-pagetype="review">review</a></li>
+                  </ul>
+              </li>  
+              <ul id="filter" class="filter">
+                <li><a href="#" id="filter-none" data-pub="Show All!">Show All</a></li>
+              </ul>
+            </div>
+
 
 
           </nav>
         </div><!-- end navigation column -->
 
-        <div class="col-sm-9 col-sm-offset-1">
+        <div class="col-sm-9">
           <article id="analysis">
             <h1>Dissections</h1>
 
@@ -93,8 +117,10 @@
         </div>
         <div class="info">
           <p class="pub">{{publication}}</p>
-          <p class="income">Median Household Income {{hhi}}</p>
-          <p class="percent">{{percentwhite}}% White Space</p>
+          <p class="subhead">Median Household Income</p>
+          <p class="income">{{hhi}}</p>
+          <p class="subhead">white space</p>
+          <p class="percent">{{percentwhite}} percent</p>
           <p class="bracket" style="display:none">{{bracket}}</p>
           <p class="pagetype" style="display:none">{{type}}</p>
 
