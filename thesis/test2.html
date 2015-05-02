@@ -34,7 +34,6 @@
         <div class="col-sm-2">
           <nav>
             <ul id="pub-filter" class="filter">
-              <li><a href="#" id="filter-none" data-pub="Show All!">Show All</a></li>
               <li><a href="#" data-pub="Woman's World">Woman's World</a></li>
               <li><a href="#" data-pub="People">People</a></li>
               <li><a href="#" data-pub="Time">Time</a></li>
@@ -45,6 +44,22 @@
               <li><a href="#" data-pub="Wallpaper">Wallpaper</a></li>
               <li><a href="#" data-pub="New York Times Magazine">New York Times Magazine</a></li>
             </ul>
+            <ul id="bracket-filter" class="filter">
+              <li><a href="#" data-bracket="less than $74,999">less than $74,999</a></li>
+              <li><a href="#" data-bracket="$75,000-$99,999">$75,000-$99,999</a></li>
+              <li><a href="#" data-bracket="over $100,000">over $100,000</a></li>
+            </ul>
+            <ul id="type-filter" class="filter">
+              <li><a href="#" data-pagetype="table of contents">table of contents</a></li>
+              <li><a href="#" data-pagetype="feature">feature</a></li>
+              <li><a href="#" data-pagetype="food">food</a></li>
+              <li><a href="#" data-pagetype="review">review</a></li>
+            </ul>
+            <ul id="filter" class="filter">
+              <li><a href="#" id="filter-none" data-pub="Show All!">Show All</a></li>
+            </ul>
+
+
           </nav>
         </div><!-- end navigation column -->
 
@@ -68,7 +83,7 @@
 
     <script id="whitespace" type="text/template">
     {{#.}}
-    <li class="{{pages}} {{publication}} {{bracket}}">
+    <li class="{{pages}} {{publication}} {{bracket}} {{type}}">
       <div class="block" >
         <div id="wscansdiv" class="imageContainer imggrid">
           <img src="images/scans/{{png}}" class="whitespaceimg" />
@@ -78,8 +93,11 @@
         </div>
         <div class="info">
           <p class="pub">{{publication}}</p>
-          <p class="income">Median Household Income ${{hhi}}</p>
+          <p class="income">Median Household Income {{hhi}}</p>
           <p class="percent">{{percentwhite}}% White Space</p>
+          <p class="bracket" style="display:none">{{bracket}}</p>
+          <p class="pagetype" style="display:none">{{type}}</p>
+
         </div>
       </div>
     </li>
