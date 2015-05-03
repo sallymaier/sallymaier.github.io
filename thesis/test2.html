@@ -21,15 +21,10 @@
 
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/dissection.css" rel="stylesheet"> 
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
   </head>
 
   <body>
@@ -37,12 +32,25 @@
     <main class="container" style="padding-top: 40px;">
       <div class="row">
 
-        <div class="col-sm-2">
-          <nav>
-            <div class="btn-group dropup">
+        
+        <nav>
+          <div class="btn-group ">
+            <div class="col-sm-2 col-sm-offset-2">
               <li>
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                  <a href="#">Publication</a><span class="caret"></span>
+                  <a href="#">Dissection</a>
+                </button>
+                    <ul id="dissection-filter" class="filter dropdown-menu">
+                      <li><a href="#" data-dissection="whitespace">White Space</a></li>
+                      <li><a href="#" data-dissection="layers">Layers</a></li>
+                    </ul>
+              </li>
+            </div>
+
+            <div class="col-sm-2">
+              <li>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  <a href="#">Publication</a>
                 </button>
                     <ul id="pub-filter" class="filter dropdown-menu">
                       <li><a href="#" data-pub="Woman's World">Woman's World</a></li>
@@ -56,9 +64,11 @@
                       <li><a href="#" data-pub="New York Times Magazine">New York Times Magazine</a></li>
                     </ul>
               </li>
+            </div>
+            <div class="col-sm-2">
               <li>
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                  <a href="#">Income Bracket</a><span class="caret"></span>
+                  <a href="#">Income Bracket</a>
                 </button>
                   <ul id="bracket-filter" class="filter dropdown-menu">
                     <li><a href="#" data-bracket="less than $74,999">less than $74,999</a></li>
@@ -66,9 +76,11 @@
                     <li><a href="#" data-bracket="over $100,000">over $100,000</a></li>
                   </ul>
               </li>
-              <li>
+            </div>
+            <div class="col-sm-2">
+              <li>  
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    <a href="#">Article Type</a><span class="caret"></span>
+                    <a href="#">Article Type</a>
                  </button>
                   <ul id="type-filter" class="filter dropdown-menu">
                     <li><a href="#" data-pagetype="table of contents">table of contents</a></li>
@@ -76,20 +88,24 @@
                     <li><a href="#" data-pagetype="food">food</a></li>
                     <li><a href="#" data-pagetype="review">review</a></li>
                   </ul>
-              </li>  
+              </li> 
+            </div>
+            <div class="col-sm-2">
               <ul id="filter" class="filter">
-                <li><a href="#" id="filter-none" data-pub="Show All!">Show All</a></li>
+                <li>
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <a href="#" id="filter-none" data-pub="Show All!">Show All</a>
+                  </button>
+                </li>
               </ul>
             </div>
-
-
-
-          </nav>
+          </div>
+        </nav>
         </div><!-- end navigation column -->
-
-        <div class="col-sm-9">
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
           <article id="analysis">
-            <h1>Dissections</h1>
 
             <ul class="list grid-display" id="whitespacediv">
               <!-- dynamically filled with some sweet magix -->
@@ -102,7 +118,7 @@
     </main>  
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/mustache.js"></script>
 
     <script id="whitespace" type="text/template">
@@ -115,14 +131,20 @@
             <img src="images/overlays/{{overlay}}" class="trans whitespaceimg pretrans " />
           </div>
         </div>
-        <div class="info">
+        <div class="info {{publication}} {{pages}}">
           <p class="pub">{{publication}}</p>
-          <p class="subhead">Median Household Income</p>
-          <p class="income">{{hhi}}</p>
-          <p class="subhead">white space</p>
-          <p class="percent">{{percentwhite}} percent</p>
-          <p class="bracket" style="display:none">{{bracket}}</p>
-          <p class="pagetype" style="display:none">{{type}}</p>
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="subhead">Median Household Income</p>
+              <p class="income">{{hhi}}</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="subhead">white space</p>
+              <p class="percent">{{percentwhite}} percent</p>
+              <p class="bracket" style="display:none">{{bracket}}</p>
+              <p class="pagetype" style="display:none">{{type}}</p>
+            </div>
+          </div>
 
         </div>
       </div>
