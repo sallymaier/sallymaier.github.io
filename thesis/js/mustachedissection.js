@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+  //sorter sticker
+
+  $(function() {
+    $('#sorter-wrapper').height($("#sorter").height());
+    
+    $('#sorter').affix({
+        offset: { top: $('#sorter').offset().top }
+    });
+  });
+
   $.getJSON('https://sheetlabs.com/SALL/dataforwhitespace', function(data) {
 
     //mustache for images
@@ -51,6 +61,21 @@ $(document).ready(function() {
       // filter items in the list
       whitespacedivList.filter(function(item) {
         if (item.values().pagetype === selection) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+      return false;
+    });
+
+    $('#analysis-filter li a').on('click touch', function()  {
+      var selection = $(this).data('dissection'); 
+      console.log(selection);
+
+      // filter items in the list
+      whitespacedivList.filter(function(item) {
+        if (item.values().dissection === selection) {
           return true;
         } else {
           return false;

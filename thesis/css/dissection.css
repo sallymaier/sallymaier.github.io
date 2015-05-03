@@ -214,10 +214,52 @@ button.btn {
   color: #0000ff; 
 }
   
-nav {
+.nav {
     text-transform: uppercase;   
     font-size: 1em;   
     color: #2800D7;
+    width: 100%;
+}
+
+#sorter.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(237,237,242, 1);
+}
+
+
+#sorter > .btn-group {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+#sorter {
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    background-color: rgba(237,237,242, 0);
+    z-index: 99;
+}
+
+#sorter li {
+      z-index: 100;
+
 }
 
 .btn-group {
@@ -231,9 +273,12 @@ nav {
     margin: 0;
     letter-spacing: .1em;
     margin-left: -4px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(237,237,242, 1);
     border: none;
     box-shadow: none;
+    border-radius: 0px;
+    padding-bottom: .6em;
+}
 }
 
 .dropdown-menu > li > a:hover,
@@ -241,7 +286,6 @@ nav {
   color: #2800D7;
   text-decoration: none;
   background-color: #ffff00;
-  margin-left:0px;
 }
 
 .dropup {
@@ -252,21 +296,21 @@ nav {
   /* bottom: -15px; */
 }
 
-nav, button.btn.btn-default.dropdown-toggle.sort-studentlist, .dropdown-menu > li > a{
+.nav, button.btn.btn-default.dropdown-toggle.sort-studentlist, .dropdown-menu > li > a{
   /* font-weight: 700; */
   /* font-size: 16px; */
   /* color:#666; */
 }
   
-nav li, ul {
+.nav li, ul {
   list-style: none;
 }
 
-nav a, .dropdown-menu > li > a {
+.nav a, .dropdown-menu > li > a {
   color:#2800D7;
 }
   
-nav a{
+.nav a{
     border-radius: 0;
     margin: 0;
     padding: .25em;
@@ -278,15 +322,13 @@ nav a{
   background: 0;
 }
 
-nav a:hover, nav a:focus {
+.nav a:hover, .nav a:focus {
   color: #2800D7;  
-  background: 0;
   text-decoration: none;
-  background: #ffff00;
-  padding: .25em;
+  background-color: #ffff00;
 }
   
-nav a:active {
+.nav a:active {
   background-color: #ffff00;  
   text-decoration: none;
 }
@@ -300,19 +342,28 @@ nav a:active {
   border-bottom: 2px solid #ffff00;
   letter-spacing: 1px;
 }
+
+.mainnav li {
+   z-index: 101;
+}
+
+.mainnav li a{
+   background-color: #ffff00;
+   font-weight: 900;
+}
   
 .nav-pills li a:hover {
   color: #ffff00;  
   background: 0;
 }
 
-nav ul > li > ul {  /** First level subnav **/
+.nav ul > li > ul {  /** First level subnav **/
   margin-left: 0;
   padding-left: 0;
   line-height: 1.5em;
 }
   
-nav ul > li > ul > li > ul {  /** Second level subnav in simpler nav **/
+.nav ul > li > ul > li > ul {  /** Second level subnav in simpler nav **/
   margin-left: 0;
   padding-left: 15px;
   margin-bottom: 10px;
