@@ -10,56 +10,86 @@ $(document).ready(function() {
     });
   });
 
-  $.getJSON('https://sheetlabs.com/SALL/dataforwhitespace', function(data) {
+  $.getJSON('https://sheetlabs.com/SALL/WhitespaceRotationLayersData', function(data) {
 
     //mustache for images
     var template = $('#whitespace').html();
     var info = Mustache.to_html(template, data);
     $('#whitespacediv').html(info);
 
+    var template = $('#rotations').html();
+    var info = Mustache.to_html(template, data);
+    $('#rotationsdiv').html(info);  
+
+
+
     // trying the list.js here, seems to work better here... weird.
     var options = {
       valueNames: [ 'pub', 'bracket', 'pagetype' ]
     };
 
-    var whitespacedivList = new List('analysis', options);
+    var whitespaceList = new List('whitespacecont', options);
+    var rotationsList = new List('rotationscont', options);
 
     $('#pub-filter li a').on('click touch', function()  {
       var selection = $(this).data('pub'); 
-      console.log(selection);
 
       // filter items in the list
-      whitespacedivList.filter(function(item) {
+      whitespaceList.filter(function(item) {
         if (item.values().pub === selection) {
           return true;
         } else {
           return false;
         }
       });
+
+      rotationsList.filter(function(item) {
+        if (item.values().pub === selection) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+
       return false;
     });
 
     $('#bracket-filter li a').on('click touch', function()  {
       var selection = $(this).data('bracket'); 
-      console.log(selection);
 
       // filter items in the list
-      whitespacedivList.filter(function(item) {
+      whitespaceList.filter(function(item) {
         if (item.values().bracket === selection) {
           return true;
         } else {
           return false;
         }
       });
+
+      rotationsList.filter(function(item) {
+        if (item.values().bracket === selection) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+
       return false;
     });
 
     $('#type-filter li a').on('click touch', function()  {
       var selection = $(this).data('pagetype'); 
-      console.log(selection);
 
       // filter items in the list
-      whitespacedivList.filter(function(item) {
+      whitespaceList.filter(function(item) {
+        if (item.values().pagetype === selection) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+
+      rotationsList.filter(function(item) {
         if (item.values().pagetype === selection) {
           return true;
         } else {
@@ -71,10 +101,17 @@ $(document).ready(function() {
 
     $('#analysis-filter li a').on('click touch', function()  {
       var selection = $(this).data('dissection'); 
-      console.log(selection);
 
       // filter items in the list
-      whitespacedivList.filter(function(item) {
+      whitespaceList.filter(function(item) {
+        if (item.values().dissection === selection) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+
+      rotationsList.filter(function(item) {
         if (item.values().dissection === selection) {
           return true;
         } else {
@@ -86,10 +123,30 @@ $(document).ready(function() {
 
     // show all items
     $('#filter-none').click(function() {
-      whitespacedivList.filter();
+      whitespaceList.filter();
       return false;
     });
+    $('#filter-none').click(function() {
+      rotationsList.filter();
+      return false;
+    });
+  }); 
+
+  //an attempt at video mouseovers. probably not worth the effort.
+  
+  // $('.quick-video').mouseover(function()  {
+  //   var playerid = $(this).data('playerid'); 
+  //       player = $("#player_" + playerid);
+  //       froogaloop = $f(player[0].id);
+
+  //   console.log(playerid);
+  //   console.log(player);
     
-  });
+  //   player.mouseover(function(){
+  //       froogaloop.api('play');
+  //   }).mouseout(function(){
+  //       froogaloop.api('pause');
+  //   });
+  // });
 
 });

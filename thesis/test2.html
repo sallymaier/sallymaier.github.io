@@ -33,17 +33,13 @@
         <div class="nav">
           <div class="btn-group affix" >
             <div class="col-sm-2 mainnav">
-              <li>
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                  <a href="#">Design Dissection</a>
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a href="#intro">Intro</a></li>
-                  <li><a href="#method">Method</a></li>
-                  <li><a href="#analysis">Analysis</a></li>
-                  <li><a href="#about">About</a></li>
-                </ul>
-              </li>
+              <ul>
+                <li><a href="#">Design Dissection</a></li>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#method">Method</a></li>
+                <li><a href="#analysis">Analysis</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -118,9 +114,18 @@
       </div><!-- end navigation column -->
       <div class="row">
         <div class="col-sm-10 col-sm-offset-2">
-          <article id="analysis">
+          <article id="whitespacecont">
 
             <ul class="list grid-display" id="whitespacediv">
+              <!-- dynamically filled with some sweet magix -->
+            </ul>
+          </article>
+          <article id="rotationscont">
+
+
+
+
+            <ul class="list grid-display" id="rotationsdiv">
               <!-- dynamically filled with some sweet magix -->
             </ul>
 
@@ -133,14 +138,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/mustache.js"></script>
+    <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+
 
     <script id="whitespace" type="text/template">
     {{#.}}
     <li class="{{pages}} {{publication}} {{bracket}} {{type}}">
       <div class="block" >
-        <div id="wscansdiv" class="imageContainer imggrid">
+        <div class="wscansdiv imageContainer imggrid">
           <img src="images/scans/{{png}}" class="whitespaceimg" />
-          <div class="overlayContainer imggrid" id="woverlaydiv">
+          <div class="overlayContainer imggrid woverlaydiv">
             <img src="images/overlays/{{overlay}}" class="trans whitespaceimg pretrans " />
           </div>
         </div>
@@ -152,14 +159,41 @@
               <p class="percent">{{percentwhite}} percent</p>
               <p class="bracket" style="display:none">{{bracket}}</p>
               <p class="pagetype" style="display:none">{{type}}</p>
+              <p class="dissection" style="display:none">whitespace</p>
         </div>
       </div>
     </li>
     {{/.}}
     </script>
 
+    <script id="rotations" type="text/template">
+    {{#.}}
+    <li class="{{pages}} {{publication}} {{bracket}} {{type}} ">
+      <div class="block" >
+        <div class="rotations imageContainer imggrid ">
+          <div class="iframewrapper{{pages}}">
+            <iframe src="https://player.vimeo.com/video/{{videoid}}?color=ffffff&loop=1&title=0&byline=0&portrait=0"  height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="info {{publication}} {{pages}}">
+          <p class="pub">{{publication}}</p>
+              <p class="subhead">Median Household Income</p>
+              <p class="income">{{hhi}}</p>
+              <p class="subhead">layers</p>
+              <p class="layers">{{layers}}</p>
+              <p class="bracket" style="display:none">{{bracket}}</p>
+              <p class="pagetype" style="display:none">{{type}}</p>
+              <p class="dissection" style="display:none">layers</p>
+          </div>
+        </div>
+      </li>
+      {{/.}}
+      </script>
+
+
     <script src="js/list.js"></script>
     <script src="js/mustachedissection.js"></script>
+
 
   </body>
 </html>

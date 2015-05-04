@@ -561,6 +561,28 @@ ul.grid-display .thumb {
 
 }
 
+.iframewrappersingle {
+  position: relative;
+  padding-bottom: 134.83%;
+  height: 0;
+}
+
+.iframewrapperspread {
+  position: relative;
+  padding-bottom: 67.415%;
+  height: 0;
+}
+
+
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .info {
     width: 100%;
 }
@@ -579,15 +601,15 @@ ul.grid-display .thumb {
     padding-bottom: 15px;
 }
 
-.info.Real.Simple {
+#whitespacediv .info.Real.Simple {
     margin-top: -60px;
 }
 
-.info.New.York.Times.Magazine {
+#whitespacediv .info.New.York.Times.Magazine {
     margin-top: -60px;
 }
 
-.info.World {
+#whitespacediv .info.World {
     margin-top: -50px;
 }
 
