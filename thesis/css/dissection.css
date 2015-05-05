@@ -201,10 +201,6 @@ button.btn {
   margin: 0;
   background-color: rgba(0,0,0,0);
   border-radius:0;
-  text-transform: uppercase;
-  font-size: .6em;
-  letter-spacing: .1em;
-  color: #2800D7;
 }
   
 .btn-group.open .dropdown-toggle a {
@@ -220,6 +216,12 @@ nav {
     color: #2800D7;
     width: 100%;
     list-style: none;
+    text-transform: uppercase;
+    font-size: .6em;
+    letter-spacing: .1em;
+    background-color: rgba(237,237,242, 1);
+    padding-top: 10px;
+
 }
 
 .left-fixed-nav {
@@ -232,19 +234,15 @@ nav {
 }
 
 .dropdown-menu {
-    font-size: .6em;
-    list-style: none;
     padding: 0;
     margin: 0;
-    letter-spacing: .1em;
     margin-left: -4px;
-    background-color: rgba(237,237,242, 1);
     border: none;
     box-shadow: none;
     border-radius: 0px;
     padding-bottom: .6em;
 }
-}
+
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
