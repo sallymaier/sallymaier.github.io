@@ -2,13 +2,13 @@ $(document).ready(function() {
 
   //sorter sticker
 
-  $(function() {
-    $('#sorter-wrapper').height($("#sorter").height());
+  // $(function() {
+  //   $('#sorter-wrapper').height($("#sorter").height());
     
-    $('#sorter').affix({
-        offset: { top: $('#sorter').offset().top }
-    });
-  });
+  //   $('#sorter').affix({
+  //       offset: { top: $('#sorter').offset().top }
+  //   });
+  // });
 
   $.getJSON('https://sheetlabs.com/SALL/WhitespaceRotationLayersData', function(data) {
 
