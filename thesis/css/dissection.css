@@ -214,51 +214,17 @@ button.btn {
   color: #0000ff; 
 }
   
-.nav {
+nav {
     text-transform: uppercase;   
     font-size: 1em;   
     color: #2800D7;
     width: 100%;
+    list-style: none;
 }
 
-#sorter.affix {
+.left-fixed-nav {
     position: fixed;
-    top: 0;
-    width: 100%;
-
-}
-
-.affix {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: rgba(237,237,242, 1);
-}
-
-
-#sorter > .btn-group {
-    border-left: 0;
-    border-right: 0;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -o-border-radius: 0;
-}
-
-#sorter {
-    height: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: absolute;
-    background-color: rgba(237,237,242, 1);
-    z-index: 100;
-}
-
-#sorter li {
-
+    top: 20px;
 }
 
 .btn-group {
