@@ -341,6 +341,9 @@ button.btn {
   border-bottom: 2px solid #ffff00;
   letter-spacing: 1px;
 }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: #FFFF00;
+}
 
 .mainnav li {
    z-index: 101;
