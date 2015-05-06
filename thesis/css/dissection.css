@@ -199,6 +199,12 @@ a {
 
 /* Nav Styles ***************************/
 
+.affix {
+  z-index: 999;
+  background-color: rgba(237,237,242, 1);
+  width: 808px;
+}
+
 button.btn {
   border: 0;
   padding: 0;
@@ -252,6 +258,7 @@ nav {
 
 .sorter {
   padding-top: 15px;
+  z-index: 200;
 }
 
 .dropdown-menu {

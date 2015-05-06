@@ -32,6 +32,29 @@ $('#sorter').affix({
     var whitespaceList = new List('whitespacecont', options);
     var rotationsList = new List('rotationscont', options);
 
+    $('#analysis-filter li a').on('click touch', function()  {
+      var selection = $(this).data('dissection'); 
+
+      // filter items in the list
+      whitespaceList.filter(function(item) {
+        if (item.values().dissection === selection) {
+          return true;
+        } else {
+          return false;
+
+        }
+    });
+
+      rotationsList.filter(function(item) {
+        if (item.values().dissection === selection) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+      return false;
+    });
+
     $('#pub-filter li a').on('click touch', function()  {
       var selection = $(this).data('pub'); 
 
@@ -93,6 +116,7 @@ $('#sorter').affix({
       rotationsList.filter(function(item) {
         if (item.values().pagetype === selection) {
           return true;
+
         } else {
           return false;
         }
@@ -100,27 +124,7 @@ $('#sorter').affix({
       return false;
     });
 
-    $('#analysis-filter li a').on('click touch', function()  {
-      var selection = $(this).data('dissection'); 
 
-      // filter items in the list
-      whitespaceList.filter(function(item) {
-        if (item.values().dissection === selection) {
-          return true;
-        } else {
-          return false;
-        }
-      });
-
-      rotationsList.filter(function(item) {
-        if (item.values().dissection === selection) {
-          return true;
-        } else {
-          return false;
-        }
-      });
-      return false;
-    });
 
     // show all items
     $('#filter-none').click(function() {
