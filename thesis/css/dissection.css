@@ -227,10 +227,26 @@ nav {
 .left-fixed-nav {
     position: fixed;
     top: 20px;
+    font-size: .6em;
+    letter-spacing: .1em;
 }
+
+.left-fixed-nav li {
+      padding-bottom: .6em;
+}
+
+.left-fixed-nav li a{
+      background-color: #ffff00;
+}
+
+
 
 .btn-group {
     width: 100%;
+}
+
+.sorter {
+  padding-top: 15px;
 }
 
 .dropdown-menu {
@@ -241,6 +257,9 @@ nav {
     box-shadow: none;
     border-radius: 0px;
     padding-bottom: .6em;
+    font-size: .6em;
+    background-color: #ededf2;
+    color: #2800D7;
 }
 
 
