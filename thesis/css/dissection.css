@@ -191,6 +191,10 @@ headline h4 {
 
 }
 
+a {
+    color: #2800D7;
+}
+
 
 
 /* Nav Styles ***************************/
@@ -212,6 +216,7 @@ button.btn {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   color: #0000ff; 
+
 }
   
 nav {
