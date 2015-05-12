@@ -30,95 +30,86 @@
   <body>
     <div class="container">
       <div class="row">
-        <nav class="nav-stacked navbar-left left-fixed-nav">
-            <ul>
-              <li><a href="#">Design Dissection</a></li>
+        <h1>Design</br>Dissection</h1>
+        <nav class="nav-bar sorter">
+          <div class="col-sm-10 col-sm-offset-2">
+            <div class="col-sm-2">
               <li><a href="#intro">Intro</a></li>
+            </div>
+            <div class="col-sm-2">
               <li><a href="#method">Method</a></li>
+            </div>
+            <div class="col-sm-2">
               <li><a href="#analysis">Analysis</a></li>
+            </div>
+            <div class="col-sm-2">
               <li><a href="#about">About</a></li>
-            </ul>
+            </div>
+          </div>
         </nav>
-        <div class="row">
-          <nav class="nav-bar sorter">
-            <div id="">
-              <div class="col-sm-10 col-sm-offset-2" data-spy="affix" data-offset-top="15" id="sort" >
-                <div class="col-sm-2">
-                  <li>
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                      <a href="#">Analysis Type</a>
-                    </button>
-                    <ul id="analysis-filter" class="filter dropdown-menu">
-                      <li><a href="#" data-dissection="whitespace">White Space</a></li>
-                      <li><a href="#" data-dissection="layers">Layers</a></li>
-                    </ul>
-                  </li>
-                </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <nav class="nav-stacked navbar-left left-fixed-nav">
+            <div id="MainMenu">
+              <div class="sorter list-group panel">
+                <h2><a href="#">Visual Research</a></h2>
 
-                <div class="col-sm-2">
+                <a href="#" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Analysis Type</a>
+                <div class="collapse" id="analysis-filter" class="filter">
+                  <a href="" class="list-group-item" data-dissection="whitespace">White Space</a>
+                  <a href="" data-dissection="layers" class="list-group-item">Layers</a>
+                </div>
+                <a href="#" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Publication</a>
+                  <div class="collapse filter" id="pub-filter">
+                    <a href="#" class="list-group-item" data-pub="Woman's World">Woman's World</a>
+                    <a href="#" class="list-group-item" data-pub="People">People</a>
+                    <a href="#" class="list-group-item" data-pub="Time">Time</a>
+                    <a href="#" class="list-group-item" data-pub="Wired">Wired</a>
+                    <a href="#" class="list-group-item" data-pub="Bon Appetit">Bon Appetit</a>
+                    <a href="#" class="list-group-item" data-pub="Real Simple">Real Simple</a>
+                    <a href="#" class="list-group-item" data-pub="New Yorker">New Yorker</a>
+                    <a href="#" class="list-group-item" data-pub="Wallpaper">Wallpaper</a>
+                    <a href="#" class="list-group-item" data-pub="New York Times Magazine">New York Times Magazine</a>
+                  </div>
+                </div>
+                <li>
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <a href="#">Income Bracket</a>
+                  </button>
+                    <ul id="bracket-filter" class="filter dropdown-menu">
+                      <li><a href="#" data-bracket="less than $74,999">less than $74,999</a></li>
+                      <li><a href="#" data-bracket="$75,000-$99,999">$75,000-$99,999</a></li>
+                      <li><a href="#" data-bracket="over $100,000">over $100,000</a></li>
+                    </ul>
+                </li>
+                <li>  
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      <a href="#">Article Type</a>
+                   </button>
+                    <ul id="type-filter" class="filter dropdown-menu">
+                      <li><a href="#" data-pagetype="table of contents">table of contents</a></li>
+                      <li><a href="#" data-pagetype="feature">feature</a></li>
+                      <li><a href="#" data-pagetype="food">food</a></li>
+                      <li><a href="#" data-pagetype="review">review</a></li>
+                    </ul>
+                </li> 
                   <li>
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                      <a href="#">Publication</a>
+                      <a href="#" id="filter-none" data-pub="Show All!">Show All</a>
                     </button>
-                        <ul id="pub-filter" class="filter dropdown-menu">
-                          <li><a href="#" data-pub="Woman's World">Woman's World</a></li>
-                          <li><a href="#" data-pub="People">People</a></li>
-                          <li><a href="#" data-pub="Time">Time</a></li>
-                          <li><a href="#" data-pub="Wired">Wired</a></li>
-                          <li><a href="#" data-pub="Bon Appetit">Bon Appetit</a></li>
-                          <li><a href="#" data-pub="Real Simple">Real Simple</a></li>
-                          <li><a href="#" data-pub="New Yorker">New Yorker</a></li>
-                          <li><a href="#" data-pub="Wallpaper">Wallpaper</a></li>
-                          <li><a href="#" data-pub="New York Times Magazine">New York Times Magazine</a></li>
-                        </ul>
                   </li>
-                </div>
-                <div class="col-sm-2">
-                  <li>
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                      <a href="#">Income Bracket</a>
-                    </button>
-                      <ul id="bracket-filter" class="filter dropdown-menu">
-                        <li><a href="#" data-bracket="less than $74,999">less than $74,999</a></li>
-                        <li><a href="#" data-bracket="$75,000-$99,999">$75,000-$99,999</a></li>
-                        <li><a href="#" data-bracket="over $100,000">over $100,000</a></li>
-                      </ul>
-                  </li>
-                </div>
-                <div class="col-sm-2">
-                  <li>  
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        <a href="#">Article Type</a>
-                     </button>
-                      <ul id="type-filter" class="filter dropdown-menu">
-                        <li><a href="#" data-pagetype="table of contents">table of contents</a></li>
-                        <li><a href="#" data-pagetype="feature">feature</a></li>
-                        <li><a href="#" data-pagetype="food">food</a></li>
-                        <li><a href="#" data-pagetype="review">review</a></li>
-                      </ul>
-                  </li> 
-                </div>
-                <div class="col-sm-2">
-                    <li>
-                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        <a href="#" id="filter-none" data-pub="Show All!">Show All</a>
-                      </button>
-                    </li>
-                </div>
               </div>
-            </div> <!--wrapper-->
+            </div>
           </nav>
       </div>
-      </div><!-- end navigation column -->
-      <div class="row">
-        <div class="col-sm-10 col-sm-offset-2">
-          <article id="whitespacecont">
+          <article id="whitespacecont" class="col-sm-10">
 
             <ul class="list grid-display" id="whitespacediv">
               <!-- dynamically filled with some sweet magix -->
             </ul>
           </article>
-          <article id="rotationscont">
+          <article id="rotationscont" class="col-sm-10 col-sm-offset-2">
 
 
 
@@ -134,7 +125,7 @@
     </div>  
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/mustache.js"></script>
     <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 

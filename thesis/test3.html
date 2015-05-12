@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Dissection</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lakki+Reddy' rel='stylesheet' type='text/css'>
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dissection.css" rel="stylesheet"> 
+
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="thesistitle col-sm-2">
+          <h1><a href="#">Design<br>Dissection</a></h1>
+        </div>
+      </row>
+    </div>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header sorter">
+            <div class="col-sm-2 col-sm-offset-2">
+              <li><a href="index.html#intro">Intro</a></li>
+            </div>
+            <div class="col-sm-2">
+              <li><a href="index.html#method">Method</a></li>
+            </div>
+            <div class="col-sm-2">
+              <li><a href="research.html">Visual Research</a></li>
+            </div>
+            <div class="col-sm-2">
+              <li><a href="index.html#about">About</a></li>
+            </div>
+            <div class="col-sm-2">
+              <li><a href="http://thesis2015.micadesign.org" target="blank">MICA GDMFA 2015</a></li>
+            </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <nav class="nav-stacked navbar-left left-fixed-nav col-sm-2">
+          <h2><a href="#">Visual Research</a></h2>
+          <div id="MainMenu">
+            <div class="sorter">
+              <li><a href="#analysis-filter" class="" data-toggle="collapse" data-parent="#MainMenu">Analysis Type</a></li>
+              <ul class="collapse" id="analysis-filter">
+                <li><a href="#" class="navlevel2" data-parent="analysis-filter" data-dissection="whitespace">White Space</a></li>
+                <li><a href="#" class="navlevel2" data-parent="analysis-filter" data-dissection="layers">Layers</a></li>
+              </ul>
+
+
+              <li><a href="#pub-filter" class="" data-toggle="collapse" data-parent="#MainMenu">Publication</a></li>
+                <ul class="collapse filter" id="pub-filter">
+                  <li><a href="#" class="navlevel2" data-parent="pub-filter" data-pub="Woman's World">Woman's World</a></li>
+                  <li><a href="#" class="navlevel2" data-parent="pub-filter" data-pub="People">People</a></li>
+                  <li><a href="#" class="navlevel2" data-parent="pub-filter" data-pub="Time">Time</a></li>
+                  <li><a href="#" class="navlevel2" data-parent="pub-filter" data-pub="Wired">Wired</a></li>
+                  <li><a href="#" class="navlevel2" data-parent="pub-filter" data-pub="Bon Appetit">Bon Appetit</a></li>
+                  <li><a href="#" class="navlevel2" data-parent="pub-filter" data-pub="Real Simple">Real Simple</a></li>
+                  <li><a href="#" class="navlevel2" data-parent="pub-filter" data-pub="New Yorker">New Yorker</a></li>
+                  <li><a href="#" class="navlevel2" data-parent="pub-filter" data-pub="Wallpaper">Wallpaper</a></li>
+                  <li><a href="#" class="navlevel2" data-parent="pub-filter" data-pub="New York Times Magazine">NYT Magazine</a></li>
+                </ul>
+
+                <li><a href="#bracket-filter" class="" data-toggle="collapse" data-parent="#MainMenu">Income Bracket</a></li>
+                <ul class="collapse filter" id="bracket-filter">
+                  <li><a href="#" class="navlevel2" data-parent="bracket-filter" data-bracket="less than $74,999">less than $74,999</a></li>
+                  <li><a href="#" class="navlevel2" data-parent="bracket-filter" data-bracket="$75,000-$99,999">$75,000-$99,999</a></li>
+                  <li><a href="#" class="navlevel2" data-parent="bracket-filter" data-bracket="over $100,000">over $100,000</a></li>
+                </ul>
+
+                <li><a href="#type-filter" class="" data-toggle="collapse" data-parent="#MainMenu">Article Type</a></li>
+                <ul class="collapse filter" id="type-filter">
+                  <li><a href="#" class="navlevel2" data-parent="type-filter" data-pagetype="table of contents">table of contents</a></li>
+                  <li><a href="#" class="navlevel2" data-parent="type-filter" data-pagetype="feature">feature</a></li>
+                  <li><a href="#" class="navlevel2" data-parent="type-filter" data-pagetype="food">food</a></li>
+                  <li><a href="#" class="navlevel2" data-parent="type-filter" data-pagetype="review">review</a></li>
+                </ul>
+
+
+              </div>
+                <li>
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <a href="#" id="filter-none" data-pub="Show All!">Show All</a>
+                  </button>
+                </li>
+            </div>
+          </div>
+        </nav>
+        <div class="col-sm-10 col-sm-offset-2">
+          <article id="whitespacecont" >
+
+            <ul class="list grid-display" id="whitespacediv">
+              <!-- dynamically filled with some sweet magix -->
+            </ul>
+          </article>
+          <article id="rotationscont">
+
+
+
+
+            <ul class="list grid-display" id="rotationsdiv">
+              <!-- dynamically filled with some sweet magix -->
+            </ul>
+
+          </article>
+        </div><!-- end image grid column -->
+
+      </div>
+    </div>  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/mustache.js"></script>
+    <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+
+
+    <script id="whitespace" type="text/template">
+    {{#.}}
+    <li class="{{pages}} {{publication}} {{bracket}} {{type}}">
+      <div class="block" >
+        <div class="wscansdiv imageContainer imggrid">
+          <img src="images/scans/{{png}}" class="whitespaceimg" />
+          <div class="overlayContainer imggrid woverlaydiv">
+            <img src="images/overlays/{{overlay}}" class="trans whitespaceimg pretrans " />
+          </div>
+        </div>
+        <div class="info {{publication}} {{pages}}">
+          <p class="pub">{{publication}}</p>
+              <p class="subhead">Median Household Income</p>
+              <p class="income">{{hhi}}</p>
+              <p class="subhead">white space</p>
+              <p class="percent">{{percentwhite}} percent</p>
+              <p class="bracket" style="display:none">{{bracket}}</p>
+              <p class="pagetype" style="display:none">{{type}}</p>
+              <p class="dissection" style="display:none">whitespace</p>
+        </div>
+      </div>
+    </li>
+    {{/.}}
+    </script>
+
+    <script id="rotations" type="text/template">
+    {{#.}}
+    <li class="{{pages}} {{publication}} {{bracket}} {{type}} ">
+      <div class="block" >
+        <div class="rotations imageContainer imggrid ">
+          <div class="iframewrapper{{pages}}">
+            <iframe src="https://player.vimeo.com/video/{{videoid}}?color=ffffff&loop=1&title=0&byline=0&portrait=0"  height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="info {{publication}} {{pages}}">
+          <p class="pub">{{publication}}</p>
+              <p class="subhead">Median Household Income</p>
+              <p class="income">{{hhi}}</p>
+              <p class="subhead">layers</p>
+              <p class="layers">{{layers}}</p>
+              <p class="bracket" style="display:none">{{bracket}}</p>
+              <p class="pagetype" style="display:none">{{type}}</p>
+              <p class="dissection" style="display:none">layers</p>
+          </div>
+        </div>
+      </li>
+      {{/.}}
+      </script>
+
+
+    <script src="js/list.js"></script>
+    <script src="js/mustachedissection.js"></script>
+
+
+  </body>
+</html>

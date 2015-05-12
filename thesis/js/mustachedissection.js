@@ -26,7 +26,7 @@ $('#sorter').affix({
 
     // trying the list.js here, seems to work better here... weird.
     var options = {
-      valueNames: [ 'pub', 'bracket', 'pagetype' ]
+      valueNames: [ 'pub', 'bracket', 'pagetype', 'dissection' ]
     };
 
     var whitespaceList = new List('whitespacecont', options);
@@ -136,6 +136,9 @@ $('#sorter').affix({
       return false;
     });
   }); 
+
+
+
 
   //an attempt at video mouseovers. probably not worth the effort.
   
