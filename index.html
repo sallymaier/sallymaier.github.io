@@ -20,16 +20,20 @@
 	<div class="overlay">
 		<div class="intro col-md-offset-3 col-md-6">
 			<h1>Sally Maier</h1>
-			<h2>designs. teaches. makes messes. </br>
-				She lives in Baltimore, and works in Baltimore, Washington, DC, and on the internet.
+			<h2><a href="#behance-magix" class="scroll">designs</a>. teaches. makes messes. </br>
+				She <a href="http://www.instagram.com/abu2you" target="blank">lives</a> in Baltimore, and <a href="https://www.linkedin.com/in/sallylynnmaier" target="blank">works</a> in Baltimore, Washington, DC, and on the internet.
 </header>
 
 <main>  
 		<div class="container-fluid">
+
+      <div id="dynamic-pages" class="row">
+      </div>
+			
+
 	    <div id="behance-magix" class="row">
 	      <!-- insert some HTML via magic JS -->
-	        <img src="https://unsplash.it/400/300/?random" />
-	        <p>This will be erased when javascript draws our new content.</p>
+	        <p>Gallery</p>
 	    </div>
 	  </div>
   </div>
@@ -69,5 +73,22 @@
     </div>
     {{/projects}}
   </script>
+
+  <script id="project-page" type="text/template">
+      <div class="imagecontainer large">
+        <img src="{{project.covers.404}}" alt="{{name}}" />
+        <div class="bg-overlay"></div>
+      </div>
+      <div class="col-md-8 col-md-offset-2" id="project-{{project.id}}">
+      <h1>{{project.name}}</h1>
+      <h5 class="fields">{{#project.fields}}   {{.}}   {{/project.fields}}</h5>
+      <p class="description">{{project.description}}</p> 
+      <h6 class="close"><a>close</a></h6>    
+    </div>
+  </script>
+
+
+
+
 
 </body>

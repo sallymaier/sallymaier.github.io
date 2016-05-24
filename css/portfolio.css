@@ -7,19 +7,18 @@ body {
     font-family: Moriston, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
 }
 
-a {
-    color: white;
-}
 
-a:hover {
-    color: white;
+
+a:hover, a:active {
+    color: #F20068;
     text-decoration: none;
 }
 
-a:visited {
-    color: white;
+a, a:visited {
+    color: #F20068;
     text-decoration: none;
 }
+
 
 h5 {
     font-size: .9em;
@@ -133,6 +132,10 @@ header {
     left: 0;
 }
 
+#behance-magix {
+    padding-top: 30px;
+}
+
 .project img {
     width: 105%;
     min-height: 100%;
@@ -237,4 +240,40 @@ a.wrapping {
 
 .intro {
     margin-top: 25vh;
+}
+
+#dynamic-pages {
+    height: 100%;
+}
+
+.imagecontainer.large {
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    vertical-align: middle;
+    background-color: #A8AD9D;
+    mix-blend-mode: multiply;
+    position: relative;
+}
+
+.imagecontainer img {
+    vertical-align: middle;
+    width: 100%;
+    margin-top: -15%;
+    mix-blend-mode: luminosity;
+}
+
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    background-repeat: repeat;
+    background-image: url("../images/black-broken-diagonal-lines.png");
+    background-color: #A8AD9D;
+    background-blend-mode: multiply;
 }
