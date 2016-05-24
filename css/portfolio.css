@@ -1,0 +1,240 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: Moriston, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+h5 {
+    font-size: .9em;
+    text-transform: uppercase;
+    letter-spacing: .125em;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    border-bottom: solid 1.5px #DDE8C5;
+    padding-bottom: .1em;
+}
+
+h2 {
+    line-height: 1.5em;
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-caption {
+     right: 15%; 
+     left: 0; 
+     padding-bottom: 0; 
+     text-align: right;
+}
+
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+header {
+    height: 90vh;
+}
+
+.carousel {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel .item {
+    width: 100%;
+    height: 100%;
+}
+.title {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  text-shadow: 2px 2px #000;
+  color: #FFF;
+}
+
+.container-fluid {
+    width: 100%;
+    position:relative;
+}
+
+.overlay {
+    background-color: #F7FEFF;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.project img {
+    width: 105%;
+    min-height: 100%;
+    height: auto;
+    transition: all 1s ease;
+    display: block;
+    margin-left: -4%;
+}
+
+.project  a:hover img {
+    width: 108%;
+    min-height: 100%;
+    height: auto;
+    margin-left: -4%;
+}
+
+.project img:hover {
+    width: 108%;
+    min-height: 100%;
+    height: auto;
+    margin-left: -4%;
+}
+
+a.wrapping:hover {
+    background-color: #2B2727;
+}
+
+a.wrapping {
+    background-color: white;
+    transition: all .5s linear;
+}
+
+.wrapping {
+    overflow: hidden;
+}
+
+.project a img {
+    mix-blend-mode: multiply;
+}
+
+.project a.wrapping {
+  text-decoration: none;
+  display: block
+}
+
+.project h3 {
+    font-weight: 800;
+    font-size: .9em;
+    line-height: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    left: -50%;
+    position: relative;
+}
+
+.project h4 {
+    font-weight: 100;
+    font-size: .7em;
+    line-height: 1.7em;
+    text-align: center;
+    letter-spacing: .05em;
+    left: -50%;
+    position: relative;
+}
+
+.info {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+}
+
+.project  a h3 {
+    border: 1.5px solid #F9FF93;
+    padding: 1em;
+    opacity: 0;
+    transition: all 0.5s ease;
+    /* background-color: #E0F7F9; */
+    /* background-blend-mode: multiply; */
+}
+
+.project  a h4 {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.project  a:hover h3 {
+    color: #F7FEFF;
+    opacity: 1;
+}
+
+.project  a:hover h4 {
+    color: #DDE8C5;
+    opacity: 1;
+}
+
+
+.project {
+    padding-bottom: 30px;
+}
+
+.intro {
+    margin-top: 25vh;
+}

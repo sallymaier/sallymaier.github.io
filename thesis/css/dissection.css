@@ -433,11 +433,11 @@ div.input-group {
   color:#2800D7;
   }
 
-.headline {
+/*.headline {
   position: fixed;
   z-index: -100;
 
-}
+}*/
 
 .headlinecontainer{
   position: relative;
@@ -447,7 +447,7 @@ div.input-group {
 
 
 .largephoto {
-  background-attachment:scroll;
+  background-attachment:fixed;
   background-size:cover;
   background-position: left top;
   width:100%;

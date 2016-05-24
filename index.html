@@ -1,14 +1,73 @@
----
-layout: frontpage
-title: The Economics of Taste in Graphic Design
----
+<!doctype html>
 
-{% for post in site.categories.essay] %}
+<html>
 
+<head>
+    <meta charset="UTF-8" />
+    <title>Sally Maier</title>
 
     
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="fonts/moriston/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
 
-        {{ post.content }}
-        
-        
-{% endfor %}
+</head>
+
+<body>
+
+
+<header>
+	<div class="overlay">
+		<div class="intro col-md-offset-3 col-md-6">
+			<h1>Sally Maier</h1>
+			<h2>designs. teaches. makes messes. </br>
+				She lives in Baltimore, and works in Baltimore, Washington, DC, and on the internet.
+</header>
+
+<main>  
+		<div class="container-fluid">
+	    <div id="behance-magix" class="row">
+	      <!-- insert some HTML via magic JS -->
+	        <img src="https://unsplash.it/400/300/?random" />
+	        <p>This will be erased when javascript draws our new content.</p>
+	    </div>
+	  </div>
+  </div>
+</main>
+
+
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+  <script src="js/portfolio.js"></script>
+
+<!-- for templated carousel
+  <script id="carousel-slides" type="text/template">
+    {{#projects}}
+		<div class="item">
+	        <img src="{{covers.404}}" data-color="lightblue" alt="{{name}}">
+	        <div class="carousel-caption" >
+          		<a href="#{{id}}" data-project-id="{{id}}"> <h3 class="name">{{name}}</h3></a>
+          	</div>
+	    </div>
+    {{/projects}}
+  </script>
+-->
+
+  <!-- gallery template -->
+  <script id="project-cards" type="text/template">
+    {{#projects}}
+    <div class="project col-md-3 col-sm-6" id="b{{id}}">
+      <a class="wrapping" href="#{{id}}" data-project-id="{{id}}">
+        <img src="{{covers.404}}" alt="{{name}}" />
+        <div class="info">
+          <h3 class="name">{{name}}</h3>
+          <h4 class="fields">{{#fields}}{{.}}</br>{{/fields}}</h4>
+        </div>
+      </a>
+    </div>
+    {{/projects}}
+  </script>
+
+</body>

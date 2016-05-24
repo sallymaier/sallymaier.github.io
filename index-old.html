@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sally Maier</title>
+
+    
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="fonts/moriston/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
+
+</head>
+
+<body>
+
+
+<header>
+	<div id="mycarousel" class="carousel slide carousel-fade" data-ride="carousel">
+	  <!-- Indicators -->
+	  <!-- <ol class="carousel-indicators">
+	    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#mycarousel" data-slide-to="1"></li>
+	    <li data-target="#mycarousel" data-slide-to="2"></li>
+	    <li data-target="#mycarousel" data-slide-to="3"></li>
+	    <li data-target="#mycarousel" data-slide-to="4"></li>
+	  </ol> -->
+
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox" id="project-slides">
+	    <div class="item">
+	        <img src="images/exfull.jpg" data-color="lightblue" alt="Design Dissection">
+	        <div class="carousel-caption" >
+          		<a href="#25096225"> <h3>Design Dissection</h3></a>
+          	</div>
+	    </div>
+	    <div class="item">
+	        <img src="images/ex1.jpg" data-color="lightblue" alt="Design Dissection">
+	        <div class="carousel-caption" >
+          		<a href="#25096225"> <h3>Design Dissection</h3></a>
+          	</div>
+	    </div>
+	  </div>
+
+	  
+	</div>
+</header>
+
+<main>  
+	<div class="container-fluid">
+	<div class="overlay"></div>
+    <div id="behance-magix" class="row">
+      <!-- insert some HTML via magic JS -->
+        <img src="https://unsplash.it/400/300/?random" />
+        <p>This will be erased when javascript draws our new content.</p>
+    </div>
+  </div>
+</main>
+
+
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+  <script src="js/portfolio.js"></script>
+
+<!-- for templated carousel
+  <script id="carousel-slides" type="text/template">
+    {{#projects}}
+		<div class="item">
+	        <img src="{{covers.404}}" data-color="lightblue" alt="{{name}}">
+	        <div class="carousel-caption" >
+          		<a href="#{{id}}" data-project-id="{{id}}"> <h3 class="name">{{name}}</h3></a>
+          	</div>
+	    </div>
+    {{/projects}}
+  </script>
+-->
+
+  <!-- gallery template -->
+  <script id="project-cards" type="text/template">
+    {{#projects}}
+    <div class="project col-md-4 col-sm-6" id="b{{id}}">
+      <a class="wrapping" href="#{{id}}" data-project-id="{{id}}">
+        <img src="{{covers.404}}" alt="{{name}}" />
+        <div class="info">
+          <h2 class="name">{{name}}</h2>
+          <h4 class="fields">{{#fields}}{{.}}</br>{{/fields}}</h4>
+        </div>
+      </a>
+    </div>
+    {{/projects}}
+  </script>
+
+</body>
