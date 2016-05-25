@@ -260,25 +260,30 @@ header {
     padding-top: 30px;
 }
 
+@media (min-width: 768px) {
+      .project img {
+        width: 105%;
+        min-height: 100%;
+        transition: all 1s ease;
+        display: block;
+    }
+
+    .project  a:hover img {
+        width: 108%;
+        min-height: 100%;
+    }
+
+    .project img:hover {
+        width: 108%;
+        min-height: 100%;
+    }
+}
+
 .project img {
-    width: 105%;
+    width: 100%;
     min-height: 100%;
-    transition: all 1s ease;
-    display: block;
-    margin-left: -4%;
 }
 
-.project  a:hover img {
-    width: 108%;
-    min-height: 100%;
-    margin-left: 0%;
-}
-
-.project img:hover {
-    width: 108%;
-    min-height: 100%;
-    margin-left: 0%;
-}
 
 a.wrapping:hover {
     background-color: #2B2727;
@@ -331,6 +336,7 @@ a.wrapping {
 }
 
 .project  a h3 {
+    color: #F7FEFF;
     border: 1.5px solid #F9FF93;
     padding: 1em;
     opacity: 0;
@@ -340,6 +346,7 @@ a.wrapping {
 }
 
 .project  a h4 {
+    color: #DDE8C5;
     opacity: 0;
     transition: all 0.5s ease;
 }
@@ -412,6 +419,7 @@ a.wrapping {
     width: 100%;
 }
 
+
 .projectinfo h1 {
     font-size: 1.75em;
     font-weight: 200;
@@ -436,6 +444,10 @@ a.wrapping {
 }
 
 .video img {
+    display: none;
+}
+
+.embed img {
     display: none;
 }
 

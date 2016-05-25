@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	//pretty scroll
-	$(" a.scroll").click(function(event){
+	$(" a.scroll").on('click touch', function(event){
 	      event.preventDefault();
 	      $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
 	});
@@ -121,7 +121,7 @@ $(document).ready(function() {
 
 		
 
-		$('.project a').click(function() {
+		$('.project a').on('click touch',function() {
 		 var projectID  = $(this).attr('data-project-id');
 		 var projectUrl = 'https://api.behance.net/v2/projects/' + projectID + '/?api_key=qQRlBnCFszvGLbGHpVGfwoId7RnIPLjm&callback=?';
 		 console.log('trying to show ' + projectUrl + '.');
@@ -139,7 +139,7 @@ $(document).ready(function() {
 		    $('div.text *').removeAttr('style');
 
 
-		    $('.close-project a').click(function() {
+		    $('.close-project a').on('click touch', function() {
 		    	console.log('trying to close.');
 		      	$("#dynamic-pages").slideToggle("slow");
 
