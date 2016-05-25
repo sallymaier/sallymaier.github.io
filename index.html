@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="fonts/moriston/stylesheet.css" />
     <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
 
+
 </head>
 
 <body>
@@ -42,7 +43,7 @@
 
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>-->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
   <script src="js/portfolio.js"></script>
 
@@ -62,7 +63,7 @@
   <!-- gallery template -->
   <script id="project-cards" type="text/template">
     {{#projects}}
-    <div class="project col-md-3 col-sm-6" id="b{{id}}">
+    <div class="project col-md-3 col-sm-6 col-xs-12" id="b{{id}}">
       <a class="wrapping" href="#{{id}}" data-project-id="{{id}}">
         <img src="{{covers.404}}" alt="{{name}}" />
         <div class="info">
@@ -79,14 +80,20 @@
         <img src="{{project.covers.404}}" alt="{{name}}" />
         <div class="bg-overlay"></div>
       </div>
-      <div class="col-md-8 col-md-offset-2" id="project-{{project.id}}">
+      <div class="col-md-8 col-md-offset-2 projectinfo" id="project-{{project.id}}">
       <h1>{{project.name}}</h1>
       <h5 class="fields">{{#project.fields}}   {{.}}   {{/project.fields}}</h5>
       <p class="description">{{project.description}}</p> 
+      {{#project.modules}} 
+          <div class="modules {{type}} alignment-{{alignment}} caption-{{caption-alignment}}">
+              {{{text}}}
+              <img class="mod-image" src="{{src}}">
+              {{{embed}}}
+          </div>
+      {{/project.modules}}
       <h6 class="close"><a>close</a></h6>    
     </div>
   </script>
-
 
 
 
