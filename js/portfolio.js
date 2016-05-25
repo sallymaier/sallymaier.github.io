@@ -157,15 +157,25 @@ $(document).ready(function() {
 		});
 	});
 	
-	$(window).resize(function(){
-	    $('.wrapping').css({"height": ""});
-	    $('.wrapping').css({"width": ""});
-		$('.project').css({"height": ""});
-	    imageHeights();
-	    imageWidths();
-	   	matchingHeights();
-	});
+	function isMobile() {
+			return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+			}
 
+			if (!isMobile()) {
+			/// try to get all the things printing out @ the same height.
+				$(window).resize(function(){
+				    $('.wrapping').css({"height": ""});
+				    $('.wrapping').css({"width": ""});
+					$('.project').css({"height": ""});
+				    imageHeights();
+				    imageWidths();
+				   	matchingHeights();
+				});
+
+			}
+
+
+	
 
 	// $('.carousel').carousel();
 
