@@ -1,15 +1,6 @@
 $(document).ready(function() {
 
-	var iframes = $('.vimeovideo'),
-    status = $('.status');
 
-	$('a').bind('click', function () {
-	    iframes.each(function() {
-	      var player=$f(this);
-	      player.api("pause");
-	    });
-	    return false;
-	});
 
 	//pretty scroll
 	$(" a.scroll").on('click touch', function(event){
@@ -164,6 +155,17 @@ $(document).ready(function() {
 		    $('#dynamic-pages').html(info);
 		    $('div.text *').removeAttr('style');
 
+		    var iframe = $('iframe')[0],
+            player = $f(iframe),
+            status = $('.status');
+
+            player.addEvent('ready', function() {
+                player.api('pause');
+            });
+
+
+
+
 
 		    $('.close-project a').on('click touch', function() {
 		    	console.log('trying to close.');
@@ -192,13 +194,9 @@ $(document).ready(function() {
 			}
 
 
-	
-
-	// $('.carousel').carousel();
 
 
-
-	
+		
 });
 
 
