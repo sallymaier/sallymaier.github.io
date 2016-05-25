@@ -261,9 +261,8 @@ header {
 }
 
 .project img {
-    width: 105%;
+    min-width: 105%;
     min-height: 100%;
-    height: auto;
     transition: all 1s ease;
     display: block;
     margin-left: -4%;
