@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+	var iframes = $('.vimeovideo'),
+    status = $('.status');
+
+	$('a').bind('click', function () {
+	    iframes.each(function() {
+	      var player=$f(this);
+	      player.api("pause");
+	    });
+	    return false;
+	});
+
 	//pretty scroll
 	$(" a.scroll").on('click touch', function(event){
 	      event.preventDefault();
