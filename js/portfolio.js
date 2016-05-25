@@ -105,19 +105,28 @@ $(document).ready(function() {
 	$('#behance-magix').html(info);
 
 
+		function isMobile() {
+			return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+			}
 
-		// try to get all the things printing out @ the same height.
-		$('.project img').load(function() {
-		  matchingHeights();
-		});
+			if (!isMobile()) {
+			/// try to get all the things printing out @ the same height.
+				$('.project img').load(function() {
+				  matchingHeights();
+				});
 
-		$('.project img').load(function() {
-		  imageHeights();
-		});
+				$('.project img').load(function() {
+				  imageHeights();
+				});
 
-		$('.project img').load(function() {
-		  imageWidths();
-		});
+				$('.project img').load(function() {
+				  imageWidths();
+				});
+			}
+
+
+
+		
 
 		
 
@@ -158,7 +167,7 @@ $(document).ready(function() {
 	});
 
 
-	$('.carousel').carousel();
+	// $('.carousel').carousel();
 
 
 
