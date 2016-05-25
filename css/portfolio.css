@@ -157,7 +157,7 @@ h5 {
 }
 
 .intro h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 1.5em;
 
 }
@@ -261,7 +261,7 @@ header {
 }
 
 .project img {
-    min-width: 105%;
+    width: 105%;
     min-height: 100%;
     transition: all 1s ease;
     display: block;
@@ -271,15 +271,13 @@ header {
 .project  a:hover img {
     width: 108%;
     min-height: 100%;
-    height: auto;
-    margin-left: -4%;
+    margin-left: 0%;
 }
 
 .project img:hover {
     width: 108%;
     min-height: 100%;
-    height: auto;
-    margin-left: -4%;
+    margin-left: 0%;
 }
 
 a.wrapping:hover {
