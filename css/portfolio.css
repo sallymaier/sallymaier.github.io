@@ -454,23 +454,30 @@ a.wrapping {
     display: none;
 }
 
+.close-project {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .7em;
+    font-weight: 800;
+    letter-spacing: .15em;
+    border-top: 3px solid;
+    color: #B3BF99;
+    padding-top: .5em;
+    display: block;
+    padding-bottom: 60px;
+}
+
 
 @media (min-width: 768px) {
-      
-    .close-project {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: .7em;
-        font-weight: 800;
-        letter-spacing: .15em;
-        border-top: 1px solid;
+    
+    .close-project a{
         color: #B3BF99;
-        padding-top: .5em;
         display: block;
     }
 
-    .close-project a{
-        color: #B3BF99;
+    .close-project {
+        border-top: 1px solid;
+
     }
 }
 
