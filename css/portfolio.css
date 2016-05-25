@@ -5,8 +5,130 @@ html {
 
 body {
     font-family: Moriston, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    font-size: 100%;
+    font-size: 16pt;
 }
 
+
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+#page {
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */
+}
+
+@media (min-width: 43.75em) {
+  #page {
+    font-size: 1em;
+    /* equivalent to 16px */
+    line-height: 1.375;
+    /* equivalent to 22px */
+  }
+}
+
+h1 {
+  font-size: 2em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */
+}
+
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    /* 3x body copy size = 48px */
+    line-height: 1.05;
+    /* keep to a multiple of the 20px line height and something more appropriate for display headings */
+  }
+}
+
+h2 {
+  font-size: 1.625em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15384615;
+  /* 30px / 26px */
+}
+
+@media (min-width: 43.75em) {
+  h2 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h2 {
+    font-size: 2.25em;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: 1.375em;
+  /* 1.375x body copy size = 22px */
+  line-height: 1.13636364;
+  /* 25px / 22px */
+}
+
+@media (min-width: 43.75em) {
+  h3 {
+    font-size: 1.5em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h3 {
+    font-size: 1.75em;
+    /* 1.75x body copy size = 28px */
+    line-height: 1.25;
+  }
+}
+
+h4 {
+  font-size: 1.125em;
+  /* 1.125x body copy size = 18px */
+  line-height: 1.11111111;
+}
+
+@media (min-width: 43.75em) {
+  h4 {
+    line-height: 1.22222222;
+    /* (22px / 18px */
+  }
+}
+
+blockquote {
+  font-size: 1.25em;
+  /* 20px / 16px */
+  line-height: 1.25;
+  /* 25px / 20px */
+}
+
+@media (min-width: 43.75em) {
+  blockquote {
+    font-size: 1.5em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;
+    /* 35px / 24px */
+  }
+}
 
 
 a:hover, a:active {
@@ -27,15 +149,17 @@ h5 {
     font-weight: 700;
 }
 
-h1 {
-    font-size: 3.5em;
+.intro h1 {
+    font-size: 2.5em;
     font-weight: 700;
     border-bottom: solid 1.5px #DDE8C5;
-    padding-bottom: .1em;
+    padding-bottom: .06em;
 }
 
-h2 {
+.intro h2 {
+    font-size: 1.5em;
     line-height: 1.5em;
+
 }
 
 .full-screen {
@@ -109,13 +233,13 @@ header {
     width: 100%;
     height: 100%;
 }
-.title {
+/*.title {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
   text-shadow: 2px 2px #000;
   color: #FFF;
-}
+}*/
 
 .container-fluid {
     width: 100%;
@@ -183,7 +307,7 @@ a.wrapping {
 
 .project h3 {
     font-weight: 800;
-    font-size: .9em;
+    font-size: .5em;
     line-height: 1.5em;
     text-align: center;
     text-transform: uppercase;
@@ -194,7 +318,7 @@ a.wrapping {
 
 .project h4 {
     font-weight: 100;
-    font-size: .7em;
+    font-size: .5em;
     line-height: 1.7em;
     text-align: center;
     letter-spacing: .05em;
@@ -258,7 +382,8 @@ a.wrapping {
 
 .imagecontainer img {
     vertical-align: middle;
-    width: 100%;
+    min-width: 100%;
+    min-height: 120%;
     margin-top: -15%;
     mix-blend-mode: luminosity;
 }
@@ -291,7 +416,7 @@ a.wrapping {
 }
 
 .projectinfo h1 {
-    font-size: 2.5em;
+    font-size: 1.75em;
     font-weight: 200;
     border-bottom: solid 1.5px #DDE8C5;
     padding-bottom: .1em;
@@ -300,7 +425,7 @@ a.wrapping {
 }
 
 .projectinfo h5 {
-    font-size: .9em;
+    font-size: .6em;
     text-transform: uppercase;
     letter-spacing: .125em;
     font-weight: 700;
@@ -315,4 +440,19 @@ a.wrapping {
 
 .video img {
     display: none;
+}
+
+.close-project {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .7em;
+    font-weight: 800;
+    letter-spacing: .15em;
+    border-top: 1px solid;
+    color: #B3BF99;
+    padding-top: .5em;
+}
+
+.close-project a{
+    color: #B3BF99;
 }

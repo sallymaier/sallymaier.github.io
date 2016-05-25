@@ -136,10 +136,13 @@ $(document).ready(function() {
 		    var template = $('#project-page').html();
 		    var info = Mustache.to_html(template, data);
 		    $('#dynamic-pages').html(info);
+		    $('div.text *').removeAttr('style');
 
-		    $('.close a').click(function() {
+
+		    $('.close-project a').click(function() {
 		    	console.log('trying to close.');
 		      	$("#dynamic-pages").slideToggle("slow");
+
 		    });
 		  });
 		});
