@@ -418,6 +418,16 @@ a.wrapping {
     width: 100%;
 }
 
+.embed {
+    max-width: 100%;
+    overflow: scroll;
+}
+
+.video {
+    max-width: 100%;
+    overflow: scroll;
+}
+
 
 .projectinfo h1 {
     font-size: 1.75em;
