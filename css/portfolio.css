@@ -263,24 +263,25 @@ header {
 @media (min-width: 768px) {
       .project img {
         width: 105%;
-        min-height: 100%;
-        transition: all 1s ease;
+/*        min-height: 100%;
+*/        transition: all 1s ease;
         display: block;
     }
 
     .project  a:hover img {
         width: 108%;
-        min-height: 100%;
-    }
+/*        min-height: 100%;
+*/    }
 
     .project img:hover {
         width: 108%;
-        min-height: 100%;
-    }
+/*        min-height: 100%;
+*/    }
 }
 
 .project img {
     width: 100%;
+    height: auto;
 }
 
 
@@ -295,7 +296,8 @@ a.wrapping {
 
 .wrapping {
     overflow: hidden;
-}
+/*    height: auto;
+*/}
 
 .project a img {
     mix-blend-mode: multiply;

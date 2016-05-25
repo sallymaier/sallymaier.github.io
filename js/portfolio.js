@@ -11,41 +11,44 @@ $(document).ready(function() {
 	/* some issue where no more than 25 can be returned at a time, there are ways to ask for more? https://help.behance.net/hc/communities/public/questions/202357274-Number-of-Behance-API-request-results-limited-to-25- */
 	console.log('connected to ' + url + '.');
 
-	var matchingHeights = function() {
-	var pHeight = 0;
-	$('.project').each(function() {
-	  var projectID  = $(this).find('a.wrapping').attr('data-project-id');
-	  pHeight = pHeight > $(this).height() ? pHeight : $(this).height();
-	  console.log('Number ' + projectID + ' is ' + pHeight + ' px tall!');
-	});
-	$('.project').each(function() {
-	  $(this).height(pHeight);
-	});
-	}
+	
 
-	var imageHeights = function() {
-	var imgHeight = 0;
-	$('.project img').each(function() {
-	  var projectID  = $(this).attr('data-project-id');
-	  imgHeight = imgHeight > $(this).height() ? imgHeight : $(this).height();
-	  console.log('Number ' + projectID + ' is ' + imgHeight + ' px tall!');
-	});
-	$('.project img').each(function() {
-	  $('.wrapping').css({"height": imgHeight });
-	});
-	}
+		var matchingHeights = function() {
+		var pHeight = 0;
+		$('.project').each(function() {
+		  var projectID  = $(this).find('a.wrapping').attr('data-project-id');
+		  pHeight = pHeight > $(this).height() ? pHeight : $(this).height();
+		  console.log('Number ' + projectID + ' is ' + pHeight + ' px tall!');
+		});
+		$('.project').each(function() {
+		  $(this).height(pHeight);
+		});
+		}
 
-	var imageWidths = function() {
-	var imgWidth = 0;
-	$('.wrapping').each(function() {
-	  var projectID  = $(this).attr('data-project-id');
-	  imgWidth = imgWidth > $(this).width() ? imgWidth : $(this).width();
-	  console.log('Number ' + projectID + ' is ' + imgWidth + ' px wide!');
-	});
-	$('.project img').each(function() {
-	  $('.wrapping').css({"width": imgWidth });
-	});
-	}
+		var imageHeights = function() {
+		var imgHeight = 0;
+		$('.project img').each(function() {
+		  var projectID  = $(this).attr('data-project-id');
+		  imgHeight = imgHeight > $(this).height() ? imgHeight : $(this).height();
+		  console.log('Number ' + projectID + ' is ' + imgHeight + ' px tall!');
+		});
+		$('.project img').each(function() {
+		  $('.wrapping').css({"height": imgHeight });
+		});
+		}
+
+		var imageWidths = function() {
+		var imgWidth = 0;
+		$('.wrapping').each(function() {
+		  var projectID  = $(this).attr('data-project-id');
+		  imgWidth = imgWidth > $(this).width() ? imgWidth : $(this).width();
+		  console.log('Number ' + projectID + ' is ' + imgWidth + ' px wide!');
+		});
+		$('.project img').each(function() {
+		  $('.wrapping').css({"width": imgWidth });
+		});
+		}
+	
 
 	//for templated carousel. turned off.
 	// $.getJSON(url, function(data) {
@@ -104,6 +107,11 @@ $(document).ready(function() {
 	var info = Mustache.to_html(template, data);
 	$('#behance-magix').html(info);
 
+	$('#container').imagesLoaded()
+	  .done( function( instance ) {
+	    console.log('all images successfully loaded');
+	  })
+
 
 		function isMobile() {
 			return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -111,17 +119,15 @@ $(document).ready(function() {
 
 			if (!isMobile()) {
 			/// try to get all the things printing out @ the same height.
-				$('.project img').load(function() {
-				  matchingHeights();
-				});
+				$('#behance-magix').imagesLoaded( function() {
 
-				$('.project img').load(function() {
-				  imageHeights();
-				});
+					  matchingHeights();
 
-				$('.project img').load(function() {
-				  imageWidths();
-				});
+					  imageHeights();
+
+					  imageWidths();
+			    });
+
 			}
 
 
