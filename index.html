@@ -80,7 +80,7 @@
     {{#projects}}
     <div class="project col-md-3 col-sm-6" id="b{{id}}">
       <a class="wrapping" href="#{{id}}" data-project-id="{{id}}">
-        <img src="{{covers.original}}" alt="{{name}}" />
+        <img src="{{covers.404}}" alt="{{name}}" />
         <div class="info">
           <h3 class="name">{{name}}</h3>
           <h4 class="fields">{{#fields}}{{.}}</br>{{/fields}}</h4>
@@ -92,7 +92,7 @@
 
   <script id="project-page" type="text/template">
       <div class="imagecontainer large">
-        <img src="{{project.covers.404}}" alt="{{name}}" />
+        <img src="{{project.covers.original}}" alt="{{name}}" />
         <div class="bg-overlay"></div>
       </div>
       <div class="col-md-8 col-md-offset-2 projectinfo" id="project-{{project.id}}">
