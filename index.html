@@ -80,7 +80,7 @@
     {{#projects}}
     <div class="project col-md-3 col-sm-6" id="b{{id}}">
       <a class="wrapping" href="#{{id}}" data-project-id="{{id}}">
-        <img src="{{covers.404}}" alt="{{name}}" />
+        <img src="{{covers.original}}" alt="{{name}}" />
         <div class="info">
           <h3 class="name">{{name}}</h3>
           <h4 class="fields">{{#fields}}{{.}}</br>{{/fields}}</h4>
@@ -102,7 +102,7 @@
       {{#project.modules}} 
           <div class="modules {{type}} alignment-{{alignment}} caption-{{caption-alignment}}">
               {{{text}}}
-              <img class="mod-image" src="{{src}}">
+              <img class="mod-image" src="{{sizes.original}}">
               {{{embed}}}
           </div>
       {{/project.modules}}
