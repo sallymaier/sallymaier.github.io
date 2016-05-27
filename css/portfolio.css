@@ -7,6 +7,7 @@ body {
     font-family: Moriston, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
     font-size: 100%;
     font-size: 16pt;
+    color: #473F3E;
 }
 
 
@@ -373,6 +374,7 @@ a.wrapping {
 
 #dynamic-pages {
     height: 100%;
+    display: none;
 }
 
 .imagecontainer.large {
@@ -492,5 +494,38 @@ a.wrapping {
 
     }
 }
+
+.back-to-bottom {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+
+a#back-to-bottom:hover {
+    color: #A8AD9D;
+    background-color: transparent;
+    border: 0;
+}
+a#back-to-bottom {
+    color: #473F3E;
+    font-size: 30px;
+
+  }
+
+.btn-primary {
+    color: #473F3E;
+    background-color: transparent;
+    border: 0;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  border: 0;
+}
+
+
+
 
 

@@ -8,6 +8,32 @@ $(document).ready(function() {
 	      $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
 	});
 
+    $(window).scroll(function () {
+    	if( $('#dynamic-pages').css('display') == 'block') {
+            $('#back-to-bottom').fadeIn();
+        } else {
+            $('#back-to-bottom').fadeOut();
+        }
+    });
+
+    $( "div#behance-magix" )
+	  .mouseenter(function() {
+	    $('#back-to-bottom').fadeOut();
+	  })
+	  // .mouseleave(function() {
+	  //   $( this ).find( "span" ).text( "mouse leave" );
+	  // });
+    // scroll body to 0px on click
+    // $('#back-to-bottom').click(function () {
+    //     $('#back-to-bottom').tooltip('hide');
+    //     $('body,html').animate({
+    //         scrollTop: 0
+    //     }, 800);
+    //     return false;
+    // });
+        
+    $('#back-to-bottom').tooltip('show');
+
 	
 	var url = 'https://api.behance.net/v2/users/sallymaier/projects/?api_key=qQRlBnCFszvGLbGHpVGfwoId7RnIPLjm&per_page=25&callback=?';
 	/* some issue where no more than 25 can be returned at a time, there are ways to ask for more? https://help.behance.net/hc/communities/public/questions/202357274-Number-of-Behance-API-request-results-limited-to-25- */
@@ -192,6 +218,7 @@ $(document).ready(function() {
 				});
 
 			}
+
 
 
 
