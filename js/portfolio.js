@@ -20,6 +20,11 @@ $(document).ready(function() {
 	  .mouseenter(function() {
 	    $('#back-to-bottom').fadeOut();
 	  })
+
+    if ($("div#behance-magix").scrollTop() > 0) {
+        $('#back-to-bottom').fadeOut();
+    } 
+
 	  // .mouseleave(function() {
 	  //   $( this ).find( "span" ).text( "mouse leave" );
 	  // });

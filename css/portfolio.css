@@ -511,19 +511,12 @@ a#back-to-bottom:hover {
 a#back-to-bottom {
     color: #473F3E;
     font-size: 30px;
-
   }
 
-.btn-primary {
-    color: #473F3E;
-    background-color: transparent;
+.btn, :hover, :active, :focus, :visited  {
     border: 0;
 }
 
-.btn-primary:hover {
-  background-color: transparent;
-  border: 0;
-}
 
 
 
