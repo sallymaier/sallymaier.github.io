@@ -1,0 +1,84 @@
+.fixed {
+  position: fixed;
+  top:    0;
+  right:  0;
+  bottom: 0;
+  left:   0;
+}
+
+h1 {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 3vw;
+  margin: 0;
+  position: fixed;
+  left: 50%;
+  top:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.one   { z-index:  10; }
+.two   { z-index:  20; }
+.three { z-index:  30; }
+.four  { z-index:  40; }
+.five  { z-index:  50; }
+.six   { z-index:  60; }
+.seven { z-index:  70; }
+.eight { z-index:  80; }
+.nine  { z-index:  90; }
+.ten   { z-index: 100; }
+
+.transparency.ten-percent      { opacity: .1; }
+.transparency.twenty-percent   { opacity: .2; }
+.transparency.thirty-percent   { opacity: .3; }
+.transparency.fourty-percent   { opacity: .4; }
+.transparency.fifty-percent    { opacity: .5; }
+.transparency.sixty-percent    { opacity: .6; }
+.transparency.seventy-percent  { opacity: .7; }
+.transparency.eighty-percent   { opacity: .8; }
+.transparency.ninety-percent   { opacity: .9; }
+
+/** Background images and other background properties **/
+/** if you need some images: https://unsplash.it/images or http://www.unsplash.com **/
+/** for help with the background CSS properties: http://www.w3schools.com/css/css_background.asp **/
+
+.one {
+  background-image: url('https://unsplash.it/1000/1000?image=992');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.two {
+  background-image: url('https://unsplash.it/1000/1000?image=992');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+}
+
+.three {
+  background-image: url('https://unsplash.it/700/700?image=992');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.four {
+  background-image: url('https://unsplash.it/600/600?image=992');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.five {
+  background-image: url('https://unsplash.it/500/500?image=992');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.six {
+  background-image: url('https://unsplash.it/400/400?image=992');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
