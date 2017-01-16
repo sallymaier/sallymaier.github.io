@@ -1,0 +1,88 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** Design Students: Please Don't Edit this File **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+@import url(https://fonts.googleapis.com/css?family=PT+Mono);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900italic,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic);
+
+/** font-family: 'Vollkorn', georgia, serif; **/
+/** font-family: 'Open Sans', helvetica, arial, sans-serif; **/
+/** font-family: 'PT Mono', courier, monospace; **/
+/** font-family: 'Oswald', sans-serif; **/
+/** font-family: 'Playfair Display', georgia, serif; **/
+/** font-family: 'Lato', helvetica, arial, sans-serif; **/
+/** font-family: 'Merriweather', georgia, serif; **/
+/** font-family: 'Gentium Book Basic', georgia, serif; **/
+
+body {
+  font-family: 'Gentium Book Basic', georgia, serif;
+  padding-bottom: 5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  line-height: 1;
+  text-indent: -.08em;
+}
+
+article {
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article header {
+  border-bottom: 1em solid black;
+  margin-bottom: 2rem;
+}
+
+article section {
+  border-top: 1px solid gray;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+}
+
+article section h2 {
+  margin-top: 0;
+}
+
+blockquote {
+  font-size: 1.25em;
+  color: gray;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-indent: -.3em;
+}
+
+blockquote p {
+  text-indent: 0;
+  font-size: 80%;
+  margin-bottom: 0;
+}
+
+blockquote p + p {
+  margin: 0;
+}
+section blockquote {
+  font-size: 1em;
+  border-left: .25em solid;
+  margin-left: 1em;
+  margin-right: 2em;
+  padding-left: 1em;
+}

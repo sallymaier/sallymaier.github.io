@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Simple Menu Pattern</title>
+
+    <style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 100%;
+        background: white;
+        color: darkgreen;
+        padding-top: 60px;
+    }
+
+    header {
+        position: fixed;
+        bottom: 0;
+        left:0;
+        right:0;
+        z-index: 100;
+    }
+
+    header ul {
+        background: lightgreen;
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0 0 60px 0;
+        border-top:1px solid darkgreen;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    header ul li {
+        border-bottom: 1px solid darkgreen;
+    }
+
+    header ul li a {
+        display: block;
+        color: darkgreen;
+        padding: 5px;
+        text-decoration: none;
+        transition: all 500ms;
+    }
+
+    header ul li a:hover {
+        background: darkgreen;
+        color: lightgreen;
+        text-decoration: none;
+    }
+
+    header button.toggle {
+        background: lightgreen;
+        border: 1px solid darkgreen;
+        border-radius: 2px;
+        box-shadow: 0 3px 3px rgba(0,0,0,.2);
+        display: block;
+        height: 50px;
+        margin: 5px;
+        padding: 5px;
+        width: 50px;
+        border-radius: 50%;
+        /**/
+        position: relative;
+        z-index: 200;
+    }
+
+    header button.toggle:focus,
+    header button.toggle:active {
+      outline: 0;
+    }
+    header button.toggle span {
+        background: darkgreen;
+        border-radius: 3px;
+        display: block;
+        height: 4px;
+        margin: 3px;
+    }
+
+    header button.toggle:active {
+        background: darkgreen;
+        box-shadow: inset 0 3px 3px rgba(0,0,0,.2);
+    }
+
+    header button.toggle:active span {
+        background: lightgreen;
+    }
+
+    @media (min-width: 768px) {
+        header {
+            background: lightgreen;
+        }
+
+        header ul {
+            display: block;
+            position: static;
+        }
+
+        header button.toggle { display: none; }
+
+        header {
+            top:0;
+            bottom:initial;
+            border: none;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+
+        header nav ul li {
+            float: left;
+            border: none;
+        }
+
+        header nav ul li a {
+            padding: 15px;
+        }
+
+    }
+    </style>
+
+  </head>
+
+  <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#one">First object</a></li>
+                <li><a href="#two">Second Thing</a></li>
+                <li><a href="#three">A Third Item</a></li>
+            </ul>
+
+            <button class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+  </body>
+
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script>
+  $('button.toggle').click(function() {
+    $('header ul').slideToggle();
+  });
+
+  $(window).resize(function() {
+    ww = $(window).width();
+
+    if (ww > 768) {
+      $('header ul').show();
+    } else {
+      $('header ul').hide();
+    };
+
+  });
+  </script>
+
+</html>

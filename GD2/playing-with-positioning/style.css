@@ -1,0 +1,24 @@
+
+body, .grey {
+  background-color: rgba(132,132,120,1);
+}
+
+.red {
+  background-color: rgba(169,87,86,1);
+}
+
+.blue {
+  background-color: rgba(157,178,176,1);
+}
+
+.green {
+  background-color: rgba(140,165,115,1);
+}
+
+.yellow {
+  background-color: rgba(197,192,101,1);
+}
+
+.white {
+  background-color: white;
+}

@@ -1,0 +1,55 @@
+* { z-index: 1; }
+
+.top,
+.right,
+.bottom,
+.left {
+  position: absolute;
+}
+
+.top    {    top:0; }
+.right  {  right:0; }
+.bottom { bottom:0; }
+.left   {   left:0; }
+
+div.red,
+div.green,
+div.blue,
+div.yellow {
+  height: 144px;
+  overflow: hidden;
+  width: 144px;
+}
+
+.white {
+  z-index: 99;
+}
+
+.white.top    {    top:12px; }
+.white.right  {  right:12px; }
+.white.bottom { bottom:12px; }
+.white.left   {   left:12px; }
+
+.white {
+  display: block;
+  height: 36px;
+  overflow: hidden;
+  width: 36px;
+}
+
+p {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  position: absolute;
+  top: 45%;
+  left:50%;
+  margin-left:-300px;
+  text-align: center;
+  width:600px;
+}

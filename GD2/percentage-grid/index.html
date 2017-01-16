@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Percentage Grid</title>
+
+    <!-- leave this CSS file alone -->
+    <link href="percentages.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      /** put your custom CSS here, or in the "editme.css" file **/
+      .cover {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .image1 {
+        background-image: url('https://source.unsplash.com/random/1200x1200');
+      }
+      .image2 {
+        background-image: url('https://source.unsplash.com/random/600x600');
+      }
+      .image3 {
+        background-image: url('https://source.unsplash.com/random/700x700');
+      }
+      .image4 {
+        background-image: url('https://source.unsplash.com/random/800x800');
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <!-- this outer most <div> determines the width for everything -->
+    <div class="wrapper">
+      <!-- all these inner divs use the percentages.css file for their height and width /nesting -->
+      <div class="half block image1 cover"></div>
+      <div class="half block">
+        <div class="quarter block image2 cover"></div>
+        <div class="half block image1"></div>
+        <div class="half block"></div>
+        <div class="half block"></div>
+      </div>
+      <div class="quarter block image1 cover"></div>
+      <div class="quarter block image1"></div>
+      <div class="quarter block"></div>
+      <div class="quarter block">
+        <div class="half block">
+          <div class="half block">
+            <div class="quarter block image1 cover"></div>
+            <div class="half block">
+              <div class="quarter block image2 cover"></div>
+              <div class="quarter block image1 cover"></div>
+              <div class="quarter block image1"></div>
+              <div class="quarter block"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="half block image2 cover">
+        <div class="half block">
+          <div class="quarter block"></div>
+        </div>
+      </div>
+      <div class="half block"></div>
+      <div class="half block image1 cover"></div>
+      <div class="half block">
+        <div class="half block">
+          <div class="half block"></div>
+        </div>
+        <div class="half block">
+          <div class="quarter block image2 cover"></div>
+          <div class="quarter block"></div>
+          <div class="quarter block"></div>
+          <div class="quarter block image2"></div>
+          <div class="quarter block">
+            <div class="half block"></div>
+          </div>
+          <div class="quarter block image2 cover"></div>
+          <div class="quarter block"></div>
+        </div>
+      </div>
+      <div class="half block image3 cover">
+        <div class="quarter block image2"></div>
+        <div class="quarter block image1"></div>
+        <div class="quarter block image3 cover"></div>
+        <div class="quarter block image4"></div>
+      </div>
+      <div class="quarter block"></div>
+      <div class="quarter block"></div>
+      <div class="quarter block"></div>
+      <div class="quarter block"></div>
+      <div class="quarter block"></div>
+      <div class="quarter block"></div>
+      <div class="quarter block"></div>
+      <div class="quarter block"></div>
+    </div>
+
+  </body>
+
+</html>
