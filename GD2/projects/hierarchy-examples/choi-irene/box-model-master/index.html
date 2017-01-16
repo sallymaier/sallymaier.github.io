@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Week 3 Demo stuff</title>
+
+        <!-- --------------------------------------------------------- -->
+        <!-- --------------------------------------------------------- -->
+        <!-- »»»» CSS LINKS GO HERE ««««------------------------------ -->
+        <!-- --------------------------------------------------------- -->
+        <!-- --------------------------------------------------------- -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    </head>
+
+    <body>
+
+        <!-- --------------------------------------------------------- -->
+        <!-- --------------------------------------------------------- -->
+        <!-- »»»» HEADER ««««----------------------------------------- -->
+        <!-- --------------------------------------------------------- -->
+        <!-- --------------------------------------------------------- -->
+        <header>
+            <nav>
+                <h1><a href="index.html">Week 3 Demo stuff</a></h1>
+                <ul>
+                  <li><a href="#boxmodel">Basic Box Model</a></li>
+                  <li><a href="#floats">Basic Floats</a></li>
+                  <li><a href="#images">Basic Image Related Stuff</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- /HEADER -->
+
+        <!-- --------------------------------------------------------- -->
+        <!-- --------------------------------------------------------- -->
+        <!-- »»»» MAIN CONTENT ««««----------------------------------- -->
+        <!-- --------------------------------------------------------- -->
+        <!-- --------------------------------------------------------- -->
+        <main>
+            <h1>Floats, Images, Etc.</h1>
+
+            <article id="boxmodel" class="fat">
+                <h2>Box Model</h2>
+
+                <div class="fat example">
+                  <div class="marginalia">
+                    Margin
+                    <div class="bordertronic">
+                      Border
+                      <div class="padtastic">
+                        Padding
+                        <p class="contents">
+                          I’m a box...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <section>
+                  <p>traditional way it worked...</p>
+                  <div class="traditional box">Default Way</div>
+                </section>
+                <section>
+                  <p>the way you can force every browser to behave now... (that actually makes more sense)</p>
+                  <div class="border-box box">New, Improved Way</div>
+                </section>
+
+            </article>
+
+            <article id="floats" class="fat">
+                <h2>Floats</h2>
+                <p>Floating left and right</p>
+
+                <div class="cf">
+                  <p class="left">I float left...</p>
+                  <p class="right">I float right...</p>
+                  <p>I don't float at all, I just sit here and try to figure out how to wrap around what's there...</p>
+                </div>
+
+                <p>Don't forget the clear</p>
+
+                <div class="cf columns">
+                  <p class="left">Big left column</p>
+                  <p class="right">Big right column</p>
+                  <p class="center">center column with actual gutters.</p>
+                </div>
+
+                <p>There is this clever thing called the "clearfix" (<a href="http://css-tricks.com/snippets/css/clear-fix/">Good advice from CSS-tricks</a>)</p>
+            </article>
+
+            <article id="images" class="fat">
+                <h2>Image Related Stuff</h2>
+                <img src="https://unsplash.it/1200/600?image=453" alt="Some Motel Image from Unsplash.it">
+                <p>The anatomy of an image tag: the important part is the "src" bit</p>
+            </article>
+
+        </main>
+        <!-- /MAIN CONTENT -->
+
+        <!-- --------------------------------------------------------- -->
+        <!-- --------------------------------------------------------- -->
+        <!-- »»»» FOOTER ««««----------------------------------------- -->
+        <!-- --------------------------------------------------------- -->
+        <!-- --------------------------------------------------------- -->
+        <footer>
+            <p>Footer</p>
+        </footer>
+        <!-- /FOOTER -->
+
+        <!-- --------------------------------------------------------- -->
+        <!-- --------------------------------------------------------- -->
+        <!-- JAVASCRIPTS WILL GO DOWN HERE WHEN WE FINALLY GET TO THIS -->
+        <!-- --------------------------------------------------------- -->
+        <!-- --------------------------------------------------------- -->
+    </body>
+</html>

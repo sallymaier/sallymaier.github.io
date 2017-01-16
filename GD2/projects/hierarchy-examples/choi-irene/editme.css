@@ -1,0 +1,174 @@
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,300);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200,300);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200);
+@import url(https://fonts.googleapis.com/css?family=Glegoo);
+@import url(https://fonts.googleapis.com/css?family=Archivo+Black);
+@import url(https://fonts.googleapis.com/css?family=Catamaran:800);
+@import url(https://fonts.googleapis.com/css?family=Martel:800,900,400);
+@import url(https://fonts.googleapis.com/css?family=Catamaran:200);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200);
+
+/** font-family: 'Martel', georgia, serif; **/
+/** font-family: 'Catamaran', helvetica, arial, sans-serif; **/
+/** font-family: 'Source Sans Pro', helvetica, arial, sans-serif; **/
+
+
+body {
+  font-family: 'Catamaran', helvetica, arial, sans-serif;
+  padding-bottom: 5em;
+
+}
+figcaption {  font-family: 'Catamaran', helvetica, arial, sans-serif;
+text-align: right;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #6a736b;
+  font-family: 'Martel', georgia, serif;
+}
+
+h1 {
+
+  text-align: right;
+  color: #53606B;
+  font-size: 2.5em;
+  font-weight: 900;
+  margin-bottom: .3rem;
+  line-height: 1;
+  text-indent: -.08em;
+}
+h4 { text-align: left;
+  font-size: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;}
+
+article {
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+article header {
+  padding-top: 1em;
+  border-bottom: 0.4em double #D9d9d9;
+  margin-bottom: 3rem;
+}
+
+article section {
+  border-top: 1px dotted gray;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+}
+
+article section h2 {
+  margin-top: 0;
+}
+.by { color: #c2c2c2;
+text-align: right;
+font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+padding-bottom: 30px;}
+
+.bu { color: #323640}
+.first {
+  float: left;
+  font-size: 1em;
+  color: #323640;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  padding-top: 3em;
+  border-top: 2em;
+  margin-top: 1em;
+  margin-right: 3em;
+  text-indent: -.3em;
+  width: 40%;
+}
+.our {
+  float:left;
+}
+.fl {
+  float: left;
+  width: 45%;
+  padding-top: 3em;
+  padding-bottom: 4em;
+  padding-right: 2em;
+}
+.fr {
+  width: 45%;
+  float: right;
+padding: .5em;}
+blockquote p {
+  text-indent: 0;
+  font-size: 80%;
+  margin-bottom: 0;
+}
+
+blockquote p + p {
+  margin: 0;
+}
+
+
+header p {
+
+  text-align: right;
+  color: #fe8b66;
+}
+h3{
+
+  font-size: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+p {
+  color: black;
+}
+
+.the {   -webkit-column-count: 2;
+-webkit-column-gap: 30px;
+-moz-column-count: 2;
+-moz-column-gap: 10px;}
+.second {
+  font-size: 1em;
+  color: #323640;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+
+  border-top: 1em;
+  margin-top: 1em;
+  margin-right: 3em;
+  text-indent: -.3em;
+}
+.third {
+  width: 70%; text-align: center; padding-left: 15%;
+  font-size: 1em;
+  color: #323640;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+
+  border-top: 1em;
+  margin-top: 1em;
+  margin-right: 3em;
+  text-indent: -.3em;
+}
+.halfr { width: 70%;}
+.halfl { width: 70%; text-align: left; padding-left: 20%;}
+.halfp { width: 70%; text-align: right; padding-left: 30%;}
+.halfe { width: 50%; text-align: left; padding-left: 20%; padding-right: 20%}
+.halfra { width: 70%;
+text-align: left;}
+.fifte { text-align: left; padding-left: 10%;}
+.fiftt { text-align: left; padding-right: 15%;}
+.halfla { width: 60%; text-align: left;}
+.venus {
+float: right;
+padding-left: 20px;}
+.two { text-align: left; padding-left: 20%;}
+.three { text-align: left; padding-left: 40%;}
+.arnheim {float: right;
+padding-left: 20px;}
+.photo {float: left;padding-right: 20px;}
+.fifl { width: 50%;}
+.fifr {width:50%; padding-left: 50%;}
