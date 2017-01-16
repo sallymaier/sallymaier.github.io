@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Background Hijinks</title>
+
+    <link href="starter.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      /* write your styles here for ease... or create a new CSS file */
+      /** for help with the background CSS properties: http://www.w3schools.com/css/css_background.asp **/
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- /** for help with the background CSS properties: http://www.w3schools.com/css/css_background.asp **/ -->
+    <div class="fixed one"></div>
+    <div class="fixed two"></div>
+    <div class="fixed three"></div>
+    <div class="fixed four"></div>
+    <div class="fixed five"></div>
+
+  </body>
+
+</html>

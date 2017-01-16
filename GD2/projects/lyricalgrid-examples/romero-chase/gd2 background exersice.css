@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Background Hijinks</title>
+
+    <link href="starter.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      /* write your styles here for ease... or create a new CSS file */
+      /** for help with the background CSS properties: http://www.w3schools.com/css/css_background.asp **/
+        .one {
+          background-color: black;
+          background-image: url(https://media.giphy.com/media/jCMq0p94fgBIk/giphy.gif);
+          background-repeat: no-repeat;
+          background-position: center center;;
+        }
+
+        .two{
+          background-repeat: no-repeat;
+          background-color: red;
+          background-image: url(https://images.unsplash.com/photo-1436397543931-01c4a5162bdb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d23f7ecaedb63c82a12679b03e5b0058);
+          background-position: center left;
+        }
+
+        .three{
+          background-color: green;
+          background-position: center right;
+        }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- /** for help with the background CSS properties: http://www.w3schools.com/css/css_background.asp **/ -->
+    <div class="fixed one"></div>
+    <div class="fixed two"></div>
+    <div class="fixed three"></div>
+    <div class="fixed four"></div>
+    <div class="fixed five"></div>
+
+  </body>
+
+</html>

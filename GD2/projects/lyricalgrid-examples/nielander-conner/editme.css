@@ -1,0 +1,10 @@
+/** Style Away. **/
+img {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+img:hover {
+  -webkit-transform: rotate(1440deg);
+  transform: rotate(1440deg);
+}
+

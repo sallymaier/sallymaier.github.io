@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <div class="outer container">
+      <div class="bg-red stripe"></div class>
+      <div class="bg-yellow stripe"></div class>
+      <div class="bg-red stripe"></div class>
+      <div class></div class>
+    </div class>
+    <style>
+      .outer.container {
+        width: 80%;
+      }
+
+      .stripe {
+        height: 200px
+        width: 80%;
+      }
+      .bg-red {
+        background-color: red;
+      }
+      .bg_yellow {
+        background-color:yellow
+      }
+    </style>
+
+  </body>
+
+</html>

@@ -7,6 +7,8 @@ body {
   font-size: 100%;
   font-size: 16pt;
   background-color: #F7FEFF;
+  margin-left: 30pt;
+  margin-right: 30pt;
 
 }
 body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
@@ -125,7 +127,7 @@ h5 {
   text-transform: uppercase;
   letter-spacing: .125em;
   font-weight: 700;
-  padding-top: 1em;
+  padding-top: 3em;
 }
 
 h6 {
@@ -152,6 +154,13 @@ h6 {
     padding-bottom: .5em;
 }
 
+.fineprint {
+  font-size: 10pt;
+}
+
+.schedule {
+  font-size: 12.5pt;
+}
 
 
 .full-screen {
@@ -211,9 +220,7 @@ h6 {
     }
 }*/
 
-header {
-  height: 90vh;
-}
+
 /*.carousel {
   position: fixed;
   height: 100vh;

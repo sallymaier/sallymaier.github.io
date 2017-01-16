@@ -1,0 +1,55 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** Design Students: Please Don't Edit this File **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.the.outer.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.a.block {
+  float: left;
+  height: 0;
+}
+
+.one.hundred.percent.wide {
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.fifty.percent.wide {
+  width: 50%;
+  padding-bottom: 50%;
+}
+
+.twenty.five.percent.wide {
+  width: 25%;
+  padding-bottom: 25%;
+}
+
+.one.third.wide {
+  width: calc(100% / 3);
+  padding-bottom: calc(100% / 3);
+}
+
+.two.third.wide {
+  width: calc(100% / 3 * 2);
+  padding-bottom: calc(100% / 3 * 2);
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+    display: block;
+}
+

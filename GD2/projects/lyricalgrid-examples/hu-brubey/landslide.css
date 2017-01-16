@@ -1,0 +1,45 @@
+/** Style Away. **/
+
+.the.outer.container{
+}
+
+.a.fifty.percent.wide.block{
+	background-color:#bdbbb0;
+}
+
+.a.fifty.percent.wide.block.image1{
+	background-image: url('picture/photo-1442589031151-61d5645469d7.jpg');
+}
+
+
+.a.one.third.wide.block{
+	background-color: #d2d7df;
+}
+
+.a.one.third.wide.block.transparent{
+	background-color:#d2d7df;
+	opacity: .3;
+}
+
+.a.fifty.percent.wide.block.blue{
+	background-color:#d2d7df;
+}
+
+.a.two.third.wide.block.off.white{
+    background-color:#bdbbb0;
+    opacity: .5;
+}
+
+.a.one.third.wide.block.light.brown{
+	background-color:#bdbbb0;
+    opacity: .6;
+}
+
+.a.one.third.wide.block.darkbrown{
+    background-color:#8a897c;
+}
+
+.one.hundred.percent.wide.rectangle{
+    width: 100%;
+    padding-bottom: 0;
+}
