@@ -69,7 +69,7 @@
                 <p class="lead">to facilitate the delivery of measurement-based mental health care. The software provides a mechanism for tracking patients over time, monitoring patients’ symptoms and accessing patient and program level data.</p>
           </div>
          <div class="col-md-6">
-              <img class="img-responsive center-block hidden-xs" src="img/CareMeasureMBCgraphic_blue.png">
+              <img class="img-responsive center-block" src="img/CareMeasureMBCgraphic_blue.png">
         </div>
         
       </div>
@@ -174,7 +174,7 @@
       <footer class="footer">
         <div class="container">
           <img alt="CareMeasure" src="img/CareMeasurestepwordmarkblue.png" width="200px"></a> 
-          <p class="text-muted">© 2016 CareMeasure All rights reserved.</p>
+          <p class="text-muted">© 2016 CareMeasure. All rights reserved.</p>
         </div>
       </footer>
   
@@ -182,6 +182,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+  <!-- Smooth Scroll -->    
     <script type="text/javascript">
       $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -196,5 +197,14 @@
         }
       });
     </script>
+  <!-- Close Menu on click in mobile -->    
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".navbar-nav li a").click(function(event) {
+        $(".navbar-collapse").collapse('hide');
+      });
+    });
+  </script>
+
   </body>
 </html>
