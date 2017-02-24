@@ -89,6 +89,30 @@ h2 {
     border-color: #004e7b;
 }
 
+.panel-group {
+  font-family: "gt_pressura_monoregular", monospace;
+}
+
+.panel-default {
+  border-color: #027ec6;
+}
+
+.panel-default>.panel-heading {
+  color: #027ec6;
+  background-color: #fff;
+  border-color: #027ec6;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 1px solid #027ec6;
+}
+
+.list-group-item {
+    border: 1px solid #027ec6;
+}
+
 .thumbnail .fa {
     font-size: 7em;
     margin-top: 25px;
@@ -146,7 +170,7 @@ h2 {
   line-height: 1.35em;
 }
 
-/*Products jumbotron background with overlays*/
+/* Hero jumbotron background with overlays */
 
 .hero:after {
   content: ' ';
@@ -194,6 +218,10 @@ h2 {
   position: relative;
   overflow: hidden;
   background-color: rgba(0, 106, 167, 0.48);
+}
+
+#products ul {
+  padding-bottom: 2em;
 }
 
 
