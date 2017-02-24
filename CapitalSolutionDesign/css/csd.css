@@ -160,8 +160,8 @@ h2 {
   position: relative;
   overflow: hidden;
   background-color: rgba(0, 106, 167, 0.48);
-  padding-top: 40vh;
   color: white;
+  padding-top: 2em;
 }
 
 .hero p {
@@ -339,6 +339,10 @@ body {
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .hero {
+    padding-top: 40vh;
   }
 
   /* The navbar becomes detached from the top, so we round the corners */
