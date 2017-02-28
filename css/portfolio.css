@@ -252,6 +252,12 @@ h6 {
   right: 0;
   left: 0;
 }
+
+header {
+  height: 90vh;
+}
+
+
 #behance-magix {
   padding-top: 30px;
 }
