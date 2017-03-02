@@ -110,7 +110,8 @@ h2 {
 }
 
 .list-group-item {
-    border: 1px solid #027ec6;
+    border: 0;
+
 }
 
 .thumbnail .fa {
@@ -119,8 +120,6 @@ h2 {
     margin-bottom: -10px;
     color: #027ec6;
 }
-
-
 
 
 
@@ -182,7 +181,7 @@ h2 {
   height: 100%;
   z-index: -1;
   opacity: 0.8;
-  background-image: url("../img/stock-photo-office-workplace-with-laptop-on-wood-table-against-the-windows-374648041.jpg");
+  background-image: url("../img/shutterstock_374648041_L.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -237,7 +236,7 @@ h2 {
     height: 100%;
     z-index: -1;
     opacity: 0.8;
-    background-image: url("../img/stock-photo-closeup-picture-of-a-keyboard-with-a-phone-and-tablet-lying-above-it-156997538.jpg");
+    background-image: url("../img/shutterstock_156997538_L.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -286,6 +285,11 @@ h2 {
 
 #awards li {
   padding-bottom: .5em;
+}
+
+#awards em {
+  font-weight: bolder;
+  font-style: normal;
 }
 
 
@@ -344,6 +348,31 @@ body {
   .hero {
     padding-top: 40vh;
   }
+
+  /* making assessments modal 3 cols */
+
+  #collapse1 ul {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    padding-bottom: 1.5em;
+  }
+
+  .list-group-item {
+    -webkit-column-break-inside: avoid;
+    border-bottom: solid .5em transparent;
+  }
+
+  .item:before {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+
+
 
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
