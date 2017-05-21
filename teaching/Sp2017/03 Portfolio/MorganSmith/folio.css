@@ -1,0 +1,233 @@
+/** h1 (+ p) links **/
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 155%;
+    font-size: 15px;
+}
+
+p2 {
+    font-family: 'Space Mono', monospace;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 155%;
+    font-size: 35px;
+}
+
+h1 {
+    font-size:6em;
+    font-family: 'Space Mono', monospace;
+    margin:2%;
+    font-kerning: normal;
+    position:relative;
+    cursor:pointer;
+    width: 40%;
+}
+
+h1::first-letter {
+    letter-spacing: 8px;
+}
+
+h1 a hover {
+    color: #000;    
+}
+
+h1 a {
+    position: relative;
+    color: #000;
+    text-decoration: none;    
+}
+
+h1 a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out 0s;
+}
+
+h1 a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/** box **/
+.box {
+    margin-top:-48%;
+    margin-left:55%;
+    width:40%;
+    height:250px;
+    position:relative;
+    z-index: auto;
+}
+
+.box-two {
+    margin-top:10%;
+    margin-left:5%;
+    width:40%;
+    height:250px;
+    position:relative;
+}
+
+/** square **/
+.square {
+    margin-top:10%;
+    margin-left:5%;
+    width:40%;
+    height:250px;
+    float:left;
+    padding-bottom: 5%;
+}
+
+.color {
+    height:194.5px;
+    margin-top:5%;
+    width:87%;
+    background-color: blue;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out; 
+    position: relative; 
+    
+}
+
+.color:hover {
+    margin-top:5%;
+    width:87%;
+    height:194.5px;
+    opacity: 1;
+    background-color: transparent;
+    transition: all 0.5s ease;
+    
+}
+
+/** span **/
+span {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid blue;
+    font-size: 15%;
+    height: 500px;
+    width:115%;
+    letter-spacing: 1px;
+    line-height: 155%;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: -7em;
+    left:105%;
+    display:none;
+    padding:0 20px;
+    overflow:scroll;
+    -moz-animation:span1 0.7s;
+    animation: span1 0.7s;
+    animation-delay: 2s
+}
+
+span:hover {
+    display: block;
+    animation-delay: 2s
+}
+
+span:after {
+    content:'';
+    position:relative;
+    bottom:-10px;
+    width:10px;
+    height:30%;
+    left:50%;
+    margin-left:-5px;
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+#about {
+    margin-top:-9em; 
+}
+
+#about:hover {
+    display: block; 
+}
+
+h1:hover span {
+    display: inline-block; 
+}
+
+@-webkit-keyframes span1 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes span1 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/** hovers **/
+/* unvisited link */
+a:link {
+    color: black;
+    text-decoration:none;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+    text-decoration:none;
+}
+
+/* mouse over link */
+a:hover {
+    color: blue;
+    text-decoration:none;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+    text-decoration:none;
+}
+
+/** me! **/
+
+.me {
+    margin-top:5%;
+    margin-left:50%;
+    height:40%;
+    width:40%;
+}
+
+.text {
+    margin-top:-20%;
+    margin-left:15%;
+    height:10%;
+    width:25%;
+}
+
+.text-two {
+    margin-top:0%;
+    margin-left:15%;
+    height:20%;
+    width:60%;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 10px;
+height: 5px;
+}
+
+::-webkit-scrollbar-track {
+border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+background: blue;  
+}

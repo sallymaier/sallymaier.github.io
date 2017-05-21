@@ -1,0 +1,118 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** *** Please Make Changes in this CSS file *** **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+body {
+  font-family: 'verdana';
+  color:rgb(88,96,104);
+}
+article {
+  line-height:1.5;
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'georgia'; 
+}
+h1 {
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  color: rgb(203,147,141);
+  max-width: 15em;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: .5em;
+  color: rgb(203,147,141);
+}
+.numbers{
+  font-size: 10em;
+  margin-top: -0.1em;
+  margin-bottom: 0em;
+}
+.double-digit{
+  font-size:9em;
+}
+.epilogue{
+  font-size: 1.8em;
+  margin-top: .6em;
+}
+.footer{
+  font-size: .6em;
+  text-align: center;
+  margin-top: 15em;
+  margin-bottom: 5em;
+}
+.author {
+  margin-bottom:3rem;
+  font-size: 1em;
+}
+.blockquote1{
+    font-size: .8em;
+    font-family: "verdana";
+    text-align: center;
+    line-height: 1.5;
+    max-width: 45em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-indent: -.3em;
+    color: rgb(128,146,144);
+}
+.blockquote2{
+    font-size: .9em;
+    font-family: "verdana";
+    text-align: left;
+    line-height: 1;
+    margin-top: 2rem;
+    margin-bottom: -1.5rem;
+    text-indent: -.3em;
+    color:rgb(88,96,104);
+}
+
+article header {
+  margin-bottom: 3rem;
+  text-align: center;
+  line-height: 2em;
+}
+hr{
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+blockquote {
+  font-size: 1em;
+  color: rgb(128,146,144);
+  font-family: "georgia", serif;
+  font-style: italic;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-indent: -.3em;
+}
+
+section {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  padding-left: .5em;
+}
+
+.padding{
+  padding-left: 2em;
+}
+
+@media (min-width: 600px) {
+    
+}

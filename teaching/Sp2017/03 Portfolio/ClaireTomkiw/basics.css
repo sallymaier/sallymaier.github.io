@@ -1,0 +1,363 @@
+/** write your styles in this sheet. **/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);
+
+.col-01 {width: 4.165%;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.face {
+  width: 30%;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  background-size: cover;
+  background-position: center, center;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: black;
+  /**/
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: black;
+  margin: 0;
+}
+
+footer {
+  float: gainsboro;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 8px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-bottom: 2em
+}
+
+header {
+  background-color: #ffd637;
+  top: 0px;
+  float: top; 
+  padding: 1.5em;
+}
+
+h1 {
+  margin: 0;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: white;
+}
+
+h2 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: .75px;
+  margin-left: 16em;
+  margin-top: 1em;
+  margin-right: 10em;
+}
+
+h3 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: .75px;
+  margin-left: 16em;
+  margin-right: 10em;
+}
+
+h4 {
+  color: #ffd637;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: .75px;
+  margin-left: 12em;
+  margin-top: 5em;
+  margin-right: 10em;
+  font-size: 16px;
+}
+
+h5 {
+  color: #ffd637;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: .75px;
+  margin-left: 12em;
+  margin-top: 2em;
+  margin-right: 10em;
+  font-size: 16px;
+}
+
+h6 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: .75px;
+  margin-left: 5em;
+  margin-top: 7em;
+  float: left;
+
+ 
+}
+
+h7 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: .75px;
+  margin-left: 5em;
+  margin-bottom: 2.5em;
+  float: left;
+}
+
+h8 {
+  float:right;
+  padding-top: 6em;
+  filter: grayscale(100%);
+}
+
+p {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: .75px;
+  text-align: center;
+
+}
+
+
+
+
+
+/*** project overlay ***/
+
+#behance-magix {
+ 
+}
+
+h8:hover {
+  filter:grayscale(0%);
+  transition: all .5s ease
+}
+
+.text {
+  width: 65%;
+  margin-right: 0;
+}
+
+.links {
+  float: left;
+}
+
+.bio {
+  margin-left:;
+}
+
+.row {
+  margin(50px, auto);
+  max-width(960px);
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.project {
+  float:left;
+  padding: 1em;
+  margin-top: 1.5em;
+  filter: grayscale(100%);
+  width: 33.3333333%;
+  overflow: hidden;
+  position: relative;
+  height: 50vh;
+}
+
+.project img {
+ 
+  display: block;
+  min-width: 110%;
+  height: 50vh;
+}
+
+.project:hover {
+  filter: grayscale(0%);
+  transition: all .5s ease
+}
+
+img.animated {
+  -webkit-animation: filter-animation 5s infinite;
+}
+
+.project-page {
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 9999999999;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 30%;
+  padding: 2em;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.project-page * {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.project-page .container {
+}
+
+.project-page button.close {
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 50%;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 3.5rem;
+  color: white;
+}
+
+.image-wrapper {
+  size:;
+  height: 50vh;
+}
+
+/* easy class to add to <ul>s to get rid of listy stuff */
+.list-reset {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+/* try to keep body from scrolling in the background */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 3px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav a:hover {
+
+}
+
+.topnav {
+    background-color: #ffd637;
+    overflow: hidden;
+}
+
+.header a{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.links {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: .75px;
+  margin-left: 5em;
+  margin-bottom: 2.5em;
+  margin-top: 6.5em;
+  float: left;
+  line-height: 2.5em;
+}
+
+.links a:link {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.links a:visited {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.links a.active {
+    background-color: white;
+    color: white;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+
+}
+
+.picture {
+  float: right;
+
+}
+
+a {
+  color: lemonchiffon;
+  text-decoration: none;
+}
+
+.bots {
+  padding: 2em;
+  position: relative;
+  text-align: center;
+}
+
+
+

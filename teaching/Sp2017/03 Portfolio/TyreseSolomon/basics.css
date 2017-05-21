@@ -1,0 +1,162 @@
+/** write your styles in this sheet. **/
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet')
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+img {
+  width: 100%;
+}
+
+
+h1 {
+  border: 1px;
+  border-style: solid;
+  padding: 6px;
+  position: absolute;
+}
+
+.project a:hover h1 {
+  color: #800000;
+}
+
+.image-wrapper h1 { 
+  color: #800000;
+}
+
+h2 {
+  border: 1px;
+  border-style: solid;
+  padding: 20px;
+ margin-top: 100px;
+ position: relative;
+
+ 
+}
+
+body {
+  background: white;
+  color: black;
+  /**/
+  font-family: 'Lato' ,Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.image-wrapper {
+  position: relative;
+  background-color: black;
+}
+
+.image-wrapper img {
+  opacity: .5;
+  mix-blend-mode: multiply;
+  transition: 2s ease;
+
+}
+
+.project a:hover .image-wrapper img {
+  opacity: 1;
+  mix-blend-mode: normal;
+}
+
+.info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 2s ease;
+  color: white;
+  
+
+}
+
+.project a:hover .info {
+  opacity: 1;
+}
+
+
+.module.text .col-9 {
+border: 1px;
+border-style: solid;
+font-size: 20px;
+margin-top: 5em;
+margin-bottom: 3em;
+font-family: 'open+sans'
+
+}
+
+
+.backgroundphoto {
+    background-image: url(websitephotos/portfoliopic1.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    margin-bottom: 60px;
+}
+
+.h1 {
+  margin-top: 3em;
+}
+
+/*** project overlay ***/
+.project-page {
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 9999999999;
+  background-color: rgba(255,255,255,.95);
+  padding: 3em;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.project-page * {
+  margin-left: auto;
+  margin-right:auto;
+
+}
+.project-page .container {
+  max-width: 50em;
+}
+.project-page button.close {
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 50%;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 3.5rem;
+}
+
+
+/* easy class to add to <ul>s to get rid of listy stuff */
+.list-reset {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+/* try to keep body from scrolling in the background */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+

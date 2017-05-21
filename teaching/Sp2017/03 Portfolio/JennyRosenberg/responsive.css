@@ -1,0 +1,429 @@
+* { box-sizing: border-box; } 
+
+.container {
+
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+h1, h2 { font-size: 1em; }
+
+
+
+/** columns **/
+
+[class*='col-'] {
+	float: left;
+	padding-left: .75em;
+	padding-right: .75em;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 { width: 100%;}
+
+
+
+
+
+
+
+/** media query **/
+@media (max-width: 500px) {
+
+
+	.c-hamburger {
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  top:0;
+
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 12px;
+  right: 12px;
+  height: 3px;
+  background: white;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -10px;
+}
+
+.c-hamburger span::after {
+  bottom: -10px;
+}
+
+
+.c-hamburger--rot {
+  background-color: none;
+}
+
+.c-hamburger--rot span {
+  transition: transform 0.3s;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--rot.is-active {
+  background-color: none;
+}
+
+.c-hamburger--rot.is-active span {
+  transform: rotate(90deg);
+}
+
+
+
+
+nav{
+	width:100%;
+
+
+	position:relative;
+
+
+}
+
+br {
+	display: none;
+}
+
+body{ 
+	width: 80%;
+	margin:0;
+	top:0em;
+}
+
+footer {
+	display: none;
+}
+
+
+.button2 {
+		font-size: 18pt;
+		margin-left: 2em;
+		margin-top: 1em;
+		margin-bottom: 2em;
+
+
+	}
+
+	ul {
+		font-size: 8pt;
+		margin-left: 2em;
+		margin-bottom: 2em;
+	}
+
+.header {
+	margin-top: -1em;
+	background-color: white;
+	margin-bottom: 7em;
+}	
+
+img {
+	margin-top:3em;
+}
+
+.project {
+  padding-bottom: 7em;
+  padding-right: 0em;
+  margin-left: 2em;
+  margin-top: -2em;
+
+}
+
+.images {
+	margin-top: 5em;
+}
+.project-page {
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 9999999999;
+  background-color: white;
+  padding-left: 1em;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+ 
+}
+.project-page * {
+  margin-left: 0;
+  margin-right:auto;
+  width:95%;
+  max-height: 100%;
+
+  
+}
+.project-page .container {
+  max-width: 100em;
+
+}
+
+.project-page img {
+  padding-bottom: 0em;
+  padding-left:0em;
+  width: 100%;
+}
+
+h1 {
+	margin-left: 0;
+	padding: 0;
+}
+
+p {
+	padding: 0;
+}
+
+.container {
+	margin-top: 4em;
+	width: 100%;
+}
+
+	
+}
+
+
+
+
+@media (min-width: 500px) {
+
+
+	.fixed {
+		display: none;
+	}
+
+
+
+	h1, h2 { font-size: 1.5em; }
+
+	.nav {
+		width:30%;
+	}
+
+	.button2 {
+		font-size: 16pt;
+		max-width: 10px;
+	}
+
+	ul {
+		font-size: 8pt;
+		margin-left: -2em;
+	}
+
+
+	.project {
+  padding-bottom: 7em;
+  padding-right: 0em;
+}
+
+.project-page {
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 9999999999;
+  background-color: white;
+  padding-left: 1em;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+ 
+}
+.project-page * {
+  margin-left: 0;
+  margin-right:auto;
+  width:95%;
+  max-height: 100%;
+
+  
+}
+.project-page .container {
+  max-width: 100em;
+
+}
+
+.project-page img {
+  padding-bottom: 0em;
+  padding-left:0em;
+  width: 100%;
+}
+
+h1 {
+	margin-left: 0;
+	padding: 0;
+}
+
+p {
+	padding: 0;
+}
+
+
+	.col-1  { width: calc( 100% / 9 * 1 );}
+	.col-2  { width: calc( 100% / 9 * 2 );}
+	.col-3  { width: calc( 100% / 9 * 3 );}
+	.col-4  { width: calc( 100% / 9 * 4 );}
+	.col-5  { width: calc( 100% / 9 * 5 );}
+	.col-6  { width: calc( 100% / 9 * 6 );}
+	.col-7  { width: calc( 100% / 9 * 7 );}
+	.col-8  { width: calc( 100% / 9 * 8 );}
+	.col-9  { width: calc( 100% / 9 * 9 );}
+	.col-10 { width: calc( 100% / 9 * 9 );}
+	.col-11 { width: calc( 100% / 9 * 9 );}
+	.col-12 { width: calc( 100% / 9 * 9 );}
+
+
+	/** offsets **/
+
+	.col-offset-1  { margin-left: calc( 100% / 12 * 1 );}
+	.col-offset-2  { margin-left: calc( 100% / 12 * 2 );}
+	.col-offset-3  { margin-left: calc( 100% / 12 * 3 );}
+	.col-offset-4  { margin-left: calc( 100% / 12 * 4 );}
+	.col-offset-5  { margin-left: calc( 100% / 12 * 5 );}
+	.col-offset-6  { margin-left: calc( 100% / 12 * 6 );}
+	.col-offset-7  { margin-left: calc( 100% / 12 * 7 );}
+	.col-offset-8  { margin-left: calc( 100% / 12 * 8 );}
+	.col-offset-9  { margin-left: calc( 100% / 12 * 9 );}
+	.col-offset-10 { margin-left: calc( 100% / 12 * 10 );}
+	.col-offset-11 { margin-left: calc( 100% / 12 * 11 );}
+	.col-offset-12 { margin-left: calc( 100% / 12 * 12 );}
+	
+
+
+	.row {
+		margin-left: -.75em;
+		margin-right: -.75em;
+	}
+
+	.cf::after,
+	.clearfix.after,
+	.row::after {
+		content: ' ' ;
+		display: table;
+		clear:both;
+	}	
+	
+	.container {
+
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+
+	}
+}
+
+
+
+@media (min-width: 900px) {
+	
+	.button2 {
+		font-size: 22pt;
+		margin-right: 2em;
+
+	}
+
+	ul {
+		font-size: 10pt;
+		margin-left: -1em;
+	}
+
+	nav {
+		width: 25%;
+	}
+
+	
+
+	.col-1  { width: calc( 100% / 12 * 1 );}
+	.col-2  { width: calc( 100% / 12 * 2 );}
+	.col-3  { width: calc( 100% / 12 * 3 );}
+	.col-4  { width: calc( 100% / 12 * 4 );}
+	.col-5  { width: calc( 100% / 12 * 5 );}
+	.col-6  { width: calc( 100% / 12 * 6 );}
+	.col-7  { width: calc( 100% / 12 * 7 );}
+	.col-8  { width: calc( 100% / 12 * 8 );}
+	.col-9  { width: calc( 100% / 12 * 9 );}
+	.col-10 { width: calc( 100% / 12 * 10 );}
+	.col-11 { width: calc( 100% / 12 * 11 );}
+	.col-12 { width: calc( 100% / 12 * 12 );}
+
+
+	/** offsets **/
+
+	.col-offset-1  { margin-left: calc( 100% / 12 * 1 );}
+	.col-offset-2  { margin-left: calc( 100% / 12 * 2 );}
+	.col-offset-3  { margin-left: calc( 100% / 12 * 3 );}
+	.col-offset-4  { margin-left: calc( 100% / 12 * 4 );}
+	.col-offset-5  { margin-left: calc( 100% / 12 * 5 );}
+	.col-offset-6  { margin-left: calc( 100% / 12 * 6 );}
+	.col-offset-7  { margin-left: calc( 100% / 12 * 7 );}
+	.col-offset-8  { margin-left: calc( 100% / 12 * 8 );}
+	.col-offset-9  { margin-left: calc( 100% / 12 * 9 );}
+	.col-offset-10 { margin-left: calc( 100% / 12 * 10 );}
+	.col-offset-11 { margin-left: calc( 100% / 12 * 11 );}
+	.col-offset-12 { margin-left: calc( 100% / 12 * 12 );}
+
+	h1, h2 { font-size: 2em; }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+.facepixel {
+    display: none;
+    max-width: 70%;
+    position: relative;
+    margin-right: 0em;
+    margin-left: 30%;
+    height: 95vh;
+    z-index: 1;
+}
+
+.section.block {
+    width: calc(6.25%);
+    background-size: 4000%;
+    transition: all 0s ease-in-out 8s;
+}
+
+.block {
+    float: left;
+    position: relative;
+    width: 100%;
+    background: rgba(80, 90, 100, 0.15);
+    overflow: hidden;
+}
+
+.block::after {
+    padding-top: 100%;
+    display: block;
+    content: "";
+}
+
+.section.block:hover {
+    background-size: 100%;
+    transition: all 0s ease-in-out 0s;
+}
+
+@media (min-width: 600px) {
+.facepixel {
+    display: block;
+    max-width: 50%;
+    position: relative;
+    margin-right: 0em;
+    margin-left: auto;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+}
+
+@media (min-width: 900px) {
+
+.facepixel {
+    max-width: 45%;
+    position: relative;
+    margin-right: 0em;
+    margin-left: auto;
+    height: 85vh;
+}
+.section.block {
+    width: calc(6.25%);
+    background-size: 4000%;
+    transition: all 0s ease-in-out 8s;
+}
+
+.block {
+    float: left;
+    position: relative;
+    width: 100%;
+    background: rgba(80, 90, 100, 0.15);
+    overflow: hidden;
+}
+
+.section.block:hover {
+    background-size: 100%;
+    transition: all 0s ease-in-out 0s;
+}
+
+}

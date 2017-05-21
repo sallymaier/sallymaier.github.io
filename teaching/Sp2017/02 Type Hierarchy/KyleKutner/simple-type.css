@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  padding-top: 30px;
+  }
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+header p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+  }
+
+blockquote {
+  font-family: 'Roboto Slab', serif;
+  font-size: .8em;
+  line-height: 2.4em;
+  padding-bottom: 16px;
+  margin:0;
+}
+
+blockquote p {
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+
+section {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.45em;
+}
+
+
+
+
+/*RESPONSIVE*/
+
+
+* { box-sizing: border-box; } 
+
+.container {
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
+/** columns **/
+
+[class*='col-'] {
+  float: left;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 { width: 100%;}
+
+
+body {
+  margin: 0px;
+
+}
+
+
+
+/** media query **/
+
+}
+
+@media (min-width: 600px) {
+
+
+  h1, h2 { font-size: 1.5em; }
+
+  blockquote p {
+    text-indent: 0;
+  }
+
+
+  .col-1  { width: calc( 100% / 9 * 1 );}
+  .col-2  { width: calc( 100% / 9 * 2 );}
+  .col-3  { width: calc( 100% / 9 * 3 );}
+  .col-4  { width: calc( 100% / 9 * 4 );}
+  .col-5  { width: calc( 100% / 9 * 5 );}
+  .col-6  { width: calc( 100% / 9 * 6 );}
+  .col-7  { width: calc( 100% / 9 * 7 );}
+  .col-8  { width: calc( 100% / 9 * 8 );}
+  .col-9  { width: calc( 100% / 9 * 9 );}
+  .col-10 { width: calc( 100% / 9 * 9 );}
+  .col-11 { width: calc( 100% / 9 * 9 );}
+  .col-12 { width: calc( 100% / 9 * 9 );}
+
+
+  /** offsets **/
+
+  .col-offset-1  { margin-left: calc( 100% / 9 * 1 );}
+  .col-offset-2  { margin-left: calc( 100% / 9 * 2 );}
+  .col-offset-3  { margin-left: calc( 100% / 9 * 3 );}
+  .col-offset-4  { margin-left: calc( 100% / 9 * 4 );}
+  .col-offset-5  { margin-left: calc( 100% / 9 * 5 );}
+  .col-offset-6  { margin-left: calc( 100% / 9 * 6 );}
+  .col-offset-7  { margin-left: calc( 100% / 9 * 7 );}
+  .col-offset-8  { margin-left: calc( 100% / 9 * 8 );}
+  .col-offset-9  { margin-left: calc( 100% / 9 * 9 );}
+  .col-offset-10 { margin-left: calc( 100% / 9 * 9 );}
+  .col-offset-11 { margin-left: calc( 100% / 9 * 9 );}
+  .col-offset-12 { margin-left: calc( 100% / 9 * 9 );}
+  
+
+
+  .row {
+    margin-left: -.75em;
+    margin-right: -.75em;
+  }
+
+  .cf::after,
+  .clearfix.after,
+  .row::after {
+    content: ' ' ;
+    display: table;
+    clear:both;
+  } 
+  
+  .container {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+
+  }
+}
+
+
+
+@media (min-width: 900px) {
+  body {
+    background-color: white;
+  }
+
+
+  h1 {
+    font-size: 3em;
+  }
+
+  header p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em
+  }
+
+  blockquote p {
+    text-indent: -1.5em;
+  }
+
+  
+
+  .col-1  { width: calc( 100% / 12 * 1 );}
+  .col-2  { width: calc( 100% / 12 * 2 );}
+  .col-3  { width: calc( 100% / 12 * 3 );}
+  .col-4  { width: calc( 100% / 12 * 4 );}
+  .col-5  { width: calc( 100% / 12 * 5 );}
+  .col-6  { width: calc( 100% / 12 * 6 );}
+  .col-7  { width: calc( 100% / 12 * 7 );}
+  .col-8  { width: calc( 100% / 12 * 8 );}
+  .col-9  { width: calc( 100% / 12 * 9 );}
+  .col-10 { width: calc( 100% / 12 * 10 );}
+  .col-11 { width: calc( 100% / 12 * 11 );}
+  .col-12 { width: calc( 100% / 12 * 12 );}
+
+
+  /** offsets **/
+
+  .col-offset-1  { margin-left: calc( 100% / 12 * 1 );}
+  .col-offset-2  { margin-left: calc( 100% / 12 * 2 );}
+  .col-offset-3  { margin-left: calc( 100% / 12 * 3 );}
+  .col-offset-4  { margin-left: calc( 100% / 12 * 4 );}
+  .col-offset-5  { margin-left: calc( 100% / 12 * 5 );}
+  .col-offset-6  { margin-left: calc( 100% / 12 * 6 );}
+  .col-offset-7  { margin-left: calc( 100% / 12 * 7 );}
+  .col-offset-8  { margin-left: calc( 100% / 12 * 8 );}
+  .col-offset-9  { margin-left: calc( 100% / 12 * 9 );}
+  .col-offset-10 { margin-left: calc( 100% / 12 * 10 );}
+  .col-offset-11 { margin-left: calc( 100% / 12 * 11 );}
+  .col-offset-12 { margin-left: calc( 100% / 12 * 12 );}
+
+
+
+
+
+}
+

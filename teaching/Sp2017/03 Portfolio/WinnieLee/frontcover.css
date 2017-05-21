@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body{
+    font-family: 'Helvetica Neue', sans-serif;
+}
+#title{
+    max-width: 30em;
+    margin-top: 19rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 5px 5px 5px #aaa;
+    left: 200px;
+    letter-spacing: 7px;
+    color: white;
+}
+#title a{
+    text-decoration:none;
+    color: white;
+}
+#title a:hover {
+    color: whitesmoke;
+    font-weight: 900;
+}
+#title a:active {
+    color: whitesmoke;
+}
+#navigation{
+    max-width: 6em;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Helvetica Neue';
+    font-size: 15px;
+    top: 470px;
+    left: 1055px;
+    line-height: 40px;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+#navigation a{
+    text-decoration:none;
+    color: #aaa;
+}
+#navigation a:hover{
+    font-weight: 100;
+    color: whitesmoke;
+}
+#navigation a:active {
+    color: whitesmoke;
+}
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+#outerCircleText {
+font-style: italic;
+font-weight: lighter;
+font-family: 'Helvetica Neue';
+color: #aaa;
+position: absolute;top: 0;left: 0;z-index: 3000;cursor: default;}
+#outerCircleText div {position: relative;}
+#outerCircleText div div {position: absolute;top: 0;left: 0;text-align: center;}
+
+
+@media only screen and (min-width: 768px) {
+    #title{
+    font-size: 120px;   
+}

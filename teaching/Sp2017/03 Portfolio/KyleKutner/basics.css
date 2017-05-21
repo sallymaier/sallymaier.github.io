@@ -1,0 +1,454 @@
+/** write your styles in this sheet. **/
+
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: black;
+  /**/
+	font-family: 'Roboto Slab', serif;
+  margin:0;
+}
+
+[class*="col-"] {
+	float:left;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.clearfix::after{
+	content: " ";
+	display: table;
+	clear:both;
+}
+
+.padding{
+	padding-bottom: 100px;
+}
+
+.height{
+	height:4em;
+}
+
+.margins {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.narrow {
+    max-height: 18vh;
+    position: relative;
+    margin-top: 1em;
+    overflow: hidden;
+}
+
+.name{
+	font-family: 'Roboto Slab', serif;
+}
+
+.col-1 	{ width: calc(100% / 12 * 1);}
+.col-2 	{ width: calc(100% / 12 * 2);}
+.col-3 	{ width: calc(100% / 12 * 3);}
+.col-4	{ width: calc(100% / 12 * 4);}
+.col-5 	{ width: calc(100% / 12 * 5);}
+.col-6 	{ width: calc(100% / 12 * 6);}
+.col-7 	{ width: calc(100% / 12 * 7);}
+.col-8 	{ width: calc(100% / 12 * 8);}
+.col-9 	{ width: calc(100% / 12 * 9);}
+.col-10 { width: calc(100% / 12 * 10);}
+.col-11 { width: calc(100% / 12 * 11);}
+.col-12 { width: calc(100% / 12 * 12);}
+
+
+
+.coloffset-1 	{ margin-left: calc(100% / 12 * 1);}
+.coloffset-2 	{ margin-left: calc(100% / 12 * 2);}
+.coloffset-3 	{ margin-left: calc(100% / 12 * 3);}
+.coloffset-4	{ margin-left: calc(100% / 12 * 4);}
+.coloffset-5 	{ margin-left: calc(100% / 12 * 5);}
+.coloffset-6 	{ margin-left: calc(100% / 12 * 6);}
+.coloffset-7 	{ margin-left: calc(100% / 12 * 7);}
+.coloffset-8 	{ margin-left: calc(100% / 12 * 8);}
+.coloffset-9 	{ margin-left: calc(100% / 12 * 9);}
+.coloffset-10 	{ margin-left: calc(100% / 12 * 10);}
+.coloffset-11 	{ margin-left: calc(100% / 12 * 11);}
+.coloffset-12 	{ margin-left: calc(100% / 12 * 12);}
+
+/*Animation*/
+
+
+/**/
+
+.h1{
+	font-family: 'Roboto Slab', serif;
+	font-size: 3.5em;
+	font-weight: 800;
+	margin-bottom: 0;
+	margin-left: 0;
+	z-index: 2;
+}
+
+.h2{
+	font-family: 'Roboto Slab', serif;
+	font-size:1em;
+	font-weight: 300;
+	z-index: 2;
+	line-height: 1.35em;
+	max-width: 80%;
+	margin-left: 0;
+	min-width: 12em;
+}
+
+.project-page {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2147483647;
+    background-color: rgba(255, 255, 255, 0.95);
+    overflow-y: auto;
+    padding: 1em;
+    padding-right: 2em;
+}
+
+
+
+.project-page .container {
+  max-width: 100%;
+	}
+
+.placeholder{
+	z-index: 1;
+	margin: 100px;
+}
+
+.intro{
+	bottom: 20%;
+	max-width: 60%;
+	padding-left: 1em;
+	margin-left: 0em;
+}
+
+.background{
+	height: 50vh;
+	z-index: -1;
+	position: relative;
+  background-repeat: no-repeat;
+  background-position: 75% 100%;
+  background-size: auto 90%;
+}
+.face {
+  background-image: url('img/home_face.jpg'); 
+  background-color: #899bc3;
+	}
+.block{
+	width: 100%;
+	height: auto;
+}
+
+.blackbar{
+	height: 2vh;
+    background-color: black;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+img {
+	width: 100%;
+}
+
+.overlay {
+  position: relative;
+}
+
+
+.info {
+	position: absolute;
+	text-align: left;
+	bottom: 0%;
+	left: 0;
+	right:0;
+	margin-left: 1em;
+	
+}
+
+.image-wrapper img{
+	-webkit-filter: grayscale(100%);
+	mix-blend-mode: overlay;
+	opacity: .3;
+}
+
+.image-wrapper:hover img{
+	-webkit-filter: grayscale(0%);
+	mix-blend-mode: normal;
+	opacity: 1;
+	transition: 1.2s;
+}
+
+.image-wrapper:hover .info{
+	bottom:50%;
+	transition: 1.2s;
+}
+
+.black {
+  background-color: #333333;
+}
+
+.padding-wide{
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+
+.col-1 	{ width: calc(100% / 3 * 1);}
+.col-2 	{ width: calc(100% / 3 * 2);}
+.col-3 	{ width: calc(100% / 3 * 3);}
+.col-4	{ width: calc(100% / 3 * 3);}
+.col-5 	{ width: calc(100% / 3 * 3);}
+.col-6 	{ width: calc(100% / 3 * 3);}
+.col-7 	{ width: calc(100% / 3 * 3);}
+.col-8 	{ width: calc(100% / 3 * 3);}
+.col-9 	{ width: calc(100% / 3 * 3);}
+.col-10 { width: calc(100% / 3 * 3);}
+.col-11 { width: calc(100% / 3 * 3);}
+.col-12 { width: calc(100% / 3 * 3);}
+
+header{
+	height: 40vh;
+	background-image: url(images/face/face_1.jpg);
+    overflow: hidden;
+}
+
+
+@media (min-width: 600px) {
+
+
+.facepixel{
+	width: 40%;
+}
+
+.intro{
+	position: absolute;
+	bottom: 60%;
+	max-width: 60%;
+	padding-left: 1em;
+	margin-left: 2em;
+	z-index: 2;
+}
+
+.h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 4em;
+}
+
+.image-wrapper:hover .info{
+	bottom:30%;
+	transition: 1.2s;
+}
+
+.h2 {
+	font-size: 1.5em;
+}
+
+.name{
+	font-size: 2em;
+	font-family: 'Roboto Slab', serif;
+}
+
+.margins{
+	margin-top: 2em;
+}
+
+.narrow{
+	max-height: 15vh;
+}
+
+.padding-wide{
+	padding-left: 0em;
+	padding-right: 0em;
+}
+
+.project-page {
+    margin-left: 3em;
+    margin-top: 3vh;
+    margin-right: 3em;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2147483647;
+    background-color: rgba(255, 255, 255, 0.95);
+    overflow-y: auto;
+    max-width: 88%;
+    padding: 3em;
+}
+
+header{
+	height: 45vh;
+}
+
+@media (min-width: 900px) {
+	/*** project overlay ***/
+header{
+	height: 85vh;
+}
+
+.project-page {
+    margin-left: 27%;
+    margin-top: 5vh;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2147483647;
+    background-color: rgba(255, 255, 255, 0.95);
+    overflow-y: auto;
+    max-width: 80%;
+    padding: 3em;
+}
+
+.narrow{
+	max-height: 18vh;
+}
+
+	.margins{
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+
+.image-wrapper:hover .info{
+	bottom:40%;
+	color: #000000;
+	transition: 1.2s;
+}
+
+.image-wrapper:hover {
+	opacity: .8;
+}
+
+
+	.project-page {
+	  top:0;
+	  right:0;
+	  bottom:0;
+	  left:0;
+	  z-index: 9999999999;
+	  background-color: rgba(255,255,255,.95);
+	  padding: 3em;
+	  overflow-y: auto;
+	  -webkit-overflow-scrolling: touch;
+	}
+	
+	.project-page .container {
+	  max-width: 50em;
+	}
+	.project-page button.close {
+	  background-color: transparent;
+	  border: 2px solid;
+	  border-radius: 50%;
+	  position: fixed;
+	  top: 2rem;
+	  right: 2rem;
+	  font-size: 1rem;
+	  height: 3.5rem;
+	  width: 3.5rem;
+	  line-height: 3.5rem;
+	}
+
+	/* easy class to add to <ul>s to get rid of listy stuff */
+	.list-reset {
+	  list-style: none;
+	  margin:0;
+	  padding: 0;
+	}
+
+	/* try to keep body from scrolling in the background */
+	.stop-scrolling {
+	  height: 100%;
+	  overflow: hidden;
+	  position: relative;
+	}
+
+	.intro{
+		position: absolute;
+		bottom:20%;
+		max-width: 60%
+		margin-left:2.5em;
+
+	}
+
+	.h1{
+		font-size: 7em;
+		z-index: 1;
+	}
+
+	.h2{
+		font-size:1em;
+		z-index: 1;
+	}
+
+	.padding-wide{
+		padding-left: 2.2em;
+		padding-right: 2.2em;
+	}
+
+
+	.placeholder{
+		z-index: 1;
+		margin: 100px;
+	}
+
+	.background{
+		height: 75vh;
+		z-index: -1;
+		position: relative;
+	  background-repeat: no-repeat;
+	  background-position: 80% 50%;
+	  background-size: auto 100%;
+	  max-width: none;
+	}
+	.face {
+	  background-image: url('img/home_face.jpg'); 
+	}
+	.col-1  { width: calc( 100% / 12 * 1 );}
+	.col-2  { width: calc( 100% / 12 * 2 );}
+	.col-3  { width: calc( 100% / 12 * 3 );}
+	.col-4  { width: calc( 100% / 12 * 4 );}
+	.col-5  { width: calc( 100% / 12 * 5 );}
+	.col-6  { width: calc( 100% / 12 * 6 );}
+	.col-7  { width: calc( 100% / 12 * 7 );}
+	.col-8  { width: calc( 100% / 12 * 8 );}
+	.col-9  { width: calc( 100% / 12 * 9 );}
+	.col-10 { width: calc( 100% / 12 * 10 );}
+	.col-11 { width: calc( 100% / 12 * 11 );}
+	.col-12 { width: calc( 100% / 12 * 12 );}
+
+
+	/** offsets **/
+
+	.col-offset-1  { margin-left: calc( 100% / 12 * 1 );}
+	.col-offset-2  { margin-left: calc( 100% / 12 * 2 );}
+	.col-offset-3  { margin-left: calc( 100% / 12 * 3 );}
+	.col-offset-4  { margin-left: calc( 100% / 12 * 4 );}
+	.col-offset-5  { margin-left: calc( 100% / 12 * 5 );}
+	.col-offset-6  { margin-left: calc( 100% / 12 * 6 );}
+	.col-offset-7  { margin-left: calc( 100% / 12 * 7 );}
+	.col-offset-8  { margin-left: calc( 100% / 12 * 8 );}
+	.col-offset-9  { margin-left: calc( 100% / 12 * 9 );}
+	.col-offset-10 { margin-left: calc( 100% / 12 * 10 );}
+	.col-offset-11 { margin-left: calc( 100% / 12 * 11 );}
+	.col-offset-12 { margin-left: calc( 100% / 12 * 12 );}
+
+
+	}
+}
+

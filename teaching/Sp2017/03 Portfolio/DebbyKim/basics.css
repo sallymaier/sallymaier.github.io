@@ -1,0 +1,386 @@
+* {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    margin:0;
+    padding:0;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+img{
+    width: 100%;
+}
+.mainstyle{
+    height: 100vh;
+}
+#about{
+    position: relative;
+    background-image: url(debby_picture.jpg);
+    background-position: left;
+    background-size: auto 100%;
+    height: 100vh;
+}
+a {
+    font-family:'Oswald', sans-serif;
+    color: white;
+}
+.resumestyle{
+    font-size: 2em;
+}
+#behance-magix img{
+}
+
+header{
+    position: fixed;
+    z-index: 100000000;
+    padding-top: 5%;
+    width: 100%;
+    background-color: white;
+    opacity: .6;
+    /***div for putting in images later***/
+}
+
+#logo{
+    width:12%;
+    position: relative;
+    z-index: 500;
+    left: 50%;
+    margin-bottom: -3%;
+    transform: translate(-50%, -50%)
+}
+homepage{
+    position: absolute;
+
+}
+.mainstyle nav{
+    height: 100vh;
+}
+nav ul{
+    list-style: none;
+    font-family:'Oswald', sans-serif;
+    font-size: 6em;
+    line-height: 120px;
+    padding: 100px;
+    padding-left: 10px;
+    margin-bottom: 100%;
+    /***style your nav here***/
+}
+nav a{
+    color: white;
+    text-decoration: none;
+
+}
+nav a:hover{
+    color: rgb(104,129,136);
+}
+
+.project {
+    position: relative;
+    overflow:hidden;
+}
+
+.project:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.image-wrapper{
+    position: absolute;
+    background-color: rgb(104,129,136);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 10%;
+}
+
+.bgimg{
+    background-size: cover;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+h2{
+    color:white;
+}
+
+.bgimg {
+    background-blend-mode: normal;
+    background-color: gray;
+}
+.project a:hover .bgimg {
+    background-blend-mode: darken;
+}
+
+.info{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    font-family: 'Timmana', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    /***info will be with image***/
+}
+.project a:hover .info{
+    opacity: 1;
+}
+.background-wrap{
+    position:absolute;
+    z-index: -1000;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    left:0;
+    
+}
+
+/*** For video background ***/
+#video-bg-elem{
+    position:relative;
+    top: 0px;
+    left:0;
+    min-height: 100%;
+    min-width: 100%;
+}
+#behance-magix{
+    display:block;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.project{
+    padding: 20px;
+}
+#wrapper{
+    position: relative;
+    background-image: url(debby_picture.jpg);
+    background-position: left;
+    background-size: auto 100%;
+    height: 100vh;
+    /***image will start at left, auto size but height will be 100%***/
+}
+.aboutplacement{
+    padding-left: 1em;
+    padding-top: 3.5em;
+}
+.hellofont {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 7em;
+    line-height: 100%;
+}
+.paragraphfont {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 1.3em;
+    padding-top: 1em;
+}
+.hellofont2 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 6em;
+    line-height: 100%;
+    letter-spacing: .05em;
+}
+.paragraphfont2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 1.2em;
+    padding-top: 1em;
+}
+#contact{
+    height: 100vh;
+    background-color: rgb(104,129,136);
+}
+#social_media i{
+    padding: .2em;
+    color: black;
+}
+footer{
+    width: 100%;
+    z-index: 500;
+    padding-top: 2em;
+}
+.copyright{
+    font-family: 'Raleway', sans-serif;
+    font-size: .5em;
+}
+
+
+/*** project overlay ***/
+.project-page {
+    font-family:'Raleway', sans-serif;
+    line-height: 2em;
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 9999999999;
+    background-color: rgba(255,255,255,.95);
+    padding: 3em;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.project-page * {
+    color:rgb(104,129,136);
+    padding-bottom: 1em;
+    margin-left: auto;
+    margin-right:auto;
+}
+.project-page .container {
+    max-width: 50em;
+}
+.project-page button.close {
+    background-color: transparent;
+    border:0;
+    border-radius: 50%;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1rem;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+}
+
+/* easy class to add to <ul>s to get rid of listy stuff */
+.list-reset {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+/* try to keep body from scrolling in the background */
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+* { box-sizing: border-box;}
+
+.container {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.row::after {
+	content: " ";
+	display: table;
+	clear: both;
+
+
+}
+
+.row {
+	margin-left: -12px;
+	margin-right: -12px;
+}
+
+/*.columns {
+	float: left;
+	padding-left: 12px;
+	padding-right: 12px;
+}*/
+
+
+.flex{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    justify-content: center;
+}
+
+.footer-flex{
+    position:relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* 2. Column Widths */
+/*=========================================*/
+/*=========================================*/
+
+[class*="col-"] {
+	float: left;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+/*fuck math!*/
+
+.col-1 	{ width: calc(100% / 12 * 1);}
+.col-2 	{ width: calc(100% / 12 * 2);}
+.col-3 	{ width: calc(100% / 12 * 3);}
+.col-4	{ width: calc(100% / 12 * 4);}
+.col-5 	{ width: calc(100% / 12 * 5);}
+.col-6 	{ width: calc(100% / 12 * 6);}
+.col-7 	{ width: calc(100% / 12 * 7);}
+.col-8 	{ width: calc(100% / 12 * 8);}
+.col-9 	{ width: calc(100% / 12 * 9);}
+.col-10 { width: calc(100% / 12 * 10);}
+.col-11 { width: calc(100% / 12 * 11);}
+.col-12 { width: calc(100% / 12 * 12);}
+
+
+
+/* 3. Offsets */
+/*=========================================*/
+/*=========================================*/
+
+.coloffset-1 	{ margin-left: calc(100% / 12 * 1);}
+.coloffset-2 	{ margin-left: calc(100% / 12 * 2);}
+.coloffset-3 	{ margin-left: calc(100% / 12 * 3);}
+.coloffset-4	{ margin-left: calc(100% / 12 * 4);}
+.coloffset-5 	{ margin-left: calc(100% / 12 * 5);}
+.coloffset-6 	{ margin-left: calc(100% / 12 * 6);}
+.coloffset-7 	{ margin-left: calc(100% / 12 * 7);}
+.coloffset-8 	{ margin-left: calc(100% / 12 * 8);}
+.coloffset-9 	{ margin-left: calc(100% / 12 * 9);}
+.coloffset-10 	{ margin-left: calc(100% / 12 * 10);}
+.coloffset-11 	{ margin-left: calc(100% / 12 * 11);}
+.coloffset-12 	{ margin-left: calc(100% / 12 * 12);}
+
+
+/* 4. Other Custom Grid-ular stuff */
+/*=========================================*/
+/*=========================================*/
+
+/* Print the grid in the background */
+header, #main, footer {
+/*   background: transparent url(960px-12col-58w-24gut.png) center top repeat-y; */
+}

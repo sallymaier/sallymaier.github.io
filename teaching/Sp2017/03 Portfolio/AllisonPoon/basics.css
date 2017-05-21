@@ -1,0 +1,564 @@
+/** write your styles in this sheet. **/
+
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: salmon;
+  /**/
+  font-family: "JosefinSans";
+text-align: center;
+    margin: auto
+}
+p {
+    font-family: "JosefinSans";
+    font-style: light;
+    color: darkgray;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.2;
+}
+p1 {
+    font-family: "JosefinSans";
+    font-style: light;
+    color: black;
+    text-align: left;
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+h1 {
+    font-family: "JosefinSans" , sans-serif;
+    color: cornflowerblue;
+    text-align: center;
+    font-size: 50px;
+}
+h2 {
+    font-family: "JosefinSans", sans-serif;
+    color: black;
+    text-align: left;
+    font-size: 40px;
+    line-height: 1.2;
+}
+.box {
+    height:1000px;
+    background-color:#3e435b;
+    z-index: -1;
+    background-size:cover;
+    margin:0;
+    position:relative;
+
+}
+.box2 {
+    height:100%;
+    background-color:white;
+    z-index: -1;
+    position: relative;
+
+}
+.box3 {
+    height:50px;
+    background-color:white;
+    text-align: center;;
+    line-height: 1.2;
+    color: gray;
+    font-family:"JosefinSans-Light";
+    position:relative;
+    padding: 20px;
+    
+}
+.box4 {
+    height:300px;
+    background-color:white;
+
+}
+.box5 {
+    height:90em;
+    background-color:white;
+    margin:0;
+    z-index: -1;
+}
+.pic {
+    height:40em;
+    float:center;
+    margin:5em;
+}
+.pic2 {
+    height:20em;
+    float:center;
+    margin:30em;
+    margin-top: 0;
+    background-size: contain;
+}
+.pic3 {
+    height:10em;
+    float:right;
+    margin:9em;
+    margin-top: 0;
+    background-size: contain;
+}
+
+.circle {
+	width: 200px;
+	height: 200px;
+	background: lightgray;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+    float:left;
+}
+.circle2 {
+	width: 200px;
+	height: 200px;
+	background: lightgray;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+    float:center;
+}
+.circle3 {
+	width: 200px;
+	height: 200px;
+	background: lightgray;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+    float:right;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+ul {
+    list-style-type: none;
+    background-color: white;
+}
+
+li {
+    float:left;
+    top: 0; 
+    z-index: 2;
+}
+
+li a {
+    display: block;
+    color: salmon;
+    font-family: "JosefinSans-Bold";
+    text-align: center;
+    padding: 30px 40px;
+    text-decoration: none;
+   
+}
+
+li a:hover {
+    text-decoration:underline;
+}
+
+.box5 {
+    padding: 20px;
+    margin-left: 10%;
+    width: 900px;
+    float:left;
+    position:relative;
+    
+}
+.box6 {
+    width: 400px;
+    margin-left:0%;
+    position:relative;
+  
+}
+.box7 {
+    width: 400px;
+    height:300px;
+    background-position: center;
+    float: left;
+    display: inline-block;
+    padding: 30px;
+    background-image: url(images/IMG_2261.jpg);
+    margin-left: 70px;
+    
+    
+}
+.box8 {
+    width: 400px;
+    height:300px;
+    background-position: center;
+    float: left;
+    display: inline-block;
+    padding: 30px;
+    background-image: url(images/IMG_2337.jpg);
+    margin-left: 70px;
+      
+}
+
+.box9 {
+    width: 400px;
+    height:300px;
+    background-position: center;
+    float: center;
+    display: inline-block;
+    padding: 30px;
+    background-image: url(images/IMG_2196.jpg);
+    margin:2em;
+    position:relative;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: salmon;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.box9:hover .overlay {
+  height: 50%;
+    
+}
+.box10:hover .overlay {
+  height: 50%;
+    
+}
+.box11:hover .overlay {
+  height: 50%;
+    
+}
+.box12:hover .overlay {
+  height: 50%;
+    
+}
+.box15:hover .overlay {
+  height: 50%;    
+}
+.box16:hover .overlay {
+  height: 50%;    
+}
+.box17:hover .overlay {
+  height: 50%;    
+}
+.box18:hover .overlay {
+  height: 50%;    
+}
+.box19:hover .overlay {
+  height: 50%;    
+}
+
+
+
+
+.text {
+  white-space: nowrap; 
+  color: white;
+font-family: "JosefinSans-Light";
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.box10 {
+    width: 400px;
+    height:300px;
+    background-position: center;
+    float: center;
+    display: inline-block;
+    padding: 30px;
+    background-image: url(images/IMG_2340.jpg);
+    margin:2em;
+    position:relative;
+
+ }   
+.box11 {
+    width: 400px;
+    height:300px;
+    background-position: center;
+    float: center;
+    display: inline-block;
+    padding: 30px;
+    background-image: url(images/IMG_2298.jpg);
+    margin:2em;
+     position:relative;
+
+}
+.box12 {
+    width: 400px;
+    height:300px;
+    background-position:center;
+    background-size:contain;
+    float: center;
+    display: inline-block;
+    padding: 30px;
+    background-image: url(images/makeup_spread1.jpg);
+    margin:2em;
+     position:relative;
+    
+
+}
+.box13 {
+    width: 320px;
+    height:400px;
+    float: center;
+    position: fixed;
+    padding: 20px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left:30px;
+    border: 5px solid black;
+
+}
+.box15 {
+    width: 400px;
+    height:300px;
+    background-position: center;
+    float: center;
+    display: inline-block;
+    padding: 30px;
+    background-image: url(images/patternposter.jpg);
+    margin:2em;
+     position:relative;
+
+}
+.box16 {
+    width: 400px;
+    height:300px;
+    background-position: center;
+     float: center;
+    display: inline-block;
+    padding: 30px;
+    background-image: url(images/packaging%20patterns6-01.png);
+    background-size: cover;
+    margin:2em;
+     position:relative;
+
+}
+.box17 {
+    width: 400px;
+    height:300px;
+    background-position: center;
+     float: center;
+    display: inline-block;
+    padding: 30px;
+    background-image: url(images/AP_002.jpg);
+    background-size:cover;
+    margin:2em;
+     position:relative;
+
+}
+.box18 {
+    width: 400px;
+    height:300px;
+    background-position: center;
+     float: center;
+    display: inline-block;
+    padding: 30px;
+    background-image: url(images/mint.gif);
+    margin:2em;
+     position:relative;
+
+}
+.box19 {
+    width: 400px;
+    height:300px;
+    background-position: center;
+     float: center;
+    display: inline-block;
+    padding: 30px;
+    background-image: url(images/IMG_1351.JPG);
+    margin:2em;
+     position:relative;
+
+}
+.button {
+    background-color: salmon;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:4px;
+    font-family:JosefinSans-Bold;
+    float:center;
+}
+.box14 {
+    width: 500px;
+    height: 200px;
+    padding: 200px;
+    float:left;
+    margin:20px;
+}
+.contact {
+    width: 300px;
+    height: 500px;
+    float:center;
+    background-image: url(images/contact-08.png);
+        background-size:cover;
+    position:relative;
+    display:inline-block;
+}
+.button:hover {
+    background-color:lightsalmon;
+    color:white;
+}
+a {
+    color:white;
+    text-decoration:none;
+}
+/** media query **/
+
+
+
+	h1  { font-size: 3.5em;
+        align-content: center;
+        padding: 8px;
+    
+    }
+
+
+
+	.col-1  { width: calc( 100% / 9 * 1 );}
+	.col-2  { width: calc( 100% / 9 * 2 );}
+	.col-3  { width: calc( 100% / 9 * 3 );}
+	.col-4  { width: calc( 100% / 9 * 4 );}
+	.col-5  { width: calc( 100% / 9 * 5 );}
+	.col-6  { width: calc( 100% / 9 * 6 );}
+	.col-7  { width: calc( 100% / 9 * 7 );}
+	.col-8  { width: calc( 100% / 9 * 8 );}
+	.col-9  { width: calc( 100% / 9 * 9 );}
+
+
+
+	/** offsets **/
+
+	.col-offset-1  { margin-left: calc( 100% / 9 * 1 );}
+	.col-offset-2  { margin-left: calc( 100% / 9 * 2 );}
+	.col-offset-3  { margin-left: calc( 100% / 9 * 3 );}
+	.col-offset-4  { margin-left: calc( 100% / 9 * 4 );}
+	.col-offset-5  { margin-left: calc( 100% / 9 * 5 );}
+	.col-offset-6  { margin-left: calc( 100% / 9 * 6 );}
+	.col-offset-7  { margin-left: calc( 100% / 9 * 7 );}
+	.col-offset-8  { margin-left: calc( 100% / 9 * 8 );}
+	.col-offset-9  { margin-left: calc( 100% / 9 * 9 );}
+
+	
+
+
+	.row {
+		margin-left: -.75em;
+		margin-right: -.75em;
+	}
+
+	.cf::after,
+	.clearfix.after,
+	.row::after {
+		content: ' ' ;
+		display: table;
+		clear:both;
+	}	
+	
+	.container {
+
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+
+	}
+}
+
+
+
+@media (min-width: 900px) {
+	body {
+		background-color: white;
+	}
+
+	.col-1  { width: calc( 100% / 9 * 1 );}
+	.col-2  { width: calc( 100% / 9 * 2 );}
+	.col-3  { width: calc( 100% / 9 * 3 );}
+	.col-4  { width: calc( 100% / 9 * 4 );}
+	.col-5  { width: calc( 100% / 9 * 5 );}
+	.col-6  { width: calc( 100% / 9 * 6 );}
+	.col-7  { width: calc( 100% / 9 * 7 );}
+	.col-8  { width: calc( 100% / 9 * 8 );}
+	.col-9  { width: calc( 100% / 9 * 9 );}
+
+
+
+	/** offsets **/
+
+	.col-offset-1  { margin-left: calc( 100% / 9 * 1 );}
+	.col-offset-2  { margin-left: calc( 100% / 9 * 2 );}
+	.col-offset-3  { margin-left: calc( 100% / 9 * 3 );}
+	.col-offset-4  { margin-left: calc( 100% / 9 * 4 );}
+	.col-offset-5  { margin-left: calc( 100% / 9 * 5 );}
+	.col-offset-6  { margin-left: calc( 100% / 9 * 6 );}
+	.col-offset-7  { margin-left: calc( 100% / 9 * 7 );}
+	.col-offset-8  { margin-left: calc( 100% / 9 * 8 );}
+	.col-offset-9  { margin-left: calc( 100% / 9 * 9 );}
+
+
+	h1, h2 { font-size: 2em; }
+
+
+}
+/*******/
+#dynamic-pages .project-page {
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 9999999999;
+  background-color: rgba(222,222,222,.9);
+  overflow-y: auto;
+  padding: 3em;
+  border: 1em solid gray;
+}
+
+.project-page button.close {
+  position: fixed;
+  right: 3em;
+  top:3em;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background: cornflowerblue;
+  border: none;
+}
+.project {
+  margin-bottom: 2em;
+}
+
+.project a.wrapping {
+  color: rgba(47,41,38,1);
+  text-decoration: none;
+  display: block;
+
+}
+
+.project h2 {
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 1.1;
+}

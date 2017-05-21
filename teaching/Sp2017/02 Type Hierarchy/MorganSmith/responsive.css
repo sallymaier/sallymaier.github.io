@@ -1,0 +1,154 @@
+* { box-sizing: border-box; } 
+
+body {
+    margin-right: 5%;
+}
+
+.col {
+    margin-left: 15%;
+	margin-right: auto;
+    margin-top: 3em;
+    margin-top: 1em;
+}
+
+.I {
+    display:none;
+}
+
+.sq {
+    margin-top: 4em;
+    margin-left: 10%;
+    margin-right: 0em;
+    background-color: #fff100;
+    border-right: solid 4em #fff100;
+    /*the effect this makes was an accident, but looks cool. I'm sure you can keep playing here to position the box and text.*/
+}
+
+.sq h1 {
+    margin-left: 10%;
+    padding-top: .9em;
+    padding:.9em;
+}
+
+
+
+h1 { 
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5em;
+    color:#213f99;
+
+}
+
+h2 {
+    font-family: 'Karla', sans-serif; 
+    color:#213f99;
+
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header p { /*styling the author name*/
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+p {
+    font-family: 'Source Serif Pro', serif;
+    font-size:14px;
+}
+
+blockquote {
+    -webkit-column-span: all; /* Chrome, Safari, Opera */
+    column-span: all;
+    font-family: 'Karla', sans-serif;
+    color: #213f99;
+    font-size: 12px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.5em;
+}
+
+
+
+
+
+
+/** media query **/
+
+
+
+@media (min-width: 600px) {
+
+
+
+    header h1 {
+    font-size: 60px;
+    }
+
+    h1 {
+    font-size: 2em;
+
+    }
+    
+    .I {
+        display:inline;
+    }
+}
+
+
+
+@media (min-width: 900px) {
+
+    .col { width: 50%;} 
+
+    .col {
+        margin-left: 25%;
+    }
+
+    .wide {
+        width: 55%;
+/*        margin-left:20%;
+*/    }
+
+    .two { /*makes section 2 column when screen is wide enough.*/
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+    }
+
+    .two p {
+        margin-top: 0;
+    }
+
+    .three {
+        -webkit-column-count: 3; /* Chrome, Safari, Opera */
+        -moz-column-count: 3; /* Firefox */
+        column-count: 3;
+    }
+
+    .three p {
+        margin-top: 0;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,286 @@
+/** write your styles in this sheet. **/
+#behance-magix {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background-color: #202020;
+}
+/*** project overlay ***/
+.project-page {
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 9999999999;
+  background-color: rgba( 20, 20, 20, 0.9 );
+  padding: 3em;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.project-page * {
+  margin-left: auto;
+  margin-right:auto;
+}
+.project-page .container {
+  max-width: 75em;
+}
+.project-page button.close {
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 50%;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 3.5rem;
+  color: #aaa;
+}
+
+/* easy class to add to <ul>s to get rid of listy stuff */
+.list-reset {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+/* try to keep body from scrolling in the background */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+h1{
+    max-width: 30em;
+    margin-top: 21rem;
+    margin-bottom: 25rem; 
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 39px;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 5px 5px 5px #aaa;
+    left: 200px;
+    letter-spacing: 7px;
+    color: #202020;
+}
+h1 a{
+    text-decoration:none;
+    color: #202020;
+}
+h1 a:hover {
+    color: #202020;
+    font-weight: 900;
+}
+h1 a:active {
+    color: #202020;
+}
+h2{
+  position: fixed;
+  right: 2.4%;
+  top: 1rem;
+  display: block;
+  z-index: 99;
+  margin-bottom: 10rem;
+  font-size: 20px;
+  margin-bottom: 5rem;
+  text-align: center; 
+}
+h2 button.toggle {
+        background: none;
+        border: 1px solid #aaa;
+        border-radius: 2px;
+        box-shadow: 0 3px 3px rgba(0,0,0,.2);
+        display: block;
+        height: 30px;
+        margin: auto;
+        padding: 5px;
+        width: 30px;
+        border-radius: 50%;
+        z-index: 200;
+    }
+
+h2 button.toggle:active {
+        background: none;
+        box-shadow: inset 0 3px 3px rgba(0,0,0,.2);
+    }
+#instagram {
+    position: fixed;
+    right: 2.3%;
+    top: 6.4rem;
+    background-color: none;
+    display: block;
+    font-family: 'Helvetica Neue';
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #aaa;
+    z-index: 99;
+}
+#instagram a{
+    text-decoration:none;
+    color: #aaa;
+}
+#instagram a:hover {
+    color: whitesmoke;
+    font-weight: 300;
+}
+#instagram a:active {
+    color: whitesmoke;
+}
+#linkedin {
+    position: fixed;
+    right: 2.3%;
+    top: 7.9rem;
+    background-color: none;
+    display: block;
+    font-family: 'Helvetica Neue';
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-decoration:none;
+    color: #aaa;
+    z-index: 99;
+}
+#linkedin a{
+    text-decoration:none;
+    color: #aaa;
+}
+#linkedin a:hover {
+    color: whitesmoke;
+    font-weight: 300;
+}
+#linkedin a:active {
+    color: whitesmoke;
+}
+
+#MOVE_TOP_BTN {
+    background-color: none;
+    position: fixed;
+    right: 2%;
+    top: 4.5rem;
+    padding: 5px;
+    display: block;
+    z-index: 99;
+    font-family: 'Helvetica Neue';
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing:2px;
+    text-decoration:none;
+    color: #aaa;
+}
+#MOVE_TOP_BTN a:hover {
+    color: whitesmoke;
+    font-weight: 300;
+}
+.project{
+    position: relative; 
+    margin-left: auto;
+    margin-right: auto;
+}
+figure.project{
+    margin-bottom: 3rem;
+}
+figure.project * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.project img {
+  max-width: 100%;
+}
+figure.project:after,
+figure.project:before,
+figure.project figcaption:after,
+figure.project figcaption:before {
+  background: #0a0a0a;
+  height: 25%;
+  position: absolute;
+  content: '';
+  opacity: 0;
+  -webkit-transition: all 0.35s steps(4);
+  transition: all 0.35s steps(4);
+  z-index: 1;
+  left: 50%;
+  right: 50%;
+}
+figure.project:before {
+  top: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+figure.project:after {
+  top: 25%;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+figure.project figcaption:before {
+  top: 50%;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  z-index: -1;
+}
+figure.project figcaption:after {
+  top: 75%;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  z-index: -1;
+}
+figure.project figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 30px;
+}
+figure.project:hover:after,
+figure.project.hover:after,
+figure.project:hover:before,
+figure.project.hover:before,
+figure.project:hover figcaption:after,
+figure.project.hover figcaption:after,
+figure.project:hover figcaption:before,
+figure.project.hover figcaption:before {
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+}
+.module img{
+    width: 100%;
+}
+.project-page{
+   color: #aaa;
+   font-family: 'Helvetica Neue';
+   font-size: 1em;
+   font-weight: 300;
+   letter-spacing: 0.02em;
+
+}
+@media only screen and (min-width: 768px) {
+    h1{
+    font-size: 80px;   
+}

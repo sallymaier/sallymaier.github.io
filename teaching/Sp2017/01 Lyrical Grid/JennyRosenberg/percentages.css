@@ -1,0 +1,73 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** Design Students: Please Don't Edit this File **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+}
+
+/** setup! **/
+.block {
+  background: rgba(80,90,100,.15);
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+.block::after {
+  padding-top: 100%;
+  display: block;
+  content: '';
+}
+
+.block img {
+  width: 100%;
+  height: auto;
+}
+
+.three-quarter.block {
+  width: 75%;
+}
+
+.two-third.block {
+  width: calc(100% / 3 * 2);
+}
+
+.half.block {
+  width: 50%;
+}
+
+.third.block {
+  width: calc(100% / 3);
+}
+
+.quarter.block {
+  width: 25%;
+}
+
+.eigth.block {
+  width: 12.5%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

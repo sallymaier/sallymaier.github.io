@@ -1,0 +1,300 @@
+/** write your styles in this sheet. **/
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i');
+
+
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  background-size: cover;
+  background-position: center, center;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: #444444;
+  /**/
+  font-family: Helvetica, Arial, monospace;
+  background-color: #444444;
+  margin: 0;
+}
+
+
+
+header {
+  background-color: #d10056;
+  top: 0px;
+  padding: .5em;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.text {
+  margin-top: 150px;
+}
+
+h1 {  margin: 8pt;
+  text-align: left;
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+
+}
+
+.info {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%);
+  display: none;
+}
+
+.project:hover .info {
+  display: block;
+}
+
+h2 {
+    color: black;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 800;
+    font-size: 25px;
+    letter-spacing: .75px;
+    background: yellow;
+    padding: .5em;
+}
+
+
+
+
+
+
+h3 {
+  color: white;
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 0;
+  margin-left: 8pt;
+}
+
+h4 {
+  font-family: 'Anonymous Pro', monospace;
+  color: white;
+  letter-spacing: .75px;
+  margin-left: 8pt;
+  margin-top: 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+h5 {
+  color: #ffd637;
+  font-family: 'Anonymous Pro', monospace;
+  letter-spacing: .75px;
+  margin-left: 12em;
+  margin-top: 2em;
+  margin-right: 10em;
+  font-size: 16px;
+}
+
+h6 {
+  color: white;
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: .75px;
+  margin-left: 5em;
+  margin-top: 7em;
+  float: left;
+
+ 
+}
+
+
+
+p {
+  color: white;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 12px;
+  letter-spacing: .75px;
+  text-align: center;
+
+}
+
+.text a {
+    display: block;
+    margin-left: 8pt;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.2em;
+    padding-bottom: .8em;
+    text-decoration: underline;
+}
+
+
+
+/*** project overlay ***/
+
+
+
+.row {
+
+  width: 100%;
+
+}
+
+.project {
+  float:right;
+/*  filter: grayscale(0%);
+*/  width: calc(50% / 16);
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.project img {
+ 
+  display: block;
+  min-width: 110%;
+  height: 100vh;
+}
+
+.project:hover {
+/*  filter: grayscale(100%);
+*/  transition: all .5s ease;
+  width: 50%;
+}
+
+img.animated {
+  -webkit-animation: filter-animation 5s infinite;
+}
+
+.image-wrapper {
+  background-size: cover;
+  height: 100vh;
+}
+
+/* easy class to add to <ul>s to get rid of listy stuff */
+.list-reset {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+/* try to keep body from scrolling in the background */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav a, p {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: .5em;
+    margin:0;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.topnav a.active {
+    background-color: #d10056;
+    color: white;
+}
+
+.topnav a:hover {
+
+}
+
+.topnav {
+    overflow: hidden;
+    width: 25%;
+}
+
+.header a{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.links {
+  color: white;
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: .75px;
+  margin-left: 5em;
+  margin-bottom: 2.5em;
+  margin-top: 6.5em;
+  float: left;
+  line-height: 2.5em;
+}
+
+.links a:link {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.links a:visited {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.links a.active {
+    background-color: white;
+    color: white;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+
+}
+
+.picture {
+  float: right;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.bots {
+  padding: 2em;
+  position: relative;
+  text-align: center;
+}
+
+
+

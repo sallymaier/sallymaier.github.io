@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+
+body {
+  font-family: 'Lato';
+  padding-bottom: 5em;
+  margin-left: 6em;
+  margin-right: 6em;
+  font-size: .9em;
+  background-color:#bcd9ea;
+}
+
+p {
+  font-family: 'Lato'; 
+  font-size: .9em;
+  margin-top: 0em;    
+}
+
+.p2 {
+  font-family: 'Lato'; 
+  font-weight:700;
+  font-size: .9em;
+  letter-spacing: 1px;
+  padding-bottom: .4em;
+  text-align: right;
+  margin-top:-3em;
+}
+
+.p3 {
+  font-family: 'Lato'; 
+  width:50px;
+  padding:14px; 
+  font-size: .9em;
+  word-spacing: 15px;
+  padding-top:.5rem; 
+  margin-left: 50%; 
+  text-align: center;
+  position: fixed;
+  left: -29rem;
+  top: 10em;
+  line-height: 1.5em;
+  border: 1px solid #a4bcca;
+
+}
+
+
+
+
+
+  
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato';
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+  font-weight: 600;
+  margin-top: -2rem;    
+  margin-bottom: 3rem;
+  margin-left: 0em;
+  margin-right: 0em;
+  line-height: 1.1em;
+  text-indent: -.08em;
+  text-align: center;       
+    
+}
+
+
+a {
+  color: black;
+  underline: none;    
+  text-decoration: none;    
+}
+
+article {
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article header {
+  border-bottom: 1px solid #a4bcca;
+  margin-bottom: .5rem;
+  margin-top: -.5rem;    
+  margin-left: 6em;
+  margin-right: 6em;   
+    
+}
+
+article section {
+  border-top: 1px solid #a4bcca;
+  margin-top: 0rem;
+  padding-top: 1rem;
+  column-count: 1;
+  margin-left: 6em;
+  margin-right: 6em;
+  padding-bottom: 3em; 
+  text-align: justify; 
+  line-height: 150%;    
+}
+
+article section h2 {
+  font-size: 2em;
+  color: white;
+  font-weight: 700;  
+  letter-spacing: 2px;
+  text-align:center;
+    
+}
+
+blockquote {   
+  font-size: .9em;
+  color: black;   
+  font-family: "Lato";
+  font-weight: 400i;
+  padding: 3em;
+  margin-left: 9em;
+  margin-right: 9em;
+  margin-bottom: 0em;
+  margin-top: 0em;    
+  text-indent: -.3em;
+  text-align: justify;  
+  line-height: 1.5;
+  font-style: italic;
+}
+
+blockquote:before {
+    display:block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    margin-left: -.6em;
+    margin-top: -.4em;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+
+
+blockquote p {
+  text-indent: 1em;
+  text-align: right;
+  font-size: .87em;
+  margin-top: 1em;
+}
+
+blockquote p + p {
+  margin: 0;
+  margin-top:-1em;
+}
+section blockquote {
+  font-size: .88em;   
+  border-color: black;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-left: 6em;
+}
+
+
+footer {
+  font-family: 'Lato';
+  padding-bottom: 0em;
+  padding-top: 0em;
+  margin-left: 7em;
+  margin-right: 7em;
+  font-size: .88em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+a:active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+
+/* animations ! ! ! */
+

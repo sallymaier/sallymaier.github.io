@@ -1,0 +1,40 @@
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/*** project grid ***/
+/*** attempting to use flexbox for ease of use in regards to mismatched heights, etc ***/
+/*** http://codepen.io/bjornmeansbear/pen/OpRqEW?editors=0100 ***/
+
+#behance-magix {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+}
+
+.project {
+  width: 25%;
+  padding: 1em;
+  position: relative;
+}
+
+.project .image-wrapper {
+  margin: -1em -1em 0;
+}
+
+/*** project overlay ***/
+.project-page {
+  color: white;
+  background-color: rgba(50,50,50,.8);
+}
+
+.project-page a {
+  color: white;
+}
