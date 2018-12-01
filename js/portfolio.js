@@ -210,6 +210,8 @@ $(document).ready(function() {
 
 		var url = document.location.toString();
 			if ( url.match('#') ) {
+				console.log('trying to open section.');
+
 			    $('html, body').animate({
 		        scrollTop: $("#dynamic-pages").offset().top
 			    }, 2000);
