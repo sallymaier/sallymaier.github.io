@@ -205,6 +205,16 @@ $(document).ready(function() {
 		    });
 		  });
 		});
+
+		///open section on URL
+
+		var url = document.location.toString();
+			if ( url.match('#') ) {
+			    $('html, body').animate({
+		        scrollTop: $("#dynamic-pages").offset().top
+			    }, 2000);
+			 $("#dynamic-pages").slideDown("slow");
+			}
 	});
 	
 	function isMobile() {

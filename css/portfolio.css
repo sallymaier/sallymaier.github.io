@@ -14,6 +14,18 @@ body {
 body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
   font-size-adjust: 0.5;
 }
+
+.text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+iframe {
+    left: 50%;
+    transform: translate(50%);
+}
+
 #page {
   font-size: 1em;
   /* equivalent to 16px */
