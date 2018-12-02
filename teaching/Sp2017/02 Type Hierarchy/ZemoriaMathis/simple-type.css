@@ -1,0 +1,296 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900italic,900);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);
+)
+
+/** font-family: 'Vollkorn', georgia, serif; **/
+/** font-family: 'Open Sans', helvetica, arial, sans-serif; **/
+/** font-family: 'PT Mono', courier, monospace; **/
+/** font-family: 'Oswald', sans-serif; **/
+/** font-family: 'Playfair Display', georgia, serif; **/
+/** font-family: 'Lato', helvetica, arial, sans-serif; **/
+/** font-family: 'Merriweather', georgia, serif; **/
+/** font-family: 'Gentium Book Basic', georgia, serif; **/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', helvetica, arial, sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  color: white;
+  line-height: 1.2;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+article {
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article header {
+  margin-bottom: 2rem;
+}
+header p {
+  font-size: 2em;
+  font-weight: 900;
+  line-height: -10%;
+  text-align: right;
+  color: white;
+  margin-top: 0em;
+  margin-bottom: 0em;
+
+  
+}
+
+.green {
+  color: #2bf4bf;
+}
+article section {
+  font-family:"Open Sans"; sans-serif;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  color: white;
+  padding: 2em;
+
+}
+
+article section h2 {
+  margin-top: 0;
+  color: white;
+  text-transform: uppercase;
+  border: solid #2bf4bf 3px;
+  padding: 0.5em;
+  text-align: center;
+}
+.white {
+  color:white;
+  padding-bottom: 15em;
+}
+
+blockquote {
+  font-size: 0.75em;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.5em;
+  color: white;
+  font-family: "Merriweather", serif;
+  color:#2bf4bf;
+
+  padding bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  text-indent: -.3em;
+  text-align: justify;
+}
+
+blockquote p {
+  text-indent: 0;
+  font-size: 80%;
+  margin-bottom: 0;
+}
+
+blockquote p + p {
+  margin: 0;
+}
+section blockquote {
+  font-size: 1em;
+  border-left: .25em;
+  margin-left: 1em;
+  margin-right: 2em;
+  padding-left: 2em;
+}
+* { box-sizing: border-box; } 
+
+article {
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 3px solid;
+  background-color: white;
+}
+
+header nav ul li {
+  border-bottom: 1px solid;
+  padding: 1em;
+}
+
+.jumbotron {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 90vh;
+    margin: 0;
+    width: 100%;
+    left: 0;
+}
+
+.imageone {
+  background-image: url(MyBoyMarx-03.jpg);
+}
+.imagetwo {
+  background-image: url(8-03.jpg)
+}
+.imagethree {
+  background-image: url(epilogue-03.jpg)
+}
+/** columns **/
+
+[class*='col-'] {
+  float: left;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 { width: 100%;}
+
+
+body {
+  margin: 0px;
+
+}
+
+
+
+/** media query **/
+
+@media (min-width: 600px) {
+
+
+  .col-1  { width: calc( 100% / 9 * 1 );}
+  .col-2  { width: calc( 100% / 9 * 2 );}
+  .col-3  { width: calc( 100% / 9 * 3 );}
+  .col-4  { width: calc( 100% / 9 * 4 );}
+  .col-5  { width: calc( 100% / 9 * 5 );}
+  .col-6  { width: calc( 100% / 9 * 6 );}
+  .col-7  { width: calc( 100% / 9 * 7 );}
+  .col-8  { width: calc( 100% / 9 * 8 );}
+  .col-9  { width: calc( 100% / 9 * 9 );}
+  .col-10 { width: calc( 100% / 9 * 9 );}
+  .col-11 { width: calc( 100% / 9 * 9 );}
+  .col-12 { width: calc( 100% / 9 * 9 );}
+
+
+  /** offsets **/
+
+  .col-offset-1  { margin-left: calc( 100% / 12 * 1 );}
+  .col-offset-2  { margin-left: calc( 100% / 12 * 2 );}
+  .col-offset-3  { margin-left: calc( 100% / 12 * 3 );}
+  .col-offset-4  { margin-left: calc( 100% / 12 * 4 );}
+  .col-offset-5  { margin-left: calc( 100% / 12 * 5 );}
+  .col-offset-6  { margin-left: calc( 100% / 12 * 6 );}
+  .col-offset-7  { margin-left: calc( 100% / 12 * 7 );}
+  .col-offset-8  { margin-left: calc( 100% / 12 * 8 );}
+  .col-offset-9  { margin-left: calc( 100% / 12 * 9 );}
+  .col-offset-10 { margin-left: calc( 100% / 12 * 10 );}
+  .col-offset-11 { margin-left: calc( 100% / 12 * 11 );}
+  .col-offset-12 { margin-left: calc( 100% / 12 * 12 );}
+  
+
+
+  .row {
+    margin-left: -.75em;
+    margin-right: -.75em;
+  }
+
+  .cf::after,
+  .clearfix.after,
+  .row::after {
+    content: ' ' ;
+    display: table;
+    clear:both;
+  } 
+  
+  article {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+
+  }
+
+}
+.face{
+  background-image: url('img/me.png');
+  height: 90vh ;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  position: relative;
+  background-position: 127%
+}
+
+
+@media (min-width: 900px) {
+
+  .col-1  { width: calc( 100% / 12 * 1 );}
+  .col-2  { width: calc( 100% / 12 * 2 );}
+  .col-3  { width: calc( 100% / 12 * 3 );}
+  .col-4  { width: calc( 100% / 12 * 4 );}
+  .col-5  { width: calc( 100% / 12 * 5 );}
+  .col-6  { width: calc( 100% / 12 * 6 );}
+  .col-7  { width: calc( 100% / 12 * 7 );}
+  .col-8  { width: calc( 100% / 12 * 8 );}
+  .col-9  { width: calc( 100% / 12 * 9 );}
+  .col-10 { width: calc( 100% / 12 * 10 );}
+  .col-11 { width: calc( 100% / 12 * 11 );}
+  .col-12 { width: calc( 100% / 12 * 12 );}
+
+
+  /** offsets **/
+
+  .col-offset-1  { margin-left: calc( 100% / 12 * 1 );}
+  .col-offset-2  { margin-left: calc( 100% / 12 * 2 );}
+  .col-offset-3  { margin-left: calc( 100% / 12 * 3 );}
+  .col-offset-4  { margin-left: calc( 100% / 12 * 4 );}
+  .col-offset-5  { margin-left: calc( 100% / 12 * 5 );}
+  .col-offset-6  { margin-left: calc( 100% / 12 * 6 );}
+  .col-offset-7  { margin-left: calc( 100% / 12 * 7 );}
+  .col-offset-8  { margin-left: calc( 100% / 12 * 8 );}
+  .col-offset-9  { margin-left: calc( 100% / 12 * 9 );}
+  .col-offset-10 { margin-left: calc( 100% / 12 * 10 );}
+  .col-offset-11 { margin-left: calc( 100% / 12 * 11 );}
+  .col-offset-12 { margin-left: calc( 100% / 12 * 12 );}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

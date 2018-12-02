@@ -1,0 +1,356 @@
+/** write your styles in this sheet. **/
+
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: grey;
+  /**/
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 25%;
+  margin-right: auto;
+  margin-top: 3em;
+  width:70%;
+}
+
+.button4{
+  color: pink;
+}
+
+.button4:visited {
+  color:pink;
+
+}
+
+.button4:hover {
+  color: grey;
+}
+
+.bgimg{
+    background-size: cover;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+/*** project overlay ***/
+
+
+.button2 {
+
+ text-transform: uppercase;
+ color: pink;
+ font-size:2em;
+ font-weight: bold;
+}
+
+.button2:visited {
+  color:pink;
+
+}
+
+.button2:hover {
+  color: grey;
+}
+
+h2 {
+  display: none;
+
+  
+}
+
+h1 {
+
+  padding-bottom: 0em;
+  margin-top: 0em;
+  padding-left: 5.2em;
+
+}
+
+p {
+  font-size: 10.5pt;
+  line-height: 18pt;
+  padding-left:12em;
+  padding-right: 13em;
+  font-family: helvetica;
+  font-weight: lighter;
+
+
+}
+
+h3 { 
+  padding:0;
+  font-size: 15pt;
+  top:0;
+
+
+
+   }
+
+
+img {
+  padding-top: 0em;
+  padding-right: 4em;
+
+}
+
+p3 {
+  width: 80;
+  line-height: 18pt;
+  margin-bottom: 20em;
+  font-family: helvetica;
+  font-size: 10.5pt;
+  max-width: 35em;
+  min-width: 25em;
+
+
+
+}
+
+.info {
+  position: absolute;
+  text-align: center;
+  left: 20%;
+  bottom: 30%;
+  top: 40%;
+  right: 35%;
+  font-size: .5em;
+  z-index: 10;
+}
+
+.project {
+  padding-bottom: 7em;
+  padding-right: 0em;
+}
+
+.project-page {
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 9999999999;
+  background-color: white;
+  padding: 3em;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+ 
+}
+.project-page * {
+  margin-left: 0;
+  margin-right:auto;
+  width:95%;
+  max-height: 100%;
+
+  
+}
+.project-page .container {
+  max-width: 100em;
+  min-width: 25em;
+
+}
+
+.project-page img {
+  padding-bottom: 3em;
+  padding-left:14em;
+}
+
+a {
+  padding-right:.3em;
+}
+
+.project-page button.close {
+
+  color:grey;
+  background-color: transparent;
+  border: none;
+    border-radius: 50%;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 3.5rem;
+}
+
+.project-page button.close:hover {
+  color:pink;
+}
+
+/* easy class to add to <ul>s to get rid of listy stuff */
+.list-reset {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+/* try to keep body from scrolling in the background */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.bgimg {
+  position: absolute;
+  top:1em;
+  left: -1em;
+  bottom: -1em;
+  right:0;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%)
+  filter: grayscale(100%);
+  outline: .2em solid black;
+  
+}
+
+.bgimg:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  
+  filter: grayscale(0%);
+  
+}
+
+.image-wrapper {
+  position: relative;
+  border: .2em solid pink;
+  width: 80%;
+  margin-left: 2em;
+
+
+
+}
+
+.image-wrapper:before{
+  content:"";
+  display: block;
+  padding-top: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.dynamic-pages {
+  width: 100%
+}
+
+ nav{
+  position: fixed;
+    
+    display: inline;
+    top: 40px;
+    left: 2em;
+    margin: 0;
+    
+       height: 73.5%; /* Full height */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+ }
+
+ul {
+    list-style-type: none;
+    color: grey;
+    font-size: 12px;
+
+
+ 
+    font: helvetica;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+li {
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+
+  
+
+}
+a:link{
+    text-decoration: none;
+    color: grey;
+}
+
+a:visited{
+    color: grey;
+    
+}
+a:hover {
+        color: pink;
+    
+    }
+
+a:selected {
+  color: grey;
+    }
+
+
+footer {
+  position:relative;
+  text-align: right;
+  font-size: 8pt;
+  text-transform: lowercase;
+  margin-bottom: 0em;
+  margin-left:5em;
+
+
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: pink;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: grey;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+

@@ -1,0 +1,49 @@
+    "user":{  
+      "id":23273735,
+      "first_name":"Jenny",
+      "last_name":"Rosenberg",
+      "username":"jrosenberg9b42",
+      "city":"Baltimore",
+      "state":"Maryland",
+      "country":"United States",
+      "location":"Baltimore, MD, USA",
+      "company":"",
+      "occupation":"Student",
+      "created_on":1449517737,
+      "url":"https:\/\/www.behance.net\/jrosenberg9b42",
+      "images":{  
+         "50":"https:\/\/mir-s3-cdn-cf.behance.net\/user\/50\/cea16523273735.573e4a3b28a09.jpg",
+         "100":"https:\/\/mir-s3-cdn-cf.behance.net\/user\/100\/cea16523273735.573e4a3b28a09.jpg",
+         "115":"https:\/\/mir-s3-cdn-cf.behance.net\/user\/115\/cea16523273735.573e4a3b28a09.jpg",
+         "230":"https:\/\/mir-s3-cdn-cf.behance.net\/user\/230\/cea16523273735.573e4a3b28a09.jpg",
+         "138":"https:\/\/mir-s3-cdn-cf.behance.net\/user\/138\/cea16523273735.573e4a3b28a09.jpg",
+         "276":"https:\/\/mir-s3-cdn-cf.behance.net\/user\/276\/cea16523273735.573e4a3b28a09.jpg"
+      },
+      "display_name":"Jenny Rosenberg",
+      "fields":[  
+         "Graphic Design",
+         "Typography"
+      ],
+      "has_default_image":0,
+      "website":"",
+      "stats":{  
+         "followers":10,
+         "following":6,
+         "appreciations":40,
+         "views":564,
+         "comments":1,
+         "team_members":0
+      },
+      "twitter":"",
+      "links":[  
+
+      ],
+      "sections":{  
+         "About Me":"I am a currently finishing up my sophomore year as a Graphic Design major at the Maryland Institute College of Art, with a concentration in book arts. My interests are in typography & lettering, print\/publication design, infographics, and branding. \n\nPlease email me at jrosenberg01@mica.edu with any questions or interests."
+      },
+      "social_links":[  
+
+      ]
+   },
+   "http_code":200
+});

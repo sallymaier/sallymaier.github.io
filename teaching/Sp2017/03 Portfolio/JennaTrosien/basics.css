@@ -1,0 +1,280 @@
+/** write your styles in this sheet. **/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url(@import url ('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+
+* {
+        box-sizing: border-box;
+    }
+
+body {
+    font-size: 80%;
+    font-color: white;
+    background: white;
+    color: white;
+}
+
+header {
+    bottom: 0;
+    left:1em;
+    right:0;
+    z-index: 100;
+    margin-top: 1em;
+    padding-bottom: 40px;
+}
+
+header ul {
+    background: darkred;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 60px 0;
+    border-top:1px solid darkred;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+header ul li {
+    border-bottom: 1px solid pink;
+    margin-top: 3em;
+}
+
+header ul li a {
+    display: block;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+header ul li a:hover {
+    background: lightgrey;
+    color: darkred;
+    text-decoration: none;
+}
+
+header button.toggle {
+    background: darkred;
+    border: 1px darkred;
+    border-radius: 2px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.2);
+    display: block;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    width: 50px;
+    border-radius: 50%;
+    /**/
+    position: relative;
+    z-index: 200;
+}
+
+header button.toggle:focus,
+header button.toggle:active {
+  outline: 0;
+}
+header button.toggle span {
+    background: lightgrey;
+    border-radius: 3px;
+    display: block;
+    height: 4px;
+    margin: 3px;
+}
+
+header button.toggle:active {
+    background: lightgrey;
+    box-shadow: inset 0 3px 3px rgba(0,0,0,.2);
+}
+
+header button.toggle:active span {
+    background: white;
+}
+
+    @media (min-width: 768px) {
+        header {
+            background: white;
+        }
+
+        header ul {
+            display: block;
+            position: static;
+        }
+
+        header button.toggle { display: none; }
+
+        header {
+            top:0;
+            bottom:initial;
+            border: none;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+
+        header nav ul li {
+            float: right;
+            border: none;
+        }
+
+        header nav ul li a {
+            padding: 15px;
+        }
+  }
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.project img {
+  opacity: .8;
+}
+
+.project img:hover {
+    opacity: 1;
+}
+
+.module img {
+  width: 100%;
+}
+
+.image-wrapper {
+  position: relative; 
+}
+
+
+body {
+  background: white;
+  color: black;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+h1 {
+  font-size: 2.5em;
+  letter-spacing: .2em; 
+  margin: 0em;
+  color: black;
+  margin-bottom: -.4em;
+  padding-left: .2em;
+
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 0;
+  padding-left: .4em;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+
+
+/*** project overlay ***/
+
+
+
+.info {
+    font-size: .8em;
+    font-color: white;
+    position: absolute;
+    top: 30%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.project a {
+  color: white;
+}
+
+.project-page {
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 9999999999;
+  background-color: rgba(255,255,255,.95);
+  padding: 3em;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.ham {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.project-page * {
+  margin-left: auto;
+  margin-right:auto;
+}
+.project-page .container {
+  max-width: 50em;
+}
+.project-page button.close {
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 50%;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 3.5rem;
+}
+
+.image-wrapper img{
+  width: 100%;
+}
+
+/* easy class to add to <ul>s to get rid of listy stuff */
+.list-reset {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+/* try to keep body from scrolling in the background */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}

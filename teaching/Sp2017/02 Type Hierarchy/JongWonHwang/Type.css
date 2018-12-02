@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box
+}
+h1 {
+	font-family: 'PT Serif', serif;
+	font-size: 40px;
+	margin-bottom: 0;
+}
+
+p {
+	font-family: 'PT Serif', serif;
+	font-size: 13px;
+}
+
+.Our {
+	line-height: 1.5em;
+	font-size: 13px;
+	text-align: left;
+    color: darkgray;
+	font-weight: 500;
+	font-kerning: normal;
+    font-family: 'PT Serif', serif;
+}
+
+h3 {
+	font-family: 'PT Serif', serif;
+	font-size: 10px;
+	color: darkgray;
+	font-weight: 500;
+	font-kerning: normal;
+}
+
+#wrapper {
+    width:auto;
+	max-width:840px;
+	margin: 0 auto;
+}
+
+#top {
+	position: relative;
+	height: 100px;
+	padding-left: 29%;
+	left: 10px;
+}
+
+.quotes {
+	font-family: 'PT Serif', serif;
+	position: relative;
+	right: 10%;
+	font-size: 13px;
+	color: darkgray;
+}
+
+.contents {
+	width: 70%;
+	float: right;
+}
+
+.side {
+	width: 20%;
+	padding: 1%;
+	float: left;
+	clear: left;
+}
+
+.side_1 {
+    Position:relative;
+    Top:132px;
+	height: 1000px;
+}
+
+.side_2 {
+    Position:relative;
+    Top:17px;
+	height: 1000px;
+}
+
+.contents_1 {
+	position: relative;
+	top: 110px;
+}
+
+#bottom {
+	clear: both;
+}
+
+.by {
+	color: black;
+	font-family: 'PT Serif', serif;
+	font-size: 11px;
+	font-weight: 100;
+}
+.dropbtn {
+    border:none;
+    width:auto;
+    cursor:pointer;
+    background:#FFFF;
+    font-size:25px;
+    font-family: 'PT Serif', serif;
+    padding:16px;
+    color:#FFF;
+}
+.dropdown {
+    position:relative;
+    display:inline-block;
+}
+.dropdown-content {
+    display:none;
+    position:absolute;
+    background:#F5F5F5;
+    min-width: auto;
+    z-index: 1;
+}
+.dropdown-content a {
+    color:black;
+    text-decoration: none;
+    padding:16px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:burlywood;
+}

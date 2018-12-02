@@ -1,0 +1,81 @@
+{
+  "name": "OOKB/behance-demo",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "master",
+  "style": {
+    "name": "Brutalist",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BasicHeader",
+      "article": "article/MarkdownArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace",
+    "heading": {},
+    "typeScale": [
+      48,
+      32,
+      20,
+      18,
+      16,
+      14,
+      12
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "fluid": true
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/OOKB/behance-demo",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/OOKB",
+          "text": "OOKB"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "behance-demo",
+      "subhead": "Using Behance as a content management sysytem... basically templating and styling the JSON output from behance.net",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "behance-demo: Using Behance as a content management sysytem... basically templating and styling the JSON output from behance.net",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "OOKB",
+          "repo": "behance-demo"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p>This is an experiment into using Behance as a basic content management sysytem to power a simple portfolio ... basically templating and styling the JSON output from behance.net using just a simple set of mustache templates. This is a starter kit of files and instructions attempting to use the lowest possible barrier to entry tools.</p>\n<p>current live demos:<br>\n<a href=\"http://www.connormuething.com/\">http://www.connormuething.com/</a><br>\n<a href=\"http://www.sallymaier.com/\">http://www.sallymaier.com/</a><br>\n<a href=\"http://spencenelson.com/\">http://spencenelson.com/</a></p>\n<p>Outcomes are severely limited due to the constraints of the tools, and some other overarching ideas:</p>\n<ul>\n<li>low barrier to entry</li>\n<li>very little Javascript knowledge required</li>\n<li>all rendering happens in the browser</li>\n<li>edit/design with simple HTML and CSS</li>\n<li>get all data from Behance, little to no project content should live in the HTML</li>\n<li>what content you can show is limited to what content behance&apos;s prebuilt API calls return (can rely on behance API documentation for solving data related problems hopefully)</li>\n</ul>\n<p>The main point: simple, semi-custom display for your behance projects. Get a nice, simple portfolio up that you still weild some control over, but have very little to manage and upkeep on your end. Make something that can be freely hosted on gh-pages.</p>\n<p>Basically, we&apos;re providing you a list of projects and you get to decide how to display that list.</p>\n<p>As this project evolves more templates, instructions, outcomes, etc. will be created.</p>\n<h2>Tools this relies upon</h2>\n<p>Currently we&apos;re using:</p>\n<ul>\n<li><a href=\"http://api.jquery.com/\">jquery</a></li>\n<li><a href=\"https://www.behance.net/dev/api/endpoints/\">behance API</a></li>\n<li><a href=\"https://github.com/janl/mustache.js\">mustache.js</a></li>\n<li><a href=\"http://fontawesome.io/\">font awesome</a></li>\n</ul>\n<p>And that&apos;s it.</p>\n<p>As we build this out more libraries and themes will be added, other things might be listed here (like list.js or masonry or isotope or tachyons or similar...).</p>\n<h2>Register w/ Behance to get API key</h2>\n<p><a href=\"https://www.behance.net/dev/register\">https://www.behance.net/dev/register</a></p>\n<ul>\n<li>Register your &quot;application&quot; (in this case your app is your website)</li>\n<li>Copy the API key / Client ID, we&apos;ll need this.</li>\n</ul>\n<p>You can get back to this by going to <a href=\"https://www.behance.net/dev/apps\">https://www.behance.net/dev/apps</a></p>\n<h2>Reading JSON</h2>\n<p>It is helpful to have a JSON viewing plugin installed in your browser to make the JSON feeds easier to navigate. One of these will work if you&apos;re using chrome: <a href=\"https://chrome.google.com/webstore/search/jsonView\">https://chrome.google.com/webstore/search/jsonView</a>. This will work if you&apos;re using Firefox: <a href=\"https://addons.mozilla.org/en-US/firefox/addon/jsonview/\">https://addons.mozilla.org/en-US/firefox/addon/jsonview/</a>. If you&apos;re a Safari user try this: <a href=\"https://github.com/rfletcher/safari-json-formatter\">https://github.com/rfletcher/safari-json-formatter</a> or <a href=\"https://github.com/acrogenesis/jsonview-safari\">https://github.com/acrogenesis/jsonview-safari</a>.</p>\n<p>Your Behance API JSON feed is findable at <code>https://api.behance.net/v2/users/ + YOURUSERNAME + /projects/?api_key= + YOURAPIKEY + &amp;per_page=25&amp;callback=?;</code></p>\n<p>Documentation on the Behance API is found here: <a href=\"https://www.behance.net/dev/api/endpoints/\">https://www.behance.net/dev/api/endpoints/</a></p>\n<h2>Themes</h2>\n<p>Currently there are two starter themes in the <code>layouts</code>. These are not yet fleshed out themes by any means. However, they do give a basic starter place that has something more going on than just a column of projects. If you&apos;ve developed a theme that you think others might enjoy, please share it.</p>\n<p>More to come.</p>\n"
+    }
+  ]
+}

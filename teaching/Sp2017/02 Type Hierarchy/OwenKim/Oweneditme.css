@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+
+body{
+  font-family: 'Oxygen', sans-serif;
+  padding-bottom: 5em;
+}
+html{
+  font-family: 'Oxygen', sans-serif;
+  padding-bottom: 5em;
+}
+top{
+    font-family: 'Oxygen', sans-serif;
+  padding-bottom: 5em;
+}
+blockquote {font-family: 'Oxygen', sans-serif;
+    padding-bottom: 1.5em;
+    margin-left: 0.5em;
+    color: darkgrey;
+    font-size: 0.8em;
+    width: 50%
+}
+author {
+    font-family: 'Oxygen', sans-serif;
+  padding-bottom: 3em;
+    font-size: 1em;
+}
+side {
+    font-family: 'Oxygen', sans-serif;
+    list-style-type: none;
+    margin: 130;
+    padding: 0;
+    width: 100px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 50px;
+    right: 16px;
+    font-size: 15px;
+    float: right;
+    cursor: pointer;
+    color: #ff7f50;
+}
+div { display: block;
+    color: #000000;
+    padding: 16px 16px;
+    text-decoration: none;
+    
+}
+div2 { display: block;
+    color: #ff7f50;
+    padding: 16px 16px;
+    text-decoration: none;
+    
+}
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    color : #ff7f50;
+    width: 50%
+} 
+p {
+     font-family: 'Oxygen', sans-serif;
+  padding-bottom: 3em;
+    font-size: 1em;
+    width: 50%;
+    line-height: 1.4;
+    
+    
+}
+footer {
+    font-family: 'Oxygen', sans-serif;
+    padding-bottom: 2em;
+    font-size: 0.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oxygen',sans-serif;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 1rem
+  line-height: 1;
+  text-indent: -.08em;
+  width: 50%
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: 350;
+  margin-bottom: 1rem
+  line-height: 1;
+  text-indent: -.08em;
+    color: coral
+}
+
+#top{
+  
+    height:100px;
+    padding-left:29%;
+    
+}
+#blockquote{
+    position:relative;
+    right:10%;
+    
+}
+#contents{
+   
+    width: 70%;
+    float: right;
+}
+#side {
+    width: 20%;
+    float: right;
+    clear: left;
+}
+#bottom{
+    clear:both;
+    
+}
+#author{ 
+font-family: 'Oxygen', sans-serif;
+  padding-bottom: 5em;
+}
+.body {
+    color:black;
+    font-family: 'Oxygen', sans-serif;
+            font-size: 11px;
+            font-weight: 100;
+    width: 50%
+}
+#article{ 
+font-family: 'Oxygen', sans-serif;
+  padding-bottom: 5em;
+    width: 50%
+}
+
+#navigation{
+    font-family: 'Oxygen', sans-serif;
+    float: right;
+    
+}

@@ -1,0 +1,32 @@
+<link href="basics.css" type="text/css" rel="stylesheet" />
+<link href="grid.css" type="text/css" rel="stylesheet" />
+
+    <script id="project-page" type="text/template">
+      <div class="project-page" id="project-{{project.id}}">
+        <div class="container">
+        <div class="col-9">
+
+          <h1>{{Hey Whats Up!}}</h1>
+          <p>{{project.description}}</p>
+
+          <ul class="modules-list list-reset">
+              <li class="module {{type}}">
+               <img src="img/zemoria.jpg" class="col-9" />
+                {{/sizes}}
+                {{#text_plain}}<p>{{text_plain}}</p>{{/text_plain}}
+                {{#original_embed}}<p>{{{original_embed}}}</p>{{/original_embed}}
+              </li>
+
+              
+            {{/project.modules}}
+          </ul>
+
+          <p>
+            <small>
+              <a href="{{project.url}}" target="_blank">See the original {{project.name}} post on Behance.net</a>
+            </small>
+          </p>
+        </div>
+        <button class="close"><i class="fa fa-times fa-2x"></i></button>
+      </div>
+    </script>

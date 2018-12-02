@@ -1,0 +1,35 @@
+          <link href="basics.css" type="text/css" rel="stylesheet" />
+          <link href="grid.css" type="text/css" rel="stylesheet" />
+
+
+      <div class="project-page" id="project-{{project.id}}">
+        <div class="container">
+        <div class="col-6">
+      
+        <h1>Black Lives Matter Website</h1>
+          <p>This website connects all police brutality cases and mixes them with images. The use of gradients connects each image as the viewers scrolls down the page.</p>
+          </div>
+
+          
+
+          <ul class="modules-list list-reset">
+            
+              <li class="module {{type}}">
+                <img src="websitephotos/website1.jpg" class="col-9" />
+                <img src="websitephotos/website2.jpg" class="col-9" />
+                <img src="websitephotos/website3.jpg" class="col-9" />
+                <img src="websitephotos/website4.jpg" class="col-9" />
+                <img src="websitephotos/website5.jpg" class="col-9" />
+               
+              </li>
+            
+          </ul>
+
+          <p>
+            <small>
+              <a href="{{project.url}}" target="_blank">See the original {{project.name}} post on Behance.net</a>
+            </small>
+          </p>
+        </div>
+        <button class="close"><i class="fa fa-times fa-2x"></i></button>
+      </div>

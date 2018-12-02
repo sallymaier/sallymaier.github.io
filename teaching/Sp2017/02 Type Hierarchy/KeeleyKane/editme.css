@@ -1,0 +1,323 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** *** Please Make Changes in this CSS file *** **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,300i,400,600,700');
+
+body {
+  font-family: 'Source Sans Pro', georgia, sans-serif;
+  padding-bottom: 5em;
+  font-size: 300
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', helvetica, arial, sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  line-height: 1;
+  margin-top: 2em;
+  
+  
+}
+
+header p{
+	font-style: italic;
+	margin-top: -.5em;
+}
+
+article {
+  
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  line-height: 1.75;
+  width:80%
+  
+}
+
+article header {
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   font-weight: 200;
+
+}
+
+article section {
+  font-family: 'Source Sans Pro', helvetica, arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-top: 0rem;
+
+
+  
+}
+
+article section h2 {
+  
+  font-family: 'Source Sans Pro', helvetica, arial, sans-serif;
+  font-weight: 200;
+  font-size: 3em;
+  margin-top: 1em;
+  margin-bottom: -.25em;
+
+
+}
+
+blockquote {
+	font-weight: 200;
+	margin-top: 2px;
+	width:70%;
+	margin-left: auto;
+    font-size: 1.1em;
+    margin-right: auto;
+    line-height: 1.75;
+}
+
+section blockquote {
+	margin-top: 2px;
+	width:70%;
+	margin-left: auto; 
+    font-size: 1em;
+    margin-top: 1em;
+    margin-right: auto;
+    font-weight: 200;
+    line-height: 1.75;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+nav button.toggle {
+        background: #333;
+        border-radius: 2px;
+        box-shadow: 0 3px 3px rgba(0,0,0,.2);
+        display: block;
+        height: 50px;
+        margin: 5px;
+        padding: 5px;
+        width: 50px;
+        border-radius: 50%;
+        /**/
+        position: fixed;
+        z-index: 200;
+    }
+
+    nav button.toggle:focus,
+    nav button.toggle:active {
+      outline: 0;
+    }
+    nav button.toggle span {
+        background: white;
+        border-radius: 3px;
+        display: block;
+        height: 4px;
+        margin: 3px;
+    }
+
+    nav button.toggle:active {
+        background: #111;
+        box-shadow: inset 0 3px 3px rgba(0,0,0,.2);
+    }
+
+    nav button.toggle:active span {
+        background: lightgray;
+	}
+nav {
+	position: fixed;
+}
+	
+
+/** columns **/
+
+[class*='col-'] {
+	float: left;
+	padding-left: .75em;
+	padding-right: .75em;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 { width: 100%;}
+
+
+body {
+	margin: 0px;
+
+}
+
+
+
+
+
+/** media query **/
+
+
+
+@media (min-width: 600px) {
+	
+
+
+
+
+
+
+	.col-1  { width: calc( 100% / 9 * 1 );}
+	.col-2  { width: calc( 100% / 9 * 2 );}
+	.col-3  { width: calc( 100% / 9 * 3 );}
+	.col-4  { width: calc( 100% / 9 * 4 );}
+	.col-5  { width: calc( 100% / 9 * 5 );}
+	.col-6  { width: calc( 100% / 9 * 6 );}
+	.col-7  { width: calc( 100% / 9 * 7 );}
+	.col-8  { width: calc( 100% / 9 * 8 );}
+	.col-9  { width: calc( 100% / 9 * 9 );}
+	.col-10 { width: calc( 100% / 9 * 9 );}
+	.col-11 { width: calc( 100% / 9 * 9 );}
+	.col-12 { width: calc( 100% / 9 * 9 );}
+
+
+	/** offsets **/
+
+	.col-offset-1  { margin-left: calc( 100% / 9 * 1 );}
+	.col-offset-2  { margin-left: calc( 100% / 9 * 2 );}
+	.col-offset-3  { margin-left: calc( 100% / 9 * 3 );}
+	.col-offset-4  { margin-left: calc( 100% / 9 * 4 );}
+	.col-offset-5  { margin-left: calc( 100% / 9 * 5 );}
+	.col-offset-6  { margin-left: calc( 100% / 9 * 6 );}
+	.col-offset-7  { margin-left: calc( 100% / 9 * 7 );}
+	.col-offset-8  { margin-left: calc( 100% / 9 * 8 );}
+	.col-offset-9  { margin-left: calc( 100% / 9 * 9 );}
+	.col-offset-10 { margin-left: calc( 100% / 9 * 9 );}
+	.col-offset-11 { margin-left: calc( 100% / 9 * 9 );}
+	.col-offset-12 { margin-left: calc( 100% / 9 * 9 );}
+	
+
+
+	.row {
+		margin-left: -.75em;
+		margin-right: -.75em;
+	}
+
+	.cf::after,
+	.clearfix.after,
+	.row::after {
+		content: ' ' ;
+		display: table;
+		clear:both;
+	}	
+	
+	article {
+
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+
+	}
+}
+
+
+
+@media (min-width: 900px) {
+
+
+	.col-1  { width: calc( 100% / 12 * 1 );}
+	.col-2  { width: calc( 100% / 12 * 2 );}
+	.col-3  { width: calc( 100% / 12 * 3 );}
+	.col-4  { width: calc( 100% / 12 * 4 );}
+	.col-5  { width: calc( 100% / 12 * 5 );}
+	.col-6  { width: calc( 100% / 12 * 6 );}
+	.col-7  { width: calc( 100% / 12 * 7 );}
+	.col-8  { width: calc( 100% / 12 * 8 );}
+	.col-9  { width: calc( 100% / 12 * 9 );}
+	.col-10 { width: calc( 100% / 12 * 10 );}
+	.col-11 { width: calc( 100% / 12 * 11 );}
+	.col-12 { width: calc( 100% / 12 * 12 );}
+
+
+	/** offsets **/
+
+	.col-offset-1  { margin-left: calc( 100% / 12 * 1 );}
+	.col-offset-2  { margin-left: calc( 100% / 12 * 2 );}
+	.col-offset-3  { margin-left: calc( 100% / 12 * 3 );}
+	.col-offset-4  { margin-left: calc( 100% / 12 * 4 );}
+	.col-offset-5  { margin-left: calc( 100% / 12 * 5 );}
+	.col-offset-6  { margin-left: calc( 100% / 12 * 6 );}
+	.col-offset-7  { margin-left: calc( 100% / 12 * 7 );}
+	.col-offset-8  { margin-left: calc( 100% / 12 * 8 );}
+	.col-offset-9  { margin-left: calc( 100% / 12 * 9 );}
+	.col-offset-10 { margin-left: calc( 100% / 12 * 10 );}
+	.col-offset-11 { margin-left: calc( 100% / 12 * 11 );}
+	.col-offset-12 { margin-left: calc( 100% / 12 * 12 );}
+
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: auto;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Source Sans Pro', helvetica, arial, sans-serif;
+    font-weight:200;
+    
+	}
+
+	li {
+	    float: left;
+	}
+
+	li a {
+	    display: block;
+	    color: white;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+
+	}
+
+	li a:hover {
+	    background-color: #111;
+	}
+
+	nav button.toggle { display: none; }
+}
+
+
+	

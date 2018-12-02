@@ -1,0 +1,104 @@
+ * 
+{
+        box-sizing:padding-box;
+    }
+
+    #menulist {
+        position: relative;
+        top:10px;
+        bottom: 0;
+        left:5px;
+        right:0;
+        z-index: 100;
+    }
+
+    #menulist ul {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding-top: 0px;
+        position: fixed;
+        left: 2px;
+        width: 5%;
+    }
+
+    #menulist ul li {
+    }
+
+    #menulist ul li a {
+        color:rgb(183,183,183);
+        display:grid;
+        padding: 0px;
+        text-decoration: none;
+        transition: all 500ms;
+    }
+
+    #menulist ul li a:hover {
+        background: transparent;
+        color:rgb(203,147,141);
+        text-decoration: none;
+    }
+
+    #menulist button.toggle {
+        background: transparent;
+        display: block;
+        width: 50px;
+        border-radius: 50%;
+        border-width:0;
+        position: fixed;
+        top:10px;
+        z-index: 200;
+    }
+
+    #menulist button.toggle:focus,
+    #menulist button.toggle:active {
+      outline: 0;
+    }
+    #menulist button.toggle span {
+        background:rgb(203,147,141);
+        border-radius: 3px;
+        display: block;
+        height: 4px;
+        margin: 3px;
+    }
+
+    #menulist button.toggle:active {
+    }
+
+    #menulist button.toggle:active span {
+
+    }
+
+    @media (min-width: 768px) {
+
+        #menulist ul {
+            display: block;
+            position: static;
+        }
+
+        #menulist button.toggle { display: none; }
+
+        #menulist {
+            top:150px;
+            left: 30px;
+            position: fixed;
+            bottom:initial;
+            border: none;
+        }
+
+        #menulist nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+
+        #menulist nav ul li {
+            border: none;
+        }
+
+        #menulist nav ul li a {
+            padding: 5px;
+        }
+
+    }

@@ -1,0 +1,132 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** Design Students: Please Don't Edit this File **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/** font-family: 'Vollkorn', georgia, serif; **/
+/** font-family: 'Open Sans', helvetica, arial, sans-serif; **/
+/** font-family: 'PT Mono', courier, monospace; **/
+/** font-family: 'Oswald', sans-serif; **/
+/** font-family: 'Playfair Display', georgia, serif; **/
+/** font-family: 'Lato', helvetica, arial, sans-serif; **/
+/** font-family: 'Merriweather', georgia, serif; **/
+/** font-family: 'Gentium Book Basic', georgia, serif; **/
+
+body {
+  font-family: 'Open Sans', georgia, serif;
+  padding-bottom: 5em;
+  font-size: .87em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+h2 {color: #FA5882;
+
+}
+article {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article header {
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FA5882;
+
+}
+hr{
+  margin-right: auto;
+  margin-left:auto;
+  width:50%;
+}
+.p3 {
+    
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-size: .87em;
+    word-spacing: 15px;
+    padding-top: 1rem;
+    margin-left: 2%;
+    width: 100%;
+    text-align: center;
+    transform: rotate(90deg);
+    position: fixed;
+    left: -29rem;
+    top: 21rem;
+    color: #FA5882
+}
+
+a { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+a{
+  color: #FA5882;
+}
+article header p {
+  font-size: 1em;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: gray;
+  text-align: center;
+}
+
+
+article section h2 {
+  margin-top: 0;
+}
+article section p {
+  line-height: 1.7em;
+  font-size: 1em;
+
+}
+
+blockquote {
+  font-size: .9em;
+  color: gray;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-indent: -.3em;
+  line-height: 1.6em;
+}
+
+blockquote p {
+  font-size: .9em;
+  text-indent: 0;
+  font-size: 80%;
+  margin-bottom: 0;
+}
+
+blockquote p + p {
+  margin: 0;
+}
+section blockquote {
+  font-size: 1em;
+  border-left: .25em solid;
+  border-color: #80bfff;
+  margin-left: 1em;
+  margin-right: 2em;
+  padding-left: 1em;
+  line-height: 1.6em;
+}

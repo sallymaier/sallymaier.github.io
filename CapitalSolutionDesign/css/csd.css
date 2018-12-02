@@ -28,6 +28,10 @@
 
 }
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i');
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 
 
 
@@ -44,23 +48,24 @@ html {
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  font-family: "gt_pressuralight", Helvetica, Arial, sans-serif;
+  font-family: "gt_pressuralight", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 
 h1 {
-  font-family: "gt_pressuraregular", Helvetica, Arial, sans-serif;
+  font-family: "gt_pressuraregular", "Source Sans Pro", Helvetica, Arial, sans-serif;
 
 }
 
 
 h2 {
   letter-spacing: .02em;
-  font-family: "gt_pressuraregular", Helvetica, Arial, sans-serif;
+  font-family: "gt_pressuraregular", "Source Sans Pro", Helvetica, Arial, sans-serif;
 
 }
 
 .btn {
-  font-family: "gt_pressura_monoregular", monospace;
+  font-family: "gt_pressura_monoregular", "Source Code Pro", monospace;
   text-transform: uppercase;
   letter-spacing: .1em;
 }
@@ -90,7 +95,7 @@ h2 {
 }
 
 .panel-group {
-  font-family: "gt_pressura_monoregular", monospace;
+  font-family: "gt_pressura_monoregular", "Source Code Pro", monospace;
 }
 
 .panel-default {

@@ -1,0 +1,144 @@
+.center {
+	margin-left: 10em;
+	margin-right: 10em; 
+
+}
+
+body {
+	background-color: white;
+	margin-top: 3.5em;
+	margin-left: 0em;
+
+	
+}
+
+img {
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h4 {
+	font-family: helvetica;
+	font-size: 23pt;
+	text-transform: uppercase;
+	color: pink;
+	text-align: center;
+	margin-bottom: .5em;
+	
+	
+}
+
+.button {
+	max-width: 7em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.text {
+
+	max-width: 20em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+p1 {
+	font-family: helvetica;
+	font-size: 10pt;
+	line-height: 14pt;
+	color: grey;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	
+}
+
+.button3 {
+	font-family: helvetica;
+	text-transform: uppercase;
+	padding: 1em;
+	border: .2em solid grey;
+	color: grey;
+	margin-left: 6em;
+	font-size: 10pt;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	
+	text-align: center;
+
+}
+
+.button3:link {
+	text-decoration: none;
+}
+
+
+.button3:hover {
+	color: pink;
+	border-color: pink;
+}
+
+
+footer {
+	display: none;
+}
+
+
+
+@media (max-width: 500px) {
+
+	.center {
+	margin-left: 1em;
+	margin-right: 1em; 
+
+}
+
+
+}
+
+
+@media (min-width: 500px) {
+
+	.center {
+	margin-left: 5em;
+	margin-right: 5em; 
+
+
+}
+
+
+}
+
+
+@media (min-width: 700px) {
+
+	.center {
+	margin-left: 8em;
+	margin-right: 8em; 
+
+
+}
+
+}
+
+
+@media (min-width: 900px) {
+
+	.center {
+	margin-left: 15em;
+	margin-right: 15em; 
+
+
+}
+
+}
+
+
+
+
+

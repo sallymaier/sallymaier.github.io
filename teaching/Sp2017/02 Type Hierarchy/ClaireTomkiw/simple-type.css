@@ -1,0 +1,180 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** Design Students: Please Don't Edit this File **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);
+@import url(https://fonts.googleapis.com/css?family=PT+Mono);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900italic,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Gravitas+One:400)
+
+/** font-family: 'Vollkorn', georgia, serif; **/
+/** font-family: 'Open Sans', helvetica, arial, sans-serif; **/
+/** font-family: 'PT Mono', courier, monospace; **/
+/** font-family: 'Oswald', sans-serif; **/
+/** font-family: 'Playfair Display', georgia, serif; **/
+/** font-family: 'Lato', helvetica, arial, sans-serif; **/
+/** font-family: 'Merriweather', georgia, serif; **/
+/** font-family: 'Gentium Book Basic', georgia, serif; **/
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-family: 'Gentium Book Basic', georgia, serif;
+  padding-bottom: 5em;
+}
+
+h1 {
+  font-family: 'Gravitas One', cursive;
+}
+
+h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 1;
+  text-indent: -.08em;
+  text-align: center;
+}
+
+h2 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+   font-size: 1em;
+   background-color: white;
+} 
+
+h2 span { 
+    background-color: ; 
+    padding:0 10px; 
+}
+
+h3 {
+  font-size: 4em;
+  font-weight: 600i;
+  float: left;
+  margin-top: .50em;
+  margin-bottom: 0;
+  margin-right: .50em;
+  margin-left: .50em;
+  color: #ef4324;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: ;
+  padding: 4em;
+  color: white;
+  text-align: justify;
+  background-color: black
+}
+
+.sample#workofart {
+  background-color: #ef4324;
+  padding: 325px 0;
+}
+
+article {
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article header {
+  margin-bottom: 2rem;
+}
+
+article section {
+  border-bottom: 1px;
+  margin-top: 0;
+  padding-top: 1.5rem;
+  padding: 7em;
+  text-align: justify;
+  letter-spacing: 1px
+  line-height: 170%;
+  font-size: .87em;
+}
+
+article section h2 {
+  margin-top: 0;
+}
+
+blockquote {
+  font-size: .75em;
+  font-weight: 400;
+  color: lightgray;
+  font-family: "Getium Book Basic", georgia, serif;
+  padding: 5em;
+  margin-left: 0;
+  margin-right: 0;
+  text-indent: -.3em;
+  text-align: center;
+  background-color: black
+}
+
+blockquote p {
+  text-indent: 0;
+  font-size: 80%;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+blockquote p + p {
+  margin: 0;
+}
+
+section blockquote {
+  font-size: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 1em
+  padding-right: 1em;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 4.5em;
+  margin-bottom: 4.5em;
+}
+
+h4 p {
+  font-size: .75em;
+  text-align: right;
+  margin-top: 1.75em;
+  margin-bottom: .5em;
+}
+
+h4 p + p{
+  font-size: .75em;
+  text-align: right;
+  margin: 0;
+}
+

@@ -1,0 +1,1105 @@
+.circle{
+    width:30%;
+    height:30%;
+    border-radius:100%;
+    margin:5%;
+    position:absolute;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example;
+    -moz-animation-duration: 0.3s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example;
+    -ms-animation-duration: 0.3s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.two{
+    width:20%;
+    height:20%;
+    border-radius:100%;
+    margin:5%;
+    margin-left:45%;
+    position:absolute;
+    -webkit-animation-name: example2;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example2;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example2;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example2;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.three{
+    width:25%;
+    height:25%;
+    border-radius:100%;
+    margin:5%;
+    margin-left:45%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example3;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.four{
+    width:25%;
+    height:25%;
+    border-radius:100%;
+    margin:5%;
+    margin-left:5%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example4;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.five{
+    width:25%;
+    height:25%;
+    border-radius:100%;
+    margin:5%;
+    margin-left:45%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example5;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.six{
+    width:25%;
+    height:25%;
+    border-radius:100%;
+    margin:5%;
+    margin-left:60%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example6;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.seven{
+    width:50%;
+    height:50%;
+    margin-left:25%;
+    margin:25%;
+    border-radius:100%;
+    background-color: brown;
+    animation-name:example9;
+}
+.circle.eight{
+    width:25px;
+    height:95px;
+    border-radius:10px;
+    margin:5%;
+    margin-left:8%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example7;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: rotate(-50deg);
+}
+.circle.nine{
+    width:25px;
+    height:95px;
+    border-radius:10px;
+    margin:5%;
+    margin-left:90%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example8;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: rotate(50deg);
+}
+.circle.ten{
+    width:25px;
+    height:95px;
+    border-radius:10px;
+    margin:80%;
+    margin-left:8%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example10;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: rotate(50deg);
+}
+.circle.eleven{
+    width:25px;
+    height:95px;
+    border-radius:10px;
+    margin:50%;
+    margin-left:55%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example11;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: rotate(-50deg);
+}
+.circle.twelve{
+    width:25%;
+    height:25%;
+    border-radius:100%;
+    margin:10%;
+    margin-left:3%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example12;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.thirteen{
+    width:25%;
+    height:25%;
+    border-radius:100%;
+    margin:10%;
+    margin-left:3%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example13;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.fourteen{
+    width:25%;
+    height:25%;
+    border-radius:100%;
+    margin:50%;
+    margin-left:3%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example14;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.circle.fifteen{
+    width:25%;
+    height:25%;
+    border-radius:100%;
+    margin:50%;
+    margin-left:3%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example14;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.circle.sixteen{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:40%;
+    margin-left:20%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example16;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+}
+.circle.eighteen{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:%;
+    margin-left:9%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example18;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+.circle.nineteen{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:50%;
+    margin-left:30%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example19;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+.circle.twenty{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:15%;
+    margin-left:40%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example20;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+.circle.twenty.one{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:3%;
+    margin-left:50%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example21;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+.circle.twenty.two{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:20%;
+    margin-left:60%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example22;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+.circle.twenty.three{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:0%;
+    margin-left:70%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example23;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.circle.twenty.four{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:20%;
+    margin-left:80%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example24;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.circle.thirty.two{
+    width:25%;
+    height:25%;
+    border-radius:100%;
+    margin:10%;
+    margin-left:3%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example26;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.circle.thirty.three{
+    width:20%;
+    height:20%;
+    border-radius:100%;
+    margin:50%;
+    margin-left:2%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example26;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.circle.thirty.four{
+    width:10%;
+    height:10%;
+    border-radius:100%;
+    margin:30%;
+    margin-left:20%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example26;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.thirty.five{
+    width:10%;
+    height:10%;
+    border-radius:100%;
+    margin:30%;
+    margin-left:%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example27;
+    animation-duration: 0.s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.thirty.six{
+    width:10%;
+    height:10%;
+    border-radius:100%;
+    margin:30%;
+    margin-left:%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example27;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.thirty.seven{
+    width:10%;
+    height:10%;
+    border-radius:100%;
+    margin:30%;
+    margin-left:35%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example27;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.thirty.eight{
+    width:10%;
+    height:10%;
+    border-radius:100%;
+    margin:30%;
+    margin-left:40%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example27;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.thirty.nine{
+    width:10%;
+    height:10%;
+    border-radius:100%;
+    margin:30%;
+    margin-left:45%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example27;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.forty{
+    width:10%;
+    height:10%;
+    border-radius:100%;
+    margin:30%;
+    margin-left:%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example28;
+    animation-duration: 0.s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.forty.one{
+    width:10%;
+    height:10%;
+    border-radius:100%;
+    margin:30%;
+    margin-left:%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example28;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.forty.two{
+    width:10%;
+    height:10%;
+    border-radius:100%;
+    margin:30%;
+    margin-left:35%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example28;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.forty.three{
+    width:10%;
+    height:10%;
+    border-radius:100%;
+    margin:30%;
+    margin-left:40%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example28;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle.forty.four{
+    width:10%;
+    height:10%;
+    border-radius:100%;
+    margin:30%;
+    margin-left:45%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example28;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes example{
+    from {background-color:  skyblue; left:90px; top:320px}
+    to {background-color: deeppink; left:0px; top:0px;}
+}
+@keyframes example2{
+    from {background-color: orangered; left:200px; top:30px}
+    to {background-color: yellow; left:20px; top:340px;}
+}
+@keyframes example3{
+    from {background-color: deepskyblue; left:0px; top:0px}
+    to {background-color: orangered; left:0px; top:0px;}
+    
+    0% {
+        left: 10%;
+    }
+    50% {
+        left:-40%;
+        top:5%;
+    }
+    100% {
+        left:30%;
+        top:70%;
+    }
+}
+@keyframes example4{
+    from {background-color: deeppink; left:0px; top:0px}
+    to {background-color: rebeccapurple; left:0px; top:0px;}
+    
+    0% {
+        left: 0%;
+    }
+    50% {
+        left:60%;
+        top:65%;
+    }
+    75% {
+        left:20%;
+        top:90%;
+    }
+    100% {
+        left:0%;
+        top:0%;
+    }
+}
+@keyframes example5{
+    from {background-color: cyan; left:0px; top:0px}
+    to {background-color: magenta; left:0px; top:0px;}
+    
+    0% {
+        left: -40%;
+    }
+    50% {
+        left:25%;
+        top:0%;
+    }
+    75% {
+        left:-30%;
+        top:50%;
+    }
+    100% {
+        left:35%;
+        top:60%;
+    }
+}
+@keyframes example6{
+    from {background-color: springgreen; left:0px; top:0px}
+    to {background-color: yellow; left:0px; top:0px;}
+    
+    0% {
+        left: 0%;
+        top:50%;
+    }
+    50% {
+        left:-50%;
+    }
+    75% {
+        left:20%;
+        top:0%;
+    }
+    100% {
+        left:0%;
+        top:80%;
+    }
+}
+@keyframes example7{
+    from {background-color: springgreen; left:450px; top:450px}
+    to {background-color: yellow; left:0px; top:0px;}   
+}
+@keyframes example8{
+    from {background-color: springgreen; left:0px; top:-0px}
+    to {background-color: yellow; left:-450px; top:450px;}   
+}
+@keyframes example9{
+    from {background-color: springgreen; left:0px; top:0px}
+    to {background-color: yellow; left:-0px; top:0px;}   
+}
+@keyframes example10{
+    from {background-color: springgreen; left:450px; top:-450px}
+    to {background-color: yellow; left:-0px; top:0px;}  
+}
+@keyframes example11{
+    from {background-color: springgreen; left:450px; top:450px}
+    to {background-color: yellow; left:0px; top:0px;}    
+}
+@keyframes example12{
+    from {background-color: hotpink; left:405px; top:0px}
+    to {background-color: blueviolet; left:0px; top:0px;}   
+}
+@keyframes example13{
+    from {background-color: hotpink; left:0px; top:0px}
+    to {background-color: blueviolet; left:405px; top:0px;}   
+}
+@keyframes example14{
+    from {background-color: hotpink; left:0px; top:105px}
+    to {background-color: blueviolet; left:405px; top:0px;}   
+}
+@keyframes example15{
+    from {background-color: hotpink; left:405px; top:0px}
+    to {background-color: blueviolet; left:0px; top:105px;}   
+}
+@keyframes example16{
+    from {background-color: yellow; left:0px; top:-300px}
+    to {background-color: blueviolet; left:0px; top:0px;}   
+}
+@keyframes example18{
+    from {background-color: yellow; left:0px; top:0px}
+    to {background-color: blueviolet; left:0px; top:300px;}   
+}
+@keyframes example19{
+    from {background-color: yellow; left:0px; top:-300px}
+    to {background-color: blueviolet; left:0px; top:0px;}   
+}
+@keyframes example20{
+    from {background-color: yellow; left:0px; top:0px}
+    to {background-color: blueviolet; left:0px; top:300px;}   
+}
+@keyframes example21{
+    from {background-color: yellow; left:0px; top:0px}
+    to {background-color: blueviolet; left:0px; top:300px;}   
+}
+@keyframes example22{
+    from {background-color: yellow; left:0px; top:0px}
+    to {background-color: blueviolet; left:0px; top:300px;}   
+}
+@keyframes example23{
+    from {background-color: yellow; left:0px; top:0px}
+    to {background-color: blueviolet; left:0px; top:300px;}   
+}
+@keyframes example24{
+    from {background-color: yellow; left:0px; top:0px}
+    to {background-color: blueviolet; left:0px; top:300px;}   
+}
+@keyframes example17{
+    from {background-color: hotpink; left:0px; top:0px}
+    to {background-color: lightpink; left:0px; top:-300px;}   
+}
+@keyframes example25{
+    from {background-color: hotpink; left:0px; top:0px}
+    to {background-color: darkorchid; left:0px; top:-300px;}   
+}
+@keyframes example26{
+    from {background-color: cyan; left:0px; top:0px}
+    to {background-color: chartreuse; left:0px; top:0px;}
+    
+    0% {
+        left:65%;
+    }
+    
+    50% {
+        top:20%;
+    }
+}
+@keyframes example27{
+    from {background-color: hotpink; left:0px; top:0px}
+    to {background-color: cyan; left:0px; top:-800px;}   
+}
+@keyframes example28{
+    from {background-color: yellow; left:2000px; top:0px}
+    to {background-color: pink; left:0px; top:100px;}   
+}
+.circle.seventeen{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:72%;
+    margin-left:10%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example17;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.circle.twenty.five{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:55%;
+    margin-left:22%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example17;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.circle.twenty.six{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:70%;
+    margin-left:35%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example17;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.circle.twenty.seven{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:52%;
+    margin-left:45%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example17;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.circle.twenty.eight{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:75%;
+    margin-left:56%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example17;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transform: rotate(0deg);
+}
+.circle.twenty.nine{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:60%;
+    margin-left:66%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example17;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transform: rotate(0deg);
+}
+.circle.thirty{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:80%;
+    margin-left:76%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example17;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transform: rotate(0deg);
+}
+.circle.thirty.one{
+    width:25px;
+    height:15%;
+    border-radius:10px;
+    margin:55%;
+    margin-left:86%;
+    position:absolute;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: example3;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: example3;
+    -ms-animation-duration: 0.2s;
+    -ms-animation-iteration-count: infinite;
+    animation-name: example17;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transform: rotate(0deg);
+}

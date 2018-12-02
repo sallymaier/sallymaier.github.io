@@ -1,0 +1,74 @@
+.I { /*using a class that can apply to all section numbers instead of a custom one for each.*/
+    width:4.6%;
+    height:8%;
+    position:absolute;
+    border: 2px solid #213f99;
+    margin:.5%;
+    margin-left:-6.5%;
+    text-align: center;
+
+}
+
+.I h2 {
+    margin-top: .4em; /*spacing down the text on all H2s inside the I class*/
+    font-size: 2em;
+}
+
+
+
+/**navi**/
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: #fff100;  
+}
+
+home:hover {
+    text-decoration: none;
+    background-color: transparent;  
+}
+
+nav { /*fixing container instead of each div, allowing numbers to be positioned relatively in columns*/
+    margin-left:2%;
+    position: fixed;
+}
+
+.square {
+    padding:5px;
+    text-align: center;
+    font-family: 'Karla', sans-serif; /*adding font to nav without spans*/
+    color:#213f99;
+}
+
+.square a {
+    color:#213f99;
+}
+
+.square:hover {
+  width: 3%;
+  height: 2%;
+}
+
+@media (min-width: 900px) { 
+
+    nav { /*fixing container instead of each div, allowing numbers to be positioned relatively in columns*/
+        margin-left:2%;
+        position: fixed;
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
+
+    .square {    
+
+    }
+
+}

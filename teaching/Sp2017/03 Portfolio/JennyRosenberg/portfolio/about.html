@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html>
+  <head>
+    <!-- this is the proper meta tag to use common special characters, etc. -->
+    <meta charset="UTF-8" />
+
+    <!-- this is necessary for responsive @media queries to work properly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The Title to your website. Shows in the browser tab or window, as well as in search engine results. Not actually on the page anywhere -->
+    <title>About Me!</title>
+
+    <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <link href="basic.css" type="text/css" rel="stylesheet" />
+    <link href="responsive.css" type="text/css" rel="stylesheet" />
+
+<div class="fixed">
+  <button class="c-hamburger c-hamburger--rot toggle">
+    <span>toggle menu</span>
+  </button>
+</div>
+
+
+ <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <script>
+
+  (function() {
+
+      "use strict";
+
+      var toggles = document.querySelectorAll(".c-hamburger");
+
+      for (var i = toggles.length - 1; i >= 0; i--) {
+        var toggle = toggles[i];
+        toggleHandler(toggle);
+      };
+
+      function toggleHandler(toggle) {
+        toggle.addEventListener( "click", function(e) {
+          e.preventDefault();
+          (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+        });
+      }
+
+    })(); 
+
+  $('button.toggle').click(function() {
+    $('ul').slideToggle();
+  });
+
+  $(window).resize(function() {
+    ww = $(window).width();
+
+    if (ww > 768) {
+      $('ul').show();
+    } else {
+      $('ul').hide();
+    };
+
+  });
+
+  </script>
+
+<div class=header>
+
+  <nav>
+    <a href="landing.html" class="button2">JENNY <br> ROSENBERG</a>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+
+    </div>
+  </nav>
+
+</div>
+<br> <br>
+
+
+  </head>
+
+
+
+  <body>
+
+
+
+  <img src= me.jpeg style="width:350px;" class= "col-3" >
+
+
+  <p3 class= "col-7">
+
+   
+  I am currently a sophomore at the Maryland Institute College of Art. I'm pursuing my BFA in Graphic Design, graduating in 2019, with a concentration in book arts. During the school year, I live in Baltimore, but I spend summer and breaks at home in Northern Virginia with my family. 
+
+  I enjoy experimentation and working cross disciplinarily. I believe that art and design has no limits, and there are endless possibilities of things to do. Besides graphic design, I am interested in fibers and printmaking. Apart from art and design, I also am interested in psychology and politics, and plan on taking classes in both areas. If I have a free moment, you can find me at home with my 3 dogs, knitting and binge watching television dramas. I enjoy meeting new people, so feel free to reach out to me on one of my social media sites. If you are interested in working with me or have any questions about my work, contact me and let me know! You can view my full resume  <a href="resume.pdf" class="button4" target= "blank">here!</a>
+  <br> <br>
+      <div class= "socialmedia">
+    <a href= "https://www.instagram.com/jennnyyy_r/" target="blank" <i class="fa fa-instagram fa-2x" aria-hidden="true"></i> </a>
+    <a href= "https://www.behance.net/jrosenberg9b42" target="blank" <i class="fa fa-behance fa-2x" aria-hidden="true"></i> </a>
+    <a href= "https://www.linkedin.com/in/jenny-rosenberg-632bb9103/" target="blank" <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+    </div> 
+
+
+  </p3>
+
+ 
+
+  </body>
+
+  <footer class=col-12>
+      <p4>© copyright <span class="year dynamic">2017</span> JENNY ROSENBERG</p4>
+    </footer>
+
+
+  </html>

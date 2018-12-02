@@ -1,0 +1,297 @@
+/** write your styles in this sheet. **/
+
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.topnav {
+    background-color: lightcyan;
+    overflow: hidden;
+    position: ;
+    margin-left: 20em;
+
+
+
+
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+
+.topnav a:hover {
+    background-color: cyan;
+    color: darkgrey;
+}
+
+
+.topnav a.active {
+    background-color: lightcyan;
+    color: white;
+}
+
+
+
+body {
+  background: whitesmoke;
+  color: black;
+  /**/
+  font-family: Helvetica, Arial, sans-serif;
+  overflow: auto;
+
+  
+}
+
+header {
+  background-color:lightcyan;
+  position:relative;
+  text-align: center;
+
+  
+}
+
+#mainheader {
+	 
+	 margin-bottom: -150px;
+}
+
+#behance-magix {
+	padding-top: 130px;
+  background-color: whitesmoke;
+}
+
+
+
+.title{
+  position:absolute;
+  top:50%;
+  font-size: 2.5em;
+}
+
+main {
+  font-weight: 400;
+  background-color: whitesmoke;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.bio {
+  text-align: left;
+  margin-top: 8em;
+}
+
+p {
+  padding-top: 40px;
+  text-align: center;
+  padding-left: 30px;
+  font-size: 25px;
+  letter-spacing: .05em;
+  line-height: 1.5em;
+  
+
+}
+
+
+
+footer {
+  padding-top: 100px;
+
+}
+
+.intro {
+  padding-bottom: 5em;
+  padding-top: 4em;
+  max-width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.portait {
+  margin-right: auto;
+  margin-left: 3em;
+  margin-top: 3em;
+}
+
+.waterimage {
+  position: absolute;
+  background-repeat: no-repeat;
+  opacity: .3;
+
+}
+
+
+
+.hexagon {
+  position: relative;
+  width: 300px; 
+  height: 173.21px;
+  margin: 86.60px 0;
+  background-image: url(me.jpg);
+  background-size: auto 346.4102px;
+  background-position: center;
+  left: 0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 212.13px;
+  height: 212.13px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 43.93px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 300.0000px;
+  height: 173.20508075688775px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+  left:0;
+  
+}
+
+.hexTop {
+  top: -106.0660px;
+}
+
+.hexTop:after {
+  background-position: center top;
+
+}
+
+.hexBottom {
+  bottom: -106.0660px;
+  
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.0000px;
+  left: 0;
+  width: 300.0000px;
+  height: 173.2051px;
+  z-index: 2;
+  background: inherit;
+}
+
+/*** project overlay ***/
+.project-page {
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 9999999999;
+  background-color: whitesmoke;
+  padding: 3em;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+
+}
+.project-page * {
+  margin-left: auto;
+  margin-right:auto;
+  text-align: center;
+  width: 100%;
+  margin-top: 1em; 
+  background-color: whitesmoke;
+
+}
+.project-page .container {
+  max-width: 150em;
+
+}
+
+
+.project-cards{
+	padding-top: 70px;
+}
+.project-page button.close {
+  position: fixed;
+  width: 50px; 
+  height: 28.87px;
+  background-color: #16a6b6;
+  margin: 14.50px 0;
+  border: 0;
+
+}
+
+.project-page button.close:before,
+.project-page button.close:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  left:0;
+}
+
+.project-page button.close:before {
+  bottom: 100%;
+  border-bottom: 14.43px solid #16a6b6;
+}
+
+.project-page button.close:after {
+  top: 100%;
+  width: 0;
+  border-top: 14.43px solid #16a6b6;
+}
+/* easy class to add to <ul>s to get rid of listy stuff */
+.list-reset {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+/* try to keep body from scrolling in the background */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+img {
+
+
+  
+}
+

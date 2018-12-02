@@ -1,0 +1,202 @@
+/** write your styles in this sheet. **/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+* {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: black;
+  /**/
+  font-family: "Open Sans", Arial, sans-serif;
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+/*** project overlay ***/
+.project-page {
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 9999999999;
+  background-color: rgba(255,255,255,.95);
+  padding: 3em;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+    color: blue;
+}
+.project-page * {
+  margin-left: auto;
+  margin-right:auto;
+}
+.project-page .container {
+  max-width: 40em;
+}
+.project-page button.close {
+  background-color: transparent;
+color: blue;
+  border: 2px solid;
+  border-radius: 20%;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1rem;
+  height: 3rem;
+  width: 3rem;
+  line-height: 3.5rem;
+    text-align: center;
+}
+.project img {
+    opacity: 1;
+}
+
+.project img:hover {
+    opacity: .5;
+}
+/* easy class to add to <ul>s to get rid of listy stuff */
+.list-reset {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+/* try to keep body from scrolling in the background */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+header{
+    background-color: blue;
+    background-image: url(img/portfolioshape.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    height: 100vh;
+    background-position: center;
+    margin-bottom: 12em;
+}
+h2{
+    font-size: 18px;
+}
+.svg{
+    width: 100%;
+    height: 100%;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    padding: 2em;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+}
+header nav ul li a:hover{
+    text-decoration: none;
+}
+header nav ul li a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+header nav ul li {
+    float: right;
+    border: none;
+       color: #ffffff;
+    padding: 5px;
+    text-decoration: none;
+    transition: all 500ms;
+
+}
+nav{
+    overflow: hidden
+}
+#behance-magix{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
+}
+
+section h1 {
+    color: white;
+}
+#about {
+    background: blue;
+    height: 40em;
+}
+#about div {
+        width: 30%;
+        margin-bottom: 0;
+     	 } 
+section p{
+    color: white;
+    max-width: 50%;
+    height: auto;
+}
+.block {
+  float: left;
+  position: relative;
+  width: 30%;
+    background-image: url(img/rrr.jpg);
+}
+.block::after {
+  padding-top: 100%;
+  display: block;
+  content: '';
+}
+div.image.block.cover{
+    width: 60%;
+    height: 5%;
+}
+.img{
+    width: 50%;
+    height: 5%;
+}
+#contact {
+        margin-top: 0;
+        background-color: blue;
+        height: 35em;
+     	 }
+section h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: normal;
+    text-align: right;
+}
+section p{
+    margin-top: 10em;
+    color: white;
+    max-width: 50%;
+    height: auto;
+    text-align: right;
+}
+.flex{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    justify-content: center;
+}
+
+.footer-flex{
+    position:relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}

@@ -1,0 +1,255 @@
+/** write your styles in this sheet. **/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Roboto:400,700');
+{
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+    
+}
+.jumbotron{
+    max-width:100%;
+    height: 100vh;
+    background-image: url("Cow.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+color: ghostwhite;
+      font-size: 2em;
+      font-weight: 900;
+       margin-top: 1rem;
+       margin-bottom: 1rem;
+      line-height: 1;
+      text-indent: -.08em;    
+}
+
+h2 {
+  font-family: 'Inconsolata', monospace;
+    color: dimgrey;
+      font-size: 1em;
+      font-weight: 400;
+    margin-top: -100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-indent: -.2em;
+      line-height: 1;
+     text-align: right;
+
+       
+}
+    
+   h3 {
+  font-family: 'Inconsolata', monospace;
+  padding-bottom: .2em;
+    color: ghostwhite;
+      font-size: .8em;
+      font-weight: 400;
+       margin-top: .8rem;
+       margin-bottom: .8rem;
+      line-height: 1;
+      text-indent: -.08em;
+}
+
+.name {
+    float:left;
+}
+
+* {
+        box-sizing: border-box;
+    }
+
+body {
+    font-size: 100%;
+    background: white;
+    color: black;
+    padding-top: 60px;
+}
+.wrapper {
+width: 80%;
+margin-left: auto;
+    margin-right: auto;
+}
+    header {
+        position: fixed;
+        bottom: 0;
+        left:0;
+        right:0;
+        z-index: 100;
+    }
+
+    header ul {
+        background: rgb(38, 38, 38);
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0 0 60px 0;
+        border-top:1px solid darkgreen;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    header ul li {
+        border-bottom: 1px solid whitesmoke;
+    }
+
+    header ul li a {
+        display: block;
+        color: whitesmoke;
+        padding: 5px;
+        text-decoration: none;
+        transition: all 500ms;
+    }
+
+    header ul li a:hover {
+        background: whitesmoke;
+        color: rgb(38, 38, 38);
+        text-decoration: none;
+    }
+
+    header button.toggle {
+        background: rgb(38, 38, 38);
+        border: 1px solid whitesmoke;
+        border-radius: 2px;
+        box-shadow: 0 3px 3px rgba(0,0,0,.2);
+        display: block;
+        height: 50px;
+        margin: 5px;
+        padding: 5px;
+        width: 50px;
+        border-radius: 50%;
+        /**/
+        position: relative;
+        z-index: 200;
+    }
+
+    header button.toggle:focus,
+    header button.toggle:active {
+      outline: 0;
+    }
+    header button.toggle span {
+        background: whitesmoke;
+        border-radius: 3px;
+        display: block;
+        height: 4px;
+        margin: 3px;
+    }
+
+    header button.toggle:active {
+        background: whitesmoke;
+        box-shadow: inset 0 3px 3px rgba(0,0,0,.2);
+    }
+
+    header button.toggle:active span {
+        background: rgb(38, 38, 38);
+    }
+
+    @media (min-width: 768px) {
+        header {
+            background: rgb(38, 38, 38);
+        }
+
+        header ul {
+            display: block;
+            position: static;
+        }
+
+        header button.toggle { display: none; }
+
+        header {
+            top:0;
+            bottom:initial;
+            border: none;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border: none;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+
+                
+        }
+
+        header nav ul li {
+            float: right;
+            border: none;
+        }
+
+        header nav ul li a {
+            padding: 15px;
+        }
+
+    }
+
+       .info{height:5em;}
+
+/*** project overlay ***/
+.project-page {
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 9999999999;
+  background-color: rgba(255,255,255,.95);
+  padding: 3em;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.project-page * {
+  margin-left: auto;
+  margin-right:auto;
+}
+.project-page .container {
+  max-width: 50em;
+}
+.project-page button.close {
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 50%;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 3.5rem;
+}
+
+/* easy class to add to <ul>s to get rid of listy stuff */
+.list-reset {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+/* try to keep body from scrolling in the background */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}

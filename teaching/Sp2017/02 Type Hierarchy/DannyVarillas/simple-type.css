@@ -1,0 +1,315 @@
+/** ******************************************** **/
+/** ******************************************** **/
+/** Design Students: Please Don't Edit this File **/
+/** ******************************************** **/
+/** ******************************************** **/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,400,600,700);
+
+/** font-family: 'Vollkorn', georgia, serif; **/
+/** font-family: 'Open Sans', helvetica, arial, sans-serif; **/
+/** font-family: 'PT Mono', courier, monospace; **/
+/** font-family: 'Oswald', sans-serif; **/
+/** font-family: 'Playfair Display', georgia, serif; **/
+/** font-family: 'Lato', helvetica, arial, sans-serif; **/
+/** font-family: 'Merriweather', georgia, serif; **/
+/** font-family: 'Gentium Book Basic', georgia, serif; **/
+
+
+
+body {
+  font-family: 'Open Sans', georgia, serif;
+  padding-bottom: 5em;
+  background-color: #3e3c3a;
+  color: #dfd9d1;
+  font-weight: 300;
+  line-height: 1.6em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', helvetica, arial, sans-serif;
+}
+
+h3, h4, h6, {
+font-family: 'Montserrat', helvetica, arial, sans-serif;
+}
+
+h5 {
+font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  margin-top: 10rem;
+  line-height: 1em;
+  color: #ee2525;
+  }
+
+  h2 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-top: 10em;
+  line-height: 1;
+  text-align: left;
+  color: #6c6460;
+  padding-top: 5em;
+  }
+
+
+  h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-bottom: 10rem;
+  margin-top: .3rem;
+  line-height: .5;
+  text-align: center;
+  color: #6c6460;
+  }
+
+   h4 {
+  font-size: .8em;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: .3em;
+  }
+
+  h5 {
+  font-size: .9em;
+  font-weight: 100;
+  margin-top: 2rem;
+  text-align: center;
+  }
+
+  h6 {
+  font-size: .9em;
+  font-weight: 100;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 0;
+  text-align: center;
+  color: #ee2525;
+  }
+
+
+header p {
+  font-family: 'Montserrat', georgia, serif;  text-align: center;
+  font-size: .7em;
+  font-weight: 700;
+}
+
+article {
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle {
+  font-family: 'Montserrat', georgia, serif;  text-align: center;
+  font-weight: 400;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #3e3c3a;
+  line-height: 100px;
+  text-align: center;
+  background: #6c6460;
+  margin-top: 2em;
+  
+}
+
+.circle:hover { 
+    background-color: #484340;
+    color: #ee2525;
+    border: 2px solid red;
+    outline-color: #484340;
+    outline-style: : solid
+  }
+
+
+article header {
+  margin-bottom: 2rem;
+
+}
+
+article section {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+}
+
+article section h2 {
+  margin-top: 0;
+}
+
+blockquote {
+  font-size: .7em;
+  font-weight: 400;
+  line-height: 1.6em;
+  color: #ee2525;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  
+}
+
+blockquote p {
+  text-indent: 0;
+  font-size: 80%;
+  margin-bottom: 0;
+}
+
+blockquote p + p {
+  margin: 0;
+}
+section blockquote {
+  font-size: 1em;
+  border-left: .15em solid;
+  margin-left: 1.5em;
+  margin-right: 2em;
+  padding-left: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+  style {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 100%;
+        background: white;
+        color: darkgreen;
+        padding-top: 60px;
+    }
+
+    header {
+        position: fixed;
+        bottom: 0;
+        left:0;
+        right:0;
+        z-index: 100;
+    }
+
+    header ul {
+        background: lightgreen;
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0 0 60px 0;
+        border-top:1px solid darkgreen;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    header ul li {
+        border-bottom: 1px solid darkgreen;
+    }
+
+    header ul li a {
+        display: block;
+        color: darkgreen;
+        padding: 5px;
+        text-decoration: none;
+        transition: all 500ms;
+    }
+
+    header ul li a:hover {
+        background: darkgreen;
+        color: lightgreen;
+        text-decoration: none;
+    }
+
+    header button.toggle {
+        background: lightgreen;
+        border: 1px solid darkgreen;
+        border-radius: 2px;
+        box-shadow: 0 3px 3px rgba(0,0,0,.2);
+        display: block;
+        height: 50px;
+        margin: 5px;
+        padding: 5px;
+        width: 50px;
+        border-radius: 50%;
+        /**/
+        position: relative;
+        z-index: 200;
+    }
+
+    header button.toggle:focus,
+    header button.toggle:active {
+      outline: 0;
+    }
+    header button.toggle span {
+        background: darkgreen;
+        border-radius: 3px;
+        display: block;
+        height: 4px;
+        margin: 3px;
+    }
+
+    header button.toggle:active {
+        background: darkgreen;
+        box-shadow: inset 0 3px 3px rgba(0,0,0,.2);
+    }
+
+    header button.toggle:active span {
+        background: lightgreen;
+    }
+
+    @media (min-width: 768px) {
+        header {
+            background: lightgreen;
+        }
+
+        header ul {
+            display: block;
+            position: static;
+        }
+
+        header button.toggle { display: none; }
+
+        header {
+            top:0;
+            bottom:initial;
+            border: none;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+
+        header nav ul li {
+            float: left;
+            border: none;
+        }
+
+        header nav ul li a {
+            padding: 15px;
+        }
+
+    }
+    }
+
+

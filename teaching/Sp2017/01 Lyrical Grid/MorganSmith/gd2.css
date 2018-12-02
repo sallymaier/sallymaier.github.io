@@ -1,0 +1,72 @@
+.half.block{
+    width:50%;
+    height:50%;
+    background-color: springgreen;
+    position: relative;
+}
+.quarter.block{
+    width:25%;
+    height:25%;
+    background-color: yellow; 
+    position: relative;
+}
+.quarter.block.two{
+    width:25%;
+    height:25%;
+    background-color: orange;
+    position: relative;
+}
+.quarter.block.three{
+    width:25%;
+    height:25%;
+    background-color: hotpink;
+    position: relative;
+}
+.quarter.block.four{
+    width:25%;
+    height:25%;
+    background-color: deepskyblue;
+    position: relative;
+}
+.full.block{
+    width:100%;
+    height:100%;
+    background-color:blueviolet;
+    position: relative;
+    opacity: 0.;
+}
+.full.block.two{
+    width:100%;
+    height:100%;
+    background-color: blueviolet;
+    position: relative;
+}
+.half.block.two{
+    width:50%;
+    height:50%;
+    background-color:aqua;
+    position: relative;
+}
+.half.block.three{
+    width:20%;
+    height:30%;
+    background-color:coral;
+    position: relative;
+}
+.two-third.block.two{
+    width:50%;
+    height:50%;
+    background-color:springgreen;
+    position: relative;
+}
+.two-third.block.three{
+    width:50%;
+    height:50%;
+    background-color:aqua;
+    position: relative;
+}
+.full.block.three{
+    width:100%;
+    height:100%;
+    background-color:blueviolet;
+}

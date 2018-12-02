@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);
+@import url(https://fonts.googleapis.com/css?family=PT+Mono);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900italic,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic');
+@import url('https://fonts.googleapis.com/css?family=Gravitas+One');
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-family: 'Gentium Book Basic', georgia, serif;
+  padding-bottom: 5em;
+}
+
+h1 {
+  font-family: 'Gravitas One', cursive;
+}
+
+h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 900;
+  line-height: 1;
+  text-indent: -.08em;
+  text-align: center;
+  letter-spacing: 1.25px;
+  color: black;
+
+}
+
+h2 {
+   width: 100%; 
+   text-align: center; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+   font-size: .87em;
+   position: relative;
+   z-index: 1;
+   letter-spacing: 1px;
+   color: black;
+   
+} 
+
+h3 {
+  font-size: 4em;
+  font-weight: 600i;
+  float: left;
+  margin-top: .50em;
+  margin-bottom: 0;
+  margin-right: .50em;
+  margin-left: .50em;
+  color: #ef4324;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: ;
+  padding: 4em;
+  color: white;
+  text-align: justify;
+  background-color: black
+}
+
+.sample#workofart {
+  background-color: #ef4324;
+  padding: 325px 0;
+}
+
+article {
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 9em;
+  padding-right: 9em;
+}
+
+article header {
+  margin-bottom: 2rem;
+}
+
+article section {
+
+  border-bottom: 1px;
+  margin-top: 0;
+  padding-top: 8em;
+  text-align: justify;
+  letter-spacing: 1px
+  line-height: 170%;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+article section h2 {
+  margin-top: 0;
+}
+
+blockquote {
+  font-size: .75em;
+  font-weight: 400;
+  color: lightgray;
+  font-family: "Getium Book Basic", georgia, serif;
+  padding: 5em;
+  margin-left: 0;
+  margin-right: 0;
+  text-indent: -.3em;
+  text-align: center;
+  background-color: black
+}
+
+blockquote p {
+  text-indent: 0;
+  font-size: 80%;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+blockquote p + p {
+  margin: 0;
+}
+
+section blockquote {
+  font-size: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 1em
+  padding-right: 1em;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 4.5em;
+  margin-bottom: 4.5em;
+}
+
+h4 p {
+  font-size: .75em;
+  text-align: right;
+  margin-top: 1.75em;
+  margin-bottom: .5em;
+}
+
+h4 p + p{
+  font-size: .75em;
+  text-align: right;
+  margin: 0;
+}
+
+.paragraph {
+  border-bottom: 1px;
+  margin-top: 0;
+  padding-top: 7rem;
+  padding-left: 7em;
+  padding-right: 7em;
+  text-align: justify;
+  letter-spacing: 1px
+  line-height: 170%;
+  font-size: .87em;
+  align-content: center
+}
+
+h2:before, h2:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 2px;
+    content: '\a0';
+    background-color: black;
+}
+h2:before {
+    margin-left: -50%;
+    text-align: center;
+}
+.color {
+    background-color: #ccc;
+}
+
+footer {
+  text-align: center;
+  padding-top: 5em;
+  padding-left: 3em;
+  padding-bottom: 9em;
+  padding-right: 3em;
+  font-size: 9px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 2em;
+    left: 2em;
+    text-align: center;
+
+
+    height: 2em;
+    width: 2em;
+    background: black;
+}
+
+nav ul {
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    color: grey;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 5px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: black;
+}
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 3px 20px;
+    margin-left: 1.5em;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: 50%;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}
+

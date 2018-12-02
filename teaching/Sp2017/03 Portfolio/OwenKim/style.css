@@ -1,0 +1,185 @@
+header{
+  margin: 0.75em;
+}
+.body {
+    color:#ff7f50;
+    font-family: 'Oxygen', sans-serif;
+            font-size: 11px;
+            font-weight: 100;
+    width: 50%;
+    left: 300em;
+}
+nav ul{
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+  font-size: 0.7em;
+  position: fixed;
+  top: 8em;
+  left:7em;
+  bottom: 39em;
+  margin-bottom: 3em;
+  padding-bottom: 90em;
+  display:block;
+  list-style:none;
+  display: inline;
+
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-indent: 3.6em;
+  left: 7em;
+}
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-indent: 9.3em;
+  left: 7em;
+}
+h3 {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 0.6em;
+  font-weight: 600;
+  left: 7em;
+  top: 10em;    
+}
+h4 {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 0.7em;
+  font-weight: 500;
+  left: 7em;
+  top: 10em;
+  width: 50%;
+}
+p {
+    font-size: 0.3em;
+    font-weight: 100;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+}
+
+a{ color:black; text-decoration: none;}
+a:visited{ text-decoration: }
+a:hover{
+        color:#5EA1B2;
+        text-decoration: none;
+        border-bottom: 1px solid;
+        padding-bottom: 3px;
+        }
+a:active{ color:#FFA8BB; text-decoration:none;}
+
+.cosmetic{
+      background: url(gd%20panel.png) ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 400px;
+      height:300px;
+      top:7em;
+      left:15em;
+      opacity:0.8;
+}
+.micaone{
+      background: url(typepanel.gif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 400px;
+      height:300px;
+      top:33em;
+      left:15em;
+    
+}
+.micatwo{
+      background: url(owensix.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 400px;
+      height:300px;
+      top:7em;
+      left:50em;
+}
+.micathree{
+      background: url(owennine.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 400px;
+      height:300px;
+      top:33em;
+      left:50em;
+}
+.gdwork{
+      background: url(owensix.jpg) ;
+      background-repeat: no-repeat;
+      background-size: contain;    
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.fineart{
+      background: url(owennine.jpeg) ;
+      background-repeat: no-repeat;
+      background-size: contain;    
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 12px;
+}
+
+
+.gd{
+      background: url(owenone.jpg) ;
+      background-repeat: no-repeat;
+      background-size: contain;    
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.image {
+    width: 75%;
+    margin-left: 25%;
+}
+
+
+.photo{
+      background: url(owensix.jpg) ;
+      background-repeat: no-repeat;
+      background-size: contain;    
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 12px;
+}
+.about{
+      background: url(owensix.jpg) ;
+      background-repeat: no-repeat;
+      background-size: contain;    
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-bottom: 12px;
+}
+.aboutimage {
+    width: 30%;
+    margin-left: 25%;
+}
+.aboutc{
+      background: url(aboutimage.png) ;
+      background-repeat: no-repeat;
+      background-size: contain;    
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
