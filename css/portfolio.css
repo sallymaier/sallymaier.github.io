@@ -315,17 +315,14 @@ a.wrapping {
   text-decoration: none;
   display: block
 }
-.project h3 {
+h3 {
   font-weight: 800;
   font-size: .5em;
   line-height: 1.5em;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .15em;
-  left: -50%;
-  position: relative;
-  border: 1.5px solid #F9FF93;
-  padding: 1em;
+
 }
 .project h4 {
   font-weight: 100;
@@ -346,6 +343,10 @@ a.wrapping {
   color: #F7FEFF;
   opacity: 0;
   transition: all 0.5s ease;
+  left: -50%;
+  position: relative;
+  border: 1.5px solid #F9FF93;
+  padding: 1em;
   /* background-color: #E0F7F9; */
   /* background-blend-mode: multiply; */
 }
@@ -428,14 +429,18 @@ a.wrapping {
   text-align: center;
   padding-top: 1em;
 }
-.projectinfo h5 {
+h5 {
   font-size: .6em;
   text-transform: uppercase;
   letter-spacing: .125em;
   font-weight: 700;
   text-align: center;
-  padding-bottom: 24px;
 }
+
+.fields {
+    padding-bottom: 24px;
+}
+
 .text .mod-image {
   display: none;
 }
@@ -483,7 +488,7 @@ a#back-to-bottom:hover {
 }
 a#back-to-bottom {
   color: #473F3E;
-  font-size: 30px;
+  font-size: 16px;
 }
 .btn, :hover, :active, :focus, :visited {
   border: 0;

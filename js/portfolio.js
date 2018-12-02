@@ -173,6 +173,15 @@ $(document).ready(function() {
 		 var projectID  = $(this).attr('data-project-id');
 		 var projectUrl = 'https://api.behance.net/v2/projects/' + projectID + '/?api_key=qQRlBnCFszvGLbGHpVGfwoId7RnIPLjm&callback=?';
 		 console.log('trying to show ' + projectUrl + '.');
+
+
+		 var url= '#' +projectID+ '';
+		 window.location.href = url;
+
+
+
+
+
 		 $('html, body').animate({
 		        scrollTop: $("#dynamic-pages").offset().top
 		    }, 2000);
@@ -193,6 +202,7 @@ $(document).ready(function() {
             player.addEvent('ready', function() {
                 player.api('pause');
             });
+           });
 
 
 
@@ -210,14 +220,52 @@ $(document).ready(function() {
 
 		var url = document.location.toString();
 			if ( url.match('#') ) {
-				console.log('trying to open section.');
 
-			    $('html, body').animate({
-		        scrollTop: $("#dynamic-pages").offset().top
-			    }, 2000);
-			 $("#dynamic-pages").slideDown("slow");
-			}
-	});
+				console.log('trying to open section.');
+				console.log('url is' + url + '.');
+				 
+				var hashtag = url.split("#");
+				var projectID = hashtag[hashtag.length-1];
+
+				var projectUrl = 'https://api.behance.net/v2/projects/' + projectID + '/?api_key=qQRlBnCFszvGLbGHpVGfwoId7RnIPLjm&callback=?';
+				console.log('trying to show ' + projectUrl + '.');
+
+				 
+				 $("#dynamic-pages").slideDown("slow");
+
+
+				  $.getJSON(projectUrl, function(data) {
+				    //mustache for projects
+				    var template = $('#project-page').html();
+				    var info = Mustache.to_html(template, data);
+				    $('#dynamic-pages').html(info);
+				    $('div.text *').removeAttr('style');
+
+				    var iframe = $('iframe')[0],
+		            player = $f(iframe),
+		            status = $('.status');
+
+		            player.addEvent('ready', function() {
+		                player.api('pause');
+		            });
+		          });
+
+		          $('html, body').animate({
+				        scrollTop: $("#dynamic-pages").offset().top
+				    }, 2000);
+
+
+
+
+
+				    $('.close-project a').on('click touch', function() {
+				    	console.log('trying to close.');
+				      	$("#dynamic-pages").slideToggle("slow");
+
+				    });
+				  
+
+		};
 	
 	function isMobile() {
 			return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -239,8 +287,8 @@ $(document).ready(function() {
 
 
 
-
-		
 });
+		
+
 
 
