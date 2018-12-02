@@ -24,7 +24,8 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 
 iframe {
    margin:0px auto;
-   display:block;"
+   display:block;
+   max-width: 100%;
 }
 
 
@@ -42,6 +43,23 @@ iframe {
     /* equivalent to 22px */
   }
 }
+
+
+
+
+
+.text {
+  font-size: .7em;
+  width: 100%;
+}
+@media (min-width: 43.75em) {
+  .text {
+    font-size: 1em;
+    /* 1.5x body copy size = 24px */
+  }
+}
+
+
 h1 {
   font-size: 2em;
   /* 2x body copy size = 32px */
@@ -151,12 +169,21 @@ h6 {
   font-weight: 300;
   padding-top: 1em;
 }
+
+
 .intro h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 700;
   border-bottom: solid 1.5px #DDE8C5;
   padding-bottom: .06em;
 }
+
+@media (min-width: 43.75em) {
+  .intro h1 {
+    font-size: 2.5em;
+  }
+}
+
 .intro h2 {
   font-size: 1.3em;
   line-height: 1.5em;
@@ -268,9 +295,14 @@ h6 {
 }
 
 header {
-  height: 90vh;
+  height: 100vh;
 }
 
+@media (min-width: 43.75em) {
+  header {
+      height: 90vh;
+  }
+}
 
 #behance-magix {
   padding-top: 30px;
@@ -368,9 +400,20 @@ h3 {
 .project {
   padding-bottom: 30px;
 }
+
 .intro {
-  margin-top: 25vh;
+ margin-top:15vh;
 }
+@media (min-width: 43.75em) {
+  .intro {
+     margin-top: 25vh;
+  }
+}
+
+
+
+
+
 #dynamic-pages {
   height: 100%;
   display: none;
