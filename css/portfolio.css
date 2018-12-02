@@ -15,12 +15,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
   font-size-adjust: 0.5;
 }
 
-.text {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
-}
+
 
 iframe {
    margin:0px auto;
@@ -51,10 +46,14 @@ iframe {
 .text {
   font-size: .7em;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 @media (min-width: 43.75em) {
   .text {
     font-size: 1em;
+    width:80%;
     /* 1.5x body copy size = 24px */
   }
 }
