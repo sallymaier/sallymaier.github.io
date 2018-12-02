@@ -22,8 +22,11 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
     line-height: 1.6;
 }
 iframe {
-    left: 50%;
     transform: translate(50%);
+}
+
+#brandbook {
+    transform: translate(25%);
 }
 
 #page {
