@@ -21,13 +21,12 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
     margin-right: auto;
     line-height: 1.6;
 }
+
 iframe {
-    transform: translate(50%);
+   margin:0px auto;
+   display:block;"
 }
 
-#brandbook {
-    transform: translate(25%);
-}
 
 #page {
   font-size: 1em;
