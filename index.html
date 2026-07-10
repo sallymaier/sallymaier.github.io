@@ -1,133 +1,127 @@
-<!doctype html>
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Sally Maier</title>
-
-
-  <!-- Always force latest IE rendering engine & Chrome Frame -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <meta http-equiv="cleartype" content="on">
-
-  <link rel="shortcut icon" href="images/initial.png">
-
-  <!-- Responsive and mobile friendly stuff -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="fonts/moriston/stylesheet.css" />
-    <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
-
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>In Loving Memory of Donald Bruce Maier &middot; 1933&ndash;2026</title>
+<meta name="description" content="A photographic tribute to Donald Bruce Maier (1933&ndash;2026), told through a scrapbook of the photographs he left behind.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#E8E0CB;font-family:'Newsreader',Georgia,serif}
+  .head{padding:64px 24px 26px;text-align:center;border-bottom:1px solid rgba(51,43,34,.16)}
+  .head h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(2rem,5vw,2.8rem);margin:0;color:#332B22}
+  .head .dates{font-family:ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#8C5A34;font-size:.72rem;margin:.9rem 0 0}
+  .grid{padding:30px 26px 40px;column-count:4;column-gap:14px}
+  @media (max-width:1100px){.grid{column-count:3}}
+  @media (max-width:720px){.grid{column-count:2;column-gap:10px}}
+  @media (max-width:420px){.grid{column-count:1}}
+  .card{break-inside:avoid;margin:0 0 16px;background:#fff;padding:8px 8px 22px;border:1px solid rgba(51,43,34,.14);
+    box-shadow:0 1px 2px rgba(51,43,34,.12),0 12px 22px -14px rgba(51,43,34,.4);position:relative;box-sizing:border-box;
+    display:flex;align-items:center;justify-content:center;cursor:pointer}
+  .card .tape{position:absolute;top:-8px;left:50%;transform:translateX(-50%) rotate(-2deg);width:34px;height:14px;background:rgba(140,90,52,.35)}
+  .card img{width:100%;display:block}
+  .foot{padding:26px 32px 52px;text-align:center;border-top:1px solid rgba(51,43,34,.16)}
+  .foot p{font-family:'Newsreader',serif;font-style:italic;color:#4a4030;font-size:.95rem;margin:0}
+  .lb{position:fixed;inset:0;z-index:100;background:rgba(22,20,17,.94);display:none;align-items:center;justify-content:center;cursor:zoom-out}
+  .lb.open{display:flex}
+  .lb img{max-width:92vw;max-height:88vh;background:#fff;padding:.6rem;box-shadow:0 30px 80px -20px rgba(0,0,0,.7)}
+</style>
 </head>
-
 <body>
+<div class="head">
+  <h1>Donald Bruce Maier</h1>
+  <p class="dates">1933 &ndash; 2026</p>
+</div>
+<div class="grid" id="grid"></div>
+<div class="foot">
+  <p>Celebration of Life &mdash; Saturday, July 11, 2026, 11:00 a.m. &middot; Dutch Neck Presbyterian Church, West Windsor, NJ</p>
+</div>
+<div class="lb" id="lb"><img id="lbImg" src="" alt=""></div>
 
+<script>
+(function(){
+  var TOTAL = 138;
+  var ROTATED_FIT = { 94:1, 117:1, 119:1, 132:1 }; // portrait source -> landscape footprint after -90
+  var ROTATED_138 = 138; // landscape final footprint (portrait source, wide crop)
+  var ROTATED_39 = 39;   // same as 138 treatment
 
-<header>
-	<div class="overlay">
-		<div class="intro col-md-offset-3 col-md-6">
-			<h1>Sally Maier</h1>
-			<h2>is a <a href="#behance-magix" class="scroll">designer and brand strategist.</a></br>
-				She <a href="https://www.linkedin.com/in/sallylynnmaier" target="blank">works</a> in the DC metro area and internationally. </br>
-        <a href="mailto: sallymaier@gmail.com" target="blank">Reach out</a> to collaborate on your next project.
-    </div>
-  </div>
-</header>
+  function pad(n){ return String(n).padStart(3,'0'); }
+  function tilt(idx){
+    var sign = (idx % 2 === 0) ? 1 : -1;
+    var mag = 0.8 + (idx % 3) * 0.4;
+    return 'rotate(' + (sign*mag) + 'deg)';
+  }
 
-<main>  
-		<div class="container-fluid">
+  var grid = document.getElementById('grid');
+  for (var i = 1; i <= TOTAL; i++){
+    var idx = i - 1;
+    var card = document.createElement('div');
+    card.className = 'card';
+    var cardTransform = tilt(idx);
+    var imgTransform = '';
+    var height = 'auto';
 
-      <div id="dynamic-pages" class="row">
-      </div>
-			
+    if (ROTATED_FIT[i]) {
+      height = '260px';
+      card.style.height = height;
+      var img = document.createElement('img');
+      img.src = 'images/thumb/p' + pad(i) + '.jpg';
+      img.alt = 'Photograph ' + i + ' of ' + TOTAL + ' from the life of Donald Maier';
+      img.loading = 'lazy';
+      img.style.width = '230px';
+      img.style.height = '172px';
+      img.style.objectFit = 'cover';
+      img.style.transform = 'rotate(-90deg)';
+      var tape = document.createElement('div');
+      tape.className = 'tape';
+      card.style.transform = cardTransform;
+      card.appendChild(tape);
+      card.appendChild(img);
+    } else if (i === ROTATED_39 || i === ROTATED_138) {
+      height = '159px';
+      card.style.height = height;
+      var img2 = document.createElement('img');
+      img2.src = 'images/thumb/p' + pad(i) + '.jpg';
+      img2.alt = 'Photograph ' + i + ' of ' + TOTAL + ' from the life of Donald Maier';
+      img2.loading = 'lazy';
+      img2.style.width = '129px';
+      img2.style.height = '172px';
+      img2.style.objectFit = 'cover';
+      img2.style.transform = 'rotate(-90deg)';
+      var tape2 = document.createElement('div');
+      tape2.className = 'tape';
+      card.style.transform = cardTransform;
+      card.appendChild(tape2);
+      card.appendChild(img2);
+    } else {
+      card.style.transform = cardTransform;
+      var tape3 = document.createElement('div');
+      tape3.className = 'tape';
+      var img3 = document.createElement('img');
+      img3.src = 'images/thumb/p' + pad(i) + '.jpg';
+      img3.alt = 'Photograph ' + i + ' of ' + TOTAL + ' from the life of Donald Maier';
+      img3.loading = 'lazy';
+      card.appendChild(tape3);
+      card.appendChild(img3);
+    }
 
-	    <div id="behance-magix" class="row">
-	      <!-- insert some HTML via magic JS -->
-	        <p>Gallery</p>
-	    </div>
-      <a id="back-to-bottom" href="#behance-magix" class="btn btn-sm back-to-bottom scroll" role="button" title="See all projects." data-toggle="tooltip" data-placement="left"><h5>project list</h5><span class="glyphicon glyphicon-chevron-down"></span></a>
-	  </div>
-  </div>
-</main>
+    (function(fullSrc){
+      card.addEventListener('click', function(){
+        document.getElementById('lbImg').src = fullSrc;
+        document.getElementById('lb').classList.add('open');
+      });
+    })('images/thumb/p' + pad(i) + '.jpg');
 
+    grid.appendChild(card);
+  }
 
-
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
-  <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-  <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
-  <script src="js/portfolio.js"></script>
-
-<!-- for templated carousel
-  <script id="carousel-slides" type="text/template">
-    {{#projects}}
-		<div class="item">
-	        <img src="{{covers.404}}" data-color="lightblue" alt="{{name}}">
-	        <div class="carousel-caption" >
-          		<a href="#{{id}}" data-project-id="{{id}}"> <h3 class="name">{{name}}</h3></a>
-          	</div>
-	    </div>
-    {{/projects}}
-  </script>
--->
-
-  <!-- gallery template -->
-  <script id="project-cards" type="text/template">
-    {{#projects}}
-    <div class="project col-md-3 col-sm-6" id="b{{id}}">
-      <a class="wrapping" href="#{{id}}" data-project-id="{{id}}">
-        <img src="{{covers.404}}" alt="{{name}}" />
-        <div class="info">
-          <h3 class="name">{{name}}</h3>
-          <h4 class="fields">{{#fields}}{{.}}</br>{{/fields}}</h4>
-        </div>
-      </a>
-    </div>
-    {{/projects}}
-  </script>
-
-  <script id="project-page" type="text/template">
-      <div class="imagecontainer large">
-        <img src="{{project.covers.404}}" alt="{{name}}" />
-        <div class="bg-overlay"></div>
-      </div>
-      <div class="col-md-8 col-md-offset-2 projectinfo" id="project-{{project.id}}">
-      <h1>{{project.name}}</h1>
-      <h5 class="fields">{{#project.fields}}   {{.}}   {{/project.fields}}</h5>
-      <p class="description">{{project.description}}</p> 
-      {{#project.modules}} 
-          <div class="modules {{type}} alignment-{{alignment}} caption-{{caption-alignment}}">
-              {{{text}}}
-              <img class="mod-image" src="{{sizes.original}}">
-              {{{embed}}}
-          </div>
-      {{/project.modules}}
-      <div class="close-project">
-        <a href="#dynamic-pages">close</a>
-      </div>    
-    </div>
-  </script>
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-78904542-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-
-
-
-
+  document.getElementById('lb').addEventListener('click', function(){
+    this.classList.remove('open');
+  });
+})();
+</script>
 </body>
+</html>
