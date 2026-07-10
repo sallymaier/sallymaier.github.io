@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sally Maier</title>
+
+
+  <!-- Always force latest IE rendering engine & Chrome Frame -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta http-equiv="cleartype" content="on">
+
+  <link rel="shortcut icon" href="images/initial.png">
+
+  <!-- Responsive and mobile friendly stuff -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="fonts/moriston/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
+
+
+</head>
+
+<body>
+
+
+<header>
+	<div class="overlay">
+		<div class="intro col-md-offset-3 col-md-6">
+			<h1>Sally Maier</h1>
+			<h2>is a <a href="#behance-magix" class="scroll">designer and brand strategist.</a></br>
+				She <a href="https://www.linkedin.com/in/sallylynnmaier" target="blank">works</a> in the DC metro area and internationally. </br>
+        <a href="mailto: sallymaier@gmail.com" target="blank">Reach out</a> to collaborate on your next project.
+    </div>
+  </div>
+</header>
+
+<main>  
+		<div class="container-fluid">
+
+      <div id="dynamic-pages" class="row">
+      </div>
+			
+
+	    <div id="behance-magix" class="row">
+	      <!-- insert some HTML via magic JS -->
+	        <p>Gallery</p>
+	    </div>
+      <a id="back-to-bottom" href="#behance-magix" class="btn btn-sm back-to-bottom scroll" role="button" title="See all projects." data-toggle="tooltip" data-placement="left"><h5>project list</h5><span class="glyphicon glyphicon-chevron-down"></span></a>
+	  </div>
+  </div>
+</main>
+
+
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+  <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="js/portfolio.js"></script>
+
+<!-- for templated carousel
+  <script id="carousel-slides" type="text/template">
+    {{#projects}}
+		<div class="item">
+	        <img src="{{covers.404}}" data-color="lightblue" alt="{{name}}">
+	        <div class="carousel-caption" >
+          		<a href="#{{id}}" data-project-id="{{id}}"> <h3 class="name">{{name}}</h3></a>
+          	</div>
+	    </div>
+    {{/projects}}
+  </script>
+-->
+
+  <!-- gallery template -->
+  <script id="project-cards" type="text/template">
+    {{#projects}}
+    <div class="project col-md-3 col-sm-6" id="b{{id}}">
+      <a class="wrapping" href="#{{id}}" data-project-id="{{id}}">
+        <img src="{{covers.404}}" alt="{{name}}" />
+        <div class="info">
+          <h3 class="name">{{name}}</h3>
+          <h4 class="fields">{{#fields}}{{.}}</br>{{/fields}}</h4>
+        </div>
+      </a>
+    </div>
+    {{/projects}}
+  </script>
+
+  <script id="project-page" type="text/template">
+      <div class="imagecontainer large">
+        <img src="{{project.covers.404}}" alt="{{name}}" />
+        <div class="bg-overlay"></div>
+      </div>
+      <div class="col-md-8 col-md-offset-2 projectinfo" id="project-{{project.id}}">
+      <h1>{{project.name}}</h1>
+      <h5 class="fields">{{#project.fields}}   {{.}}   {{/project.fields}}</h5>
+      <p class="description">{{project.description}}</p> 
+      {{#project.modules}} 
+          <div class="modules {{type}} alignment-{{alignment}} caption-{{caption-alignment}}">
+              {{{text}}}
+              <img class="mod-image" src="{{sizes.original}}">
+              {{{embed}}}
+          </div>
+      {{/project.modules}}
+      <div class="close-project">
+        <a href="#dynamic-pages">close</a>
+      </div>    
+    </div>
+  </script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-78904542-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+
+
+</body>
