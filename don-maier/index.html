@@ -78,8 +78,6 @@
     <p style="margin-bottom:0">He also leaves behind his sister-in-law, <b>Barbara Maier</b>, and many, many nieces and nephews.</p>
   </div>
 
-  
-
   <div class="obit-rule"></div>
 </div>
 
@@ -91,7 +89,11 @@
 
 <script>
 (function(){
-  var TOTAL = 138;
+  var ORDER = [];
+  for (var n = 1; n <= 33; n++) ORDER.push(n);
+  ORDER.push(139, 140);
+  for (var n = 34; n <= 138; n++) ORDER.push(n);
+  var TOTAL = ORDER.length;
 
   function pad(n){ return String(n).padStart(3,'0'); }
   function tilt(idx){
@@ -101,8 +103,9 @@
   }
 
   var grid = document.getElementById('grid');
-  for (var i = 1; i <= TOTAL; i++){
-    var idx = i - 1;
+  for (var pos = 0; pos < TOTAL; pos++){
+    var i = ORDER[pos];
+    var idx = pos;
     var card = document.createElement('div');
     card.className = 'card';
     card.style.transform = tilt(idx);
@@ -112,7 +115,7 @@
     var img = document.createElement('img');
     var src = 'images/thumb/p' + pad(i) + '.jpg';
     img.src = src;
-    img.alt = 'Photograph ' + i + ' of ' + TOTAL + ' from the life of Donald Maier';
+    img.alt = 'Photograph ' + (pos + 1) + ' of ' + TOTAL + ' from the life of Donald Maier';
     img.loading = 'lazy';
 
     // Frame each card to the photo's own aspect ratio, whatever it is,
